@@ -30,6 +30,8 @@ PUBLIC_FILES = (
     "scripts/validate_notion_bundle.py",
     "requirements.txt",
     ".github/workflows/materials.yml",
+    "scripts/vendor/tex-svg-full.js",
+    "scripts/vendor/LICENSE.mathjax",
 )
 CSS = """@page {size:A4;margin:16mm} body{font-family:'Noto Sans CJK KR','Malgun Gothic',sans-serif;font-size:10pt;line-height:1.65;color:#172333}
 h1{font-size:21pt} h2{font-size:15pt} h1,h2,h3{break-after:avoid} img{max-width:100%;max-height:220mm;display:block;margin:12px auto}
@@ -87,6 +89,20 @@ def revision(root):
 
 
 def render(text, source, root, repository):
+    from html import escape
+    config = load(root)
+    formulas = {}
+    if config.get("math"):
+        def capture(match):
+            value = match.group(0)
+            key = "MATHPLACEHOLDER" + str(len(formulas)) + "END"
+            display = value.startswith("$$") or value.startswith(r"\[")
+            formula = value[2:-2] if display or value.startswith(r"\(") else value[1:-1]
+            formulas[key] = (r"\[" if display else r"\(") + escape(formula) + (r"\]" if display else r"\)")
+            return key
+        chunks = re.split(r"(```[\s\S]*?```|`[^`\n]*`)", text)
+        pattern = r"\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([^\n]*?\\\)|(?<!\\)\$[^$\n]+?(?<!\\)\$"
+        text = "".join(re.sub(pattern, capture, chunk) if i % 2 == 0 else chunk for i, chunk in enumerate(chunks))
     md = MarkdownIt("commonmark", {"html": False}).enable("table")
     tokens = md.parse(text)
     for t in tokens:
@@ -106,11 +122,17 @@ def render(text, source, root, repository):
                 p = (source.parent / unquote(target)).resolve()
                 rel = p.relative_to(root.resolve()).as_posix()
                 c.attrSet(key, f"https://github.com/{repository}/blob/main/{rel}")
+    body = md.renderer.render(tokens, md.options, {})
+    for key, formula in formulas.items(): body = body.replace(key, formula)
+    math_script = ""
+    if formulas:
+        asset = root / "scripts/vendor/tex-svg-full.js"
+        math_script = '<script>MathJax={startup:{typeset:true},svg:{fontCache:"local"}};</script><script>' + asset.read_text(encoding="utf-8") + '</script>'
     return (
-        '<!doctype html><html lang="ko"><meta charset="utf-8"><style>'
+        '<!doctype html><html lang="' + escape(config.get("language", "ko")) + '"><meta charset="utf-8"><style>'
         + CSS
         + "</style><body>"
-        + md.renderer.render(tokens, md.options, {})
+        + body + math_script
         + "</body></html>"
     )
 
@@ -123,7 +145,7 @@ def quiz(root, session):
         source = "\n".join("".join(c["source"]) for c in json.loads(source)["cells"])
     if not 5 <= len(data["items"]) <= 10:
         raise ValueError("Expected 5–10 checkpoint questions")
-    parts = ["# " + session["title"] + " · 퀴즈 해설", data["provenance"]]
+    parts = ["# " + session["title"] + (" · Quiz explanations" if load(root).get("language") == "en" else " · 퀴즈 해설"), data["provenance"]]
     for i, item in enumerate(data["items"], 1):
         if item["question"] not in source or not item["answer"].strip():
             raise ValueError(f"Quiz/source mismatch: {i}")
@@ -245,6 +267,10 @@ def build(root=ROOT):
             rendered = Path(tmp) / "page.html"
             write(rendered, render(p.read_text(encoding="utf-8"), p, root, c["repository"]))
             tab.goto(rendered.as_uri())
+            if c.get("math"):
+                tab.evaluate("async () => {if(window.MathJax && MathJax.startup) await MathJax.startup.promise}")
+                if tab.locator('[data-mjx-error], mjx-merror').count():
+                    raise ValueError(f"Math rendering error: {p}")
             tab.evaluate("document.fonts.ready")
             if not tab.evaluate(
                 "Array.from(document.images).every(i=>i.complete && i.naturalWidth>0)"
@@ -332,6 +358,20 @@ def notices(root=ROOT, sid=None):
                  "\n".join("- " + item for item in guidance),
                  "전체 강의자료\n" + base]
         body = "\n\n".join(line for line in lines if line) + "\n"
+        if c.get("language") == "en":
+            translations = {
+                "자료 안내": "Materials",
+                "강의자료와 실습 안내입니다. 아래 링크를 이용해 주세요.": "Please use the following lecture and practice materials.",
+                "Notion 강의노트: 링크 등록 후 안내합니다. 우선 아래 Markdown/PDF를 이용하세요.": "Notion: the link will follow. Use the Markdown/PDF below in the meantime.",
+                "Notion 강의노트": "Notion lecture notes",
+                "Markdown 강의노트": "Markdown lecture notes",
+                "PDF 강의노트": "PDF lecture notes",
+                "퀴즈 답안·해설": "Quiz answers and explanations",
+                "전체 강의자료": "All course materials",
+                "수강생 여러분의 요청을 반영해 강의노트를 PDF로도 제공하고, 강의 끝 퀴즈의 답안·해설을 별도로 제공합니다. 퀴즈를 먼저 풀어 본 뒤 해설로 확인해 주세요.": "Lecture notes are also available as PDFs, with separate checkpoint quiz answers and explanations as requested. Attempt the questions before consulting the explanations.",
+            }
+            for old, new in sorted(translations.items(), key=lambda item: -len(item[0])):
+                body = body.replace(old, new)
         destination = root / "instructor/announcements" / (s["id"] + "-smartclass.txt")
         write(destination, body)
         print("\n=== SmartClass 공지 초안: 배포 링크 확인 후 복사 ===")
@@ -360,7 +400,10 @@ def stage(root=ROOT):
         if (root / rel).is_file():
             dst = candidate / rel
             dst.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(root / rel, dst)
+            source = root / rel
+            if rel == ".github/workflows/materials.yml" and (root / "scripts/public-materials.yml").exists():
+                source = root / "scripts/public-materials.yml"
+            shutil.copy2(source, dst)
     errors = scan(candidate)
     if errors:
         raise ValueError("\n".join(f"{e.path}: {e.message}" for e in errors))

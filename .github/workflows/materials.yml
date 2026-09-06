@@ -1,31 +1,15 @@
-name: Course materials
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+name: Validate student materials
+on: [push, pull_request, workflow_dispatch]
 permissions:
-  contents: write
-concurrency:
-  group: course-materials-${{ github.repository }}
-  cancel-in-progress: false
+  contents: read
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -r requirements.txt
-      - run: python -m playwright install --with-deps chromium
-      - run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
-      - run: python scripts/course.py build
-      - name: Save generated student materials
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- README.md course/handouts course/references.md
-          if ! git diff --cached --quiet; then
-            git commit -m "Update generated course materials"
-            git push origin HEAD:main
-          fi
+      - run: pip install pypdf PyYAML
+      - run: python scripts/validate_notion_bundle.py course/notion --strict
+      - run: python scripts/check_public_release.py .
