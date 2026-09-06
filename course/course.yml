@@ -29,6 +29,8 @@ sessions:
   quiz: course/quiz/w02a.yml
   colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/main/notebooks/student/w02a_colab_generative_demo.ipynb
   notion_url: https://app.notion.com/p/W02a-Colab-AI-3d37fd00109f81ae90b8c676e658ddfd?source=copy_link
+  announcement_guidance:
+  - 필수 실습은 CPU에서 진행하며 추가 원자료는 필요하지 않습니다. 사전학습 모델 다운로드는 선택 실습입니다.
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

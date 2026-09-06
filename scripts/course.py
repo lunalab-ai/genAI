@@ -282,6 +282,63 @@ def build(root=ROOT):
         ),
     )
     print("Build passed. Notion ZIP:", dest)
+    notices(root)
+
+
+def notices(root=ROOT, sid=None):
+    """Save copyable student announcements privately and print their full text."""
+    from urllib.parse import quote
+    c = load(root)
+    sessions = [s for s in c["sessions"] if sid is None or s["id"] == sid]
+    if sid and not sessions:
+        raise ValueError("Unknown session: " + sid)
+    for s in sessions:
+        if not s.get("pages"):
+            continue
+        base = "https://github.com/" + c["repository"]
+        links = []
+        if s.get("notion_url"):
+            links.append("Notion 강의노트\n" + s["notion_url"])
+        else:
+            links.append("Notion 강의노트: 링크 등록 후 안내합니다. 우선 아래 Markdown/PDF를 이용하세요.")
+        def add(label, relative):
+            # Never announce a missing file or an instructor-only path.
+            allowed = ("course/notion/", "course/handouts/", "notebooks/student/", "labs/student/")
+            if not relative.startswith(allowed):
+                raise ValueError("Not a student announcement path: " + relative)
+            if safe(root, relative).is_file():
+                links.append(label + "\n" + base + "/blob/main/" + quote(relative, safe="/"))
+        for page in s["pages"]:
+            add("Markdown 강의노트", page)
+            add("PDF 강의노트", "course/handouts/" + Path(page).stem + ".pdf")
+        if s.get("quiz"):
+            add("퀴즈 답안·해설", "course/handouts/" + s["id"] + "-quiz.md")
+            add("퀴즈 답안·해설 PDF", "course/handouts/" + s["id"] + "-quiz.pdf")
+        for lab in s.get("labs", []):
+            add("실습 파일 (" + Path(lab).suffix.lstrip(".") + ")", lab)
+        if s.get("colab_url"):
+            links.append("Colab 실습\n" + s["colab_url"])
+        guidance = s.get("announcement_guidance", [])
+        if s.get("colab_url"):
+            guidance = ["Colab에서 Drive에 사본을 저장한 뒤 설명을 읽고 한 셀씩 실행하세요."] + guidance
+        elif s.get("labs") and c.get("runtime") == "r":
+            guidance = ["R과 RStudio를 준비하고 .R 실습 파일을 열어 한 표현식씩 실행하세요."] + guidance
+        lines = [f"[{c['title']}] {s.get('date') or '일정 추후 안내'} · {s['id']} {s['title']} 자료 안내",
+                 "강의자료와 실습 안내입니다. 아래 링크를 이용해 주세요.",
+                 "\n\n".join(links),
+                 ("수강생 여러분의 요청을 반영해 강의노트를 PDF로도 제공하고, 강의 끝 퀴즈의 답안·해설을 별도로 제공합니다. 퀴즈를 먼저 풀어 본 뒤 해설로 확인해 주세요."
+                  if any(x.startswith("PDF 강의노트") for x in links) and any(x.startswith("퀴즈 답안·해설") for x in links)
+                  else "위에 연결된 자료를 이용해 학습하고, 퀴즈 해설이 제공되면 먼저 풀어 본 뒤 확인해 주세요."),
+                 "\n".join("- " + item for item in guidance),
+                 "전체 강의자료\n" + base]
+        body = "\n\n".join(line for line in lines if line) + "\n"
+        destination = root / "instructor/announcements" / (s["id"] + "-smartclass.txt")
+        write(destination, body)
+        print("\n=== SmartClass 공지 초안: 배포 링크 확인 후 복사 ===")
+        print(body)
+        print("저장:", destination)
+        escaped = str(destination.resolve()).replace("'", "''")
+        print(f"Get-Content -LiteralPath '{escaped}' -Raw -Encoding utf8 | Set-Clipboard")
 
 
 def stage(root=ROOT):
@@ -352,8 +409,12 @@ def status(root=ROOT, sid=None):
 
 
 def main():
+    import sys
+
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["build", "stage", "status", "note", "notion", "inputs"])
+    parser.add_argument("command", choices=["build", "stage", "status", "note", "notion", "inputs", "notice"])
     parser.add_argument("session", nargs="?")
     parser.add_argument("--note")
     parser.add_argument("--url")
@@ -363,6 +424,8 @@ def main():
         build()
     elif a.command == "stage":
         stage()
+    elif a.command == "notice":
+        notices(sid=a.session)
     elif a.command == "status":
         status(sid=a.session)
     elif a.command == "inputs":
@@ -412,6 +475,7 @@ def main():
             state["notion_revision"] = revision(ROOT)
             state["zip_sha256"] = a.zip_sha256
             hub(ROOT, c)
+            notices(sid=a.session)
         state.setdefault("notes", []).append(
             {
                 "at": dt.datetime.now(dt.timezone.utc).isoformat(),
