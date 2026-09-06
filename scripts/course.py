@@ -175,7 +175,7 @@ def hub(root, config):
             )
             + " |"
         )
-    if config.get("supplements"):
+    if config.get("supplements") and config.get("show_supplements", True):
         parts.extend(["", "## 보충 실습 자료", "", "| 자료 | 실습 | 퀴즈 해설 |", "|---|---|---|"])
         for s in config["supplements"]:
             labs = " · ".join(f"[{Path(p).suffix[1:]}]({p})" for p in s.get("labs", []))

@@ -10,7 +10,7 @@ overview: course/overview.md
 sessions:
 - id: w01
   title: 생성형 인공지능과 생성 미디어 입문
-  date: null
+  date: '2026-09-02'
   pages:
   - course/notion/week01/week01_generative_ai_intro.md
   quiz: course/quiz/week01.yml
@@ -36,3 +36,4 @@ supplements:
   labs:
   - notebooks/student/week01_generative_ai_intro.ipynb
   quiz: course/quiz/week01-lab.yml
+show_supplements: false

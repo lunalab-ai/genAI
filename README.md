@@ -8,26 +8,111 @@
 
 | 차시 | 날짜 | 주제 | 강의노트 | 퀴즈 해설 | 실습 | 실행 |
 |---|---|---|---|---|---|---|
-| w01 | 일정 미확정 | 생성형 인공지능과 생성 미디어 입문 | [MD](course/notion/week01/week01_generative_ai_intro.md) · [PDF](course/handouts/week01_generative_ai_intro.pdf) · [Notion](https://app.notion.com/p/week01_generative_ai_intro-3ce7fd00109f81e58d28ec3fcaca3305?source=copy_link) | [MD](course/handouts/w01-quiz.md) · [PDF](course/handouts/w01-quiz.pdf) | [ipynb](notebooks/student/week01_generative_ai_intro.ipynb) | [Colab](https://colab.research.google.com/drive/1zd4AEMV3FW83CCOLKOQcDv5C8CgZyg5-?usp=sharing) |
+| w01 | 2026-09-02 | 생성형 인공지능과 생성 미디어 입문 | [MD](course/notion/week01/week01_generative_ai_intro.md) · [PDF](course/handouts/week01_generative_ai_intro.pdf) · [Notion](https://app.notion.com/p/week01_generative_ai_intro-3ce7fd00109f81e58d28ec3fcaca3305?source=copy_link) | [MD](course/handouts/w01-quiz.md) · [PDF](course/handouts/w01-quiz.pdf) | [ipynb](notebooks/student/week01_generative_ai_intro.ipynb) | [Colab](https://colab.research.google.com/drive/1zd4AEMV3FW83CCOLKOQcDv5C8CgZyg5-?usp=sharing) |
 | w02a | 2026-09-07 | Colab 실습 환경 설정 및 생성형 AI 데모 실습 | [MD](course/notion/w02a/w02a-colab-generative-demo.md) · [PDF](course/handouts/w02a-colab-generative-demo.pdf) · [Notion](https://app.notion.com/p/W02a-Colab-AI-3d37fd00109f81ae90b8c676e658ddfd?source=copy_link) | [MD](course/handouts/w02a-quiz.md) · [PDF](course/handouts/w02a-quiz.pdf) | [ipynb](notebooks/student/w02a_colab_generative_demo.ipynb) | [Colab](https://colab.research.google.com/github/lunalab-ai/genAI/blob/main/notebooks/student/w02a_colab_generative_demo.ipynb) |
-
-## 보충 실습 자료
-
-| 자료 | 실습 | 퀴즈 해설 |
-|---|---|---|
-| 기존 1주차 실습 패키지 · 후속 실습에서도 활용 | [ipynb](notebooks/student/week01_generative_ai_intro.ipynb) | [MD](course/handouts/week01-lab-quiz.md) · [PDF](course/handouts/week01-lab-quiz.pdf) |
 
 ## 강의 개요
 
-학부 · 동덕여자대학교 데이터사이언스전공 · 유원상 교수 · 2026년 2학기
+**2026년 2학기 · 동덕여자대학교 데이터사이언스전공 · 유원상 교수**
 
-텍스트·이미지·오디오 생성의 원리와 Python 실습을 연결합니다. 교재는 『핸즈온 생성형 AI』입니다.
+월·수 10:30–11:45 · 전공선택 3학점 · 교과목 코드 데사K0038
 
-## 커리큘럼 안내
+## 이 강의에서 무엇을 배우는가
 
-생성 미디어 입문에서 Transformer, 표현 학습, 확산 모델, 조건부 생성, 파인튜닝 및 응용으로 이어집니다. 상세 주차 계획은 강의계획서 원본을 확보한 뒤 보완합니다.
+이 과목은 생성형 인공지능을 단순히 “써 보는 도구”로만 다루지 않습니다. 다음 세 층을 연결해 학습합니다.
 
-[1주차 강의와 전체 흐름](course/notion/week01/week01_generative_ai_intro.md)
+| 층 | 핵심 질문 | 대표 내용 |
+|---|---|---|
+| 활용 | 사전학습 모델로 무엇을 만들 수 있는가? | 텍스트·이미지·오디오 생성, 의미 검색, 이미지 편집, RAG |
+| 원리 | 모델은 어떤 구조와 학습목표로 작동하는가? | Transformer, AutoEncoder/VAE, CLIP, Diffusion, Stable Diffusion |
+| 책임 | 결과를 어떻게 평가하고 안전하게 사용할 것인가? | 사실성, 편향, 개인정보, 저작권·출처, 인간의 최종 책임 |
+
+강의계획서의 교육목표에 따라 이론 강의와 Python 실습을 병행합니다. 사전학습 모델을 불러오고, 텍스트·이미지·오디오 데이터를 다루며, 생성 결과를 해석하고 한계와 윤리적·사회적 영향을 검토합니다.
+
+## 학습 목표
+
+- 생성형 모델과 예측 모델을 구분하고 텍스트·이미지·오디오 생성의 공통 구조를 설명합니다.
+- Transformer, 표현 학습, 확산 모델의 핵심 개념을 Python 실습과 연결합니다.
+- 프롬프트·seed·생성 설정을 기록하고 조건을 바꾸며 결과를 비교합니다.
+- 사전학습 모델을 활용하고 검색·파인튜닝·조건부 생성 등 응용 방법을 익힙니다.
+- 생성 결과의 사실성·편향·출처와 한계를 검토하고 자신의 실험을 설명합니다.
+
+## 수업 자료 이용 방법
+
+1. 위 **수업 자료** 표에서 해당 차시의 Notion 또는 Markdown 강의노트를 엽니다. PDF는 내려받아 읽을 수 있습니다.
+2. 실습은 Colab 링크로 열고 개인 Drive에 사본을 저장합니다. ipynb 파일을 내려받아 사용할 수도 있습니다.
+3. 설명을 읽고 한 셀씩 실행한 뒤 예상 결과와 비교합니다. 수정한 코드와 관찰 결과를 기록합니다.
+4. 강의 끝의 퀴즈를 먼저 풀고 별도 퀴즈 해설로 이해를 점검합니다.
+
+## 수업 운영과 준비사항
+
+- 지각 2회는 결석 1회로 산정합니다.
+- 결석시수가 총 수업시수의 1/5을 초과하면 학칙에 따라 F학점이 부여됩니다.
+- Python 프로그래밍 또는 이에 준하는 과목을 선수강하여 기본 문법과 코딩 역량을 갖추는 것을 권장합니다.
+- 실습을 위해 개인 노트북을 준비합니다. 실습은 주로 JupyterLab 또는 Google Colab에서 진행합니다.
+- 실습 범위는 수강생의 이해도, Colab/GPU 환경, 모델 다운로드 상황에 따라 일부 조정될 수 있습니다.
+
+## 평가
+
+| 평가 요소 | 반영 비율 | 이번 학기 학습과의 연결 |
+|---|---:|---|
+| 중간고사 | 30% | 전반부 모델의 핵심 개념·구조·작동 원리 |
+| 기말고사 | 40% | 전 범위의 비교·응용·비판적 해석 |
+| 과제 | 10% | Python 구현, 실험 비교, 결과 분석과 보고 |
+| 출석 | 20% | 수업 참여와 실습 과정 |
+| **합계** | **100%** |  |
+
+## 학기 전체 지도
+
+아래는 1주차 강의자료에 제시한 학기 계획입니다. 실제 진행 날짜와 공개된 자료는 위 수업 자료 표를 기준으로 확인하세요. Colab 환경 설정과 생성형 AI 데모 실습은 9월 7일 2주차 1차시에 진행합니다.
+
+![강의 로드맵](course/notion/week01/assets/03_course_roadmap.png)
+
+| 주차 | 핵심 주제 |
+|---:|---|
+| 1 | 생성형 AI 입문, 생성 미디어 사례, 책임 있는 활용, Colab 환경 |
+| 2–3 | 언어 모델, Transformer, 토큰화, 프롬프트와 텍스트 생성 |
+| 4 | AutoEncoder, VAE, CLIP, 이미지·텍스트 임베딩, 의미 검색 |
+| 5–6 | Diffusion, U-Net, 잠재 확산, Stable Diffusion, 조건부 생성 |
+| 7 | 오픈 모델과 Gradio 기반 인터랙티브 데모, 전반부 정리 |
+| 8 | 중간고사 |
+| 9–10 | 언어 모델 Fine-tuning, Adapter, Quantization, RAG |
+| 11–12 | DreamBooth, LoRA, 이미지-이미지 변환, 인페인팅, ControlNet |
+| 13 | 오디오 데이터, 음성·음악 생성과 평가 |
+| 14–15 | 최신 동향, 긴 컨텍스트, MoE, 멀티모달·비디오, 종합 비교 |
+| 16 | 기말고사 |
+
+## Python 기초가 약하다면
+
+먼저 [Python·Colab 기초 안내](course/basics.md)를 읽고, [2주차 Colab 따라 하기](course/notion/w02a/w02a-colab-generative-demo.md)에서 사본 저장·셀 실행·변수·리스트부터 연습하세요. 오류가 나면 변수 이름과 실행 순서를 확인하고, 한 번에 한 조건만 바꾸어 결과를 비교합니다.
+
+이미 프로그래밍을 조금 배웠다면 기초 안내에 연결된 Python 한국어 자습서로 문법을 복습하세요. 첫 프로그래밍 경험이라면 수업의 작은 예제를 직접 실행하는 것부터 시작합니다.
+
+## 생성형 AI 도구 사용 원칙
+
+이 과목은 생성형 AI를 배우는 과목이므로 도구 사용 자체를 숨기지 않습니다. 대신 **사용 과정의 투명성과 결과에 대한 책임**을 요구합니다.
+
+- 사용한 모델·서비스·버전과 핵심 프롬프트를 기록합니다.
+- AI가 작성한 코드나 설명을 그대로 신뢰하지 말고 직접 실행·검증·수정합니다.
+- 과제 제출물에는 본인이 이해하고 설명할 수 있는 내용만 포함합니다.
+- 개인정보, 미공개 연구자료, 타인의 과제나 대화 등 민감한 자료를 공개 서비스에 입력하지 않습니다.
+- 생성물의 출처·라이선스·인용 필요성을 확인하고, AI를 사용한 범위를 투명하게 밝힙니다.
+
+> **수업의 기준:** “AI가 만들어 주었는가?”보다 “내가 왜 이 결과가 나왔는지 설명하고 검증할 수 있는가?”가 더 중요합니다.
+
+## 교재
+
+주교재는 **『핸즈온 생성형 AI』**입니다. 강의에서는 교재의 개념을 실습과 연결하며, 차시별 참고자료는 페이지 하단과 전체 참고자료 문서에서 확인할 수 있습니다.
+
+## 담당교수 및 면담
+
+| 항목 | 내용 |
+|---|---|
+| 담당교수 | 유원상 교수 |
+| 이메일 | wonsang@dongduk.ac.kr |
+| 연구실 | 예지관 B553호 |
+| 연락처 | 02-940-4753 |
+| 면담시간 | 월–목 15:00–18:00 |
 
 ## 교재와 참고자료
 
