@@ -19,3 +19,17 @@ https://github.com/lunalab-ai/genAI
 https://github.com/yk-genai/genaibook
 
 ## Colab 실습 환경 설정 및 생성형 AI 데모 실습
+
+[강의 원문](../course/notion/w02a/w02a-colab-generative-demo.md)
+
+- 기존 1주차 강의·실습의 Colab 설정, seed, 샘플링, 문자 생성, 이미지·오디오 기준선을 재구성했습니다. 따라 하기 절차와 비교 과제, 작은 예시 코드는 이번 차시용으로 새로 작성했습니다.
+- [Google Colab 공식 FAQ](https://research.google.com/colaboratory/faq.html): 노트북 저장·공유와 런타임의 차이 확인.
+- [DistilGPT2 모델 카드](https://huggingface.co/distilbert/distilgpt2): 선택 시연 모델의 용도·언어·한계.
+- [Transformers pipeline 안내](https://huggingface.co/docs/transformers/main/en/pipeline_tutorial): 선택 시연 API 참고.
+- 주교재: 『핸즈온 생성형 AI』, 1장 생성 미디어 입문. 이번 차시에서는 추가 교재 원본을 사용하지 않았습니다.
+
+https://huggingface.co/distilbert/distilgpt2
+
+https://huggingface.co/docs/transformers/main/en/pipeline_tutorial
+
+https://research.google.com/colaboratory/faq.html

@@ -9,7 +9,7 @@
 | 차시 | 날짜 | 주제 | 강의노트 | 퀴즈 해설 | 실습 | 실행 |
 |---|---|---|---|---|---|---|
 | w01 | 일정 미확정 | 생성형 인공지능과 생성 미디어 입문 | [MD](course/notion/week01/week01_generative_ai_intro.md) · [PDF](course/handouts/week01_generative_ai_intro.pdf) · [Notion](https://app.notion.com/p/week01_generative_ai_intro-3ce7fd00109f81e58d28ec3fcaca3305?source=copy_link) | [MD](course/handouts/w01-quiz.md) · [PDF](course/handouts/w01-quiz.pdf) | [ipynb](notebooks/student/week01_generative_ai_intro.ipynb) | [Colab](https://colab.research.google.com/drive/1zd4AEMV3FW83CCOLKOQcDv5C8CgZyg5-?usp=sharing) |
-| w02a | 2026-09-07 | Colab 실습 환경 설정 및 생성형 AI 데모 실습 | — | — | — | 자료 준비 중 |
+| w02a | 2026-09-07 | Colab 실습 환경 설정 및 생성형 AI 데모 실습 | [MD](course/notion/w02a/w02a-colab-generative-demo.md) · [PDF](course/handouts/w02a-colab-generative-demo.pdf) | [MD](course/handouts/w02a-quiz.md) · [PDF](course/handouts/w02a-quiz.pdf) | [ipynb](notebooks/student/w02a_colab_generative_demo.ipynb) | [Colab](https://colab.research.google.com/github/lunalab-ai/genAI/blob/main/notebooks/student/w02a_colab_generative_demo.ipynb) |
 
 ## 보충 실습 자료
 

@@ -21,9 +21,13 @@ sessions:
 - id: w02a
   title: Colab 실습 환경 설정 및 생성형 AI 데모 실습
   date: '2026-09-07'
-  pages: []
-  labs: []
-  runtime_label: 자료 준비 중
+  pages:
+  - course/notion/w02a/w02a-colab-generative-demo.md
+  labs:
+  - notebooks/student/w02a_colab_generative_demo.ipynb
+  runtime_label: Colab · CPU
+  quiz: course/quiz/w02a.yml
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/main/notebooks/student/w02a_colab_generative_demo.ipynb
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab
