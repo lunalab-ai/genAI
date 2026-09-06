@@ -1,0 +1,33 @@
+schema_version: 1
+id: genai
+title: 데이터 사이언스를 위한 생성형 인공지능
+description: 데이터 사이언스를 위한 생성형 인공지능 강의자료 모음
+repository: lunalab-ai/genAI
+semester: 2026-2
+language: ko
+runtime: python
+overview: course/overview.md
+sessions:
+- id: w01
+  title: 생성형 인공지능과 생성 미디어 입문
+  date: null
+  pages:
+  - course/notion/week01/week01_generative_ai_intro.md
+  quiz: course/quiz/week01.yml
+  labs:
+  - notebooks/student/week01_generative_ai_intro.ipynb
+  notion_url: https://app.notion.com/p/week01_generative_ai_intro-3ce7fd00109f81e58d28ec3fcaca3305?source=copy_link
+  colab_url: https://colab.research.google.com/drive/1zd4AEMV3FW83CCOLKOQcDv5C8CgZyg5-?usp=sharing
+- id: w02a
+  title: Colab 실습 환경 설정 및 생성형 AI 데모 실습
+  date: '2026-09-07'
+  pages: []
+  labs: []
+  runtime_label: 자료 준비 중
+hero: course/notion/week01/assets/01_hero_banner.png
+supplements:
+- id: week01-lab
+  title: 기존 1주차 실습 패키지 · 후속 실습에서도 활용
+  labs:
+  - notebooks/student/week01_generative_ai_intro.ipynb
+  quiz: course/quiz/week01-lab.yml
