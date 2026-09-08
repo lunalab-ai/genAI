@@ -1,0 +1,6 @@
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+torch==2.8.0
+transformers==5.15.1
+gradio==6.26.0

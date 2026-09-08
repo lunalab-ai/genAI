@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luna-genai"
+version = "0.1.0"
+description = "Reusable language-model experiments for the genAI course"
+requires-python = ">=3.10,<3.14"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<4", "torch==2.8.0", "transformers==5.15.1", "gradio==6.26.0"]
+
+[project.scripts]
+luna-genai = "luna_genai.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["luna_genai*"]
+
+[tool.setuptools.package-data]
+luna_genai = ["datasets/*.json"]

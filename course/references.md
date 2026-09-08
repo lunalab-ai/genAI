@@ -33,3 +33,34 @@ https://huggingface.co/distilbert/distilgpt2
 https://huggingface.co/docs/transformers/main/en/pipeline_tutorial
 
 https://research.google.com/colaboratory/faq.html
+
+## 언어 모델의 활용 사례
+
+[강의 원문](../course/notion/w02b/w02b-language-model-applications.md)
+
+- 주교재 『핸즈온 생성형 AI』 2.1 언어 모델의 활용 사례, 인쇄 p.44–67, 그림 2-1~2-8. 원문의 토큰화·확률 예측·생성·제로샷·퓨샷 용어와 흐름을 따른다. 도식 1~5는 개념을 참고해 새 예문·수치·배치로 독립 제작했고 도식 6과 리뷰·앱은 수업용 추가 설계이다.
+- [Qwen2-0.5B](https://huggingface.co/Qwen/Qwen2-0.5B), [토큰화 문서](https://huggingface.co/docs/transformers/main/en/tokenizer_summary), [생성 문서](https://huggingface.co/docs/transformers/main/en/generation_strategies): 모델 선택과 API 설명.
+- [Holtzman 외, The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751), [Brown 외, Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165): 초록의 nucleus sampling 동기와 가중치 업데이트 없는 few-shot 개념 참고. 이 논문들의 실험 결과를 이번 소형 모델의 성능 보장으로 사용하지 않는다.
+- [Transformers 5.15.1 Qwen2 API](https://huggingface.co/docs/transformers/v5.15.1/en/model_doc/qwen2), [Gradio Blocks](https://github.com/gradio-app/gradio/blob/main/guides/03_building-with-blocks/01_blocks-and-event-listeners.md): 설치 버전·이벤트 연결 확인. 외부 자료 확인일 2026-09-08.
+
+https://arxiv.org/abs/1904.09751
+
+https://arxiv.org/abs/2005.14165
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/main/notebooks/student/w02b_language_model_applications.ipynb
+
+https://github.com/gradio-app/gradio/blob/main/guides/03_building-with-blocks/01_blocks-and-event-listeners.md
+
+https://github.com/lunalab-ai/genAI/blob/main/course/handouts/w02b-quiz.md
+
+https://github.com/lunalab-ai/genAI/tree/main/src
+
+https://huggingface.co/Qwen/Qwen2-0.5B
+
+https://huggingface.co/docs/transformers/main/en/generation_strategies
+
+https://huggingface.co/docs/transformers/main/en/tokenizer_summary
+
+https://huggingface.co/docs/transformers/v5.15.1/en/model_doc/qwen2
+
+[강의 원문](../course/notion/w02b/w02b-experiment-log.md)

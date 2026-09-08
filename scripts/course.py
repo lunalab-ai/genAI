@@ -29,6 +29,8 @@ PUBLIC_FILES = (
     "scripts/check_public_release.py",
     "scripts/validate_notion_bundle.py",
     "requirements.txt",
+    "requirements-lab.txt",
+    "scripts/execute_notebook.py",
     ".github/workflows/materials.yml",
     "scripts/vendor/tex-svg-full.js",
     "scripts/vendor/LICENSE.mathjax",
@@ -62,7 +64,7 @@ def load(root=ROOT):
     if len(set(ids)) != len(ids):
         raise ValueError("Duplicate session IDs")
     for s in config["sessions"]:
-        if not re.fullmatch(r"w\d{2}[a-z]?", s["id"]):
+        if not re.fullmatch(r"w\d{1,2}[a-z]?", s["id"]):
             raise ValueError("Invalid session ID")
         if s.get("date"):
             dt.date.fromisoformat(str(s["date"]))
@@ -177,6 +179,8 @@ def hub(root, config):
             notes.append(f"[Notion]({s['notion_url']})")
         lab = " · ".join(f"[{Path(p).suffix[1:]}]({p})" for p in s.get("labs", [])) or "—"
         run = f"[Colab]({s['colab_url']})" if s.get("colab_url") else s.get("runtime_label", "—")
+        if s.get("browser_url"):
+            run = f"[브라우저 실습]({s['browser_url']}) · " + run
         q = (
             f"[MD](course/handouts/{s['id']}-quiz.md) · [PDF](course/handouts/{s['id']}-quiz.pdf)"
             if s.get("quiz")
@@ -221,12 +225,17 @@ def hub(root, config):
         + "\n".join(parts[parts.index("## 수업 자료") :])
         + "\n",
     )
-    refs = ["# 전체 참고자료", "[강의 홈](../README.md)"]
+    if config.get("language") == "en":
+        translations = {"## 수업 자료": "## Class materials", "| 차시 | 날짜 | 주제 | 강의노트 | 퀴즈 해설 | 실습 | 실행 |": "| Session | Date | Topic | Lecture notes | Quiz explanations | Practice | Runtime |", "## 보충 실습 자료": "## Supplementary practice", "| 자료 | 실습 | 퀴즈 해설 |": "| Material | Practice | Quiz explanations |", "## 교재와 참고자료": "## Textbooks and references", "전체 참고자료와 차시별 출처": "References and session sources", "기초 실습 안내": "Prerequisites and practice preparation", "일정 미확정": "Date to be confirmed"}
+        text = (root / "README.md").read_text(encoding="utf-8")
+        for original, translated in translations.items(): text = text.replace(original, translated)
+        write(root / "README.md", text)
+    refs = ["# References", "[Course home](../README.md)"] if config.get("language") == "en" else ["# 전체 참고자료", "[강의 홈](../README.md)"]
     for s in config["sessions"]:
         refs.append("## " + s["title"])
         for p in s["pages"]:
             text = safe(root, p).read_text(encoding="utf-8")
-            refs.append(f"[강의 원문](../{p})")
+            refs.append(f"[Lecture source](../{p})" if config.get("language") == "en" else f"[강의 원문](../{p})")
             section = re.search(r"^## 참고[^\n]*\n(.*?)(?=^## |\Z)", text, re.M | re.S)
             if section:
                 refs.append(section[1].strip())
@@ -234,9 +243,49 @@ def hub(root, config):
     write(root / "course/references.md", "\n\n".join(refs) + "\n")
 
 
+def validate_course_contract(root, c):
+    policy = c.get("lesson_policy", {})
+    for session in c.get("sessions", []):
+        if session["id"] in policy.get("legacy_sessions", []):
+            continue
+        if policy.get("automatic_notebooks"):
+            if not any(p.endswith(".ipynb") for p in session.get("labs", [])) or not session.get("colab_url"):
+                raise ValueError("Notebook and Colab URL required: " + session["id"])
+        if policy.get("ask_assignment"):
+            assignment = session.get("assignment", {})
+            if type(assignment.get("requested")) is not bool:
+                raise ValueError("Record professor assignment decision: " + session["id"])
+            if assignment["requested"]:
+                rubric = assignment.get("rubric", [])
+                if not rubric or any(not isinstance(x.get("points"), (int, float)) or x["points"] <= 0 for x in rubric) or sum(x["points"] for x in rubric) != 10:
+                    raise ValueError("Assignment rubric must total 10: " + session["id"])
+                rel = assignment.get("page", "")
+                if not rel.startswith("course/notion/") or not safe(root, rel).is_file():
+                    raise ValueError("Missing student assignment: " + session["id"])
+    if c.get("required_instructor_scripts"):
+        for session in c["sessions"]:
+            scripts = session.get("instructor_scripts", {})
+            for language in c.get("instructor_languages", ["en", "ko"]):
+                rel = scripts.get(language, "")
+                if not rel.startswith("instructor/"): raise ValueError("Missing private speaker script: " + session["id"] + "/" + language)
+                path = safe(root, rel)
+                if not path.is_file() or not path.read_text(encoding="utf-8").strip(): raise ValueError("Empty/missing speaker script: " + rel)
+            if len(set(scripts.values())) != len(scripts): raise ValueError("Use distinct files for bilingual scripts")
+    if c.get("language") == "en":
+        for folder in ["course/notion", "course/handouts", "notebooks/student", "labs/student"]:
+            for p in (root / folder).rglob("*"):
+                if p.is_file() and p.suffix in {".md", ".qmd", ".py", ".R", ".ipynb"} and re.search(r"[가-힣]", p.read_text(encoding="utf-8")):
+                    raise ValueError("English student material contains Korean text: " + str(p.relative_to(root)))
+
+
 def build(root=ROOT):
     (root / ".build/build.json").unlink(missing_ok=True)
     c = load(root)
+    validate_course_contract(root, c)
+    if c.get("browser", {}).get("enabled"):
+        from browser_labs import render as render_browser, check as check_browser
+        render_browser(root)
+        check_browser(root)
     if (root / "notebooks/source").exists():
         from build_notebooks import build_all
 
@@ -344,10 +393,12 @@ def notices(root=ROOT, sid=None):
             add("실습 파일 (" + Path(lab).suffix.lstrip(".") + ")", lab)
         if s.get("colab_url"):
             links.append("Colab 실습\n" + s["colab_url"])
+        if s.get("browser_url"):
+            links.append("설치 없는 온라인 R 실습\n" + s["browser_url"])
         guidance = s.get("announcement_guidance", [])
         if s.get("colab_url"):
             guidance = ["Colab에서 Drive에 사본을 저장한 뒤 설명을 읽고 한 셀씩 실행하세요."] + guidance
-        elif s.get("labs") and c.get("runtime") == "r":
+        elif s.get("labs") and c.get("runtime") == "r" and not s.get("browser_url"):
             guidance = ["R과 RStudio를 준비하고 .R 실습 파일을 열어 한 표현식씩 실행하세요."] + guidance
         lines = [f"[{c['title']}] {s.get('date') or '일정 추후 안내'} · {s['id']} {s['title']} 자료 안내",
                  "강의자료와 실습 안내입니다. 아래 링크를 이용해 주세요.",
@@ -361,6 +412,8 @@ def notices(root=ROOT, sid=None):
         if c.get("language") == "en":
             translations = {
                 "자료 안내": "Materials",
+                "일정 추후 안내": "Date to be announced",
+                "위에 연결된 자료를 이용해 학습하고, 퀴즈 해설이 제공되면 먼저 풀어 본 뒤 확인해 주세요.": "Study the linked materials. Attempt checkpoint questions before reading any available explanations.",
                 "강의자료와 실습 안내입니다. 아래 링크를 이용해 주세요.": "Please use the following lecture and practice materials.",
                 "Notion 강의노트: 링크 등록 후 안내합니다. 우선 아래 Markdown/PDF를 이용하세요.": "Notion: the link will follow. Use the Markdown/PDF below in the meantime.",
                 "Notion 강의노트": "Notion lecture notes",
@@ -368,12 +421,35 @@ def notices(root=ROOT, sid=None):
                 "PDF 강의노트": "PDF lecture notes",
                 "퀴즈 답안·해설": "Quiz answers and explanations",
                 "전체 강의자료": "All course materials",
+                "Colab 실습": "Colab practice",
+                "실습 파일": "Practice file",
+                "Colab에서 Drive에 사본을 저장한 뒤 설명을 읽고 한 셀씩 실행하세요.": "Save a copy in Drive, read the explanations, and run the Colab cells in order.",
                 "수강생 여러분의 요청을 반영해 강의노트를 PDF로도 제공하고, 강의 끝 퀴즈의 답안·해설을 별도로 제공합니다. 퀴즈를 먼저 풀어 본 뒤 해설로 확인해 주세요.": "Lecture notes are also available as PDFs, with separate checkpoint quiz answers and explanations as requested. Attempt the questions before consulting the explanations.",
             }
             for old, new in sorted(translations.items(), key=lambda item: -len(item[0])):
                 body = body.replace(old, new)
         destination = root / "instructor/announcements" / (s["id"] + "-smartclass.txt")
         write(destination, body)
+        assignment = s.get("assignment", {})
+        if assignment.get("requested"):
+            page = safe(root, assignment["page"])
+            assignment_body = page.read_text(encoding="utf-8")
+            if assignment.get("notice_summary"):
+                title = assignment_body.splitlines()[0].lstrip("# ")
+                assignment_body = (f"[{c['title']}] {title}\n\n"
+                    + "Total: 10 points\nDeadline: " + assignment.get("deadline", "As displayed in SmartClass") + "\n\n"
+                    + assignment["notice_summary"] + "\n\nRubric (10 points)\n"
+                    + "\n".join(f"- {item['criterion']}: {item['points']} points" for item in assignment["rubric"])
+                    + "\n\n" + assignment.get("submission_instructions", "Follow the full specification and submit through SmartClass.") + "\n")
+            assignment_body += "\n\nAssignment page\n" + base + "/blob/main/" + assignment["page"] + "\n"
+            pdf = "course/handouts/" + page.stem + ".pdf"
+            if safe(root, pdf).is_file():
+                assignment_body += "\nAssignment PDF\n" + base + "/blob/main/" + pdf + "\n"
+            if assignment.get("starter"):
+                assignment_body += "\nProject starter in Colab\nhttps://colab.research.google.com/github/" + c["repository"] + "/blob/main/" + assignment["starter"] + "\n"
+            if s.get("colab_url"):
+                assignment_body += "\nStarting Colab notebook\n" + s["colab_url"] + "\n"
+            write(root / "instructor/announcements/assignments" / (s["id"] + "-assignment-smartclass.md"), assignment_body)
         print("\n=== SmartClass 공지 초안: 배포 링크 확인 후 복사 ===")
         print(body)
         print("저장:", destination)
@@ -404,6 +480,19 @@ def stage(root=ROOT):
             if rel == ".github/workflows/materials.yml" and (root / "scripts/public-materials.yml").exists():
                 source = root / "scripts/public-materials.yml"
             shutil.copy2(source, dst)
+    if yaml.safe_load((root / "course/course.yml").read_text(encoding="utf-8")).get("browser", {}).get("enabled"):
+        shutil.copytree(root / "browser", candidate / "browser", ignore=shutil.ignore_patterns("_site", ".quarto"))
+        for rel in ["scripts/browser_labs.py", "scripts/browser-pages.yml", "scripts/check_browser.py"]:
+            source = root / rel
+            if source.exists():
+                dest = candidate / (".github/workflows/pages.yml" if rel.endswith("browser-pages.yml") else rel)
+                dest.parent.mkdir(parents=True, exist_ok=True); shutil.copyfile(source, dest)
+    public_config_path = candidate / "course/course.yml"
+    if public_config_path.exists():
+        public_config = yaml.safe_load(public_config_path.read_text(encoding="utf-8"))
+        public_config.pop("required_instructor_scripts", None)
+        for session in public_config.get("sessions", []): session.pop("instructor_scripts", None)
+        write(public_config_path, yaml.safe_dump(public_config, allow_unicode=True, sort_keys=False))
     errors = scan(candidate)
     if errors:
         raise ValueError("\n".join(f"{e.path}: {e.message}" for e in errors))
@@ -421,7 +510,7 @@ def stage(root=ROOT):
 
 
 def state_path(root, sid):
-    if not re.fullmatch(r"w\d{2}[a-z]?", sid):
+    if not re.fullmatch(r"w\d{1,2}[a-z]?", sid):
         raise ValueError("Invalid session ID")
     return root / "briefs" / sid / "workflow.json"
 

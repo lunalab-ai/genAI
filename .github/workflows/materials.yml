@@ -13,3 +13,18 @@ jobs:
       - run: pip install pypdf PyYAML
       - run: python scripts/validate_notion_bundle.py course/notion --strict
       - run: python scripts/check_public_release.py .
+      - name: Install declared Python lab environment
+        if: hashFiles('requirements-lab.txt') != ''
+        run: pip install -r requirements.txt -r requirements-lab.txt
+      - name: Execute registered Python notebooks
+        if: hashFiles('requirements-lab.txt') != ''
+        run: |
+          python - <<'PY'
+          import subprocess, sys, yaml
+          from pathlib import Path
+          config = yaml.safe_load(Path('course/course.yml').read_text())
+          for session in config['sessions']:
+              for lab in session.get('labs', []):
+                  if lab.endswith('.ipynb'):
+                      subprocess.run([sys.executable, 'scripts/execute_notebook.py', lab], check=True)
+          PY

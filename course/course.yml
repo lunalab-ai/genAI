@@ -31,6 +31,21 @@ sessions:
   notion_url: https://app.notion.com/p/W02a-Colab-AI-3d37fd00109f81ae90b8c676e658ddfd?source=copy_link
   announcement_guidance:
   - 필수 실습은 CPU에서 진행하며 추가 원자료는 필요하지 않습니다. 사전학습 모델 다운로드는 선택 실습입니다.
+- id: w02b
+  date: '2026-09-09'
+  title: 언어 모델의 활용 사례
+  pages:
+  - course/notion/w02b/w02b-language-model-applications.md
+  - course/notion/w02b/w02b-experiment-log.md
+  labs:
+  - notebooks/student/w02b_language_model_applications.ipynb
+  quiz: course/quiz/w02b.yml
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/main/notebooks/student/w02b_language_model_applications.ipynb
+  runtime_label: Colab · CPU 기본 · Gradio 웹 앱
+  announcement_guidance:
+  - Colab 사본을 저장하고 첫 셀부터 실행하세요. 공개 모델 약1 GB를 처음 다운로드하며 API 키·별도 파일 업로드는 필요 없습니다.
+  - 마지막에는 토큰·생성·분류 기능을 웹 앱으로 연결합니다. 공유 링크는 실행 중인 Colab 런타임에 의존합니다.
+  - 별도 성적 반영 과제는 없습니다. 실험 기록과 점검 퀴즈로 복습하세요.
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab
