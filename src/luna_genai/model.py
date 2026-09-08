@@ -4,6 +4,7 @@ import os
 from threading import RLock
 import pandas as pd
 from .data import load_reviews
+from .download import model_directory, configure_hub
 
 MODEL_ID = "Qwen/Qwen2-0.5B"
 MODEL_REVISION = "91d2aff3f957f99e4c74c962f2f408dcc88a18d8"
@@ -17,10 +18,14 @@ class LanguageModelLab:
     Never silently replaces the model with synthetic predictions.
     """
     def __init__(self, device: str = "auto", local_files_only: bool = False):
-        os.environ.setdefault("HF_HUB_ETAG_TIMEOUT", "20")
-        os.environ.setdefault("HF_HUB_DOWNLOAD_TIMEOUT", "60")
-        import torch
-        from transformers import AutoModelForCausalLM, AutoTokenizer
+        configure_hub()
+        try:
+            import torch
+            from transformers import Qwen2ForCausalLM, AutoTokenizer
+        except (ImportError, RuntimeError, OSError) as exc:
+            raise RuntimeError("언어 모델 라이브러리 불러오기 실패: 첫 설치 셀을 다시 실행하세요. "
+                               "이미 오류가 난 Colab은 런타임을 삭제하고 새로 연결하세요. "
+                               f"다운로드 문제가 아닙니다 ({type(exc).__name__}).") from None
         self.torch = torch
         torch.set_num_threads(min(4, os.cpu_count() or 1))
         if device == "auto":
@@ -28,22 +33,16 @@ class LanguageModelLab:
         if device not in {"cpu", "cuda"}:
             raise ValueError("device must be auto, cpu, or cuda")
         self.device = device
-        kwargs = dict(revision=MODEL_REVISION)
         dtype = torch.float16 if device == "cuda" else torch.float32
+        directory = model_directory(MODEL_ID, MODEL_REVISION, local_files_only=local_files_only)
         try:
-            try:
-                self.tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, local_files_only=True, **kwargs)
-                self.model = AutoModelForCausalLM.from_pretrained(MODEL_ID, local_files_only=True, dtype=dtype, **kwargs)
-            except OSError:
-                if local_files_only:
-                    raise
-                self.tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, **kwargs)
-                self.model = AutoModelForCausalLM.from_pretrained(MODEL_ID, dtype=dtype, **kwargs)
+            self.tokenizer = AutoTokenizer.from_pretrained(str(directory), local_files_only=True)
+            self.model = Qwen2ForCausalLM.from_pretrained(str(directory), local_files_only=True, dtype=dtype)
             self.model.to(device).eval()
-        except (OSError, RuntimeError) as exc:
-            raise RuntimeError("모델 준비 실패: 인터넷·디스크 여유·메모리를 확인하고 다시 실행하세요. "
-                               "약 1 GB 다운로드와 CPU 메모리 약 4 GB 이상 여유가 필요합니다. "
-                               "네트워크 없이 계속하려면 수치 실험 모드를 선택하세요.") from exc
+        except (ImportError, OSError, RuntimeError) as exc:
+            raise RuntimeError("모델 파일을 확보했지만 로드에 실패했습니다. "
+                               "첫 설치 셀과 CPU 메모리 약 4 GB 이상의 여유를 확인하세요. "
+                               f"오류 종류: {type(exc).__name__}.") from None
         self.label_ids = {}
         for label in ("positive", "negative"):
             ids = self.tokenizer.encode(" " + label, add_special_tokens=False)
