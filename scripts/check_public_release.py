@@ -60,6 +60,8 @@ def scan(root: Path) -> list[Finding]:
                 findings.append(Finding(rel, f"Invalid notebook JSON: {exc}"))
                 continue
             for index, cell in enumerate(notebook.get("cells", [])):
+                if cell.get('outputs') or cell.get('execution_count') is not None:
+                    findings.append(Finding(rel, f'Cell {index} contains saved execution output/count'))
                 tags = set(cell.get("metadata", {}).get("tags", []))
                 private = tags.intersection(FORBIDDEN_NOTEBOOK_TAGS)
                 if private:
@@ -91,6 +93,8 @@ def scan(root: Path) -> list[Finding]:
             for marker in FORBIDDEN_MARKERS:
                 if marker in text:
                     findings.append(Finding(rel, f"Forbidden marker: {marker}"))
+            if re.search(r'https://github\.com/[^/\s]+/[^/\s]*-authoring(?:/|\b)', text):
+                findings.append(Finding(rel, 'Private authoring repository URL in public material'))
             for label, pattern in SECRET_PATTERNS.items():
                 if pattern.search(text):
                     findings.append(Finding(rel, f"Possible {label}"))
