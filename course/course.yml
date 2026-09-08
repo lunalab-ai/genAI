@@ -46,6 +46,7 @@ sessions:
   - Colab 사본을 저장하고 첫 셀부터 실행하세요. 공개 모델 약1 GB를 처음 다운로드하며 API 키·별도 파일 업로드는 필요 없습니다.
   - 마지막에는 토큰·생성·분류 기능을 웹 앱으로 연결합니다. 공유 링크는 실행 중인 Colab 런타임에 의존합니다.
   - 별도 성적 반영 과제는 없습니다. 실험 기록과 점검 퀴즈로 복습하세요.
+  notion_url: https://app.notion.com/p/w02b-language-model-applications-3d57fd00109f816496ded7e4c77cfc37?source=copy_link
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab
