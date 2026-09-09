@@ -17,7 +17,7 @@ sessions:
   labs:
   - notebooks/student/week01_generative_ai_intro.ipynb
   notion_url: https://app.notion.com/p/week01_generative_ai_intro-3ce7fd00109f81e58d28ec3fcaca3305?source=copy_link
-  colab_url: https://colab.research.google.com/drive/1zd4AEMV3FW83CCOLKOQcDv5C8CgZyg5-?usp=sharing
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-explained/notebooks/student/week01_generative_ai_intro.ipynb
 - id: w02a
   title: Colab 실습 환경 설정 및 생성형 AI 데모 실습
   date: '2026-09-07'

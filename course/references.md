@@ -14,7 +14,19 @@
 
 > 이 페이지의 도식은 강의용으로 새로 제작한 설명 그림이며, 스캔 교재의 페이지 이미지를 포함하지 않습니다.
 
+https://colab.research.google.com/drive/1zd4AEMV3FW83CCOLKOQcDv5C8CgZyg5-?usp=sharing
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-explained/notebooks/student/week01_generative_ai_intro.ipynb
+
 https://github.com/lunalab-ai/genAI
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/API.md
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/pretrained_demo.py#L12
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/pretrained_demo.py#L37
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/runtime.py#L15
 
 https://github.com/yk-genai/genaibook
 
@@ -27,6 +39,14 @@ https://github.com/yk-genai/genaibook
 - [DistilGPT2 모델 카드](https://huggingface.co/distilbert/distilgpt2): 선택 시연 모델의 용도·언어·한계.
 - [Transformers pipeline 안내](https://huggingface.co/docs/transformers/main/en/pipeline_tutorial): 선택 시연 API 참고.
 - 주교재: 『핸즈온 생성형 AI』, 1장 생성 미디어 입문. 이번 차시에서는 추가 교재 원본을 사용하지 않았습니다.
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/API.md
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/pretrained_demo.py#L12
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/pretrained_demo.py#L37
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/runtime.py#L15
 
 https://huggingface.co/distilbert/distilgpt2
 
@@ -50,6 +70,20 @@ https://arxiv.org/abs/2005.14165
 https://colab.research.google.com/github/lunalab-ai/genAI/blob/main/notebooks/student/w02b_language_model_applications.ipynb
 
 https://github.com/gradio-app/gradio/blob/main/guides/03_building-with-blocks/01_blocks-and-event-listeners.md
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/API.md
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/__init__.py#L8
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/data.py#L5
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/model.py#L106
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/model.py#L13
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/model.py#L158
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/pretrained_demo.py#L12
 
 https://github.com/lunalab-ai/genAI/blob/main/course/handouts/w02b-quiz.md
 

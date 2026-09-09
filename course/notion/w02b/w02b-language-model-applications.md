@@ -221,3 +221,18 @@ Gradio Blocks에서는 컴포넌트를 만들고 이벤트에 함수를 연결�
 - [Qwen2-0.5B](https://huggingface.co/Qwen/Qwen2-0.5B), [토큰화 문서](https://huggingface.co/docs/transformers/main/en/tokenizer_summary), [생성 문서](https://huggingface.co/docs/transformers/main/en/generation_strategies): 모델 선택과 API 설명.
 - [Holtzman 외, The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751), [Brown 외, Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165): 초록의 nucleus sampling 동기와 가중치 업데이트 없는 few-shot 개념 참고. 이 논문들의 실험 결과를 이번 소형 모델의 성능 보장으로 사용하지 않는다.
 - [Transformers 5.15.1 Qwen2 API](https://huggingface.co/docs/transformers/v5.15.1/en/model_doc/qwen2), [Gradio Blocks](https://github.com/gradio-app/gradio/blob/main/guides/03_building-with-blocks/01_blocks-and-event-listeners.md): 설치 버전·이벤트 연결 확인. 외부 자료 확인일 2026-09-08.
+
+## 코드 정의에서 보충 학습하기
+
+[API: arguments, results and examples](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/API.md)
+
+- [build_app](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/__init__.py#L8): 이미 준비한 lab을 연결한 Gradio Blocks 객체를 반환한다.
+- [load_reviews](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/data.py#L5): 패키지에 포함된 수업용 리뷰 목록을 새 객체로 읽어 반환한다.
+- [LanguageModelLab](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/model.py#L13): 고정 Qwen2 기본 언어 모델을 한 번 준비해 여러 실험에서 재사용하는 클래스.
+- [LanguageModelLab.generate](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/model.py#L106): text 뒤의 새 문자열만 반환한다. 원래 프롬프트는 반환 문자열에서 제외한다.
+- [LanguageModelLab.classify](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/model.py#L158): review의 다음 토큰으로 positive/negative를 비교한 dict를 반환한다.
+- [PretrainedTextDemo](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/pretrained_demo.py#L12): 고정 DistilGPT2를 CPU에서 한 번 로드하는 선택 시연 객체.
+
+![사전학습 모델과 호출의 역할](assets/model-state-flow.svg)
+
+직접 설계한 코드 흐름도 · 객체 생성, 모델 추론, 결과 표시를 구분한다.

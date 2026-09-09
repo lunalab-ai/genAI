@@ -469,7 +469,7 @@ def stage(root=ROOT):
             shutil.copytree(
                 root / folder,
                 candidate / folder,
-                ignore=shutil.ignore_patterns("__pycache__", "*.pyc"),
+                ignore=shutil.ignore_patterns("__pycache__", "*.pyc", "*.egg-info", "*.dist-info", ".ipynb_checkpoints"),
                 dirs_exist_ok=True,
             )
     for rel in PUBLIC_FILES:

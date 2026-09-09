@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "luna-genai"
-version = "0.1.1"
+version = "0.1.2"
 description = "Reusable language-model experiments for the genAI course"
 requires-python = ">=3.10,<3.14"
 dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<4", "torch>=2.8,<3", "transformers==5.15.1", "huggingface-hub>=1.5,<2", "gradio==6.26.0"]

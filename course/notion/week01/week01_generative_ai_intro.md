@@ -433,3 +433,21 @@ if torch.cuda.is_available():
 - 강의 실습 저장소: [lunalab-ai/genAI](https://github.com/lunalab-ai/genAI)
 
 > 이 페이지의 도식은 강의용으로 새로 제작한 설명 그림이며, 스캔 교재의 페이지 이미지를 포함하지 않습니다.
+
+## 코드 정의에서 보충 학습하기
+
+[API: arguments, results and examples](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/API.md)
+
+- [PretrainedTextDemo](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/pretrained_demo.py#L12): 고정 DistilGPT2를 CPU에서 한 번 로드하는 선택 시연 객체.
+- [PretrainedTextDemo.generate](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/pretrained_demo.py#L37): prompt를 포함한 영어 이어쓰기 문자열 목록을 반환한다.
+- [prepare_text_runtime](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/runtime.py#L15): 새 자식 Python에서 텍스트 모델 import를 검사하고 제거한 패키지 이름을 반환한다.
+
+![사전학습 모델과 호출의 역할](../w02b/assets/model-state-flow.svg)
+
+직접 설계한 코드 흐름도 · 객체 생성, 모델 추론, 결과 표시를 구분한다.
+이 그림은 다음 수업의 공통 객체와 연결해 읽는 보충 자료다. 현재 문자 bigram은 직접 빈도로 학습하고, 선택 DistilGPT2 시연은 사전학습된 가중치를 읽는다는 차이를 확인한다.
+
+
+## 보완된 실습 사본
+
+[설명과 점검을 보완한 GitHub Colab 실습](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-explained/notebooks/student/week01_generative_ai_intro.ipynb)을 사용합니다. [기존 Drive 사본](https://colab.research.google.com/drive/1zd4AEMV3FW83CCOLKOQcDv5C8CgZyg5-?usp=sharing)은 과거 수업 기록으로 유지하며 자동 갱신되지 않습니다.

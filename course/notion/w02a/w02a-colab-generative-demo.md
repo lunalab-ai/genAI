@@ -318,3 +318,16 @@ plt.show()
 - [DistilGPT2 모델 카드](https://huggingface.co/distilbert/distilgpt2): 선택 시연 모델의 용도·언어·한계.
 - [Transformers pipeline 안내](https://huggingface.co/docs/transformers/main/en/pipeline_tutorial): 선택 시연 API 참고.
 - 주교재: 『핸즈온 생성형 AI』, 1장 생성 미디어 입문. 이번 차시에서는 추가 교재 원본을 사용하지 않았습니다.
+
+## 코드 정의에서 보충 학습하기
+
+[API: arguments, results and examples](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/API.md)
+
+- [PretrainedTextDemo](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/pretrained_demo.py#L12): 고정 DistilGPT2를 CPU에서 한 번 로드하는 선택 시연 객체.
+- [PretrainedTextDemo.generate](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/pretrained_demo.py#L37): prompt를 포함한 영어 이어쓰기 문자열 목록을 반환한다.
+- [prepare_text_runtime](https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/luna_genai/runtime.py#L15): 새 자식 Python에서 텍스트 모델 import를 검사하고 제거한 패키지 이름을 반환한다.
+
+![사전학습 모델과 호출의 역할](../w02b/assets/model-state-flow.svg)
+
+직접 설계한 코드 흐름도 · 객체 생성, 모델 추론, 결과 표시를 구분한다.
+이 그림은 다음 수업의 공통 객체와 연결해 읽는 보충 자료다. 현재 문자 bigram은 직접 빈도로 학습하고, 선택 DistilGPT2 시연은 사전학습된 가중치를 읽는다는 차이를 확인한다.
