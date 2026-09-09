@@ -18,6 +18,8 @@ https://colab.research.google.com/drive/1zd4AEMV3FW83CCOLKOQcDv5C8CgZyg5-?usp=sh
 
 https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-explained/notebooks/student/week01_generative_ai_intro.ipynb
 
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/main/notebooks/student/week01_generative_ai_intro.ipynb
+
 https://github.com/lunalab-ai/genAI
 
 https://github.com/lunalab-ai/genAI/blob/2026-fall-explained/src/API.md

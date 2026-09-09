@@ -450,4 +450,6 @@ if torch.cuda.is_available():
 
 ## 보완된 실습 사본
 
-[설명과 점검을 보완한 GitHub Colab 실습](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-explained/notebooks/student/week01_generative_ai_intro.ipynb)을 사용합니다. [기존 Drive 사본](https://colab.research.google.com/drive/1zd4AEMV3FW83CCOLKOQcDv5C8CgZyg5-?usp=sharing)은 과거 수업 기록으로 유지하며 자동 갱신되지 않습니다.
+[설명과 점검을 보완한 GitHub Colab 실습](https://colab.research.google.com/github/lunalab-ai/genAI/blob/main/notebooks/student/week01_generative_ai_intro.ipynb)을 사용합니다. [기존 Drive 사본](https://colab.research.google.com/drive/1zd4AEMV3FW83CCOLKOQcDv5C8CgZyg5-?usp=sharing)은 과거 수업 기록으로 유지하며 자동 갱신되지 않습니다.
+
+[수식·이미지 수정 전 고정 버전](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-explained/notebooks/student/week01_generative_ai_intro.ipynb)도 이전 수업 재현용으로 유지합니다.

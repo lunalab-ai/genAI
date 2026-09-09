@@ -31,6 +31,8 @@ PUBLIC_FILES = (
     "requirements.txt",
     "requirements-lab.txt",
     "scripts/execute_notebook.py",
+    "scripts/notion_export.py",
+    "scripts/check_math_materials.py",
     ".github/workflows/materials.yml",
     "scripts/vendor/tex-svg-full.js",
     "scripts/vendor/LICENSE.mathjax",
@@ -93,18 +95,11 @@ def revision(root):
 def render(text, source, root, repository):
     from html import escape
     config = load(root)
+    from notion_export import protect_math
+    text, records = protect_math(text)
     formulas = {}
-    if config.get("math"):
-        def capture(match):
-            value = match.group(0)
-            key = "MATHPLACEHOLDER" + str(len(formulas)) + "END"
-            display = value.startswith("$$") or value.startswith(r"\[")
-            formula = value[2:-2] if display or value.startswith(r"\(") else value[1:-1]
-            formulas[key] = (r"\[" if display else r"\(") + escape(formula) + (r"\]" if display else r"\)")
-            return key
-        chunks = re.split(r"(```[\s\S]*?```|`[^`\n]*`)", text)
-        pattern = r"\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([^\n]*?\\\)|(?<!\\)\$[^$\n]+?(?<!\\)\$"
-        text = "".join(re.sub(pattern, capture, chunk) if i % 2 == 0 else chunk for i, chunk in enumerate(chunks))
+    for i, (tex, display) in enumerate(records):
+        formulas[f"MATHPLACEHOLDER{i}END"] = (r"\[" if display else r"\(") + escape(tex) + (r"\]" if display else r"\)")
     md = MarkdownIt("commonmark", {"html": False}).enable("table")
     tokens = md.parse(text)
     for t in tokens:
@@ -316,10 +311,8 @@ def build(root=ROOT):
             rendered = Path(tmp) / "page.html"
             write(rendered, render(p.read_text(encoding="utf-8"), p, root, c["repository"]))
             tab.goto(rendered.as_uri())
-            if c.get("math"):
-                tab.evaluate("async () => {if(window.MathJax && MathJax.startup) await MathJax.startup.promise}")
-                if tab.locator('[data-mjx-error], mjx-merror').count():
-                    raise ValueError(f"Math rendering error: {p}")
+            from notion_export import verify_math
+            verify_math(tab)
             tab.evaluate("document.fonts.ready")
             if not tab.evaluate(
                 "Array.from(document.images).every(i=>i.complete && i.naturalWidth>0)"
@@ -340,10 +333,8 @@ def build(root=ROOT):
     rev = revision(root)
     dest = root / "dist/notion" / f"{c['id']}-{rev[:12]}.zip"
     dest.parent.mkdir(parents=True, exist_ok=True)
-    with zipfile.ZipFile(dest, "w", zipfile.ZIP_DEFLATED) as z:
-        for p in sorted((root / "course/notion").rglob("*")):
-            if p.is_file():
-                z.write(p, p.relative_to(root / "course/notion"))
+    from notion_export import export_bundle
+    export_bundle(root / "course/notion", dest, repository=c["repository"])
     write(
         root / ".build/build.json",
         json.dumps(
