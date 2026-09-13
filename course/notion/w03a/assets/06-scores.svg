@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="335.952pt" viewBox="0 0 684 335.952" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-14T05:30:23.938276</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 335.952 
+L 684 335.952 
+L 684 0 
+L 0 0 
+z
+" style="fill: #f5f8fb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 35.1 162.432 
+L 74.16 162.432 
+L 74.16 123.624 
+L 35.1 123.624 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 74.16 162.432 
+L 113.22 162.432 
+L 113.22 123.624 
+L 74.16 123.624 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #edf1f5; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 35.1 201.24 
+L 74.16 201.24 
+L 74.16 162.432 
+L 35.1 162.432 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #edf1f5; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 74.16 201.24 
+L 113.22 201.24 
+L 113.22 162.432 
+L 74.16 162.432 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 35.1 240.048 
+L 74.16 240.048 
+L 74.16 201.24 
+L 35.1 201.24 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 74.16 240.048 
+L 113.22 240.048 
+L 113.22 201.24 
+L 74.16 201.24 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 213.66 162.432 
+L 252.72 162.432 
+L 252.72 123.624 
+L 213.66 123.624 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 252.72 162.432 
+L 291.78 162.432 
+L 291.78 123.624 
+L 252.72 123.624 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #edf1f5; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 291.78 162.432 
+L 330.84 162.432 
+L 330.84 123.624 
+L 291.78 123.624 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 213.66 201.24 
+L 252.72 201.24 
+L 252.72 162.432 
+L 213.66 162.432 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #edf1f5; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 252.72 201.24 
+L 291.78 201.24 
+L 291.78 162.432 
+L 252.72 162.432 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 291.78 201.24 
+L 330.84 201.24 
+L 330.84 162.432 
+L 291.78 162.432 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 442.44 162.432 
+L 481.5 162.432 
+L 481.5 123.624 
+L 442.44 123.624 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 481.5 162.432 
+L 520.56 162.432 
+L 520.56 123.624 
+L 481.5 123.624 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #edf1f5; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 520.56 162.432 
+L 559.62 162.432 
+L 559.62 123.624 
+L 520.56 123.624 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 442.44 201.24 
+L 481.5 201.24 
+L 481.5 162.432 
+L 442.44 162.432 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #edf1f5; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 481.5 201.24 
+L 520.56 201.24 
+L 520.56 162.432 
+L 481.5 162.432 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 520.56 201.24 
+L 559.62 201.24 
+L 559.62 162.432 
+L 520.56 162.432 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 442.44 240.048 
+L 481.5 240.048 
+L 481.5 201.24 
+L 442.44 201.24 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 481.5 240.048 
+L 520.56 240.048 
+L 520.56 201.24 
+L 481.5 201.24 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 520.56 240.048 
+L 559.62 240.048 
+L 559.62 201.24 
+L 520.56 201.24 
+z
+" clip-path="url(#pe88d21682f)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="23.94" y="42.042937" transform="rotate(-0 23.94 42.042937)">QKᵀ: 각 행은 질문 위치, 각 열은 참고 위치</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #516678" x="23.94" y="66.543969" transform="rotate(-0 23.94 66.543969)">학습되지 않은 3토큰·2차원 교육용 수치. 같은 Q/K/V를 그림 07·08에서도 사용한다.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="35.1" y="100.3392" transform="rotate(-0 35.1 100.3392)">Q: 3 × 2</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="54.63" y="146.625656" transform="rotate(-0 54.63 146.625656)">1</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="93.69" y="146.625656" transform="rotate(-0 93.69 146.625656)">0</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="54.63" y="185.433656" transform="rotate(-0 54.63 185.433656)">0</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="93.69" y="185.433656" transform="rotate(-0 93.69 185.433656)">1</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="54.63" y="224.241656" transform="rotate(-0 54.63 224.241656)">1</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="93.69" y="224.241656" transform="rotate(-0 93.69 224.241656)">1</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="213.66" y="100.3392" transform="rotate(-0 213.66 100.3392)">Kᵀ: 2 × 3</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="233.19" y="146.625656" transform="rotate(-0 233.19 146.625656)">1</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="272.25" y="146.625656" transform="rotate(-0 272.25 146.625656)">0</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="311.31" y="146.625656" transform="rotate(-0 311.31 146.625656)">1</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="233.19" y="185.433656" transform="rotate(-0 233.19 185.433656)">0</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="272.25" y="185.433656" transform="rotate(-0 272.25 185.433656)">1</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="311.31" y="185.433656" transform="rotate(-0 311.31 185.433656)">1</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="442.44" y="100.3392" transform="rotate(-0 442.44 100.3392)">QKᵀ: 3 × 3</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="461.97" y="146.625656" transform="rotate(-0 461.97 146.625656)">1</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="501.03" y="146.625656" transform="rotate(-0 501.03 146.625656)">0</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="540.09" y="146.625656" transform="rotate(-0 540.09 146.625656)">1</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="461.97" y="185.433656" transform="rotate(-0 461.97 185.433656)">0</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="501.03" y="185.433656" transform="rotate(-0 501.03 185.433656)">1</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="540.09" y="185.433656" transform="rotate(-0 540.09 185.433656)">1</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="461.97" y="224.241656" transform="rotate(-0 461.97 224.241656)">1</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="501.03" y="224.241656" transform="rotate(-0 501.03 224.241656)">1</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="540.09" y="224.241656" transform="rotate(-0 540.09 224.241656)">2</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 14px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="35.1" y="295.488" transform="rotate(-0 35.1 295.488)">예: 3행·2열 = [1, 1] · [0, 1] = 1. 출력 특징 벡터가 아니라 위치 간 점수다.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe88d21682f">
+   <rect x="7.2" y="7.2" width="669.6" height="321.552"/>
+  </clipPath>
+ </defs>
+</svg>

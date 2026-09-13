@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="335.952pt" viewBox="0 0 684 335.952" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-14T05:30:23.125270</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 335.952 
+L 684 335.952 
+L 684 0 
+L 0 0 
+z
+" style="fill: #f5f8fb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 34.542 222.3072 
+L 129.96 222.3072 
+Q 136.656 222.3072 136.656 215.6544 
+L 136.656 128.6136 
+Q 136.656 121.9608 129.96 121.9608 
+L 34.542 121.9608 
+Q 27.846 121.9608 27.846 128.6136 
+L 27.846 215.6544 
+Q 27.846 222.3072 34.542 222.3072 
+z
+" clip-path="url(#p94d72f7aab)" style="fill: #ffffff; stroke: #007f86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 153.954 222.3072 
+L 249.372 222.3072 
+Q 256.068 222.3072 256.068 215.6544 
+L 256.068 128.6136 
+Q 256.068 121.9608 249.372 121.9608 
+L 153.954 121.9608 
+Q 147.258 121.9608 147.258 128.6136 
+L 147.258 215.6544 
+Q 147.258 222.3072 153.954 222.3072 
+z
+" clip-path="url(#p94d72f7aab)" style="fill: #ffffff; stroke: #007f86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 273.366 222.3072 
+L 368.784 222.3072 
+Q 375.48 222.3072 375.48 215.6544 
+L 375.48 128.6136 
+Q 375.48 121.9608 368.784 121.9608 
+L 273.366 121.9608 
+Q 266.67 121.9608 266.67 128.6136 
+L 266.67 215.6544 
+Q 266.67 222.3072 273.366 222.3072 
+z
+" clip-path="url(#p94d72f7aab)" style="fill: #ffffff; stroke: #007f86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 392.778 222.3072 
+L 488.196 222.3072 
+Q 494.892 222.3072 494.892 215.6544 
+L 494.892 128.6136 
+Q 494.892 121.9608 488.196 121.9608 
+L 392.778 121.9608 
+Q 386.082 121.9608 386.082 128.6136 
+L 386.082 215.6544 
+Q 386.082 222.3072 392.778 222.3072 
+z
+" clip-path="url(#p94d72f7aab)" style="fill: #ffffff; stroke: #007f86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 512.19 222.3072 
+L 607.608 222.3072 
+Q 614.304 222.3072 614.304 215.6544 
+L 614.304 128.6136 
+Q 614.304 121.9608 607.608 121.9608 
+L 512.19 121.9608 
+Q 505.494 121.9608 505.494 128.6136 
+L 505.494 215.6544 
+Q 505.494 222.3072 512.19 222.3072 
+z
+" clip-path="url(#p94d72f7aab)" style="fill: #ffffff; stroke: #007f86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="23.94" y="41.767312" transform="rotate(-0 23.94 41.767312)">문장부터 다음 토큰까지</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #516678" x="23.94" y="66.490687" transform="rotate(-0 23.94 66.490687)">읽는 순서: 왼쪽 → 오른쪽. 선택한 ID는 다음 반복의 입력으로 돌아간다.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; fill: #007f86" transform="translate(69.251 167.089391)">문장</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; fill: #007f86" transform="translate(60.548109 187.151031)">토큰 ID</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 134.194179 172.4112 
+Q 138.609151 172.4112 141.011662 172.4112 
+" style="fill: none; stroke: #183449; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 135.411662 169.6112 
+L 141.011662 172.4112 
+L 135.411662 175.2112 
+" style="fill: none; stroke: #183449; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; fill: #007f86" transform="translate(182.163 167.038609)">임베딩</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; fill: #007f86" transform="translate(173.377844 187.188609)">위치 정보</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 253.606179 172.4112 
+Q 258.021151 172.4112 260.423662 172.4112 
+" style="fill: none; stroke: #183449; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 254.823662 169.6112 
+L 260.423662 172.4112 
+L 254.823662 175.2112 
+" style="fill: none; stroke: #183449; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; fill: #007f86" transform="translate(295.830625 166.952281)">블록 × L</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; fill: #007f86" transform="translate(292.789844 187.188609)">문맥 표현</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 373.018179 172.4112 
+Q 377.433151 172.4112 379.835662 172.4112 
+" style="fill: none; stroke: #183449; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 374.235662 169.6112 
+L 379.835662 172.4112 
+L 374.235662 175.2112 
+" style="fill: none; stroke: #183449; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; fill: #007f86" transform="translate(412.201844 167.070094)">어휘 로짓</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; fill: #007f86" transform="translate(417.360203 187.137828)">softmax</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 492.430179 172.4112 
+Q 496.845151 172.4112 499.247662 172.4112 
+" style="fill: none; stroke: #183449; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 493.647662 169.6112 
+L 499.247662 172.4112 
+L 493.647662 175.2112 
+" style="fill: none; stroke: #183449; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; fill: #007f86" transform="translate(546.899 167.038609)">선택</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; fill: #007f86" transform="translate(538.196109 187.287125)">ID 추가</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="29.52" y="289.944" transform="rotate(-0 29.52 289.944)">입력 ID는 번호 / 블록 안은 벡터 / 마지막 출력은 다음 토큰 후보의 점수</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p94d72f7aab">
+   <rect x="7.2" y="7.2" width="669.6" height="321.552"/>
+  </clipPath>
+ </defs>
+</svg>

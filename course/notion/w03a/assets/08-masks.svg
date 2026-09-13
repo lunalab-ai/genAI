@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="335.952pt" viewBox="0 0 684 335.952" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-14T05:30:24.285876</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 335.952 
+L 684 335.952 
+L 684 0 
+L 0 0 
+z
+" style="fill: #f5f8fb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 63 162.432 
+L 102.06 162.432 
+L 102.06 123.624 
+L 63 123.624 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 102.06 162.432 
+L 141.12 162.432 
+L 141.12 123.624 
+L 102.06 123.624 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 141.12 162.432 
+L 180.18 162.432 
+L 180.18 123.624 
+L 141.12 123.624 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 63 201.24 
+L 102.06 201.24 
+L 102.06 162.432 
+L 63 162.432 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 102.06 201.24 
+L 141.12 201.24 
+L 141.12 162.432 
+L 102.06 162.432 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 141.12 201.24 
+L 180.18 201.24 
+L 180.18 162.432 
+L 141.12 162.432 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 63 240.048 
+L 102.06 240.048 
+L 102.06 201.24 
+L 63 201.24 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 102.06 240.048 
+L 141.12 240.048 
+L 141.12 201.24 
+L 102.06 201.24 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 141.12 240.048 
+L 180.18 240.048 
+L 180.18 201.24 
+L 141.12 201.24 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 342 162.432 
+L 381.06 162.432 
+L 381.06 123.624 
+L 342 123.624 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 381.06 162.432 
+L 420.12 162.432 
+L 420.12 123.624 
+L 381.06 123.624 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #edf1f5; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 420.12 162.432 
+L 459.18 162.432 
+L 459.18 123.624 
+L 420.12 123.624 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #edf1f5; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 342 201.24 
+L 381.06 201.24 
+L 381.06 162.432 
+L 342 162.432 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 381.06 201.24 
+L 420.12 201.24 
+L 420.12 162.432 
+L 381.06 162.432 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 420.12 201.24 
+L 459.18 201.24 
+L 459.18 162.432 
+L 420.12 162.432 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #edf1f5; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 342 240.048 
+L 381.06 240.048 
+L 381.06 201.24 
+L 342 201.24 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 381.06 240.048 
+L 420.12 240.048 
+L 420.12 201.24 
+L 381.06 201.24 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 420.12 240.048 
+L 459.18 240.048 
+L 459.18 201.24 
+L 420.12 201.24 
+z
+" clip-path="url(#p2f9954e466)" style="fill: #d7eef0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="23.94" y="41.767312" transform="rotate(-0 23.94 41.767312)">미래를 못 보게 하는 것은 모델 이름이 아니라 마스크</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #516678" x="23.94" y="66.490687" transform="rotate(-0 23.94 66.490687)">1 = 접근 가능, 0 = 차단. 점수에 이 숫자를 곱하는 구현으로 이해하지 말 것.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="63" y="100.3392" transform="rotate(-0 63 100.3392)">양방향</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="82.53" y="146.625656" transform="rotate(-0 82.53 146.625656)">1</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="121.59" y="146.625656" transform="rotate(-0 121.59 146.625656)">1</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="160.65" y="146.625656" transform="rotate(-0 160.65 146.625656)">1</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="82.53" y="185.433656" transform="rotate(-0 82.53 185.433656)">1</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="121.59" y="185.433656" transform="rotate(-0 121.59 185.433656)">1</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="160.65" y="185.433656" transform="rotate(-0 160.65 185.433656)">1</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="82.53" y="224.241656" transform="rotate(-0 82.53 224.241656)">1</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="121.59" y="224.241656" transform="rotate(-0 121.59 224.241656)">1</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="160.65" y="224.241656" transform="rotate(-0 160.65 224.241656)">1</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="342" y="100.3392" transform="rotate(-0 342 100.3392)">causal: 대각선 포함</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="361.53" y="146.625656" transform="rotate(-0 361.53 146.625656)">1</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="400.59" y="146.625656" transform="rotate(-0 400.59 146.625656)">0</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="439.65" y="146.625656" transform="rotate(-0 439.65 146.625656)">0</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="361.53" y="185.433656" transform="rotate(-0 361.53 185.433656)">1</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="400.59" y="185.433656" transform="rotate(-0 400.59 185.433656)">1</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="439.65" y="185.433656" transform="rotate(-0 439.65 185.433656)">0</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="361.53" y="224.241656" transform="rotate(-0 361.53 224.241656)">1</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="400.59" y="224.241656" transform="rotate(-0 400.59 224.241656)">1</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #183449" x="439.65" y="224.241656" transform="rotate(-0 439.65 224.241656)">1</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 14px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #183449" x="40.68" y="295.488" transform="rotate(-0 40.68 295.488)">차단 위치에는 softmax 전에 −∞를 더한다. 따라서 미래 위치의 확률은 0이 된다.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2f9954e466">
+   <rect x="7.2" y="7.2" width="669.6" height="321.552"/>
+  </clipPath>
+ </defs>
+</svg>

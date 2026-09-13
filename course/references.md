@@ -100,3 +100,31 @@ https://huggingface.co/docs/transformers/main/en/tokenizer_summary
 https://huggingface.co/docs/transformers/v5.15.1/en/model_doc/qwen2
 
 [강의 원문](../course/notion/w02b/w02b-experiment-log.md)
+
+## 트랜스포머 블록과 사전학습: 모델 계보에서 텍스트 생성 웹앱까지
+
+[강의 원문](../course/notion/w03a/w03a-transformers.md)
+
+https://aclanthology.org/N19-1423/
+
+https://arxiv.org/html/1706.03762v7
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w03a/notebooks/student/w03a_transformers.ipynb
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w03a/src/W03A-API.md
+
+https://huggingface.co/Qwen/Qwen2-0.5B
+
+https://huggingface.co/Qwen/Qwen2-0.5B/blob/91d2aff3f957f99e4c74c962f2f408dcc88a18d8/config.json
+
+https://huggingface.co/docs/transformers/main/en/cache_explanation
+
+https://huggingface.co/docs/transformers/v5.15.1/en/model_doc/qwen2
+
+https://huggingface.co/learn/llm-course/chapter1/6
+
+https://jmlr.org/papers/v21/20-074.html
+
+https://www.gradio.app/guides/blocks-and-event-listeners
+
+[강의 원문](../course/notion/w03a/w03a-experiment-log.md)

@@ -47,6 +47,23 @@ sessions:
   - 마지막에는 토큰·생성·분류 기능을 웹 앱으로 연결합니다. 공유 링크는 실행 중인 Colab 런타임에 의존합니다.
   - 별도 성적 반영 과제는 없습니다. 실험 기록과 점검 퀴즈로 복습하세요.
   notion_url: https://app.notion.com/p/w02b-language-model-applications-3d57fd00109f816496ded7e4c77cfc37?source=copy_link
+- id: w03a
+  date: '2026-09-14'
+  title: '트랜스포머 블록과 사전학습: 모델 계보에서 텍스트 생성 웹앱까지'
+  pages:
+  - course/notion/w03a/w03a-transformers.md
+  - course/notion/w03a/w03a-experiment-log.md
+  labs:
+  - notebooks/student/w03a_transformers.ipynb
+  quiz: course/quiz/w03a.yml
+  runtime_label: Colab · CPU 기본 · Gradio 웹 앱
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w03a/notebooks/student/w03a_transformers.ipynb
+  announcement_guidance:
+  - Colab 사본을 저장하고 첫 셀부터 실행하세요. 수업 패키지 0.1.3은 2026-fall-w03a 버전에 고정합니다.
+  - 공개 모델 약 1 GB를 최초 다운로드하고 캐시를 재사용합니다. 유료 API 키나 원자료 업로드는 필요 없습니다.
+  - 기본 앱에서 한 토큰씩 관찰하고 자동 생성 반복을 조립합니다. 공유 링크는 실행 중인 런타임에 의존합니다.
+  - 별도 성적 반영 과제나 제출 기한은 없습니다.
+  notion_url: https://app.notion.com/p/W03a-3da7fd00109f8127a58ed548525258e9?source=copy_link
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

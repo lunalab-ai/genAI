@@ -3,7 +3,7 @@ from .data import load_reviews
 from .probability import filtered_distribution, distribution_table
 from .model import LanguageModelLab, MODEL_ID, MODEL_REVISION
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 def build_app(lab=None):
     """이미 준비한 lab을 연결한 Gradio Blocks 객체를 반환한다.
