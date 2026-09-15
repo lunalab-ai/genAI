@@ -79,7 +79,8 @@ sessions:
   - W03A를 끝내지 않아도 시작할 수 있습니다. 새 W03B 사본을 Drive에 저장하고 첫 셀부터 실행하세요.
   - 패키지 0.1.4 / 2026-fall-w03b 고정 버전입니다. CPU 기본이며 최초 모델 약 1 GB 다운로드가 필요합니다.
   - 초기화 후 다음 토큰 버튼을 반복해 누적 ID와 문장을 관찰합니다. 자동 생성과 버튼 연결은 짧은 빈칸 활동으로 진행합니다.
-  - Notion 링크는 추후 안내합니다. 지금은 Markdown·PDF·Colab을 이용하세요. 별도 성적 반영 과제나 제출 기한은 없습니다.
+  - Notion·Markdown·PDF·Colab 자료를 함께 이용하세요. 별도 성적 반영 과제나 제출 기한은 없습니다.
+  notion_url: https://app.notion.com/p/W03B-3dc7fd00109f81ecbc1dfe1269550dba?source=copy_link
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab
