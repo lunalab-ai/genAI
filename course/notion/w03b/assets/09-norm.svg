@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="628.2pt" height="347.04pt" viewBox="0 0 628.2 347.04" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-15T20:34:42.462205</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 347.04 
+L 628.2 347.04 
+L 628.2 -0 
+L 0 -0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 25.614 308.2392 
+L 283.41 308.2392 
+Q 286.479 308.2392 286.479 306.576 
+L 286.479 67.0752 
+Q 286.479 65.412 283.41 65.412 
+L 25.614 65.412 
+Q 22.545 65.412 22.545 67.0752 
+L 22.545 306.576 
+Q 22.545 308.2392 25.614 308.2392 
+z
+" clip-path="url(#pa71d0857fc)" style="fill: #e3f0ff; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 344.79 308.2392 
+L 602.586 308.2392 
+Q 605.655 308.2392 605.655 306.576 
+L 605.655 67.0752 
+Q 605.655 65.412 602.586 65.412 
+L 344.79 65.412 
+Q 341.721 65.412 341.721 67.0752 
+L 341.721 306.576 
+Q 341.721 308.2392 344.79 308.2392 
+z
+" clip-path="url(#pa71d0857fc)" style="fill: #e1f4ec; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(109.500516 131.800561)">원논문 post-LN</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(154.512 145.271303)"/>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(150.604891 158.271303)">X</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(118.709187 171.271303)">↓ Attention</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(106.270828 184.271303)">X + Attention(X)</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(113.733641 197.271303)">↓ LayerNorm</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(149.944734 210.811108)">U</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(134.595594 223.811108)">↓ FFN</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(120.836922 236.811108)">U + FFN(U)</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(113.733641 249.811108)">↓ LayerNorm</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(388.979797 131.98769)">Qwen2 pre-RMSNorm (요약)</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(473.688 145.458432)"/>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(390.620031 158.458432)">X → RMSNorm → Attention</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(391.159328 171.458432)">X + Attention(RMSNorm(X))</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(462.281516 184.458432)">= U</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(473.688 197.458432)"/>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(395.328469 210.458432)">U → RMSNorm → SwiGLU</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(395.207609 223.458432)">U + SwiGLU(RMSNorm(U))</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(473.688 236.458432)"/>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(416.258469 250.163784)">RoPE / GQA도 사용</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Malgun Gothic'; text-anchor: middle" x="314.1" y="30.4848" transform="rotate(-0 314.1 30.4848)">정규화 위치와 종류를 섞어 그리지 않기</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa71d0857fc">
+   <rect x="7.2" y="7.2" width="613.8" height="332.64"/>
+  </clipPath>
+ </defs>
+</svg>

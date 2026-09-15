@@ -128,3 +128,27 @@ https://jmlr.org/papers/v21/20-074.html
 https://www.gradio.app/guides/blocks-and-event-listeners
 
 [강의 원문](../course/notion/w03a/w03a-experiment-log.md)
+
+## 트랜스포머 구조 다시 보기: 블록 해부와 단계별 텍스트 생성 실습
+
+[강의 원문](../course/notion/w03b/w03b-transformer-walkthrough.md)
+
+https://arxiv.org/html/1706.03762v7
+
+https://arxiv.org/html/1706.03762v7/Figures/ModalNet-19.png
+
+https://arxiv.org/html/1706.03762v7/Figures/ModalNet-20.png
+
+https://arxiv.org/html/1706.03762v7/Figures/ModalNet-21.png
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w03b/notebooks/student/w03b_transformer_walkthrough.ipynb
+
+https://github.com/lunalab-ai/genAI/blob/main/course/handouts/w03b-quiz.md
+
+https://github.com/lunalab-ai/genAI/blob/main/course/notion/w03a/w03a-transformers.md
+
+https://huggingface.co/Qwen/Qwen2-0.5B/tree/91d2aff3f957f99e4c74c962f2f408dcc88a18d8
+
+https://huggingface.co/learn/llm-course/chapter1/6
+
+[강의 원문](../course/notion/w03b/w03b-workbook.md)

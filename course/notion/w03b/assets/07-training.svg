@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="628.2pt" height="291.6pt" viewBox="0 0 628.2 291.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-15T20:34:41.975721</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 291.6 
+L 628.2 291.6 
+L 628.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 37.89 88.974 
+L 203.616 88.974 
+Q 206.685 88.974 206.685 87.588 
+L 206.685 57.096 
+Q 206.685 55.71 203.616 55.71 
+L 37.89 55.71 
+Q 34.821 55.71 34.821 57.096 
+L 34.821 87.588 
+Q 34.821 88.974 37.89 88.974 
+z
+" clip-path="url(#p01ae07c4f5)" style="fill: #e3f0ff; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 37.89 180.45 
+L 203.616 180.45 
+Q 206.685 180.45 206.685 179.064 
+L 206.685 143.028 
+Q 206.685 141.642 203.616 141.642 
+L 37.89 141.642 
+Q 34.821 141.642 34.821 143.028 
+L 34.821 179.064 
+Q 34.821 180.45 37.89 180.45 
+z
+" clip-path="url(#p01ae07c4f5)" style="fill: #e1f4ec; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 37.89 260.838 
+L 203.616 260.838 
+Q 206.685 260.838 206.685 259.452 
+L 206.685 228.96 
+Q 206.685 227.574 203.616 227.574 
+L 37.89 227.574 
+Q 34.821 227.574 34.821 228.96 
+L 34.821 259.452 
+Q 34.821 260.838 37.89 260.838 
+z
+" clip-path="url(#p01ae07c4f5)" style="fill: #fff1cf; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 234.306 88.974 
+L 400.032 88.974 
+Q 403.101 88.974 403.101 87.588 
+L 403.101 57.096 
+Q 403.101 55.71 400.032 55.71 
+L 234.306 55.71 
+Q 231.237 55.71 231.237 57.096 
+L 231.237 87.588 
+Q 231.237 88.974 234.306 88.974 
+z
+" clip-path="url(#p01ae07c4f5)" style="fill: #e3f0ff; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 234.306 180.45 
+L 400.032 180.45 
+Q 403.101 180.45 403.101 179.064 
+L 403.101 143.028 
+Q 403.101 141.642 400.032 141.642 
+L 234.306 141.642 
+Q 231.237 141.642 231.237 143.028 
+L 231.237 179.064 
+Q 231.237 180.45 234.306 180.45 
+z
+" clip-path="url(#p01ae07c4f5)" style="fill: #e1f4ec; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 234.306 260.838 
+L 400.032 260.838 
+Q 403.101 260.838 403.101 259.452 
+L 403.101 228.96 
+Q 403.101 227.574 400.032 227.574 
+L 234.306 227.574 
+Q 231.237 227.574 231.237 228.96 
+L 231.237 259.452 
+Q 231.237 260.838 234.306 260.838 
+z
+" clip-path="url(#p01ae07c4f5)" style="fill: #fff1cf; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 430.722 88.974 
+L 596.448 88.974 
+Q 599.517 88.974 599.517 87.588 
+L 599.517 57.096 
+Q 599.517 55.71 596.448 55.71 
+L 430.722 55.71 
+Q 427.653 55.71 427.653 57.096 
+L 427.653 87.588 
+Q 427.653 88.974 430.722 88.974 
+z
+" clip-path="url(#p01ae07c4f5)" style="fill: #e3f0ff; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 430.722 180.45 
+L 596.448 180.45 
+Q 599.517 180.45 599.517 179.064 
+L 599.517 143.028 
+Q 599.517 141.642 596.448 141.642 
+L 430.722 141.642 
+Q 427.653 141.642 427.653 143.028 
+L 427.653 179.064 
+Q 427.653 180.45 430.722 180.45 
+z
+" clip-path="url(#p01ae07c4f5)" style="fill: #e1f4ec; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 430.722 260.838 
+L 596.448 260.838 
+Q 599.517 260.838 599.517 259.452 
+L 599.517 228.96 
+Q 599.517 227.574 596.448 227.574 
+L 430.722 227.574 
+Q 427.653 227.574 427.653 228.96 
+L 427.653 259.452 
+Q 427.653 260.838 430.722 260.838 
+z
+" clip-path="url(#p01ae07c4f5)" style="fill: #fff1cf; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="120.753" y="76.592137" transform="rotate(-0 120.753 76.592137)">입력: 나는</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(79.467844 158.500336)">현재까지 참고</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(77.182688 172.205687)">다음 토큰 분포</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="120.753" y="248.456137" transform="rotate(-0 120.753 248.456137)">정답: 오늘</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 120.753 89.587819 
+Q 120.753 115.308189 120.753 139.127902 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 123.353 133.927902 
+L 120.753 139.127902 
+L 118.153 133.927902 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 120.753 181.064834 
+Q 120.753 204.011191 120.753 225.056889 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 123.353 219.856889 
+L 120.753 225.056889 
+L 118.153 219.856889 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="317.169" y="76.592137" transform="rotate(-0 317.169 76.592137)">입력: 오늘</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(275.883844 158.500336)">현재까지 참고</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(273.598688 172.205687)">다음 토큰 분포</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="317.169" y="248.487621" transform="rotate(-0 317.169 248.487621)">정답: 학교에</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 317.169 89.587819 
+Q 317.169 115.308189 317.169 139.127902 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 319.769 133.927902 
+L 317.169 139.127902 
+L 314.569 133.927902 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 317.169 181.064834 
+Q 317.169 204.011191 317.169 225.056889 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 319.769 219.856889 
+L 317.169 225.056889 
+L 314.569 219.856889 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="513.585" y="76.623621" transform="rotate(-0 513.585 76.623621)">입력: 학교에</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(472.299844 158.500336)">현재까지 참고</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(470.014688 172.205687)">다음 토큰 분포</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="513.585" y="248.456137" transform="rotate(-0 513.585 248.456137)">정답: 간다</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 513.585 89.587819 
+Q 513.585 115.308189 513.585 139.127902 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 516.185 133.927902 
+L 513.585 139.127902 
+L 510.985 133.927902 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 513.585 181.064834 
+Q 513.585 204.011191 513.585 225.056889 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 516.185 219.856889 
+L 513.585 225.056889 
+L 510.985 219.856889 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; text-anchor: middle" x="314.1" y="26.604" transform="rotate(-0 314.1 26.604)">학습: 정답을 한 칸 이동 · 미래는 가리고 모든 위치의 손실 계산</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p01ae07c4f5">
+   <rect x="7.2" y="7.2" width="613.8" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="516.6pt" height="572.231063pt" viewBox="0 0 516.6 572.231063" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-15T20:34:39.526839</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 572.231063 
+L 516.6 572.231063 
+L 516.6 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 132.75 556.715063 
+L 383.85 556.715063 
+Q 386.361 556.715063 386.361 553.943063 
+L 386.361 515.135063 
+Q 386.361 512.363063 383.85 512.363063 
+L 132.75 512.363063 
+Q 130.239 512.363063 130.239 515.135063 
+L 130.239 553.943063 
+Q 130.239 556.715063 132.75 556.715063 
+z
+" clip-path="url(#pc1d333acaf)" style="fill: #e3f0ff; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 132.75 479.099063 
+L 383.85 479.099063 
+Q 386.361 479.099063 386.361 476.327063 
+L 386.361 437.519063 
+Q 386.361 434.747063 383.85 434.747063 
+L 132.75 434.747063 
+Q 130.239 434.747063 130.239 437.519063 
+L 130.239 476.327063 
+Q 130.239 479.099063 132.75 479.099063 
+z
+" clip-path="url(#pc1d333acaf)" style="fill: #e1f4ec; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 132.75 401.483063 
+L 383.85 401.483063 
+Q 386.361 401.483063 386.361 398.711063 
+L 386.361 359.903063 
+Q 386.361 357.131063 383.85 357.131063 
+L 132.75 357.131063 
+Q 130.239 357.131063 130.239 359.903063 
+L 130.239 398.711063 
+Q 130.239 401.483063 132.75 401.483063 
+z
+" clip-path="url(#pc1d333acaf)" style="fill: #fff1cf; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 132.75 340.499063 
+L 383.85 340.499063 
+Q 386.361 340.499063 386.361 337.727063 
+L 386.361 298.919063 
+Q 386.361 296.147063 383.85 296.147063 
+L 132.75 296.147063 
+Q 130.239 296.147063 130.239 298.919063 
+L 130.239 337.727063 
+Q 130.239 340.499063 132.75 340.499063 
+z
+" clip-path="url(#pc1d333acaf)" style="fill: #e3f0ff; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 132.75 262.883063 
+L 383.85 262.883063 
+Q 386.361 262.883063 386.361 260.111063 
+L 386.361 221.303063 
+Q 386.361 218.531063 383.85 218.531063 
+L 132.75 218.531063 
+Q 130.239 218.531063 130.239 221.303063 
+L 130.239 260.111063 
+Q 130.239 262.883063 132.75 262.883063 
+z
+" clip-path="url(#pc1d333acaf)" style="fill: #e1f4ec; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 132.75 185.267063 
+L 383.85 185.267063 
+Q 386.361 185.267063 386.361 182.495063 
+L 386.361 143.687063 
+Q 386.361 140.915063 383.85 140.915063 
+L 132.75 140.915063 
+Q 130.239 140.915063 130.239 143.687063 
+L 130.239 182.495063 
+Q 130.239 185.267063 132.75 185.267063 
+z
+" clip-path="url(#pc1d333acaf)" style="fill: #fff1cf; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 132.75 124.283063 
+L 383.85 124.283063 
+Q 386.361 124.283063 386.361 121.511063 
+L 386.361 82.703063 
+Q 386.361 79.931063 383.85 79.931063 
+L 132.75 79.931063 
+Q 130.239 79.931063 130.239 82.703063 
+L 130.239 121.511063 
+Q 130.239 124.283063 132.75 124.283063 
+z
+" clip-path="url(#pc1d333acaf)" style="fill: #e3f0ff; stroke: #17324d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 258.3 504.047063 
+L 62.442 504.047063 
+" clip-path="url(#pc1d333acaf)" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 62.442 504.047063 
+L 62.442 379.307063 
+" clip-path="url(#pc1d333acaf)" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 258.3 287.831063 
+L 454.158 287.831063 
+" clip-path="url(#pc1d333acaf)" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 454.158 287.831063 
+L 454.158 163.091063 
+" clip-path="url(#pc1d333acaf)" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Malgun Gothic'; text-anchor: middle" x="258.3" y="21.719063" transform="rotate(-0 258.3 21.719063)">원논문 post-LN 블록: 아래에서 위로 읽기</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="258.3" y="538.789199" transform="rotate(-0 258.3 538.789199)">입력 X · 3 × 4</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="258.3" y="461.173199" transform="rotate(-0 258.3 461.173199)">멀티헤드 어텐션 · 3 × 4</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="258.3" y="383.557199" transform="rotate(-0 258.3 383.557199)">덧셈: X + Attention(X)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="258.3" y="321.950621" transform="rotate(-0 258.3 321.950621)">LayerNorm → U · 3 × 4</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="258.3" y="244.957199" transform="rotate(-0 258.3 244.957199)">위치별 FFN · 3 × 4</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="258.3" y="167.341199" transform="rotate(-0 258.3 167.341199)">덧셈: U + FFN(U)</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="258.3" y="105.734621" transform="rotate(-0 258.3 105.734621)">LayerNorm → Y · 3 × 4</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 258.3 513.131183 
+Q 258.3 495.728746 258.3 480.226968 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 255.7 485.426968 
+L 258.3 480.226968 
+L 260.9 485.426968 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 258.3 435.515183 
+Q 258.3 418.112746 258.3 402.610968 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 255.7 407.810968 
+L 258.3 402.610968 
+L 260.9 407.810968 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 258.3 357.902566 
+Q 258.3 348.817186 258.3 341.632464 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 255.7 346.832464 
+L 258.3 341.632464 
+L 260.9 346.832464 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 258.3 296.915183 
+Q 258.3 279.512746 258.3 264.010968 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 255.7 269.210968 
+L 258.3 264.010968 
+L 260.9 269.210968 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 258.3 219.299183 
+Q 258.3 201.896746 258.3 186.394968 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 255.7 191.594968 
+L 258.3 186.394968 
+L 260.9 191.594968 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 258.3 141.686566 
+Q 258.3 132.601186 258.3 125.416464 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 255.7 130.616464 
+L 258.3 125.416464 
+L 260.9 130.616464 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 64.446018 379.307063 
+Q 97.599547 379.307063 128.852418 379.307063 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 123.652418 376.707063 
+L 128.852418 379.307063 
+L 123.652418 381.907063 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'" transform="translate(33.424891 434.901711)">X</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'" transform="translate(24.332 448.607063)">우회</text>
+   </g>
+   <g id="patch_16">
+    <path d="M 452.153982 163.091063 
+Q 419.000453 163.091063 387.747582 163.091063 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 392.947582 165.691063 
+L 387.747582 163.091063 
+L 392.947582 160.491063 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'" transform="translate(474.700734 218.685711)">U</text>
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'" transform="translate(466.268 232.391063)">우회</text>
+   </g>
+   <g id="patch_17">
+    <path d="M 258.3 80.701213 
+Q 258.3 66.071885 258.3 53.343215 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 255.7 58.543215 
+L 258.3 53.343215 
+L 260.9 58.543215 
+" style="fill: none; stroke: #17324d; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic'; text-anchor: middle" x="258.3" y="43.895063" transform="rotate(-0 258.3 43.895063)">다음 블록으로 (각 블록 가중치는 별도)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc1d333acaf">
+   <rect x="7.2" y="10.631063" width="502.2" height="554.4"/>
+  </clipPath>
+ </defs>
+</svg>
