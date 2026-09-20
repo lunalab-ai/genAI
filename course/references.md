@@ -152,3 +152,38 @@ https://huggingface.co/Qwen/Qwen2-0.5B/tree/91d2aff3f957f99e4c74c962f2f408dcc88a
 https://huggingface.co/learn/llm-course/chapter1/6
 
 [강의 원문](../course/notion/w03b/w03b-workbook.md)
+
+## 오토인코더: 압축과 복원으로 배우는 잠재 표현
+
+[강의 원문](../course/notion/w04a/w04a-autoencoders.md)
+
+주교재의3.1 설명·용어·구조를 읽고 독립 작성했다. 교재 스캔이나 출판사 코드를 공개 자료에 포함하지 않았다. 수업 그림은 새 도식 및 실제 수업 구현의 계산 결과다. 실행 설정은seed1337, train6,000/validation1,000/test1,000, Adam학습률0.001, batch128,5epoch, CPU2threads다. 처음 관측한 데이터 다운로드와 두 모델 학습·평가 전체는 해당 PC에서약15.6초였으며 학생 환경의 시간 보장이 아니다.
+
+- [TensorFlow: Intro to Autoencoders](https://www.tensorflow.org/tutorials/generative/autoencoder) — 기본 구조·정규화·복원의 개념 참고.
+- [PyTorch: MSELoss](https://docs.pytorch.org/docs/2.14/generated/torch.nn.modules.loss.MSELoss.html) — 전체 원소 평균 정의. 온라인 문서는2.14, 실제 수업 검증 런타임은2.8이며 사용한 핵심 API를 실제 실행으로 확인한다.
+- [PyTorch: ConvTranspose2d](https://docs.pytorch.org/docs/2.14/generated/torch.nn.modules.conv.ConvTranspose2d.html) — 출력 shape와 역함수에 대한 주의.
+- [torchvision MNIST 구현](https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py) — 공개 미러와 파일별 체크섬. 실습은 torchvision을 import하지 않는 독립 로더다.
+- [MNIST 데이터 카드](https://huggingface.co/datasets/ylecun/mnist) — 이미지 크기·원래 split·데이터 설명.
+- [Gradio: Blocks and Event Listeners](https://www.gradio.app/guides/blocks-and-event-listeners) — 화면 구성과 이벤트의 입력·출력 연결.
+
+자료 확인일:2026-09-20. 별도 성적 반영 과제나 제출 기한은 없다. 실험 기록과 점검 질문을 복습에 활용한다.
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w04a/notebooks/student/w04a_autoencoders.ipynb
+
+https://docs.pytorch.org/docs/2.14/generated/torch.nn.modules.conv.ConvTranspose2d.html
+
+https://docs.pytorch.org/docs/2.14/generated/torch.nn.modules.loss.MSELoss.html
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w04a/src/W04A-API.md
+
+https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py
+
+https://huggingface.co/datasets/ylecun/mnist
+
+https://www.gradio.app/guides/blocks-and-event-listeners
+
+https://www.tensorflow.org/tutorials/generative/autoencoder
+
+[강의 원문](../course/notion/w04a/w04a-workbook.md)
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w04a/notebooks/student/w04a_autoencoders.ipynb
