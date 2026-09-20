@@ -93,13 +93,13 @@ sessions:
   runtime_label: Colab · CPU · MNIST 자동 준비 · Gradio
   colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w04a/notebooks/student/w04a_autoencoders.ipynb
   announcement_guidance:
-  - Notion 페이지는 생성되었으나 학생용 웹 공개 확인이 대기 중입니다. 공개 확인 전에는 아래 GitHub PDF와 Colab을 이용하세요.
+  - Notion 강의노트와 PDF·Colab을 함께 이용하세요.
   - W04A 새 사본을 Drive에 저장하고 첫 셀부터 실행하세요. Python 3.12/3.13, 패키지 0.1.5 / 2026-fall-w04a
     고정 버전입니다.
   - MNIST 약 11.6 MB를 자동 다운로드하고 캐시를 재사용합니다. CPU 기본, API 키·개인 파일 업로드는 필요하지 않습니다.
   - 16/2차원 복원과 잠재 공간을 관찰한 뒤 웹 앱을 조립합니다. 공유 링크는 실행 중인 런타임에 의존합니다.
   - 별도 성적 반영 과제나 제출 기한은 없습니다. 실험 기록지와 점검 퀴즈로 복습하세요.
-  notion_url: https://app.notion.com/p/3e17fd00109f811cb296dfda8ec22f49?pvs=204
+  notion_url: https://app.notion.com/p/W04A-2026-09-21-3-1-3e17fd00109f811cb296dfda8ec22f49?source=copy_link
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab
