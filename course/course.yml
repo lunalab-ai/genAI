@@ -100,6 +100,29 @@ sessions:
   - 16/2차원 복원과 잠재 공간을 관찰한 뒤 웹 앱을 조립합니다. 공유 링크는 실행 중인 런타임에 의존합니다.
   - 별도 성적 반영 과제나 제출 기한은 없습니다. 실험 기록지와 점검 퀴즈로 복습하세요.
   notion_url: https://app.notion.com/p/W04A-2026-09-21-3-1-3e17fd00109f811cb296dfda8ec22f49?source=copy_link
+- id: w05a
+  date: '2026-09-28'
+  title: '이미지 표현의 세 가지 목적: 오토인코더·VAE·CLIP과 의미 기반 이미지 검색'
+  pages:
+  - course/notion/w05a/w05a-image-representations.md
+  - course/notion/w05a/w05a-workbook.md
+  labs:
+  - notebooks/student/w05a_ae_vae.ipynb
+  - notebooks/student/w05a_clip_search.ipynb
+  quiz: course/quiz/w05a.yml
+  runtime_label: Colab · CPU · AE/VAE·CLIP · 누적 Gradio 웹 앱
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a/notebooks/student/w05a_ae_vae.ipynb
+  announcement_guidance:
+  - 지난 W04A에서 배운 AE 기본 구조를 출발점으로 복원 손실·학습 과정을 보완하고, VAE 생성과 CLIP 의미 검색으로 연결합니다.
+  - 'A: AE/VAE를 먼저 실행한 뒤 B: CLIP 검색을 새 Colab 사본으로 실행하세요. 두 노트북은 독립적으로 준비되며 마지막에 웹
+    앱이 포함됩니다.'
+  - '실습 B: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a/notebooks/student/w05a_clip_search.ipynb'
+  - CPU 기본, API 키·개인 파일 업로드 불필요. 패키지 0.1.6 / 2026-fall-w05a 고정 버전입니다. 최초 MNIST 약 11.6
+    MB, CLIP 가중치 약 605 MB 및 의존성 다운로드가 필요합니다.
+  - 각 노트북은 첫 셀부터 순서대로 실행하고 마지막 점검 메시지를 확인하세요. 패키지를 이미 import한 뒤 교체했다면 런타임을 재시작합니다.
+  - 클래스·함수·메소드 옆 소스 바로가기로 실제 구현을 확인하세요. 웹 앱의 공유 URL은 Colab 런타임 실행 중에만 유지됩니다.
+  - 기록지에는 예측·설정·관찰·해석을 구별해 적고 점검 해설은 답한 뒤 확인하세요. 별도 성적 반영 과제나 제출 기한은 없습니다.
+  notion_url: https://fancy-ballcap-a15.notion.site/W05A-AE-VAE-CLIP-2026-09-28-3e87fd00109f81b19815d419ef77395c
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

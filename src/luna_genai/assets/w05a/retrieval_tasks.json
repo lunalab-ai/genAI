@@ -1,0 +1,74 @@
+{
+  "defined_before_full_retrieval": true,
+  "scope": "Manual visual relevance for this 40-photo gallery only",
+  "tasks": [
+    {
+      "query": "a photo of a dog",
+      "relevant_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08"
+      ],
+      "reason": "A dog is the main subject."
+    },
+    {
+      "query": "a photo of pizza",
+      "relevant_ids": [
+        "P17",
+        "P18",
+        "P19",
+        "P20",
+        "P21",
+        "P22",
+        "P23",
+        "P24"
+      ],
+      "reason": "Pizza is clearly visible."
+    },
+    {
+      "query": "a cat in the snow",
+      "relevant_ids": [
+        "P10",
+        "P11"
+      ],
+      "reason": "A cat stands or sits in snow."
+    },
+    {
+      "query": "a red car",
+      "relevant_ids": [
+        "P28",
+        "P30",
+        "P31",
+        "P32"
+      ],
+      "reason": "The main car is red."
+    },
+    {
+      "query": "a lake surrounded by mountains",
+      "relevant_ids": [
+        "P33",
+        "P34",
+        "P35",
+        "P39"
+      ],
+      "reason": "A lake and mountains are visible together."
+    },
+    {
+      "query": "a cat playing with a lizard",
+      "relevant_ids": [
+        "P16"
+      ],
+      "reason": "The cat and lizard occur together."
+    },
+    {
+      "query": "a horse on a beach",
+      "relevant_ids": [],
+      "reason": "No horse is present; top-k still returns candidates."
+    }
+  ]
+}

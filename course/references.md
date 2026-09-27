@@ -187,3 +187,83 @@ https://www.tensorflow.org/tutorials/generative/autoencoder
 [강의 원문](../course/notion/w04a/w04a-workbook.md)
 
 https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w04a/notebooks/student/w04a_autoencoders.ipynb
+
+## 이미지 표현의 세 가지 목적: 오토인코더·VAE·CLIP과 의미 기반 이미지 검색
+
+[강의 원문](../course/notion/w05a/w05a-image-representations.md)
+
+주교재의 용어·그림·전개를 바탕으로 수업 예제와 설명을 독립 작성했다. 원본 그림의 출처는 각 캡션에 표시했다. 교재 전체 스캔과 출판사 예제 원본은 학생 저장소에 포함하지 않는다. 실측은 Python 3.12.10, PyTorch 2.8 CPU, 위에 명시한 분할과 설정에서 얻었다. 실제 실행의 상세 조건은 [모델 기록](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/assets/w05a/models.json)과 [공통 API](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/W05A-API.md)에 제공한다.
+
+- [Kingma & Welling, Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114): 변분 하한·재매개변수화의 이론적 근거.
+- [Radford et al., Learning Transferable Visual Models From Natural Language Supervision](https://proceedings.mlr.press/v139/radford21a.html): CLIP의 이미지–텍스트 대조 학습과 제로샷 전이.
+- [OpenAI CLIP 공식 구현](https://github.com/openai/CLIP): 인코딩·정규화·유사도 계산의 원 구현.
+- [Transformers 5.15.1 CLIP 문서](https://huggingface.co/docs/transformers/v5.15.1/en/model_doc/clip): 현재 실습 버전의 반환 형식과 전처리.
+- [ViT-B/32 모델 카드](https://huggingface.co/openai/clip-vit-base-patch32): 모델의 사용 범위와 언어·평가 한계.
+- [PyTorch 2.8 MSELoss](https://docs.pytorch.org/docs/2.8/generated/torch.nn.MSELoss.html): reduction과 평균 정의.
+- [Gradio Blocks와 이벤트](https://www.gradio.app/guides/blocks-and-event-listeners): 입력·callback·출력 연결.
+
+이 수업에서는 별도 성적 반영 과제나 제출 기한을 추가하지 않는다. 기록지와 점검 질문으로 관찰과 설명을 연습한다.
+
+https://arxiv.org/abs/1312.6114
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a/notebooks/student/w05a_ae_vae.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a/notebooks/student/w05a_clip_search.ipynb
+
+https://docs.pytorch.org/docs/2.8/generated/torch.nn.MSELoss.html
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/GALLERY-CREDITS.md
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/W05A-API.md
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/assets/w05a/models.json
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L12
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L28
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L42
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L115
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L190
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L21
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L249
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L42
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L46
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L77
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L97
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L106
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L125
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L137
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L159
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L176
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L23
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L36
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L65
+
+https://github.com/openai/CLIP
+
+https://huggingface.co/docs/transformers/v5.15.1/en/model_doc/clip
+
+https://huggingface.co/openai/clip-vit-base-patch32
+
+https://proceedings.mlr.press/v139/radford21a.html
+
+https://www.gradio.app/guides/blocks-and-event-listeners
+
+[강의 원문](../course/notion/w05a/w05a-workbook.md)
