@@ -46,6 +46,8 @@ def build_embedding_app(models: dict, images: torch.Tensor, search_lab=None):
     prepared CLIPSearch with index_images already run, or None for AE/VAE-only.
     Builds UI/events but does not download/train/launch. Launch via
     app.launch(css=APP_CSS,share=True) in Colab; link expires with runtime.
+    For search, also pass allowed_paths=search_lab.gallery['path'].tolist()
+    to launch: only the verified public photo files need to be served.
     The same numerical callbacks are independently callable for verification.
     """
     import gradio as gr
@@ -66,7 +68,7 @@ def build_embedding_app(models: dict, images: torch.Tensor, search_lab=None):
                 output=gr.Image(label='복원',height=220,elem_classes=['digit'])
                 residual=gr.Image(label='절대 잔차 · 고정 밝기 범위',height=220,elem_classes=['digit'])
             metrics=gr.JSON(label='실측 MSE · 잠재 좌표')
-            reconstruct.click(partial(reconstruction_view,models=models,images=images),[choice,index],[original,output,residual,metrics])
+            reconstruct.click(partial(reconstruction_view,models=models,images=images),[choice,index],[original,output,residual,metrics],api_name='reconstruct')
         with gr.Tab('2 · 2차원 좌표 탐색'):
             gr.Markdown('VAE prior는 표준정규분포입니다. [-3,3]을 균일하게 움직이는 활동은 정규분포 샘플링과 다릅니다. AE의 좌표 척도는 다를 수 있습니다.')
             latent_model=gr.Dropdown([k for k,v in models.items() if v.latent_dim==2],value='vae1',label='2차원 모델')
@@ -76,7 +78,7 @@ def build_embedding_app(models: dict, images: torch.Tensor, search_lab=None):
             decode=gr.Button('좌표 디코딩',variant='primary')
             generated=gr.Image(label='디코더 출력',height=280,elem_classes=['digit'])
             status=gr.Markdown()
-            decode.click(partial(latent_view,models=models),[latent_model,z1,z2],[generated,status])
+            decode.click(partial(latent_view,models=models),[latent_model,z1,z2],[generated,status],api_name='decode')
         if search_lab is not None:
             with gr.Tab('3 · CLIP 의미 검색'):
                 gr.Markdown('사진 파일명으로 검색하지 않습니다. 사진 픽셀과 영어 문장을 같은 512차원 공간에서 비교합니다. 없는 대상도 top-k가 반환하므로 결과를 직접 확인하세요.')
@@ -86,6 +88,6 @@ def build_embedding_app(models: dict, images: torch.Tensor, search_lab=None):
                 result=gr.Gallery(label='검색 결과 · 출처와 이용 조건은 각 캡션',columns=3,height=360)
                 scores=gr.Dataframe(label='코사인 점수 · 확률이 아님',interactive=False)
                 message=gr.Markdown()
-                search.click(partial(search_view,lab=search_lab),[query,k],[result,scores,message])
+                search.click(partial(search_view,lab=search_lab),[query,k],[result,scores,message],api_name='search')
         gr.Markdown('수업 모델은 설명용입니다. AE/VAE는 MNIST, CLIP은 별도 사전학습 모델을 사용합니다. 공유 URL은 실행 중인 런타임에서만 유지됩니다.')
     return app

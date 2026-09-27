@@ -192,7 +192,7 @@ https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w04a/no
 
 [강의 원문](../course/notion/w05a/w05a-image-representations.md)
 
-주교재의 용어·그림·전개를 바탕으로 수업 예제와 설명을 독립 작성했다. 원본 그림의 출처는 각 캡션에 표시했다. 교재 전체 스캔과 출판사 예제 원본은 학생 저장소에 포함하지 않는다. 실측은 Python 3.12.10, PyTorch 2.8 CPU, 위에 명시한 분할과 설정에서 얻었다. 실제 실행의 상세 조건은 [모델 기록](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/assets/w05a/models.json)과 [공통 API](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/W05A-API.md)에 제공한다.
+주교재의 용어·그림·전개를 바탕으로 수업 예제와 설명을 독립 작성했다. 원본 그림의 출처는 각 캡션에 표시했다. 교재 전체 스캔과 출판사 예제 원본은 학생 저장소에 포함하지 않는다. 실측은 Python 3.12.10, PyTorch 2.8 CPU, 위에 명시한 분할과 설정에서 얻었다. 실제 실행의 상세 조건은 [모델 기록](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/assets/w05a/models.json)과 [공통 API](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/W05A-API.md)에 제공한다.
 
 - [Kingma & Welling, Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114): 변분 하한·재매개변수화의 이론적 근거.
 - [Radford et al., Learning Transferable Visual Models From Natural Language Supervision](https://proceedings.mlr.press/v139/radford21a.html): CLIP의 이미지–텍스트 대조 학습과 제로샷 전이.
@@ -206,55 +206,55 @@ https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w04a/no
 
 https://arxiv.org/abs/1312.6114
 
-https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a/notebooks/student/w05a_ae_vae.ipynb
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a-v2/notebooks/student/w05a_ae_vae.ipynb
 
-https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a/notebooks/student/w05a_clip_search.ipynb
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a-v2/notebooks/student/w05a_clip_search.ipynb
 
 https://docs.pytorch.org/docs/2.8/generated/torch.nn.MSELoss.html
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/GALLERY-CREDITS.md
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/GALLERY-CREDITS.md
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/W05A-API.md
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/W05A-API.md
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/assets/w05a/models.json
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/assets/w05a/models.json
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L12
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/embedding_app.py#L12
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L28
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/embedding_app.py#L28
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L42
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/embedding_app.py#L42
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L115
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L115
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L190
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L190
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L21
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L21
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L249
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L249
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L42
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L42
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L46
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L46
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L77
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L77
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L97
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L97
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L106
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L106
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L125
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L125
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L137
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L137
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L159
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L159
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L176
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L176
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L23
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L23
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L36
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L36
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L65
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L65
 
 https://github.com/openai/CLIP
 

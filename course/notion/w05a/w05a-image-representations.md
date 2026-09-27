@@ -4,7 +4,7 @@
 
 주교재 『핸즈온 생성형 AI』 3장. 3.1 오토인코더를 보강하고, 3.2 변이형 오토인코더, 3.3 CLIP, 3.5 의미 기반 이미지 검색으로 연결한다. W04A에서는 AE의 개념과 기본 구조까지 배웠다. 이번 자료는 그 지점에서 다시 출발하므로 지난 실습을 끝내지 않아도 읽고 실행할 수 있다.
 
-[Colab A · AE/VAE 관찰실](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a/notebooks/student/w05a_ae_vae.ipynb) · [Colab B · CLIP 검색과 웹 앱](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a/notebooks/student/w05a_clip_search.ipynb) · [실험 기록지](w05a-workbook.md) · [함수·클래스·메소드 설명과 소스](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/W05A-API.md)
+[Colab A · AE/VAE 관찰실](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a-v2/notebooks/student/w05a_ae_vae.ipynb) · [Colab B · CLIP 검색과 웹 앱](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05a-v2/notebooks/student/w05a_clip_search.ipynb) · [실험 기록지](w05a-workbook.md) · [함수·클래스·메소드 설명과 소스](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/W05A-API.md)
 
 ## 1. 같은 이미지, 서로 다른 세 가지 질문
 
@@ -64,7 +64,7 @@ MNIST는 28×28 흑백 손 글씨다. 한 장은 784개 밝기 값이고, 실습
 
 이번에는 차원을 명확히 추적할 수 있는 완전연결 모델을 사용한다. 교재와 W04A의 합성곱 모델과 구조가 다르며, AE의 학습 목적은 같다. W04A보다 학습 표본과 epoch도 늘렸으므로 개선을 어느 한 요인만의 효과로 해석하면 안 된다.
 
-[`DenseAE`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L21)의 `latent_dim` 기본값은 2이고, 초기화만으로 학습되지 않는다. [`DenseAE.encode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L42)는 이미지 배치를 잠재 벡터로, [`DenseAE.decode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L46)는 잠재 벡터를 이미지로 바꾼다. 디코더는 인코더의 정확한 역함수로 보장되지 않는다.
+[`DenseAE`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L21)의 `latent_dim` 기본값은 2이고, 초기화만으로 학습되지 않는다. [`DenseAE.encode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L42)는 이미지 배치를 잠재 벡터로, [`DenseAE.decode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L46)는 잠재 벡터를 이미지로 바꾼다. 디코더는 인코더의 정확한 역함수로 보장되지 않는다.
 
 ## 3. MSE를 손으로 계산하고 코드와 연결하기
 
@@ -105,7 +105,7 @@ Colab A는 실제 한 번의 갱신 전후를 비교한다. 전체 재학습은 
 
 모든 체크포인트는 같은 seed 1337과 같은 분할을 사용한다. 원 MNIST train 60,000장에서 20,000장을 학습에, 겹치지 않는 2,000장을 검증에 사용한다. 별도 공식 test 파일에서 고른 1,000장은 최종 비교용이다. 라벨은 학습 손실에 들어가지 않는다.
 
-학습은 Adam, 학습률 0.001, batch 256, **사전에 정한 50 epoch**다. 모델을 고정한 뒤 test를 평가했다. [`load_checkpoints`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L190)는 패키지에 포함된 수업용 가중치의 SHA-256을 검사하고 불러온다. 파일이 손상되면 무작위 모델로 대체하지 않고 오류를 낸다.
+학습은 Adam, 학습률 0.001, batch 256, **사전에 정한 50 epoch**다. 모델을 고정한 뒤 test를 평가했다. [`load_checkpoints`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L190)는 패키지에 포함된 수업용 가중치의 SHA-256을 검사하고 불러온다. 파일이 손상되면 무작위 모델로 대체하지 않고 오류를 낸다.
 
 ![동일한 테스트 첫 여덟 장의 원본과 학습 전 AE2, 학습 후 AE2·AE16, VAE 복원을 비교한 실제 결과](assets/03-reconstruction.png)
 
@@ -159,7 +159,7 @@ $$
 
 그림 8. 분포의 필요성을 설명하는 자체 도식이며 실측 산점도가 아니다. 타원의 중심은 평균, 축 방향의 폭은 표준편차와 연결된다. 대각 공분산은 좌표 사이 공분산을 0으로 두는 가정이며, 모든 좌표의 분산이 같다는 가정이 아니다.
 
-[`DenseVAE.encode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L77)는 `(mu, logvar)`를 반환한다. 로그분산을 쓰면 분산이 음수가 되지 않도록 양수 변환을 명확하게 적용할 수 있다. `exp(logvar)`는 **분산**, `exp(0.5*logvar)`는 **표준편차**다.
+[`DenseVAE.encode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L77)는 `(mu, logvar)`를 반환한다. 로그분산을 쓰면 분산이 음수가 되지 않도록 양수 변환을 명확하게 적용할 수 있다. `exp(logvar)`는 **분산**, `exp(0.5*logvar)`는 **표준편차**다.
 
 ### 세 분포를 구별하기
 
@@ -189,7 +189,7 @@ epsilon = torch.randn_like(mu)
 z = mu + std * epsilon
 ```
 
-[`reparameterize`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L97)는 `epsilon`을 직접 주면 같은 수계산을 재현하고, 생략하면 새 잡음을 뽑는다. $\epsilon$은 이번 계산에서 외부 잡음으로 두고, $\mu$와 $\ell$을 거쳐 모수에 미분을 전달한다. “샘플링을 제거했다”거나 “항상 같은 $z$를 사용한다”는 뜻이 아니다.
+[`reparameterize`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L97)는 `epsilon`을 직접 주면 같은 수계산을 재현하고, 생략하면 새 잡음을 뽑는다. $\epsilon$은 이번 계산에서 외부 잡음으로 두고, $\mu$와 $\ell$을 거쳐 모수에 미분을 전달한다. “샘플링을 제거했다”거나 “항상 같은 $z$를 사용한다”는 뜻이 아니다.
 
 ## 8. VAE 손실: 잘 복원하면서 샘플을 뽑기 쉬운 공간으로
 
@@ -205,7 +205,7 @@ $$
 D_{\mathrm{KL}}=\frac{1}{2}\sum_{j=1}^{d}\left(\mu_j^2+\exp(\ell_j)-1-\ell_j\right).
 $$
 
-[`vae_loss`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L115)는 `(총손실, 복원 SSE, KL)`의 스칼라 세 개를 반환한다. 픽셀과 잠재 좌표는 **이미지 안에서 합**, 이미지는 **배치에서 평균**한다. MNIST에서 이 복원항은 앞의 픽셀 MSE의 784배다. reduction을 바꾸면 같은 β라도 상대적인 영향이 달라진다.
+[`vae_loss`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L115)는 `(총손실, 복원 SSE, KL)`의 스칼라 세 개를 반환한다. 픽셀과 잠재 좌표는 **이미지 안에서 합**, 이미지는 **배치에서 평균**한다. MNIST에서 이 복원항은 앞의 픽셀 MSE의 784배다. reduction을 바꾸면 같은 β라도 상대적인 영향이 달라진다.
 
 | 계산 | 4픽셀 수계산 예 |
 |---|---:|
@@ -262,7 +262,7 @@ $$
 
 ![같은 두 테스트 이미지 사이에서 AE와 VAE의 잠재 좌표를 보간한 실제 디코딩](assets/10-interpolation.png)
 
-그림 14. [`interpolation`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L249)의 실제 출력. VAE의 끝점은 각 이미지의 평균 $\mu$다. 중간 이미지가 부드럽게 바뀌어도 각 중간 결과가 정확히 어떤 숫자라는 보장은 없다. 끝점의 출력도 원본이 아니라 복원이다.
+그림 14. [`interpolation`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L249)의 실제 출력. VAE의 끝점은 각 이미지의 평균 $\mu$다. 중간 이미지가 부드럽게 바뀌어도 각 중간 결과가 정확히 어떤 숫자라는 보장은 없다. 끝점의 출력도 원본이 아니라 복원이다.
 
 ![동일한 표준정규 샘플 열여섯 개를 AE와 세 VAE에 입력한 실제 결과](assets/11-prior-samples.png)
 
@@ -287,7 +287,7 @@ $$
 
 **서로 다른 두 인코더의 내부 차원까지 같을 필요는 없다.** 최종 비교 벡터 차원을 맞춘다. 모델 이름이 바뀌면 차원·입력 크기·전처리도 실제 설정에서 확인해야 한다.
 
-[`CLIPSearch`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L65)는 고정된 `openai/clip-vit-base-patch32` 사전학습 가중치를 CPU에 불러온다. 이 수업에서는 CLIP을 재학습하지 않는다. 사진은 RGB로 바꾸고 모델 전처리의 크기 조정·중앙 자르기·정규화를 적용한다. 긴 사진의 가장자리가 잘릴 수 있다는 점도 검색 결과 해석에 영향을 준다.
+[`CLIPSearch`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L65)는 고정된 `openai/clip-vit-base-patch32` 사전학습 가중치를 CPU에 불러온다. 이 수업에서는 CLIP을 재학습하지 않는다. 사진은 RGB로 바꾸고 모델 전처리의 크기 조정·중앙 자르기·정규화를 적용한다. 긴 사진의 가장자리가 잘릴 수 있다는 점도 검색 결과 해석에 영향을 준다.
 
 ### 교재 3.4의 다른 선택지
 
@@ -322,9 +322,9 @@ text_vectors = text_vectors / text_vectors.norm(dim=1, keepdim=True)
 similarities = image_vectors @ text_vectors.T
 ```
 
-`dim=1`은 **각 이미지/문장 한 개의 특징 축**이다. 배치 방향인 `dim=0`으로 나누면 다른 연산이다. [`unit_rows`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L23)는 0벡터를 오류로 처리한다. 0벡터에는 방향이 없으므로 코사인이 정의되지 않는다.
+`dim=1`은 **각 이미지/문장 한 개의 특징 축**이다. 배치 방향인 `dim=0`으로 나누면 다른 연산이다. [`unit_rows`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L23)는 0벡터를 오류로 처리한다. 0벡터에는 방향이 없으므로 코사인이 정의되지 않는다.
 
-현재 실습 버전 Transformers 5.15.1의 `get_image_features`와 `get_text_features`는 결과 객체를 반환하며, 투영된 벡터는 `.pooler_output`에서 꺼낸다. 예전 예제처럼 반환 객체에 바로 `.norm()`을 호출하지 않는다. [`CLIPSearch.encode_images`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L106)와 [`CLIPSearch.encode_texts`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L125)에서 실제 처리를 확인할 수 있다.
+현재 실습 버전 Transformers 5.15.1의 `get_image_features`와 `get_text_features`는 결과 객체를 반환하며, 투영된 벡터는 `.pooler_output`에서 꺼낸다. 예전 예제처럼 반환 객체에 바로 `.norm()`을 호출하지 않는다. [`CLIPSearch.encode_images`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L106)와 [`CLIPSearch.encode_texts`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L125)에서 실제 처리를 확인할 수 있다.
 
 ## 12. 대조 학습의 3×3 짝맞추기
 
@@ -355,11 +355,11 @@ softmax로 얻은 값은 **현재 후보 집합 안의 상대 점수**다. 후�
 
 그림 19. 자체 제작 검색 흐름. 사진의 임베딩은 먼저 계산해 저장한다. 사용자가 문장을 바꿀 때마다 사진 40장을 다시 인코딩하지 않고, 새 문장 벡터만 만들어 저장된 행렬과 비교한다.
 
-[`load_gallery`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L36)는 사진과 출처 메타데이터를 준비한다. 사진은 패키지 설치 때 함께 내려받으므로 개인 파일 업로드는 필요 없다. [`CLIPSearch.index_images`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L137)는 `(40,512)` 행렬을 만들고 캐시한다. 파일명·분류명은 화면에 보여 줄 정보이며 **이미지 인코더의 입력으로 사용하지 않는다.**
+[`load_gallery`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L36)는 사진과 출처 메타데이터를 준비한다. 사진은 패키지 설치 때 함께 내려받으므로 개인 파일 업로드는 필요 없다. [`CLIPSearch.index_images`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L137)는 `(40,512)` 행렬을 만들고 캐시한다. 파일명·분류명은 화면에 보여 줄 정보이며 **이미지 인코더의 입력으로 사용하지 않는다.**
 
 ![개·고양이·피자·자동차·풍경으로 구성한 수업 사진 40장의 전체 목록](assets/gallery-overview.jpg)
 
-그림 20. P01–P40의 전체 사진. Wikimedia Commons의 개별 저자·이용 조건은 [사진별 출처표](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/GALLERY-CREDITS.md)에 제공한다. 축소된 사진을 사용했으며 각 원본의 이용 조건을 유지한다. 이 소규모 모음은 실제 서비스 전체를 대표하는 벤치마크가 아니다.
+그림 20. P01–P40의 전체 사진. Wikimedia Commons의 개별 저자·이용 조건은 [사진별 출처표](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/GALLERY-CREDITS.md)에 제공한다. 축소된 사진을 사용했으며 각 원본의 이용 조건을 유지한다. 이 소규모 모음은 실제 서비스 전체를 대표하는 벤치마크가 아니다.
 
 문장 벡터가 $t\in\mathbb{R}^{512}$이고 저장한 이미지 행렬이 $V\in\mathbb{R}^{40\times512}$라면 점수는 다음과 같다.
 
@@ -367,7 +367,7 @@ $$
 s=Vt\in\mathbb{R}^{40}.
 $$
 
-[`CLIPSearch.search`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L159)는 점수가 큰 순서대로 k개의 행을 반환한다. `k=3`이 기본이다. 반환 표의 `rank`는 검색 순위, `id`는 사진 ID, `cosine`은 유사도다. 같은 점수에서는 원래 사진 순서를 유지한다.
+[`CLIPSearch.search`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L159)는 점수가 큰 순서대로 k개의 행을 반환한다. `k=3`이 기본이다. 반환 표의 `rank`는 검색 순위, `id`는 사진 ID, `cosine`은 유사도다. 같은 점수에서는 원래 사진 순서를 유지한다.
 
 ### 검색과 제로샷 분류의 차이
 
@@ -412,7 +412,7 @@ Colab B 마지막의 누적 앱에는 **AE/VAE 복원**, **2차원 좌표 탐색
 | 2차원 모델 + z1,z2 | 선택한 좌표 디코딩 | 생성 이미지 |
 | 문장 + k | 문장 인코딩 → 내적 → 정렬 | 사진·코사인·출처 |
 
-[`build_embedding_app`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L42)는 준비된 모델과 데이터를 받아 화면과 기본 이벤트를 만든다. 다운로드·학습·서버 시작을 한꺼번에 숨겨 수행하지 않는다. [`reconstruction_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L12), [`latent_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L28), [`search_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L176)에서 버튼이 실제로 호출하는 함수를 확인한다.
+[`build_embedding_app`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/embedding_app.py#L42)는 준비된 모델과 데이터를 받아 화면과 기본 이벤트를 만든다. 다운로드·학습·서버 시작을 한꺼번에 숨겨 수행하지 않는다. [`reconstruction_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/embedding_app.py#L12), [`latent_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/embedding_app.py#L28), [`search_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L176)에서 버튼이 실제로 호출하는 함수를 확인한다.
 
 학생은 마지막에 **두 문장 비교 탭**을 추가한다. 두 Textbox, 공통 k, 비교 버튼, 두 Gallery를 만들고 입력 순서와 반환 순서를 연결한다. 문제를 완성하지 않아도 기본 검색 탭은 독립적으로 동작한다. `Blocks` 객체 생성, callback 직접 실행, 서버 시작, 브라우저 버튼 클릭은 서로 다른 검증 단계다.
 
@@ -421,7 +421,7 @@ Colab B 마지막의 누적 앱에는 **AE/VAE 복원**, **2차원 좌표 탐색
 ### 실행 전 확인
 
 1. A와 B는 각각 새 Colab 사본으로 실행한다. CPU 기본이며 API 키는 필요 없다.
-2. 설치 셀부터 순서대로 실행한다. 패키지는 0.1.6, 고정 태그는 `2026-fall-w05a`다.
+2. 설치 셀부터 순서대로 실행한다. 패키지는 0.1.7, 고정 태그는 `2026-fall-w05a-v2`다.
 3. A는 MNIST 약 11.6 MB를 최초 준비한다. 수업 체크포인트·사진은 패키지에 포함된다. B는 CLIP 가중치 약 605 MB를 최초 준비하고 캐시를 재사용한다. 패키지 의존성 설치량은 환경에 따라 추가된다.
 4. 설치 후 이미 import한 패키지가 바뀌었다면 런타임을 재시작하고 첫 셀부터 실행한다. 다운로드 실패를 가짜 결과로 대체하지 않는다.
 5. 출력 shape, 유한한 점수, 실제 이미지, 마지막 점검 셀을 확인한다. 실험 기록지에는 본인이 실제로 관찰한 결과를 남긴다.
@@ -443,7 +443,7 @@ Colab B 마지막의 누적 앱에는 **AE/VAE 복원**, **2차원 좌표 탐색
 
 ## 참고자료와 재현 범위
 
-주교재의 용어·그림·전개를 바탕으로 수업 예제와 설명을 독립 작성했다. 원본 그림의 출처는 각 캡션에 표시했다. 교재 전체 스캔과 출판사 예제 원본은 학생 저장소에 포함하지 않는다. 실측은 Python 3.12.10, PyTorch 2.8 CPU, 위에 명시한 분할과 설정에서 얻었다. 실제 실행의 상세 조건은 [모델 기록](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/assets/w05a/models.json)과 [공통 API](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/W05A-API.md)에 제공한다.
+주교재의 용어·그림·전개를 바탕으로 수업 예제와 설명을 독립 작성했다. 원본 그림의 출처는 각 캡션에 표시했다. 교재 전체 스캔과 출판사 예제 원본은 학생 저장소에 포함하지 않는다. 실측은 Python 3.12.10, PyTorch 2.8 CPU, 위에 명시한 분할과 설정에서 얻었다. 실제 실행의 상세 조건은 [모델 기록](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/assets/w05a/models.json)과 [공통 API](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/W05A-API.md)에 제공한다.
 
 - [Kingma & Welling, Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114): 변분 하한·재매개변수화의 이론적 근거.
 - [Radford et al., Learning Transferable Visual Models From Natural Language Supervision](https://proceedings.mlr.press/v139/radford21a.html): CLIP의 이미지–텍스트 대조 학습과 제로샷 전이.

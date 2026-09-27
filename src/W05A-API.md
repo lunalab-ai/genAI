@@ -1,6 +1,6 @@
 # W05A · 공통 API와 소스 바로가기
 
-패키지 0.1.6 / `2026-fall-w05a`. 링크는 설치한 고정 버전의 실제 선언 줄을 가리킨다. 각 메소드의 입력·출력과 부작용을 확인하고 사용한다.
+패키지 0.1.7 / `2026-fall-w05a-v2`. 링크는 설치한 고정 버전의 실제 선언 줄을 가리킨다. 각 메소드의 입력·출력과 부작용을 확인하고 사용한다.
 
 ## 빠른 사용
 
@@ -15,7 +15,7 @@ result = lab.search("a cat in the snow", 3)
 
 ## MNISTSplit
 
-[`MNISTSplit`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/autoencoder.py#L37)
+[`MNISTSplit`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/autoencoder.py#L37)
 
 Image tensors are float32 [N,1,28,28] in [0,1], on CPU.
 
@@ -25,7 +25,7 @@ downloads lists files fetched in this call; an empty list means cache use.
 
 ## load_mnist
 
-[`load_mnist`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/autoencoder.py#L92)
+[`load_mnist`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/autoencoder.py#L92)
 
 Download ~11.6 MB once, verify MD5 each call, then return fixed splits.
 
@@ -37,7 +37,7 @@ offline=True forbids downloads. Seed affects selection, not the files.
 
 ## reconstruction_figure
 
-[`reconstruction_figure`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L210)
+[`reconstruction_figure`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L210)
 
 Return a matplotlib Figure of identical images and model reconstructions.
 
@@ -45,13 +45,13 @@ count=8 first images, fixed gray [0,1]; no cherry-picking. Caller closes figure.
 
 ## latent_figure
 
-[`latent_figure`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L224)
+[`latent_figure`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L224)
 
 Return 2-D z/mu scatter figure; labels color points only, not training.
 
 ## DenseAE
 
-[`DenseAE`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L21)
+[`DenseAE`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L21)
 
 Deterministic autoencoder; [B,1,28,28] -> [B,d] -> original shape.
 
@@ -62,31 +62,31 @@ Example: model=DenseAE(2); z=model.encode(torch.zeros(1,1,28,28)).
 
 ## DenseAE.__init__
 
-[`DenseAE.__init__`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L29)
+[`DenseAE.__init__`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L29)
 
 
 
 ## DenseAE.encode
 
-[`DenseAE.encode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L42)
+[`DenseAE.encode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L42)
 
 Map float32 [B,1,28,28] to unconstrained [B,d]; gradients retained.
 
 ## DenseAE.decode
 
-[`DenseAE.decode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L46)
+[`DenseAE.decode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L46)
 
 Map float32 [B,d] to [B,1,28,28] in [0,1]; no inverse guarantee.
 
 ## DenseAE.forward
 
-[`DenseAE.forward`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L50)
+[`DenseAE.forward`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L50)
 
 Return differentiable reconstruction; does not update parameters.
 
 ## DenseVAE
 
-[`DenseVAE`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L55)
+[`DenseVAE`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L55)
 
 Diagonal Gaussian encoder with the same dense backbone as DenseAE.
 
@@ -96,25 +96,25 @@ Initializing a model does not fit it. Prior is standard normal, not the encoder.
 
 ## DenseVAE.__init__
 
-[`DenseVAE.__init__`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L62)
+[`DenseVAE.__init__`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L62)
 
 
 
 ## DenseVAE.encode
 
-[`DenseVAE.encode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L77)
+[`DenseVAE.encode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L77)
 
 Return (mu, logvar), both [B,d]; logvar is log variance, not std.
 
 ## DenseVAE.decode
 
-[`DenseVAE.decode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L82)
+[`DenseVAE.decode`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L82)
 
 Decode [B,d] into pixel means [B,1,28,28] in [0,1].
 
 ## DenseVAE.forward
 
-[`DenseVAE.forward`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L86)
+[`DenseVAE.forward`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L86)
 
 Return (reconstruction,mu,logvar); sample=True draws fresh epsilon.
 
@@ -123,7 +123,7 @@ under the nonlinear decoder. Neither mode performs an optimizer step.
 
 ## reparameterize
 
-[`reparameterize`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L97)
+[`reparameterize`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L97)
 
 Return mu + exp(0.5*logvar)*epsilon; all tensors must have equal shape.
 
@@ -134,7 +134,7 @@ Example: reparameterize(torch.tensor([[1.]]),torch.log(torch.tensor([[4.]])),
 
 ## vae_loss
 
-[`vae_loss`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L115)
+[`vae_loss`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L115)
 
 Return scalar (SSE + beta*KL, SSE, KL), each averaged over images.
 
@@ -145,13 +145,13 @@ This teaching Gaussian reconstruction objective omits fixed constants.
 
 ## latent_means
 
-[`latent_means`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L135)
+[`latent_means`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L135)
 
 Encode CPU images to detached [N,d]; use mu for VAE; batches of 256.
 
 ## reconstruct_images
 
-[`reconstruct_images`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L143)
+[`reconstruct_images`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L143)
 
 Return detached [N,1,28,28] in original order, deterministically via z/mu.
 
@@ -160,7 +160,7 @@ For VAE this decodes mu; stochastic training loss has a different meaning.
 
 ## fit_representation
 
-[`fit_representation`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L155)
+[`fit_representation`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L155)
 
 Train in place with Adam and return per-epoch loss and validation MSE.
 
@@ -172,7 +172,7 @@ Caller controls torch CPU thread count. Example: fit_representation(m,x,v).
 
 ## load_checkpoints
 
-[`load_checkpoints`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L190)
+[`load_checkpoints`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L190)
 
 Verify bundled NPZ SHA256 and load five classroom checkpoints on CPU.
 
@@ -183,7 +183,7 @@ random weights. No training or network call. See assets/w05a/models.json.
 
 ## latent_grid
 
-[`latent_grid`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L237)
+[`latent_grid`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L237)
 
 Return grayscale tiled image from 2D grid; y increases upwards.
 
@@ -192,7 +192,7 @@ AE may have a very different coordinate scale. No learning or RNG changes.
 
 ## interpolation
 
-[`interpolation`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/representation.py#L249)
+[`interpolation`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/representation.py#L249)
 
 Return [steps,1,28,28] decoded linear interpolation between z/mu endpoints.
 
@@ -201,7 +201,7 @@ interpolation does not establish that all intermediate images are plausible.
 
 ## unit_rows
 
-[`unit_rows`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L23)
+[`unit_rows`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L23)
 
 Normalize finite nonzero [N,d] rows by L2 norm; return same-shape tensor.
 
@@ -210,7 +210,7 @@ device, dtype and autograd. Example: unit_rows(tensor([[3.,4.]])) -> [[.6,.8]].
 
 ## load_gallery
 
-[`load_gallery`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L36)
+[`load_gallery`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L36)
 
 Verify and return the 40 bundled Commons photos in fixed P01..P40 order.
 
@@ -221,7 +221,7 @@ Attribution lives in gallery.json and GALLERY-CREDITS.md; do not strip it.
 
 ## precision_at_k
 
-[`precision_at_k`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L53)
+[`precision_at_k`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L53)
 
 Count relevant unique IDs among first k results / k; missing ranks count 0.
 
@@ -231,7 +231,7 @@ Example: precision_at_k(['A','B','C'],{'A','C'},3) == 2/3.
 
 ## CLIPSearch
 
-[`CLIPSearch`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L65)
+[`CLIPSearch`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L65)
 
 Load fixed CLIP on CPU, then separately index pixels and query by text.
 
@@ -243,13 +243,13 @@ trains or re-encodes stored images. English is the primary query language.
 
 ## CLIPSearch.__init__
 
-[`CLIPSearch.__init__`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L74)
+[`CLIPSearch.__init__`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L74)
 
 
 
 ## CLIPSearch.encode_images
 
-[`CLIPSearch.encode_images`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L106)
+[`CLIPSearch.encode_images`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L106)
 
 Read RGB images; return normalized CPU [N,512], preserving path order.
 
@@ -259,7 +259,7 @@ the model. Transformers 5.15.1 returns projected features in pooler_output.
 
 ## CLIPSearch.encode_texts
 
-[`CLIPSearch.encode_texts`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L125)
+[`CLIPSearch.encode_texts`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L125)
 
 Return normalized [N,512] for nonempty strings, without training.
 
@@ -268,7 +268,7 @@ Short English descriptions are recommended; Korean is exploratory.
 
 ## CLIPSearch.index_images
 
-[`CLIPSearch.index_images`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L137)
+[`CLIPSearch.index_images`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L137)
 
 Compute/reuse normalized [N,512] pixel embeddings; return the matrix.
 
@@ -278,7 +278,7 @@ derived file. Writes one local NPZ atomically, never changes weights.
 
 ## CLIPSearch.search
 
-[`CLIPSearch.search`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L159)
+[`CLIPSearch.search`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L159)
 
 Return descending cosine top-k rows with rank,id,cosine and metadata.
 
@@ -288,7 +288,7 @@ returned even when the requested object is absent from the gallery.
 
 ## search_view
 
-[`search_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/semantic_search.py#L176)
+[`search_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/semantic_search.py#L176)
 
 Gradio callback: (query,k,prepared lab) -> (gallery,score table,status).
 
@@ -297,7 +297,7 @@ cosine. k may be a whole-number slider value. No new model/index is created.
 
 ## reconstruction_view
 
-[`reconstruction_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L12)
+[`reconstruction_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/embedding_app.py#L12)
 
 Return original/reconstruction/absolute residual uint8 images and metrics.
 
@@ -307,7 +307,7 @@ Input order to bind: name,index; models/images are fixed callback context.
 
 ## latent_view
 
-[`latent_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L28)
+[`latent_view`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/embedding_app.py#L28)
 
 Decode one user-selected 2D coordinate and describe sampling context.
 
@@ -317,7 +317,7 @@ on the Gaussian distribution or guarantees of realistic output.
 
 ## build_embedding_app
 
-[`build_embedding_app`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a/src/luna_genai/embedding_app.py#L42)
+[`build_embedding_app`](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05a-v2/src/luna_genai/embedding_app.py#L42)
 
 Return Gradio Blocks with reconstruction, 2D latent, optional real search.
 
@@ -325,4 +325,6 @@ models: loaded checkpoint mapping; images: held-out CPU images; search_lab:
 prepared CLIPSearch with index_images already run, or None for AE/VAE-only.
 Builds UI/events but does not download/train/launch. Launch via
 app.launch(css=APP_CSS,share=True) in Colab; link expires with runtime.
+For search, also pass allowed_paths=search_lab.gallery['path'].tolist()
+to launch: only the verified public photo files need to be served.
 The same numerical callbacks are independently callable for verification.
