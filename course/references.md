@@ -267,3 +267,47 @@ https://proceedings.mlr.press/v139/radford21a.html
 https://www.gradio.app/guides/blocks-and-event-listeners
 
 [강의 원문](../course/notion/w05a/w05a-workbook.md)
+
+## CLIP 의미 검색과 확산 모델의 원리·학습
+
+[강의 원문](../course/notion/w05b/w05b-clip-search.md)
+
+- 주교재 『핸즈온 생성형 AI』 3.3 CLIP, 3.5 의미 기반 이미지 검색. 교재 그림의 필요한 부분은 출처를 표시해 직접 사용했다.
+- [Radford et al., Learning Transferable Visual Models From Natural Language Supervision](https://proceedings.mlr.press/v139/radford21a.html): 이미지–문장 대조 사전학습의 원논문.
+- [Hugging Face CLIPModel 공식 문서](https://huggingface.co/docs/transformers/model_doc/clip): 모델 입력·출력·투영 API.
+- [수업 API와 실제 소스 선언 줄](https://github.com/lunalab-ai/genAI/blob/2026-fall-w05b/src/W05B-API.md): 설치와 같은 고정 태그.
+- 수계산·40장 후보 실험·후보 의존성·실패 분석·웹 앱은 수업에서 추가한 설명이다. 2026-09-29 실제 CPU 추론값이며 모델이나 후보를 바꾸면 결과도 달라질 수 있다.
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05b/notebooks/student/w05b_clip_search.ipynb
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05b/src/GALLERY-CREDITS.md
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05b/src/W05B-API.md
+
+https://huggingface.co/docs/transformers/model_doc/clip
+
+https://proceedings.mlr.press/v139/radford21a.html
+
+[강의 원문](../course/notion/w05b/w05b-diffusion.md)
+
+- 주교재 『핸즈온 생성형 AI』 4.1 반복 정제, 4.2.1–4.2.6 데이터·노이즈·모델·학습·샘플링·평가, 156–172쪽 중4.3 시작 전까지. 그림4-1·4-3은 선별한 원본을 직접 사용했다.
+- [Ho, Jain & Abbeel, Denoising Diffusion Probabilistic Models](https://arxiv.org/html/2006.11239v2): 전방 Gaussian 과정, 직접 노이즈 식, epsilon 예측과 역과정의 수학적 보강.
+- [DDPM 저자 프로젝트](https://hojonathanho.github.io/diffusion/): 학습·샘플링 알고리즘과 반복 생성의 맥락.
+- [Diffusers DDPMScheduler 공식 문서](https://huggingface.co/docs/diffusers/api/schedulers/ddpm): add_noise, step, pred_original_sample, prev_sample.
+- 작은 MNIST U-Net·실제 학습 기록·평가 분리·웹 앱은 수업용 추가 구현이다. 교재의 큰 나비 모델과 데이터·크기·학습량이 다름을 명시했다.
+
+https://arxiv.org/html/2006.11239v2
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05b/notebooks/student/w05b_diffusion.ipynb
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w05b/src/W05B-API.md
+
+https://hojonathanho.github.io/diffusion/
+
+https://huggingface.co/docs/diffusers/api/schedulers/ddpm
+
+[강의 원문](../course/notion/w05b/w05b-workbook.md)
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05b/notebooks/student/w05b_clip_search.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05b/notebooks/student/w05b_diffusion.ipynb

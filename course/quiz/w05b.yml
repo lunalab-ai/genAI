@@ -1,0 +1,32 @@
+source: course/notion/w05b/w05b-workbook.md
+provenance: W05B 기록지의 점검 질문과 정확히 대응하는 별도 복습 해설. 실습 조립 활동 정답과 구별한다.
+items:
+- question: Q1. CLIP에서 이미지와 문장을 각각 인코딩한 뒤 투영하는 이유는 무엇인가?
+  answer: 서로 다른 입력에서 얻은 내부 특징을 같은 공통 공간으로 옮겨 비교하기 위해서다. B/32 이미지 내부768차원은 투영 후512차원이며
+    텍스트도 학습된 투영을 거친다. 차원 수만 같다고 의미 정렬이 자동으로 이루어지는 것은 아니다.
+- question: Q2. 벡터 (3,4)와 (0,2)의 내적과 코사인은 각각 얼마인가?
+  answer: 내적은 $8$, 길이는 $5$와 $2$이므로 코사인은 $\frac{8}{5\times2}=0.8$이다. 길이1로 정규화한 뒤 내적해도
+    $0.8$이다.
+- question: Q3. image_to_text와 text_to_image 표의 행은 각각 무엇을 뜻하는가?
+  answer: image_to_text의 행은 이미지, 열은 문장이다. text_to_image는 전치한 뒤 행 softmax를 계산하므로 행은
+    문장, 열은 이미지다. 두 표 모두 각 행 합이1이다.
+- question: Q4. A의 코사인이 그대로인데 후보를 추가하면 softmax 점수가 달라지는 이유는 무엇인가?
+  answer: softmax 분모는 현재 후보 전체의 exp(logit) 합이다. A의 원래 코사인이 같아도 새 후보의 항이 추가되어 상대 점수가
+    바뀐다. 보정된 실제 정답 확률이라고 해석하지 않는다.
+- question: Q5. 관련 사진이 두 장뿐인 모음에서 P@3의 최댓값은 얼마이며, 없는 대상 검색도 결과가 나올 수 있는가?
+  answer: 최댓값은2/3이다. top-k는 현재 후보의 순위이므로 정답 대상이 없어도 결과를 반환한다. 관련 집합이 공집합이면 P@3은0이다.
+- question: Q6. alpha_bar=0.64, x0=0.5, epsilon=-1일 때 noisy 픽셀은 얼마인가?
+  answer: $\sqrt{0.64}\times0.5+\sqrt{0.36}\times(-1)=0.4-0.6=-0.2$다. 계수는 분산 자체가 아니라
+    제곱근이다.
+- question: Q7. epsilon prediction 모델의 입력과 학습 정답은 무엇이며, 숫자 라벨은 사용되는가?
+  answer: 입력은 noisy 이미지 x_t와 시점t, 정답은 직접 뽑아 섞은 Gaussian epsilon이다. 정답 epsilon은 loss에
+    사용하며 model.forward에는 넣지 않는다. 숫자 클래스 라벨은 이 무조건부 학습에 쓰지 않는다.
+- question: Q8. backward와 optimizer.step은 각각 무엇을 바꾸는가?
+  answer: backward는 모수의 gradient를 계산하며 모수 값은 그대로다. optimizer.step은 gradient와 optimizer
+    상태에 따라 모수를 실제로 갱신한다.
+- question: Q9. pred_original_sample과 prev_sample은 어떻게 다르며, 단순히 예측 잡음을 빼면 되는가?
+  answer: pred_original_sample은 현재 상태에서 추정한 깨끗한 원본이고 prev_sample은 스케줄의 평균·분산에 따라 만든
+    다음 상태다. 신호·잡음 계수와 분산을 사용하므로 x_t에서 예측 epsilon을 그냥 빼는 것과 다르다.
+- question: Q10. noise-MSE가 낮아졌다는 사실만으로 좋은 생성 품질을 단정할 수 없는 이유는 무엇인가?
+  answer: noise-MSE는 지정한 시점·잡음에서의 예측 오차다. 생성물의 인식 가능성, 다양성, 애매한 획, 분포 누락을 모두 대변하지
+    않는다. 고정 평가 조건과 같은 seed·표본 수의 전체 생성 격자를 함께 보며, 소수 표본에서 FID를 과장하지 않는다.
