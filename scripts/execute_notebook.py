@@ -30,8 +30,13 @@ def main():
         if cell.cell_type == 'code':
             cell.outputs = []
             cell.execution_count = None
-    km = KernelManager(kernel_name="python3")
-    km.kernel_spec.argv[0] = sys.executable
+    language = nb.metadata.get("language_info", {}).get("name", "python").lower()
+    kernel = "ir" if language == "r" else "python3"
+    if language not in {"python", "r"}:
+        raise ValueError("Unsupported notebook language: " + language)
+    km = KernelManager(kernel_name=kernel)
+    if kernel == "python3":
+        km.kernel_spec.argv[0] = sys.executable
     client = NotebookClient(
         nb, km=km, timeout=600, allow_errors=False, force_raise_errors=True,
         resources={"metadata": {"path": str(root)}}
@@ -40,13 +45,17 @@ def main():
     dest.parent.mkdir(parents=True, exist_ok=True)
     status = 'failed'
     try:
-        client.execute()
+        # This function creates the supplied manager, so it also owns its cleanup.
+        # Without this flag NBClient keeps an externally supplied R kernel alive.
+        client.execute(cleanup_kc=True)
         if any(c.cell_type == 'code' and c.source.strip() and c.execution_count is None for c in nb.cells):
             raise ValueError('Some code cells were not executed')
         status = 'passed'
     finally:
         nbformat.write(nb, dest)
-        report = {'status': status, 'python_version': platform.python_version(),
+        report = {'status': status, 'kernel': kernel, 'language': language,
+                  'executor_python_version': platform.python_version(),
+                  'python_version': platform.python_version() if kernel == 'python3' else None,
                   'platform': platform.platform(), 'runtime_checks': len(checks),
                   'packages': {d.metadata['Name']: d.version for d in distributions() if d.metadata['Name']}}
         dest.with_suffix('.runtime.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')

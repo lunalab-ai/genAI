@@ -44,6 +44,10 @@ def scan(root: Path) -> list[Finding]:
         if not path.is_file():
             continue
         rel = Path(path.name) if root.is_file() else path.relative_to(root)
+        # Git's checkout database is not a distributable course asset. Keep
+        # scanning every other hidden path, including nested .git directories.
+        if root.is_dir() and rel.parts[0] == ".git":
+            continue
         lower_parts = {part.lower() for part in rel.parts}
         bad_parts = lower_parts.intersection(FORBIDDEN_PATH_PARTS)
         if bad_parts:
