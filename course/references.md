@@ -311,3 +311,61 @@ https://huggingface.co/docs/diffusers/api/schedulers/ddpm
 https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05b/notebooks/student/w05b_clip_search.ipynb
 
 https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w05b/notebooks/student/w05b_diffusion.ipynb
+
+## 확산 모델: 노이즈에서 이미지까지
+
+[강의 원문](../course/notion/w06a/w06a-foundations.md)
+
+- 주교재 『핸즈온 생성형 AI』 4.1–4.2, 156–172쪽. 그림 1은 선별 원본 사용, 나머지 계산·실험 도식은 수업용으로 작성했다.
+- [DDPM 원논문](https://arxiv.org/abs/2006.11239): 전방 직접식, 역방향 매개화, 학습 목적.
+- [Diffusers의 모델·스케줄러 분리](https://huggingface.co/docs/diffusers/using-diffusers/write_own_pipeline).
+- [DDPMScheduler 공식 API](https://huggingface.co/docs/diffusers/api/schedulers/ddpm).
+- [이번 실습의 함수·클래스 정의와 입출력](https://github.com/lunalab-ai/genAI/blob/2026-fall-w06a/src/W06A-API.md).
+
+https://arxiv.org/abs/2006.11239
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w06a/notebooks/student/w06a_noise_targets.ipynb
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w06a/src/W06A-API.md
+
+https://huggingface.co/docs/diffusers/api/schedulers/ddpm
+
+https://huggingface.co/docs/diffusers/using-diffusers/write_own_pipeline
+
+[강의 원문](../course/notion/w06a/w06a-design.md)
+
+- 주교재 『핸즈온 생성형 AI』 4.3–4.5, 172–192쪽. 그림 9·12는 선별 원본, 나머지는 수업용 계산·실측 도식이다.
+- [Diffusers 0.40.0의 DDPM 구현](https://github.com/huggingface/diffusers/blob/v0.40.0/src/diffusers/schedulers/scheduling_ddpm.py): `get_velocity`와 예측 타입 대조.
+- [Simple diffusion](https://arxiv.org/abs/2301.11093): 고해상도 스케줄·연산 집중의 설계 취지.
+- [RIN](https://arxiv.org/abs/2212.11972): 데이터·잠재 토큰 사이의 읽기·쓰기.
+- [Diffusion Transformer](https://arxiv.org/abs/2212.09748): 대안 구조의 맥락.
+- [수업용 API와 소스 정의](https://github.com/lunalab-ai/genAI/blob/2026-fall-w06a/src/W06A-API.md).
+
+https://arxiv.org/abs/2212.09748
+
+https://arxiv.org/abs/2212.11972
+
+https://arxiv.org/abs/2301.11093
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w06a/notebooks/student/w06a_noise_targets.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w06a/notebooks/student/w06a_train_generate.ipynb
+
+https://github.com/huggingface/diffusers/blob/v0.40.0/src/diffusers/schedulers/scheduling_ddpm.py
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w06a/src/W06A-API.md
+
+[강의 원문](../course/notion/w06a/w06a-project.md)
+
+- 주교재 『핸즈온 생성형 AI』 4.6–4.7 및 연습·도전, 192–196쪽.
+- [DDIMScheduler 공식 API](https://huggingface.co/docs/diffusers/api/schedulers/ddim): 추론 단계·eta·갱신.
+- [고정 버전 API와 실제 소스](https://github.com/lunalab-ai/genAI/blob/2026-fall-w06a/src/W06A-API.md).
+- 이 문서의 실험 그림은 `TinyTimeUNet`과 실제 MNIST로 계산했다. 짧은 프로젝트와 기존 체크포인트의 학습 이력을 구별했다.
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w06a/notebooks/student/w06a_train_generate.ipynb
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w06a/src/W06A-API.md
+
+https://huggingface.co/docs/diffusers/api/schedulers/ddim
+
+[강의 원문](../course/notion/w06a/w06a-workbook.md)
