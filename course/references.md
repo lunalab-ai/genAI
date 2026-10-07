@@ -369,3 +369,35 @@ https://github.com/lunalab-ai/genAI/blob/2026-fall-w06a/src/W06A-API.md
 https://huggingface.co/docs/diffusers/api/schedulers/ddim
 
 [강의 원문](../course/notion/w06a/w06a-workbook.md)
+
+## 스테이블 디퓨전과 조건부 이미지 생성
+
+[강의 원문](../course/notion/w06b/w06b-conditioning.md)
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w06b/src/W06B-API.md
+
+https://github.com/zalandoresearch/fashion-mnist
+
+[강의 원문](../course/notion/w06b/w06b-latent.md)
+
+https://arxiv.org/abs/2112.10752
+
+https://huggingface.co/docs/diffusers/api/models/autoencoderkl
+
+[강의 원문](../course/notion/w06b/w06b-components.md)
+
+https://arxiv.org/abs/2207.12598
+
+https://arxiv.org/abs/2307.01952
+
+https://arxiv.org/abs/2403.03206
+
+https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/text2img
+
+[강의 원문](../course/notion/w06b/w06b-workbook.md)
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w06b/notebooks/student/w06b_class_conditioning.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w06b/notebooks/student/w06b_stable_diffusion.ipynb
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w06b/src/W06B-API.md
