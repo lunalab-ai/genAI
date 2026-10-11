@@ -206,6 +206,38 @@ sessions:
   - 마지막 웹앱의 버튼과 출력 설정을 확인하세요. 공유 URL은 현재 Colab 런타임 동안만 유지됩니다. 별도 성적 반영 과제나 새 제출 기한은
     없습니다.
   notion_url: https://fancy-ballcap-a15.notion.site/3f27fd00109f8175bbdee09b45db3f48
+- id: w07a
+  date: '2026-10-12'
+  title: 스테이블 디퓨전 샘플링 루프와 오픈 모델·Gradio 실습
+  pages:
+  - course/notion/w07a/w07a-sampling.md
+  - course/notion/w07a/w07a-open-models.md
+  - course/notion/w07a/w07a-app.md
+  - course/notion/w07a/w07a-workbook.md
+  - course/notion/w07a/w07a-map.md
+  labs:
+  - notebooks/student/w07a_sampling_foundations.ipynb
+  - notebooks/student/w07a_sampling_app.ipynb
+  quiz: course/quiz/w07a.yml
+  runtime_label: Colab · CPU 기록 분석 / T4 실제 SD1.5 · 직접 샘플링 · Gradio
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w07a/notebooks/student/w07a_sampling_foundations.ipynb
+  announcement_guidance:
+  - 지난 시간의 구성요소를 연결하여 pipe(prompt) 안의 샘플링 루프를 함께 펼쳐 봅니다. 주교재5.4–5.7 범위입니다.
+  - 처음부터 다 이해하지 못했어도 괜찮습니다. 한 장 지도 → 샘플링 노트 → Colab A → 오픈 모델·앱 노트 → Colab B 순서로 차근차근
+    진행하세요.
+  - A는 CPU 수계산과 실제 저장 기록 분석, B는 같은 기록 분석에 T4 실제 생성과 웹 앱을 더합니다. 두 노트북은 새 사본에서 첫 셀부터
+    독립 실행할 수 있습니다.
+  - '실습 B: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w07a/notebooks/student/w07a_sampling_app.ipynb'
+  - 패키지0.1.11 / 2026-fall-w07a 고정 버전입니다. 이전 버전을 import했다면 런타임을 재시작하세요. 각 함수 옆 정의 바로가기는
+    설치 버전과 같은 코드로 연결됩니다.
+  - T4 실제 생성은 모델 약2.7GB를 처음 받고 캐시를 재사용합니다. GPU 할당이 어려우면 명시된 기록 분석 모드로 핵심 활동을 진행하세요.
+    API 키·개인 파일 업로드·유료 업그레이드는 필요 없습니다.
+  - 같은 시작점에서 negative·CFG·steps 중 하나만 바꾸고 예상·관찰·설명의 한계를 기록합니다. 중간 미리보기의 차단 상태와 최종
+    생성 결과도 구별하세요.
+  - 마지막 W07A A/B 검증 통과 출력을 확인하고 웹 앱의 버튼·이미지·설정 JSON을 직접 확인하세요. 공유 URL은 현재 Colab 런타임
+    동안만 유지됩니다.
+  - 새 성적 반영 과제나 제출 기한은 없습니다. 활동은 먼저 직접 풀고 별도 복습 해설로 개념을 점검해 주세요.
+  notion_url: https://fancy-ballcap-a15.notion.site/3f67fd00109f8154b3b9f41c58684dbb
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

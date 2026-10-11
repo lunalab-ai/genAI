@@ -1,0 +1,27 @@
+source: course/notion/w07a/w07a-workbook.md
+provenance: 기록지의 복습 점검8문항과 정확히 대응하는 공개 개념 해설. A1–B5 활동의 완성 코드·상세 교수자 풀이와는 별도.
+items:
+- question: 샘플링에서 U-Net의 가중치와 잠재 상태 중 무엇이 갱신되는가?
+  answer: 잠재 상태가 갱신된다. 학습된 U-Net 가중치는 고정되며 loss/backward/optimizer로 모수를 바꾸지 않는다. 같은
+    모델을 여러 번 사용하는 계산과 학습은 다르다.
+- question: U-Net의 출력과 scheduler.step의 출력은 어떻게 다른가?
+  answer: U-Net은 현재 latent와 시점·조건에서 잡음을 예측한다. scheduler.step은 그 예측과 단계 계수를 이용해 다음
+    latent를 계산한다. 두 출력의 shape가 같을 수 있어도 의미는 다르다.
+- question: CFG에서 negative와 positive 갈래에 같은 latent를 넣는 이유는 무엇인가?
+  answer: 동일한 현재 상태에서 텍스트 조건만 달리해야 두 예측의 차이를 조건 차이로 읽을 수 있다. 서로 다른 latent를 넣으면 상태
+    차이도 섞인다. 같은 가중치의 U-Net을 두 조건에 사용한다.
+- question: seed 변수를 선언했는데도 같은 결과가 나오지 않을 수 있는 이유는 무엇인가?
+  answer: seed 변수가 randn의 Generator에 연결되지 않을 수 있다. 같은 Generator를 연속 사용하면 상태가 소비되어
+    다른 난수가 나온다. 새 Generator를 같은 seed로 초기화하거나 초기 latent를 복사하고 다른 설정·환경도 통제한다.
+- question: negative prompt가 특정 색이나 객체의 제거를 보장하지 않는 이유는 무엇인가?
+  answer: negative 문장은 CFG의 기준 잡음 예측을 바꾼다. 특정 픽셀이나 객체를 반드시 삭제하는 규칙은 아니다. 최종 결과는 모델과
+    프롬프트·seed·설정에 좌우되며 이번 negative-red 예에서도 붉은색이 남았다.
+- question: 중간 noisy latent 직접 복원과 예측 x0 미리보기는 같은가?
+  answer: 다르다. 직접 복원은 아직 잡음이 포함된 현재 z를 VAE에 넣는 것이고 x0 미리보기는 잡음 예측과 계수로 깨끗한 상태를 추정한
+    뒤 복원하는 것이다. 차단된 preview를 정상적인 검은 이미지로 해석하지 않는다.
+- question: 메타데이터 공개와 원이미지의 이용 조건을 구별해야 하는 이유는 무엇인가?
+  answer: URL·캡션 목록에 대한 조건과 그 URL의 원이미지에 대한 조건은 다르다. 접근 가능성을 무제한 사용 허가로 바꾸어 읽을 수 없다.
+    코드·가중치·데이터 설명과 원출처 조건을 각각 확인한다.
+- question: Gradio 입력 위젯의 순서와 함수 인자의 순서가 어긋나면 어떤 문제가 생기는가?
+  answer: 위젯 값이 잘못된 인자로 전달되어 설정이 뒤바뀌거나 타입 오류가 생긴다. inputs 순서와 함수 인자, 반환값 순서·개수와 outputs를
+    대응시키고 작은 함수 호출을 먼저 검사한다.

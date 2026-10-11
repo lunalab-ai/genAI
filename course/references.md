@@ -401,3 +401,35 @@ https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w06b/no
 https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w06b/notebooks/student/w06b_stable_diffusion.ipynb
 
 https://github.com/lunalab-ai/genAI/blob/2026-fall-w06b/src/W06B-API.md
+
+## 스테이블 디퓨전 샘플링 루프와 오픈 모델·Gradio 실습
+
+[강의 원문](../course/notion/w07a/w07a-sampling.md)
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w07a/src/W07A-API.md
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w07a/src/luna_genai/sampling.py
+
+https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/text2img
+
+https://huggingface.co/docs/diffusers/using-diffusers/reusing_seeds
+
+https://huggingface.co/docs/diffusers/using-diffusers/write_own_pipeline
+
+[강의 원문](../course/notion/w07a/w07a-open-models.md)
+
+https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
+
+https://laion.ai/blog/laion-5b/
+
+https://laion.ai/blog/relaion-5b/
+
+[강의 원문](../course/notion/w07a/w07a-app.md)
+
+https://github.com/gradio-app/gradio/blob/main/guides/01_getting-started/01_quickstart.md
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w07a/src/W07A-API.md
+
+[강의 원문](../course/notion/w07a/w07a-workbook.md)
+
+[강의 원문](../course/notion/w07a/w07a-map.md)
