@@ -1,9 +1,21 @@
 """Shared course APIs; importing this module does not download a model."""
 from .data import load_reviews
-from .probability import filtered_distribution, distribution_table
-from .model import LanguageModelLab, MODEL_ID, MODEL_REVISION
+__version__ = "0.1.12"
 
-__version__ = "0.1.11"
+def __getattr__(name):
+    """Load optional model dependencies only when the existing API is requested.
+
+    W07B pure-Python review imports require no torch/transformers. Existing
+    ``from luna_genai import LanguageModelLab`` and probability APIs are preserved.
+    """
+    from importlib import import_module
+    modules = {"filtered_distribution": ".probability", "distribution_table": ".probability",
+               "LanguageModelLab": ".model", "MODEL_ID": ".model", "MODEL_REVISION": ".model"}
+    if name not in modules:
+        raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+    value = getattr(import_module(modules[name], __name__), name)
+    globals()[name] = value
+    return value
 
 def build_app(lab=None):
     """이미 준비한 lab을 연결한 Gradio Blocks 객체를 반환한다.

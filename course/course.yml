@@ -238,6 +238,26 @@ sessions:
     동안만 유지됩니다.
   - 새 성적 반영 과제나 제출 기한은 없습니다. 활동은 먼저 직접 풀고 별도 복습 해설로 개념을 점검해 주세요.
   notion_url: https://fancy-ballcap-a15.notion.site/3f67fd00109f8154b3b9f41c58684dbb
+- id: w07b
+  date: '2026-10-14'
+  title: '중간고사 대비 복습 ①: 생성형 AI·언어 모델·트랜스포머·AE 기초 80문항'
+  pages:
+  - course/notion/w07b/w07b-review.md
+  - course/notion/w07b/w07b-questions.md
+  labs:
+  - notebooks/student/w07b_review_a.ipynb
+  - notebooks/student/w07b_review_b.ipynb
+  runtime_label: CPU · 기본 Python · 80문항 복습 · Gradio
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w07b/notebooks/student/w07b_review_a.ipynb
+  announcement_guidance:
+  - 1~4주차 실제 진도를 차근차근 복습합니다. AE는 개념·기본 구조까지입니다.
+  - 80문항(일반52/Python28)은 수업과 자율 복습용입니다. 답뿐 아니라 조건·과정·이유를 적어 주세요.
+  - '실습 B: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w07b/notebooks/student/w07b_review_b.ipynb'
+  - 두 노트북은 각각 새 사본에서 첫 셀부터 독립 실행합니다. CPU 기본, API키·GPU·대형모델·파일 업로드가 필요 없습니다.
+  - 마지막 웹 앱에서 한 조건씩 바꾸고 함수 정의 바로가기를 확인하세요. 공유 URL은 현재 런타임 동안 유지됩니다.
+  - 중간고사는 자료의 문제를 조금씩 변형하여 출제할 예정입니다. 숫자보다 풀이 원리를 이해해 주세요.
+  - 다음 복습은10월20일,5주차~7주차1차시입니다. 별도 성적 과제나 새 제출 기한은 없습니다.
+  notion_url: https://fancy-ballcap-a15.notion.site/W07b-1-4-80-3f87fd00109f81cca2d1d0f9a7016ba5
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

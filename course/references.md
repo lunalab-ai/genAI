@@ -433,3 +433,27 @@ https://github.com/lunalab-ai/genAI/blob/2026-fall-w07a/src/W07A-API.md
 [강의 원문](../course/notion/w07a/w07a-workbook.md)
 
 [강의 원문](../course/notion/w07a/w07a-map.md)
+
+## 중간고사 대비 복습 ①: 생성형 AI·언어 모델·트랜스포머·AE 기초 80문항
+
+[강의 원문](../course/notion/w07b/w07b-review.md)
+
+https://arxiv.org/html/1706.03762v7
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w07b/notebooks/student/w07b_review_a.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w07b/notebooks/student/w07b_review_b.ipynb
+
+https://docs.python.org/3.13/library/math.html
+
+https://docs.python.org/3.13/tutorial/datastructures.html
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w07b/src/W07B-API.md
+
+https://huggingface.co/docs/transformers/main/en/generation_strategies
+
+https://huggingface.co/docs/transformers/main/en/tokenizer_summary
+
+https://www.deeplearningbook.org/contents/autoencoders.html
+
+[강의 원문](../course/notion/w07b/w07b-questions.md)
