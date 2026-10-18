@@ -190,7 +190,15 @@ def build_review_app(summary_fn: Summary | None = None) -> Any:
             button.click(lambda s:sampling_view(s,summary_fn),[guidance],[table,report,plot],api_name='sampling')
             gr.Markdown('### 기존 실제 SD 기록 읽기\n파일 해시를 확인해 저장된 결과를 엽니다. 현재 모델을 불러오거나 새 이미지를 생성하지 않습니다.')
             key=gr.Dropdown(['base','negative-red','cfg-4','steps-10'],value='base',label='기존 기록');button=gr.Button('검증된 기록 열기')
-            trace=gr.Dataframe(headers=['step','input_t','next_t','latent RMS 전','latent RMS 후'],interactive=False);report=gr.Markdown();picture=gr.Image(label='기존 실제 실행의 최종 이미지',interactive=False)
-            button.click(lambda k:recorded_view(k,summary_fn),[key],[trace,report,picture],api_name='recorded')
+            trace=gr.Dataframe(headers=['step','input_t','next_t','latent RMS 전','latent RMS 후'],interactive=False);report=gr.Markdown();picture=gr.Image(label='기존 실제 실행의 최종 이미지',interactive=False,format='png')
+            button.click(lambda k:_recorded_image_view(k,summary_fn),[key],[trace,report,picture],api_name='recorded')
         gr.Markdown('Q60의 my_summary 함수는 현재 실행 모드·바꾼 조건·관찰·한계를 연결합니다. 앱 기본 설명과 표를 근거로 본인의 해석을 덧붙이세요. 공유 주소는 현재 런타임이 유지되는 동안 사용합니다.')
     return app
+
+
+def _recorded_image_view(run_key: str, summary_fn: Summary | None = None) -> tuple:
+    """검증된 기록을 이미지로 복사해 Gradio의 자체 캐시에 전달한다."""
+    from PIL import Image
+    rows, report, image_path = recorded_view(run_key, summary_fn)
+    with Image.open(image_path) as picture:
+        return rows, report, picture.copy()

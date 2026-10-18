@@ -1,0 +1,612 @@
+{
+  "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+  "generated_by": "build_sd_records.py",
+  "package_versions": {
+    "torch": "2.8.0+cpu",
+    "diffusers": "0.40.0",
+    "transformers": "5.15.1"
+  },
+  "gallery": [
+    {
+      "key": "cfg-1",
+      "file": "sd-cfg-1.png",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "seed": 42,
+      "guidance_scale": 1.0,
+      "steps": 20,
+      "scheduler": "DDIMScheduler",
+      "height": 512,
+      "width": 512,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "seconds": 92.49879340000916,
+      "safety_checked": true,
+      "mode": "live generation"
+    },
+    {
+      "key": "cfg-4",
+      "file": "sd-cfg-4.png",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "seed": 42,
+      "guidance_scale": 4.0,
+      "steps": 20,
+      "scheduler": "DDIMScheduler",
+      "height": 512,
+      "width": 512,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "seconds": 196.07288930000504,
+      "safety_checked": true,
+      "mode": "live generation"
+    },
+    {
+      "key": "cfg-7.5",
+      "file": "sd-cfg-7.5.png",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "seed": 42,
+      "guidance_scale": 7.5,
+      "steps": 20,
+      "scheduler": "DDIMScheduler",
+      "height": 512,
+      "width": 512,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "seconds": 214.36539859999903,
+      "safety_checked": true,
+      "mode": "live generation"
+    },
+    {
+      "key": "cfg-12",
+      "file": "sd-cfg-12.png",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "seed": 42,
+      "guidance_scale": 12.0,
+      "steps": 20,
+      "scheduler": "DDIMScheduler",
+      "height": 512,
+      "width": 512,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "seconds": 214.62683870003093,
+      "safety_checked": true,
+      "mode": "live generation"
+    },
+    {
+      "key": "blue",
+      "file": "sd-blue.png",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a blue ceramic mug on a white table",
+      "seed": 42,
+      "guidance_scale": 7.5,
+      "steps": 20,
+      "scheduler": "DDIMScheduler",
+      "height": 512,
+      "width": 512,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "seconds": 215.10346720000962,
+      "safety_checked": true,
+      "mode": "live generation"
+    },
+    {
+      "key": "seed-43",
+      "file": "sd-seed-43.png",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "seed": 43,
+      "guidance_scale": 7.5,
+      "steps": 20,
+      "scheduler": "DDIMScheduler",
+      "height": 512,
+      "width": 512,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "seconds": 154.68861809995724,
+      "safety_checked": true,
+      "mode": "live generation"
+    }
+  ],
+  "tokens": [
+    {
+      "position": 0,
+      "token_id": 49406,
+      "token": "<|startoftext|>",
+      "is_padding": false
+    },
+    {
+      "position": 1,
+      "token_id": 320,
+      "token": "a</w>",
+      "is_padding": false
+    },
+    {
+      "position": 2,
+      "token_id": 3155,
+      "token": "studio</w>",
+      "is_padding": false
+    },
+    {
+      "position": 3,
+      "token_id": 8853,
+      "token": "photograph</w>",
+      "is_padding": false
+    },
+    {
+      "position": 4,
+      "token_id": 539,
+      "token": "of</w>",
+      "is_padding": false
+    },
+    {
+      "position": 5,
+      "token_id": 320,
+      "token": "a</w>",
+      "is_padding": false
+    },
+    {
+      "position": 6,
+      "token_id": 736,
+      "token": "red</w>",
+      "is_padding": false
+    },
+    {
+      "position": 7,
+      "token_id": 15112,
+      "token": "ceramic</w>",
+      "is_padding": false
+    },
+    {
+      "position": 8,
+      "token_id": 9722,
+      "token": "mug</w>",
+      "is_padding": false
+    },
+    {
+      "position": 9,
+      "token_id": 525,
+      "token": "on</w>",
+      "is_padding": false
+    },
+    {
+      "position": 10,
+      "token_id": 320,
+      "token": "a</w>",
+      "is_padding": false
+    },
+    {
+      "position": 11,
+      "token_id": 1579,
+      "token": "white</w>",
+      "is_padding": false
+    },
+    {
+      "position": 12,
+      "token_id": 2175,
+      "token": "table</w>",
+      "is_padding": false
+    },
+    {
+      "position": 13,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": false
+    },
+    {
+      "position": 14,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 15,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 16,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 17,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 18,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 19,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 20,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 21,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 22,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 23,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 24,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 25,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 26,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 27,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 28,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 29,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 30,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 31,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 32,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 33,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 34,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 35,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 36,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 37,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 38,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 39,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 40,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 41,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 42,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 43,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 44,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 45,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 46,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 47,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 48,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 49,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 50,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 51,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 52,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 53,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 54,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 55,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 56,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 57,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 58,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 59,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 60,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 61,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 62,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 63,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 64,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 65,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 66,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 67,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 68,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 69,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 70,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 71,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 72,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 73,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 74,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 75,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    },
+    {
+      "position": 76,
+      "token_id": 49407,
+      "token": "<|endoftext|>",
+      "is_padding": true
+    }
+  ],
+  "unpadded_length": 14,
+  "component_probe": {
+    "timestep": 500,
+    "input_shape": [
+      1,
+      4,
+      64,
+      64
+    ],
+    "prompt": "a studio photograph of a red ceramic mug on a white table",
+    "note": "Direct noise predictions at a fixed synthetic Gaussian latent, not extracted attention weights"
+  },
+  "vae": {
+    "scaling_factor": 0.18215,
+    "mse": 0.0001294952817261219,
+    "posterior": "mode",
+    "source": "sd-cfg-7.5.png"
+  },
+  "files": {
+    "sd-cfg-1.png": "57572ab47272b0afa0bcf3b49ce93e7f92097743810eb4fe0e6152a422051bce",
+    "sd-cfg-4.png": "87af16ea97f761dc8876c3b21a1be5ef8de4e33583d4ee198395af7a40591638",
+    "sd-cfg-7.5.png": "31111de4898a7666beab41663f2c8f7346486c9489068dff4600801644fb8d24",
+    "sd-cfg-12.png": "47318a1644b76957e6ec5a40279d613a6718ecd3d11fafff55c91d39c6dd6ce2",
+    "sd-blue.png": "7462039b768193404d38e243865237ea637317b35a91fbf861c47bdce6fceb7d",
+    "sd-seed-43.png": "dd25dc34983cd0b645820481166d2549dc5c534c5da46c43e33abd3aa6a11055",
+    "sd-tensors.npz": "2d2e495172950738261ce2e58d6de93f69f1c82841f2a9272de1c720567fe5c9"
+  },
+  "limitations": "Six actual CPU float32 images, not a quality benchmark. Recorded mode never runs SD. Cross-device numerical identity is not promised."
+}

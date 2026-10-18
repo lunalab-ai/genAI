@@ -1,0 +1,19 @@
+{
+  "provenance": "Original synthetic movie reviews written for this course. Not IMDb or publisher data.",
+  "examples": [
+    {"id":"s1","review":"The story was warm and I enjoyed every scene.","label":"positive"},
+    {"id":"s2","review":"The plot was dull and the ending made no sense.","label":"negative"}
+  ],
+  "development": [
+    {"id":"d1","review":"Wonderful acting made this a lovely evening.","label":"positive"},
+    {"id":"d2","review":"The film wasted my time with a boring story.","label":"negative"},
+    {"id":"d3","review":"The slow opening led to a beautiful final scene.","label":"positive"},
+    {"id":"d4","review":"Great costumes could not save the awful dialogue.","label":"negative"}
+  ],
+  "evaluation": [
+    {"id":"e1","review":"I would happily watch this delightful film again.","label":"positive"},
+    {"id":"e2","review":"The jokes felt tired and I wanted it to end.","label":"negative"},
+    {"id":"e3","review":"Not a bad movie; the final scene made me smile.","label":"positive"},
+    {"id":"e4","review":"The trailer promised fun, but the film disappointed me.","label":"negative"}
+  ]
+}

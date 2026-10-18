@@ -1,0 +1,1063 @@
+{
+  "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+  "created_at": "2026-10-11T22:23:40Z",
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu130",
+    "diffusers": "0.40.0",
+    "transformers": "5.15.1",
+    "device": "Tesla T4"
+  },
+  "runs": [
+    {
+      "key": "base",
+      "file": "base.png",
+      "frames": [
+        {
+          "file": "base-step-1.png",
+          "step": 1,
+          "input_t": 951,
+          "safety_status": "blocked preview (black image)"
+        },
+        {
+          "file": "base-step-6.png",
+          "step": 6,
+          "input_t": 701,
+          "safety_status": "blocked preview (black image)"
+        },
+        {
+          "file": "base-step-11.png",
+          "step": 11,
+          "input_t": 451,
+          "safety_status": "passed"
+        },
+        {
+          "file": "base-step-16.png",
+          "step": 16,
+          "input_t": 201,
+          "safety_status": "passed"
+        },
+        {
+          "file": "base-step-20.png",
+          "step": 20,
+          "input_t": 1,
+          "safety_status": "passed"
+        }
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "input_t": 951,
+          "next_t": 901,
+          "latent_rms_before": 1.0040324926376343,
+          "latent_rms_after": 1.001664638519287,
+          "negative_mean": 0.004702460952103138,
+          "positive_mean": 0.005042226519435644,
+          "guided_rms": 1.0107131004333496
+        },
+        {
+          "step": 2,
+          "input_t": 901,
+          "next_t": 851,
+          "latent_rms_before": 1.001664638519287,
+          "latent_rms_after": 0.9981759786605835,
+          "negative_mean": 0.0038303192704916,
+          "positive_mean": 0.00423342315480113,
+          "guided_rms": 1.0179709196090698
+        },
+        {
+          "step": 3,
+          "input_t": 851,
+          "next_t": 801,
+          "latent_rms_before": 0.9981759786605835,
+          "latent_rms_after": 0.9950687885284424,
+          "negative_mean": 0.0033949590288102627,
+          "positive_mean": 0.0032430808059871197,
+          "guided_rms": 1.0217041969299316
+        },
+        {
+          "step": 4,
+          "input_t": 801,
+          "next_t": 751,
+          "latent_rms_before": 0.9950687885284424,
+          "latent_rms_after": 0.9900947213172913,
+          "negative_mean": 0.0025062127970159054,
+          "positive_mean": 0.0020015565678477287,
+          "guided_rms": 1.0032063722610474
+        },
+        {
+          "step": 5,
+          "input_t": 751,
+          "next_t": 701,
+          "latent_rms_before": 0.9900947213172913,
+          "latent_rms_after": 0.9832143783569336,
+          "negative_mean": 0.0019841832108795643,
+          "positive_mean": 0.001599503681063652,
+          "guided_rms": 1.002506971359253
+        },
+        {
+          "step": 6,
+          "input_t": 701,
+          "next_t": 651,
+          "latent_rms_before": 0.9832143783569336,
+          "latent_rms_after": 0.9747148156166077,
+          "negative_mean": 0.0015953397378325462,
+          "positive_mean": 0.0013411645777523518,
+          "guided_rms": 0.9985219836235046
+        },
+        {
+          "step": 7,
+          "input_t": 651,
+          "next_t": 601,
+          "latent_rms_before": 0.9747148156166077,
+          "latent_rms_after": 0.9640344977378845,
+          "negative_mean": 0.0013633077032864094,
+          "positive_mean": 0.0012225979007780552,
+          "guided_rms": 0.9959486126899719
+        },
+        {
+          "step": 8,
+          "input_t": 601,
+          "next_t": 551,
+          "latent_rms_before": 0.9640344977378845,
+          "latent_rms_after": 0.951057493686676,
+          "negative_mean": 0.0011792993173003197,
+          "positive_mean": 0.0012281257659196854,
+          "guided_rms": 0.992467999458313
+        },
+        {
+          "step": 9,
+          "input_t": 551,
+          "next_t": 501,
+          "latent_rms_before": 0.951057493686676,
+          "latent_rms_after": 0.9357956051826477,
+          "negative_mean": 0.0011510956101119518,
+          "positive_mean": 0.0011621760204434395,
+          "guided_rms": 0.9879683256149292
+        },
+        {
+          "step": 10,
+          "input_t": 501,
+          "next_t": 451,
+          "latent_rms_before": 0.9357956051826477,
+          "latent_rms_after": 0.9182415008544922,
+          "negative_mean": 0.0010577226057648659,
+          "positive_mean": 0.001089639961719513,
+          "guided_rms": 0.9832213521003723
+        },
+        {
+          "step": 11,
+          "input_t": 451,
+          "next_t": 401,
+          "latent_rms_before": 0.9182415008544922,
+          "latent_rms_after": 0.8986940383911133,
+          "negative_mean": 0.0009171105921268463,
+          "positive_mean": 0.0009514717385172844,
+          "guided_rms": 0.976860761642456
+        },
+        {
+          "step": 12,
+          "input_t": 401,
+          "next_t": 351,
+          "latent_rms_before": 0.8986940383911133,
+          "latent_rms_after": 0.8774340748786926,
+          "negative_mean": 0.0008032401092350483,
+          "positive_mean": 0.0007924707606434822,
+          "guided_rms": 0.9704682230949402
+        },
+        {
+          "step": 13,
+          "input_t": 351,
+          "next_t": 301,
+          "latent_rms_before": 0.8774340748786926,
+          "latent_rms_after": 0.8551845550537109,
+          "negative_mean": 0.0006741872057318687,
+          "positive_mean": 0.0007229363545775414,
+          "guided_rms": 0.9607617259025574
+        },
+        {
+          "step": 14,
+          "input_t": 301,
+          "next_t": 251,
+          "latent_rms_before": 0.8551845550537109,
+          "latent_rms_after": 0.8322901129722595,
+          "negative_mean": 0.0006769555620849133,
+          "positive_mean": 0.0006541777402162552,
+          "guided_rms": 0.9511978030204773
+        },
+        {
+          "step": 15,
+          "input_t": 251,
+          "next_t": 201,
+          "latent_rms_before": 0.8322901129722595,
+          "latent_rms_after": 0.8094209432601929,
+          "negative_mean": 0.0006747045554220676,
+          "positive_mean": 0.000651143491268158,
+          "guided_rms": 0.9389473795890808
+        },
+        {
+          "step": 16,
+          "input_t": 201,
+          "next_t": 151,
+          "latent_rms_before": 0.8094209432601929,
+          "latent_rms_after": 0.7873824834823608,
+          "negative_mean": 0.0006659030914306641,
+          "positive_mean": 0.0006574951112270355,
+          "guided_rms": 0.9223893880844116
+        },
+        {
+          "step": 17,
+          "input_t": 151,
+          "next_t": 101,
+          "latent_rms_before": 0.7873824834823608,
+          "latent_rms_after": 0.7666655778884888,
+          "negative_mean": 0.0006768368184566498,
+          "positive_mean": 0.000746480654925108,
+          "guided_rms": 0.8991054892539978
+        },
+        {
+          "step": 18,
+          "input_t": 101,
+          "next_t": 51,
+          "latent_rms_before": 0.7666655778884888,
+          "latent_rms_after": 0.7473284006118774,
+          "negative_mean": 0.0008046180009841919,
+          "positive_mean": 0.0006933603435754776,
+          "guided_rms": 0.8651614189147949
+        },
+        {
+          "step": 19,
+          "input_t": 51,
+          "next_t": 1,
+          "latent_rms_before": 0.7473284006118774,
+          "latent_rms_after": 0.7246183753013611,
+          "negative_mean": 0.0006243200041353703,
+          "positive_mean": 0.0005701105110347271,
+          "guided_rms": 0.803382158279419
+        },
+        {
+          "step": 20,
+          "input_t": 1,
+          "next_t": null,
+          "latent_rms_before": 0.7246183753013611,
+          "latent_rms_after": 0.7242074012756348,
+          "negative_mean": -0.0013810640666633844,
+          "positive_mean": -0.001312684966251254,
+          "guided_rms": 0.4562661647796631
+        }
+      ],
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "negative_prompt": "",
+      "seed": 42,
+      "initial_sha256": "4fa813126adca84b299f55fa2bf4e5c1787cc87fefde384239928e70c6d28af1",
+      "guidance_scale": 7.5,
+      "steps": 20,
+      "scheduler": "DDIMScheduler",
+      "eta": 0,
+      "height": 512,
+      "width": 512,
+      "dtype": "torch.float16",
+      "device": "cuda:0",
+      "seconds": 4.510463688000073,
+      "mode": "live manual SD generation",
+      "safety_checked": true,
+      "negative_active": true,
+      "preview_kind": "direct decode of updated noisy latent; not predicted x0"
+    },
+    {
+      "key": "negative-red",
+      "file": "negative-red.png",
+      "frames": [
+        {
+          "file": "negative-red-step-1.png",
+          "step": 1,
+          "input_t": 951,
+          "safety_status": "blocked preview (black image)"
+        },
+        {
+          "file": "negative-red-step-6.png",
+          "step": 6,
+          "input_t": 701,
+          "safety_status": "blocked preview (black image)"
+        },
+        {
+          "file": "negative-red-step-11.png",
+          "step": 11,
+          "input_t": 451,
+          "safety_status": "passed"
+        },
+        {
+          "file": "negative-red-step-16.png",
+          "step": 16,
+          "input_t": 201,
+          "safety_status": "passed"
+        },
+        {
+          "file": "negative-red-step-20.png",
+          "step": 20,
+          "input_t": 1,
+          "safety_status": "passed"
+        }
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "input_t": 951,
+          "next_t": 901,
+          "latent_rms_before": 1.0040324926376343,
+          "latent_rms_after": 1.0014766454696655,
+          "negative_mean": 0.006106449291110039,
+          "positive_mean": 0.005042226519435644,
+          "guided_rms": 1.0097911357879639
+        },
+        {
+          "step": 2,
+          "input_t": 901,
+          "next_t": 851,
+          "latent_rms_before": 1.0014766454696655,
+          "latent_rms_after": 0.997955322265625,
+          "negative_mean": 0.006158655509352684,
+          "positive_mean": 0.004356437362730503,
+          "guided_rms": 1.0122095346450806
+        },
+        {
+          "step": 3,
+          "input_t": 851,
+          "next_t": 801,
+          "latent_rms_before": 0.997955322265625,
+          "latent_rms_after": 0.993735134601593,
+          "negative_mean": 0.004894488491117954,
+          "positive_mean": 0.004322409629821777,
+          "guided_rms": 1.0193102359771729
+        },
+        {
+          "step": 4,
+          "input_t": 801,
+          "next_t": 751,
+          "latent_rms_before": 0.993735134601593,
+          "latent_rms_after": 0.9876314401626587,
+          "negative_mean": 0.004447229206562042,
+          "positive_mean": 0.0036871694028377533,
+          "guided_rms": 1.0065639019012451
+        },
+        {
+          "step": 5,
+          "input_t": 751,
+          "next_t": 701,
+          "latent_rms_before": 0.9876314401626587,
+          "latent_rms_after": 0.9800059199333191,
+          "negative_mean": 0.0038269166834652424,
+          "positive_mean": 0.0032595940865576267,
+          "guided_rms": 1.0024617910385132
+        },
+        {
+          "step": 6,
+          "input_t": 701,
+          "next_t": 651,
+          "latent_rms_before": 0.9800059199333191,
+          "latent_rms_after": 0.9707823991775513,
+          "negative_mean": 0.003258263226598501,
+          "positive_mean": 0.0029157493263483047,
+          "guided_rms": 0.9976731538772583
+        },
+        {
+          "step": 7,
+          "input_t": 651,
+          "next_t": 601,
+          "latent_rms_before": 0.9707823991775513,
+          "latent_rms_after": 0.9593560695648193,
+          "negative_mean": 0.0028172051534056664,
+          "positive_mean": 0.00258863577619195,
+          "guided_rms": 0.9944624900817871
+        },
+        {
+          "step": 8,
+          "input_t": 601,
+          "next_t": 551,
+          "latent_rms_before": 0.9593560695648193,
+          "latent_rms_after": 0.9457291960716248,
+          "negative_mean": 0.0024670297279953957,
+          "positive_mean": 0.002333889715373516,
+          "guided_rms": 0.9894337058067322
+        },
+        {
+          "step": 9,
+          "input_t": 551,
+          "next_t": 501,
+          "latent_rms_before": 0.9457291960716248,
+          "latent_rms_after": 0.9296993017196655,
+          "negative_mean": 0.002248348668217659,
+          "positive_mean": 0.0021651294082403183,
+          "guided_rms": 0.984711766242981
+        },
+        {
+          "step": 10,
+          "input_t": 501,
+          "next_t": 451,
+          "latent_rms_before": 0.9296993017196655,
+          "latent_rms_after": 0.9112519025802612,
+          "negative_mean": 0.0021030339412391186,
+          "positive_mean": 0.0019885082729160786,
+          "guided_rms": 0.9802127480506897
+        },
+        {
+          "step": 11,
+          "input_t": 451,
+          "next_t": 401,
+          "latent_rms_before": 0.9112519025802612,
+          "latent_rms_after": 0.8907903432846069,
+          "negative_mean": 0.001974221784621477,
+          "positive_mean": 0.0018573859706521034,
+          "guided_rms": 0.9730343222618103
+        },
+        {
+          "step": 12,
+          "input_t": 401,
+          "next_t": 351,
+          "latent_rms_before": 0.8907903432846069,
+          "latent_rms_after": 0.8685404658317566,
+          "negative_mean": 0.0018517128191888332,
+          "positive_mean": 0.0017581470310688019,
+          "guided_rms": 0.9660416841506958
+        },
+        {
+          "step": 13,
+          "input_t": 351,
+          "next_t": 301,
+          "latent_rms_before": 0.8685404658317566,
+          "latent_rms_after": 0.8451168537139893,
+          "negative_mean": 0.0016765901818871498,
+          "positive_mean": 0.0016093547455966473,
+          "guided_rms": 0.9565772414207458
+        },
+        {
+          "step": 14,
+          "input_t": 301,
+          "next_t": 251,
+          "latent_rms_before": 0.8451168537139893,
+          "latent_rms_after": 0.821174144744873,
+          "negative_mean": 0.0015860917046666145,
+          "positive_mean": 0.0015059704892337322,
+          "guided_rms": 0.9449586272239685
+        },
+        {
+          "step": 15,
+          "input_t": 251,
+          "next_t": 201,
+          "latent_rms_before": 0.821174144744873,
+          "latent_rms_after": 0.7972425222396851,
+          "negative_mean": 0.0015239305794239044,
+          "positive_mean": 0.001376943662762642,
+          "guided_rms": 0.9327939748764038
+        },
+        {
+          "step": 16,
+          "input_t": 201,
+          "next_t": 151,
+          "latent_rms_before": 0.7972425222396851,
+          "latent_rms_after": 0.7741349935531616,
+          "negative_mean": 0.001418899279087782,
+          "positive_mean": 0.0013430630788207054,
+          "guided_rms": 0.9153299927711487
+        },
+        {
+          "step": 17,
+          "input_t": 151,
+          "next_t": 101,
+          "latent_rms_before": 0.7741349935531616,
+          "latent_rms_after": 0.7523264288902283,
+          "negative_mean": 0.0014130230993032455,
+          "positive_mean": 0.0013248254545032978,
+          "guided_rms": 0.8925126791000366
+        },
+        {
+          "step": 18,
+          "input_t": 101,
+          "next_t": 51,
+          "latent_rms_before": 0.7523264288902283,
+          "latent_rms_after": 0.7318698763847351,
+          "negative_mean": 0.001300722360610962,
+          "positive_mean": 0.0012362669222056866,
+          "guided_rms": 0.8578506708145142
+        },
+        {
+          "step": 19,
+          "input_t": 51,
+          "next_t": 1,
+          "latent_rms_before": 0.7318698763847351,
+          "latent_rms_after": 0.7076994180679321,
+          "negative_mean": 0.0011557256802916527,
+          "positive_mean": 0.0010848697274923325,
+          "guided_rms": 0.7938516736030579
+        },
+        {
+          "step": 20,
+          "input_t": 1,
+          "next_t": null,
+          "latent_rms_before": 0.7076994180679321,
+          "latent_rms_after": 0.7073122262954712,
+          "negative_mean": -0.0010057585313916206,
+          "positive_mean": -0.0010091030271723866,
+          "guided_rms": 0.4469439685344696
+        }
+      ],
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "negative_prompt": "red",
+      "seed": 42,
+      "initial_sha256": "4fa813126adca84b299f55fa2bf4e5c1787cc87fefde384239928e70c6d28af1",
+      "guidance_scale": 7.5,
+      "steps": 20,
+      "scheduler": "DDIMScheduler",
+      "eta": 0,
+      "height": 512,
+      "width": 512,
+      "dtype": "torch.float16",
+      "device": "cuda:0",
+      "seconds": 4.498170074999962,
+      "mode": "live manual SD generation",
+      "safety_checked": true,
+      "negative_active": true,
+      "preview_kind": "direct decode of updated noisy latent; not predicted x0"
+    },
+    {
+      "key": "cfg-4",
+      "file": "cfg-4.png",
+      "frames": [
+        {
+          "file": "cfg-4-step-1.png",
+          "step": 1,
+          "input_t": 951,
+          "safety_status": "blocked preview (black image)"
+        },
+        {
+          "file": "cfg-4-step-6.png",
+          "step": 6,
+          "input_t": 701,
+          "safety_status": "blocked preview (black image)"
+        },
+        {
+          "file": "cfg-4-step-11.png",
+          "step": 11,
+          "input_t": 451,
+          "safety_status": "passed"
+        },
+        {
+          "file": "cfg-4-step-16.png",
+          "step": 16,
+          "input_t": 201,
+          "safety_status": "passed"
+        },
+        {
+          "file": "cfg-4-step-20.png",
+          "step": 20,
+          "input_t": 1,
+          "safety_status": "passed"
+        }
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "input_t": 951,
+          "next_t": 901,
+          "latent_rms_before": 1.0040324926376343,
+          "latent_rms_after": 1.0019209384918213,
+          "negative_mean": 0.004702460952103138,
+          "positive_mean": 0.005042226519435644,
+          "guided_rms": 1.006855845451355
+        },
+        {
+          "step": 2,
+          "input_t": 901,
+          "next_t": 851,
+          "latent_rms_before": 1.0019209384918213,
+          "latent_rms_after": 0.998806893825531,
+          "negative_mean": 0.0043335058726370335,
+          "positive_mean": 0.004750669933855534,
+          "guided_rms": 1.007758378982544
+        },
+        {
+          "step": 3,
+          "input_t": 851,
+          "next_t": 801,
+          "latent_rms_before": 0.998806893825531,
+          "latent_rms_after": 0.9939382672309875,
+          "negative_mean": 0.004335126839578152,
+          "positive_mean": 0.004804432857781649,
+          "guided_rms": 1.0096641778945923
+        },
+        {
+          "step": 4,
+          "input_t": 801,
+          "next_t": 751,
+          "latent_rms_before": 0.9939382672309875,
+          "latent_rms_after": 0.9878290891647339,
+          "negative_mean": 0.004918178077787161,
+          "positive_mean": 0.004162721335887909,
+          "guided_rms": 1.0084270238876343
+        },
+        {
+          "step": 5,
+          "input_t": 751,
+          "next_t": 701,
+          "latent_rms_before": 0.9878290891647339,
+          "latent_rms_after": 0.9792647361755371,
+          "negative_mean": 0.004005012102425098,
+          "positive_mean": 0.0032936274074018,
+          "guided_rms": 1.0040966272354126
+        },
+        {
+          "step": 6,
+          "input_t": 701,
+          "next_t": 651,
+          "latent_rms_before": 0.9792647361755371,
+          "latent_rms_after": 0.9683060646057129,
+          "negative_mean": 0.0033573308028280735,
+          "positive_mean": 0.002859598957002163,
+          "guided_rms": 1.0010287761688232
+        },
+        {
+          "step": 7,
+          "input_t": 651,
+          "next_t": 601,
+          "latent_rms_before": 0.9683060646057129,
+          "latent_rms_after": 0.95476895570755,
+          "negative_mean": 0.0028601186349987984,
+          "positive_mean": 0.002611827105283737,
+          "guided_rms": 0.9967511296272278
+        },
+        {
+          "step": 8,
+          "input_t": 601,
+          "next_t": 551,
+          "latent_rms_before": 0.95476895570755,
+          "latent_rms_after": 0.9383476376533508,
+          "negative_mean": 0.002435403410345316,
+          "positive_mean": 0.002368608955293894,
+          "guided_rms": 0.9924007058143616
+        },
+        {
+          "step": 9,
+          "input_t": 551,
+          "next_t": 501,
+          "latent_rms_before": 0.9383476376533508,
+          "latent_rms_after": 0.9189633131027222,
+          "negative_mean": 0.0020815287716686726,
+          "positive_mean": 0.0021117948926985264,
+          "guided_rms": 0.9873142838478088
+        },
+        {
+          "step": 10,
+          "input_t": 501,
+          "next_t": 451,
+          "latent_rms_before": 0.9189633131027222,
+          "latent_rms_after": 0.8965451717376709,
+          "negative_mean": 0.0019505354575812817,
+          "positive_mean": 0.0019363467581570148,
+          "guided_rms": 0.9826122522354126
+        },
+        {
+          "step": 11,
+          "input_t": 451,
+          "next_t": 401,
+          "latent_rms_before": 0.8965451717376709,
+          "latent_rms_after": 0.8713585138320923,
+          "negative_mean": 0.001714309211820364,
+          "positive_mean": 0.001748939510434866,
+          "guided_rms": 0.9766133427619934
+        },
+        {
+          "step": 12,
+          "input_t": 401,
+          "next_t": 351,
+          "latent_rms_before": 0.8713585138320923,
+          "latent_rms_after": 0.8437580466270447,
+          "negative_mean": 0.001552162691950798,
+          "positive_mean": 0.0015744715929031372,
+          "guided_rms": 0.970398485660553
+        },
+        {
+          "step": 13,
+          "input_t": 351,
+          "next_t": 301,
+          "latent_rms_before": 0.8437580466270447,
+          "latent_rms_after": 0.8145204782485962,
+          "negative_mean": 0.0014122077263891697,
+          "positive_mean": 0.0014217556454241276,
+          "guided_rms": 0.9611870050430298
+        },
+        {
+          "step": 14,
+          "input_t": 301,
+          "next_t": 251,
+          "latent_rms_before": 0.8145204782485962,
+          "latent_rms_after": 0.7843369245529175,
+          "negative_mean": 0.0012890445068478584,
+          "positive_mean": 0.0013087205588817596,
+          "guided_rms": 0.9508705735206604
+        },
+        {
+          "step": 15,
+          "input_t": 251,
+          "next_t": 201,
+          "latent_rms_before": 0.7843369245529175,
+          "latent_rms_after": 0.7539964914321899,
+          "negative_mean": 0.0011486783623695374,
+          "positive_mean": 0.0012047472409904003,
+          "guided_rms": 0.938133955001831
+        },
+        {
+          "step": 16,
+          "input_t": 201,
+          "next_t": 151,
+          "latent_rms_before": 0.7539964914321899,
+          "latent_rms_after": 0.7245174050331116,
+          "negative_mean": 0.0010700458660721779,
+          "positive_mean": 0.001120986882597208,
+          "guided_rms": 0.9196971654891968
+        },
+        {
+          "step": 17,
+          "input_t": 151,
+          "next_t": 101,
+          "latent_rms_before": 0.7245174050331116,
+          "latent_rms_after": 0.6965939402580261,
+          "negative_mean": 0.00104990741237998,
+          "positive_mean": 0.0010270299389958382,
+          "guided_rms": 0.895074188709259
+        },
+        {
+          "step": 18,
+          "input_t": 101,
+          "next_t": 51,
+          "latent_rms_before": 0.6965939402580261,
+          "latent_rms_after": 0.6704363822937012,
+          "negative_mean": 0.0009341808035969734,
+          "positive_mean": 0.0009675459004938602,
+          "guided_rms": 0.8597798347473145
+        },
+        {
+          "step": 19,
+          "input_t": 51,
+          "next_t": 1,
+          "latent_rms_before": 0.6704363822937012,
+          "latent_rms_after": 0.6407114863395691,
+          "negative_mean": 0.0007541966624557972,
+          "positive_mean": 0.0007895468734204769,
+          "guided_rms": 0.7938934564590454
+        },
+        {
+          "step": 20,
+          "input_t": 1,
+          "next_t": null,
+          "latent_rms_before": 0.6407114863395691,
+          "latent_rms_after": 0.6402430534362793,
+          "negative_mean": -0.0012323199771344662,
+          "positive_mean": -0.0012663817033171654,
+          "guided_rms": 0.44896456599235535
+        }
+      ],
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "negative_prompt": "",
+      "seed": 42,
+      "initial_sha256": "4fa813126adca84b299f55fa2bf4e5c1787cc87fefde384239928e70c6d28af1",
+      "guidance_scale": 4.0,
+      "steps": 20,
+      "scheduler": "DDIMScheduler",
+      "eta": 0,
+      "height": 512,
+      "width": 512,
+      "dtype": "torch.float16",
+      "device": "cuda:0",
+      "seconds": 4.670038911999882,
+      "mode": "live manual SD generation",
+      "safety_checked": true,
+      "negative_active": true,
+      "preview_kind": "direct decode of updated noisy latent; not predicted x0"
+    },
+    {
+      "key": "steps-10",
+      "file": "steps-10.png",
+      "frames": [
+        {
+          "file": "steps-10-step-1.png",
+          "step": 1,
+          "input_t": 901,
+          "safety_status": "blocked preview (black image)"
+        },
+        {
+          "file": "steps-10-step-3.png",
+          "step": 3,
+          "input_t": 701,
+          "safety_status": "blocked preview (black image)"
+        },
+        {
+          "file": "steps-10-step-6.png",
+          "step": 6,
+          "input_t": 401,
+          "safety_status": "passed"
+        },
+        {
+          "file": "steps-10-step-8.png",
+          "step": 8,
+          "input_t": 201,
+          "safety_status": "passed"
+        },
+        {
+          "file": "steps-10-step-10.png",
+          "step": 10,
+          "input_t": 1,
+          "safety_status": "passed"
+        }
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "input_t": 901,
+          "next_t": 801,
+          "latent_rms_before": 1.0040324926376343,
+          "latent_rms_after": 0.9946602582931519,
+          "negative_mean": 0.004667534027248621,
+          "positive_mean": 0.005199151113629341,
+          "guided_rms": 1.013878345489502
+        },
+        {
+          "step": 2,
+          "input_t": 801,
+          "next_t": 701,
+          "latent_rms_before": 0.9946602582931519,
+          "latent_rms_after": 0.9814045429229736,
+          "negative_mean": 0.003784208558499813,
+          "positive_mean": 0.004043400287628174,
+          "guided_rms": 1.0215953588485718
+        },
+        {
+          "step": 3,
+          "input_t": 701,
+          "next_t": 601,
+          "latent_rms_before": 0.9814045429229736,
+          "latent_rms_after": 0.9589269757270813,
+          "negative_mean": 0.002465964760631323,
+          "positive_mean": 0.0021656928583979607,
+          "guided_rms": 1.0200411081314087
+        },
+        {
+          "step": 4,
+          "input_t": 601,
+          "next_t": 501,
+          "latent_rms_before": 0.9589269757270813,
+          "latent_rms_after": 0.9257787466049194,
+          "negative_mean": 0.0014906646683812141,
+          "positive_mean": 0.0013253609649837017,
+          "guided_rms": 0.9939917325973511
+        },
+        {
+          "step": 5,
+          "input_t": 501,
+          "next_t": 401,
+          "latent_rms_before": 0.9257787466049194,
+          "latent_rms_after": 0.8825310468673706,
+          "negative_mean": 0.0012067523784935474,
+          "positive_mean": 0.0012055770494043827,
+          "guided_rms": 0.9820165634155273
+        },
+        {
+          "step": 6,
+          "input_t": 401,
+          "next_t": 301,
+          "latent_rms_before": 0.8825310468673706,
+          "latent_rms_after": 0.8319584131240845,
+          "negative_mean": 0.001017862930893898,
+          "positive_mean": 0.0010811062529683113,
+          "guided_rms": 0.966659426689148
+        },
+        {
+          "step": 7,
+          "input_t": 301,
+          "next_t": 201,
+          "latent_rms_before": 0.8319584131240845,
+          "latent_rms_after": 0.7785285115242004,
+          "negative_mean": 0.0010355589911341667,
+          "positive_mean": 0.0010452475398778915,
+          "guided_rms": 0.948387861251831
+        },
+        {
+          "step": 8,
+          "input_t": 201,
+          "next_t": 101,
+          "latent_rms_before": 0.7785285115242004,
+          "latent_rms_after": 0.7271488904953003,
+          "negative_mean": 0.0010378975421190262,
+          "positive_mean": 0.0010002530179917812,
+          "guided_rms": 0.9234318733215332
+        },
+        {
+          "step": 9,
+          "input_t": 101,
+          "next_t": 1,
+          "latent_rms_before": 0.7271488904953003,
+          "latent_rms_after": 0.6744005084037781,
+          "negative_mean": 0.0009175180457532406,
+          "positive_mean": 0.0009113550186157227,
+          "guided_rms": 0.8664879202842712
+        },
+        {
+          "step": 10,
+          "input_t": 1,
+          "next_t": null,
+          "latent_rms_before": 0.6744005084037781,
+          "latent_rms_after": 0.6740190982818604,
+          "negative_mean": -0.0017200224101543427,
+          "positive_mean": -0.0017308432143181562,
+          "guided_rms": 0.4697028696537018
+        }
+      ],
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "negative_prompt": "",
+      "seed": 42,
+      "initial_sha256": "4fa813126adca84b299f55fa2bf4e5c1787cc87fefde384239928e70c6d28af1",
+      "guidance_scale": 7.5,
+      "steps": 10,
+      "scheduler": "DDIMScheduler",
+      "eta": 0,
+      "height": 512,
+      "width": 512,
+      "dtype": "torch.float16",
+      "device": "cuda:0",
+      "seconds": 2.994282402999943,
+      "mode": "live manual SD generation",
+      "safety_checked": true,
+      "negative_active": true,
+      "preview_kind": "direct decode of updated noisy latent; not predicted x0"
+    }
+  ],
+  "parity": {
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "atol": 0.002,
+    "rtol": 0.002,
+    "passed": true,
+    "initial_sha256": "4fa813126adca84b299f55fa2bf4e5c1787cc87fefde384239928e70c6d28af1",
+    "settings": {
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "negative_prompt": "",
+      "seed": 42,
+      "initial_sha256": "4fa813126adca84b299f55fa2bf4e5c1787cc87fefde384239928e70c6d28af1",
+      "guidance_scale": 7.5,
+      "steps": 20,
+      "scheduler": "DDIMScheduler",
+      "eta": 0,
+      "height": 512,
+      "width": 512,
+      "dtype": "torch.float16",
+      "device": "cuda:0",
+      "seconds": 3.7810580370000935,
+      "mode": "live manual SD generation",
+      "safety_checked": true,
+      "negative_active": true,
+      "preview_kind": "direct decode of updated noisy latent; not predicted x0"
+    }
+  },
+  "parity_negative": {
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "atol": 0.002,
+    "rtol": 0.002,
+    "passed": true,
+    "initial_sha256": "4fa813126adca84b299f55fa2bf4e5c1787cc87fefde384239928e70c6d28af1",
+    "settings": {
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "negative_prompt": "red",
+      "seed": 42,
+      "initial_sha256": "4fa813126adca84b299f55fa2bf4e5c1787cc87fefde384239928e70c6d28af1",
+      "guidance_scale": 7.5,
+      "steps": 4,
+      "scheduler": "DDIMScheduler",
+      "eta": 0,
+      "height": 512,
+      "width": 512,
+      "dtype": "torch.float16",
+      "device": "cuda:0",
+      "seconds": 1.011206083999923,
+      "mode": "live manual SD generation",
+      "safety_checked": true,
+      "negative_active": true,
+      "preview_kind": "direct decode of updated noisy latent; not predicted x0"
+    }
+  },
+  "parity_cfg_one": {
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "atol": 0.002,
+    "rtol": 0.002,
+    "passed": true,
+    "initial_sha256": "4fa813126adca84b299f55fa2bf4e5c1787cc87fefde384239928e70c6d28af1",
+    "settings": {
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "prompt": "a studio photograph of a red ceramic mug on a white table",
+      "negative_prompt": "red",
+      "seed": 42,
+      "initial_sha256": "4fa813126adca84b299f55fa2bf4e5c1787cc87fefde384239928e70c6d28af1",
+      "guidance_scale": 1.0,
+      "steps": 4,
+      "scheduler": "DDIMScheduler",
+      "eta": 0,
+      "height": 512,
+      "width": 512,
+      "dtype": "torch.float16",
+      "device": "cuda:0",
+      "seconds": 0.9113832409998395,
+      "mode": "live manual SD generation",
+      "safety_checked": true,
+      "negative_active": false,
+      "preview_kind": "direct decode of updated noisy latent; not predicted x0"
+    }
+  },
+  "weights_sha256_before": "774e03a33428cf9f37d3e5a66deea782b30daa6053a44f8565553cb4af302d47",
+  "weights_sha256_after": "774e03a33428cf9f37d3e5a66deea782b30daa6053a44f8565553cb4af302d47",
+  "source_hashes": {
+    "sampling.py": "bfe4e7c25d539c8aa7272ab69129ae9c1bbd9d4584120eba573fddf0e739cbb1",
+    "stable_diffusion.py": "29e0986cb05c825d6e66f7567307322d8a0a2b971f37491b92ace1a96455d545"
+  },
+  "provenance": "Actual manual SD1.5 generation on Colab T4; see private validation notebook.",
+  "files": {
+    "sampling-tensors.npz": "d9a8e31add48ce0d13ae5f86cc3afe87ad507161ac7b9568f805316017d10d37",
+    "steps-10-step-3.png": "e9c4a470ad900801f7de4f9402eb27af8a1cc00eac80d618ef16bac39fb27d33",
+    "cfg-4-step-20.png": "d42afbd24ddc996b62933484908fe1c0653283a2f91cb433028592966b5e5e33",
+    "negative-red-step-11.png": "7bb9d2bc5d04f9fd0d8f611e08ce3c4ebce63cb1a6c229dbea996656389a87e9",
+    "cfg-4-step-11.png": "ddac718af47a9f8a67df3276fe16efaab19d532315986f757d721fb3f4a82f22",
+    "cfg-4.png": "d42afbd24ddc996b62933484908fe1c0653283a2f91cb433028592966b5e5e33",
+    "cfg-4-step-1.png": "e9c4a470ad900801f7de4f9402eb27af8a1cc00eac80d618ef16bac39fb27d33",
+    "steps-10-step-6.png": "d629082aa4643da53fbdfa6b5a744126d3531b3af96d360cc0ea8067878ff6e3",
+    "negative-red-step-16.png": "9b22cac7aa524308f3f0bdf6bd169000dbbfed507ae2f0a9a7b0ec71e2d3a24a",
+    "base-step-11.png": "5d4f3e3d59139644e7859a38e185ebe017f8e0841264c315f2924f0f4f48133c",
+    "negative-red-step-20.png": "6b840c28a3e038b4a0a4f86dbc2cf3bd9cd6d16e2c225b8b1900d1daa0ecd724",
+    "steps-10.png": "883dd95544ec341fd74cae5a11456a1fd8f3da398769cb9ee89722a030525ccf",
+    "base-step-1.png": "e9c4a470ad900801f7de4f9402eb27af8a1cc00eac80d618ef16bac39fb27d33",
+    "base-step-20.png": "037bf5470d3e2d1e8cdc875eedcd58fec675371b03c2762dce3e226e48f76e3b",
+    "steps-10-step-8.png": "4908f8152a723c121b93649b66330ca096846098b6532a64b4d52af6f76a23c6",
+    "cfg-4-step-6.png": "e9c4a470ad900801f7de4f9402eb27af8a1cc00eac80d618ef16bac39fb27d33",
+    "steps-10-step-10.png": "883dd95544ec341fd74cae5a11456a1fd8f3da398769cb9ee89722a030525ccf",
+    "negative-red-step-1.png": "e9c4a470ad900801f7de4f9402eb27af8a1cc00eac80d618ef16bac39fb27d33",
+    "base-step-16.png": "c38c7728f70c4bf6d378fa3105cfeaddf6a7f72e6d3aebd64e85f682025359c0",
+    "cfg-4-step-16.png": "52dbeeb1fc4cb3b022d756921459d6cb2b2dc47b3d5ff933e539dfd3946b5988",
+    "base.png": "037bf5470d3e2d1e8cdc875eedcd58fec675371b03c2762dce3e226e48f76e3b",
+    "negative-red.png": "6b840c28a3e038b4a0a4f86dbc2cf3bd9cd6d16e2c225b8b1900d1daa0ecd724",
+    "negative-red-step-6.png": "e9c4a470ad900801f7de4f9402eb27af8a1cc00eac80d618ef16bac39fb27d33",
+    "base-step-6.png": "e9c4a470ad900801f7de4f9402eb27af8a1cc00eac80d618ef16bac39fb27d33",
+    "steps-10-step-1.png": "e9c4a470ad900801f7de4f9402eb27af8a1cc00eac80d618ef16bac39fb27d33"
+  }
+}

@@ -466,15 +466,15 @@ https://arxiv.org/html/2112.10752v2
 
 https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w07a/notebooks/student/w07a_sampling_app.ipynb
 
-https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a/notebooks/student/w08a_review_a.ipynb
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a-r1/notebooks/student/w08a_review_a.ipynb
 
-https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a/notebooks/student/w08a_review_b.ipynb
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a-r1/notebooks/student/w08a_review_b.ipynb
 
-https://github.com/lunalab-ai/genAI/blob/2026-fall-w08a/src/W08A-API.md
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w08a-r1/src/W08A-API.md
 
-https://github.com/lunalab-ai/genAI/raw/2026-fall-w08a/course/handouts/w08a-questions.pdf
+https://github.com/lunalab-ai/genAI/raw/2026-fall-w08a-r1/course/handouts/w08a-questions.pdf
 
-https://github.com/lunalab-ai/genAI/raw/2026-fall-w08a/course/handouts/w08a-review.pdf
+https://github.com/lunalab-ai/genAI/raw/2026-fall-w08a-r1/course/handouts/w08a-review.pdf
 
 https://huggingface.co/docs/diffusers/using-diffusers/write_own_pipeline
 

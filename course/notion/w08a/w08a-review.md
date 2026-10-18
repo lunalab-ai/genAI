@@ -6,9 +6,9 @@
 
 그림에서 대상을 찾고, 작은 수를 계산하고, 코드의 중간값을 확인한 뒤 자신의 말로 설명하세요. 처음 배울 때 놓친 부분이 있어도, **입력·학습 정답·출력·바뀌는 대상**을 나누면 다시 연결할 수 있습니다.
 
-[60문항 문제지](w08a-questions.md) · [Colab A: 표현·검색](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a/notebooks/student/w08a_review_a.ipynb) · [Colab B: 확산·조건 생성·앱](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a/notebooks/student/w08a_review_b.ipynb) · [함수의 입력·출력과 정의 바로가기](https://github.com/lunalab-ai/genAI/blob/2026-fall-w08a/src/W08A-API.md)
+[60문항 문제지](w08a-questions.md) · [Colab A: 표현·검색](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a-r1/notebooks/student/w08a_review_a.ipynb) · [Colab B: 확산·조건 생성·앱](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a-r1/notebooks/student/w08a_review_b.ipynb) · [함수의 입력·출력과 정의 바로가기](https://github.com/lunalab-ai/genAI/blob/2026-fall-w08a-r1/src/W08A-API.md)
 
-[핵심 요약 PDF](https://github.com/lunalab-ai/genAI/raw/2026-fall-w08a/course/handouts/w08a-review.pdf) · [60문항 문제지 PDF](https://github.com/lunalab-ai/genAI/raw/2026-fall-w08a/course/handouts/w08a-questions.pdf)
+[핵심 요약 PDF](https://github.com/lunalab-ai/genAI/raw/2026-fall-w08a-r1/course/handouts/w08a-review.pdf) · [60문항 문제지 PDF](https://github.com/lunalab-ai/genAI/raw/2026-fall-w08a-r1/course/handouts/w08a-questions.pdf)
 
 60문항은 일반 39문항과 Python 21문항입니다. 문제은행은 수업과 자율 복습에 함께 사용합니다. 답만 적기보다 **조건 → 적용 원리 → 중간 과정 → 결과의 의미**를 남기세요. 새로운 성적 반영 과제나 제출 기한은 없습니다. 중간고사는 복습 자료의 문제를 조금씩 변형하여 출제할 예정이므로 입력 숫자보다 풀이 원리를 이해하는 것이 중요합니다.
 
@@ -247,7 +247,7 @@ seed는 난수 상태를 초기화하는 수단입니다. 같은 Generator 객�
 
 Q60에서는 준비된 앱의 기록을 받아 짧은 설명을 만드는 callback 하나를 연결합니다. 입력은 실행 모드·바꾼 조건·관찰·한계가 담긴 기록이고 출력은 문자열입니다. 모델을 다시 학습하는 함수가 아닙니다. 자신의 함수가 아직 미완성이면 준비된 기본 안내로 앱을 사용할 수 있으며, 이것이 Q60을 풀었다는 뜻은 아닙니다.
 
-설치 버전은 `0.1.13`, 공개 ref는 `2026-fall-w08a`로 고정합니다. 이미 이전 버전을 import한 런타임에서는 설치 후 런타임을 다시 시작하고 첫 셀부터 실행하세요. 함수 이름의 바로가기는 설치 ref와 같은 실제 정의 줄을 가리킵니다. 마지막 실행 검사 문구와 앱 출력을 확인하세요. 공유 URL은 현재 Colab 런타임 동안 유지되므로 다음 실습 때는 고정 Colab 링크에서 다시 시작합니다.
+설치 버전은 `0.1.14`, 공개 ref는 `2026-fall-w08a-r1`로 고정합니다. 이미 이전 버전을 import한 런타임에서는 설치 후 런타임을 다시 시작하고 첫 셀부터 실행하세요. 함수 이름의 바로가기는 설치 ref와 같은 실제 정의 줄을 가리킵니다. 마지막 실행 검사 문구를 확인한 뒤, 마지막 셀에 출력된 앱 주소를 새 탭에서 열어 기록 이미지와 입력 변경 결과를 확인하세요. 공유 URL은 현재 Colab 런타임 동안 유지되므로 다음 실습 때는 고정 Colab 링크에서 다시 시작합니다.
 
 ## 13. 막힌 지점에 맞춰 다시 읽기
 
