@@ -457,3 +457,27 @@ https://huggingface.co/docs/transformers/main/en/tokenizer_summary
 https://www.deeplearningbook.org/contents/autoencoders.html
 
 [강의 원문](../course/notion/w07b/w07b-questions.md)
+
+## 중간고사 대비 복습 ②: 이미지 표현부터 Stable Diffusion까지
+
+[강의 원문](../course/notion/w08a/w08a-review.md)
+
+https://arxiv.org/html/2112.10752v2
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w07a/notebooks/student/w07a_sampling_app.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a/notebooks/student/w08a_review_a.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a/notebooks/student/w08a_review_b.ipynb
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w08a/src/W08A-API.md
+
+https://github.com/lunalab-ai/genAI/raw/2026-fall-w08a/course/handouts/w08a-questions.pdf
+
+https://github.com/lunalab-ai/genAI/raw/2026-fall-w08a/course/handouts/w08a-review.pdf
+
+https://huggingface.co/docs/diffusers/using-diffusers/write_own_pipeline
+
+https://proceedings.mlr.press/v139/radford21a.html
+
+[강의 원문](../course/notion/w08a/w08a-questions.md)

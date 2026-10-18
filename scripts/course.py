@@ -120,6 +120,12 @@ def render(text, source, root, repository):
                 rel = p.relative_to(root.resolve()).as_posix()
                 c.attrSet(key, f"https://github.com/{repository}/blob/main/{rel}")
     body = md.renderer.render(tokens, md.options, {})
+    worksheet = source.resolve().relative_to(root.resolve()).as_posix() in config.get("pdf_question_pages", [])
+    if worksheet:
+        # Keep each numbered question, its prompt and writing space together.
+        # Opt-in prevents repagination of previously published lecture notes.
+        body = re.sub(r'(<h2>Q\d{2}\s*·[\s\S]*?)(?=<h2>|$)',
+                      r'<section class="pdf-question">\1</section>', body)
     for key, formula in formulas.items(): body = body.replace(key, formula)
     math_script = ""
     if formulas:
@@ -127,7 +133,7 @@ def render(text, source, root, repository):
         math_script = '<script>MathJax={startup:{typeset:true},svg:{fontCache:"local"}};</script><script>' + asset.read_text(encoding="utf-8") + '</script>'
     return (
         '<!doctype html><html lang="' + escape(config.get("language", "ko")) + '"><meta charset="utf-8"><style>'
-        + CSS
+        + CSS + (".pdf-question{break-inside:avoid}" if worksheet else "")
         + "</style><body>"
         + body + math_script
         + "</body></html>"
@@ -320,7 +326,11 @@ def build(root=ROOT):
                 raise ValueError(f"Broken PDF image: {p}")
             dest = root / "course/handouts" / f"{p.stem}.pdf"
             dest.parent.mkdir(parents=True, exist_ok=True)
-            tab.pdf(path=str(dest), prefer_css_page_size=True, print_background=True)
+            pdf_options = {}
+            if p.relative_to(root).as_posix() in c.get("pdf_question_pages", []):
+                pdf_options = dict(display_header_footer=True, header_template="<span></span>",
+                    footer_template='<div style="font-size:8px;width:100%;text-align:center"><span class="pageNumber"></span> / <span class="totalPages"></span></div>')
+            tab.pdf(path=str(dest), prefer_css_page_size=True, print_background=True, **pdf_options)
         browser.close()
     hub(root, c)
     errors = scan(root / "course")

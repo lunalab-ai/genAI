@@ -256,8 +256,29 @@ sessions:
   - 두 노트북은 각각 새 사본에서 첫 셀부터 독립 실행합니다. CPU 기본, API키·GPU·대형모델·파일 업로드가 필요 없습니다.
   - 마지막 웹 앱에서 한 조건씩 바꾸고 함수 정의 바로가기를 확인하세요. 공유 URL은 현재 런타임 동안 유지됩니다.
   - 중간고사는 자료의 문제를 조금씩 변형하여 출제할 예정입니다. 숫자보다 풀이 원리를 이해해 주세요.
-  - 다음 복습은10월20일,5주차~7주차1차시입니다. 별도 성적 과제나 새 제출 기한은 없습니다.
+  - 다음 복습은10월19일(월),5주차~7주차1차시입니다. 별도 성적 과제나 새 제출 기한은 없습니다.
   notion_url: https://fancy-ballcap-a15.notion.site/W07b-1-4-80-3f87fd00109f81cca2d1d0f9a7016ba5
+- id: w08a
+  date: '2026-10-19'
+  title: '중간고사 대비 복습 ②: 이미지 표현부터 Stable Diffusion까지'
+  notion_url: https://fancy-ballcap-a15.notion.site/3fd7fd00109f813d83d7dfe130d25156
+  pages:
+  - course/notion/w08a/w08a-review.md
+  - course/notion/w08a/w08a-questions.md
+  labs:
+  - notebooks/student/w08a_review_a.ipynb
+  - notebooks/student/w08a_review_b.ipynb
+  runtime_label: CPU · 60문항 복습 · 기본 Python · 네 탭 Gradio
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a/notebooks/student/w08a_review_a.ipynb
+  announcement_guidance:
+  - 수업일은 10월 19일(월)입니다. 앞서 안내한 10월 20일에서 정정합니다. 범위는 5주차부터 7주차 1차시까지입니다.
+  - 60문항(일반 39 / Python 21)은 수업과 자율 복습용입니다. 조건·과정·이유를 함께 적어 주세요.
+  - '실습 B: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w08a/notebooks/student/w08a_review_b.ipynb'
+  - 실습 A와 B는 각각 새 사본에서 첫 셀부터 독립 실행합니다. CPU 기본이며 API 키·GPU·대형 모델 다운로드·개인 파일 업로드는 필요
+    없습니다.
+  - 패키지 0.1.13 / 2026-fall-w08a 버전입니다. 다른 버전을 이미 import했다면 런타임을 재시작합니다.
+  - 네 탭 앱에서 조건 하나를 바꾸고 예상·관찰·해석의 한계를 구별하세요. SD 이미지는 기존 실행 기록이며 이번에 새로 생성한 결과가 아닙니다.
+  - 앱 공유 URL은 현재 런타임 동안만 유지됩니다. 별도 성적 반영 과제나 새 제출 기한은 없습니다.
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab
@@ -266,3 +287,5 @@ supplements:
   - notebooks/student/week01_generative_ai_intro.ipynb
   quiz: course/quiz/week01-lab.yml
 show_supplements: false
+pdf_question_pages:
+- course/notion/w08a/w08a-questions.md
