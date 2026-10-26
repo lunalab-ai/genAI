@@ -281,6 +281,21 @@ sessions:
   - 네 탭 앱에서 조건 하나를 바꾸고 예상·관찰·해석의 한계를 구별하세요. SD 이미지는 기존 실행 기록이며 이번에 새로 생성한 결과가 아닙니다.
   - 마지막 셀에 출력된 앱 주소를 새 탭에서 열고 기록 이미지와 입력 변경 결과를 확인하세요.
   - 앱 공유 URL은 현재 런타임 동안만 유지됩니다. 별도 성적 반영 과제나 새 제출 기한은 없습니다.
+- id: w09a
+  date: '2026-10-26'
+  title: 중간고사 답안 리뷰와 판서 필기
+  pages:
+  - course/notion/w09a/w09a-midterm-review-notes.md
+  labs: []
+  runtime_label: 중간고사 판서 리뷰 · PDF 필기
+  release_tag: 2026-fall-w09a
+  assignment:
+    requested: false
+    reason: 중간고사 답안의 판서 리뷰이며 새 제출 과제 요청이 없음
+  announcement_guidance:
+  - 10월 26일(월) 9주차 1차시는 중간고사 답안 리뷰입니다.
+  - 문항별 평가표를 확인하고 수업 중 교수자의 판서와 설명을 필기용 PDF에 정리해 주세요.
+  - 중간고사 채점은 이번 주 중 마무리할 예정입니다. 채점이 완료된 후 결과를 공지하겠습니다.
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab
@@ -291,3 +306,5 @@ supplements:
 show_supplements: false
 pdf_question_pages:
 - course/notion/w08a/w08a-questions.md
+pdf_board_review_pages:
+- course/notion/w09a/w09a-midterm-review-notes.md

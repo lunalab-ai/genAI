@@ -481,3 +481,7 @@ https://huggingface.co/docs/diffusers/using-diffusers/write_own_pipeline
 https://proceedings.mlr.press/v139/radford21a.html
 
 [강의 원문](../course/notion/w08a/w08a-questions.md)
+
+## 중간고사 답안 리뷰와 판서 필기
+
+[강의 원문](../course/notion/w09a/w09a-midterm-review-notes.md)
