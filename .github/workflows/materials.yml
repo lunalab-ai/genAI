@@ -1,5 +1,13 @@
 name: Validate student materials
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: Existing branch, tag, or commit to validate
+        required: false
+        default: ''
 permissions:
   contents: read
 jobs:
@@ -11,6 +19,8 @@ jobs:
         python-version: ['3.12', '3.13']
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_ref || github.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
@@ -24,11 +34,18 @@ jobs:
         if: hashFiles('requirements-lab.txt') != ''
         run: |
           python - <<'PY'
-          import subprocess, sys, yaml
+          import subprocess, sys, tomllib, yaml
           from pathlib import Path
           config = yaml.safe_load(Path('course/course.yml').read_text())
+          project = Path('src/pyproject.toml')
+          package = (tomllib.loads(project.read_text()).get('project', {}).get('name')
+                     if project.exists() else None)
           for session in config['sessions']:
               for lab in session.get('labs', []):
                   if lab.endswith('.ipynb'):
+                      # Each fresh kernel must run the notebook's own pinned bootstrap.
+                      # An installed newer course package can bypass legacy find_spec checks.
+                      if package:
+                          subprocess.run([sys.executable, '-m', 'pip', 'uninstall', '-y', package], check=True)
                       subprocess.run([sys.executable, 'scripts/execute_notebook.py', lab, '--require-checks'], check=True)
           PY

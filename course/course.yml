@@ -326,6 +326,8 @@ sessions:
   - 먼저 예상하고 한 조건만 바꾼 뒤 관찰·근거·한계를 기록하세요. 지시 데이터 형식화 버튼은 SFT 학습이 아닙니다.
   - 마지막 W09B A/B 검증 통과 출력을 확인하고 웹앱 버튼과 관찰 JSON을 직접 점검하세요. 공유 URL은 현재 런타임 동안만 유지됩니다.
   - 별도 성적 반영 과제나 새 제출 기한은 없습니다. 복습 질문에 먼저 답한 뒤 별도 해설을 확인하세요.
+  - Colab 출력에 JavaScript 로딩 오류가 뜨면 새로고침 후, 새 코드 셀에서 print(app.share_url)을 실행하고 나온
+    주소를 새 탭에서 여세요. 별도 앱에서 버튼·출력·JSON을 확인합니다.
   notion_url: https://fancy-ballcap-a15.notion.site/W09B-2026-10-28-4067fd00109f81d8ae3af33ba6151d6d
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
