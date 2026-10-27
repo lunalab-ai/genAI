@@ -34,3 +34,8 @@ Python 3.10–3.13, torch >=2.8,<3, transformers 5.15.1, gradio 6.26.0. Colab의
 | `build_app(lab)` | 같은 lab을 재사용하는 Gradio Blocks |
 
 Qwen은 instruction-tuned 챗봇이 아닌 기본 모델입니다. 두 레이블 내 비율은 정답 확신도가 아니며, 소형 합성 데이터는 성능 벤치마크가 아닙니다. 모델 출처: [Qwen2-0.5B](https://huggingface.co/Qwen/Qwen2-0.5B), revision은 `MODEL_REVISION`에 고정합니다. 새 차시에서는 이 API와 기존 tag를 보존하며 기능을 추가합니다.
+
+
+## W09B · 언어 모델 파인튜닝 · 0.1.15
+
+`2026-fall-w09b`는 실제 DistilBERT 분류/SmolLM-135M 이어쓰기의 작은 학습과 Gradio 관찰실을 추가합니다. [API와 실제 정의](W09B-API.md)를 읽고 독립 Colab A/B에서 입력·정답·loss·가중치 갱신·평가를 추적하세요. 데이터는 고정 AG News revision을 자동 준비하며 원문/체크포인트를 재배포하지 않습니다. 지시 형식화와 실제 SFT 학습을 구별합니다. 이전 수업의 tag와 API는 보존합니다.

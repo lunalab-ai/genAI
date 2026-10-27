@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="572.4pt" height="245.896531pt" viewBox="0 0 572.4 245.896531" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-28T03:06:23.463948</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 245.896531 
+L 572.4 245.896531 
+L 572.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="table_1">
+    <g id="patch_2">
+     <path d="M 15.57 118.960531 
+L 171.81 118.960531 
+L 171.81 90.160531 
+L 15.57 90.160531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_1">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="93.69" y="107.339984" transform="rotate(-0 93.69 107.339984)">설명용 input_ids</text>
+    </g>
+    <g id="patch_3">
+     <path d="M 171.81 118.960531 
+L 235.98 118.960531 
+L 235.98 90.160531 
+L 171.81 90.160531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_2">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="203.895" y="107.258773" transform="rotate(-0 203.895 107.258773)">101</text>
+    </g>
+    <g id="patch_4">
+     <path d="M 235.98 118.960531 
+L 300.15 118.960531 
+L 300.15 90.160531 
+L 235.98 90.160531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_3">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="268.065" y="107.258773" transform="rotate(-0 268.065 107.258773)">314</text>
+    </g>
+    <g id="patch_5">
+     <path d="M 300.15 118.960531 
+L 364.32 118.960531 
+L 364.32 90.160531 
+L 300.15 90.160531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="332.235" y="107.258773" transform="rotate(-0 332.235 107.258773)">202</text>
+    </g>
+    <g id="patch_6">
+     <path d="M 364.32 118.960531 
+L 428.49 118.960531 
+L 428.49 90.160531 
+L 364.32 90.160531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="396.405" y="107.258773" transform="rotate(-0 396.405 107.258773)">102</text>
+    </g>
+    <g id="patch_7">
+     <path d="M 428.49 118.960531 
+L 492.66 118.960531 
+L 492.66 90.160531 
+L 428.49 90.160531 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="460.575" y="107.258773" transform="rotate(-0 460.575 107.258773)">0</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 492.66 118.960531 
+L 556.83 118.960531 
+L 556.83 90.160531 
+L 492.66 90.160531 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="524.745" y="107.258773" transform="rotate(-0 524.745 107.258773)">0</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 15.57 147.760531 
+L 171.81 147.760531 
+L 171.81 118.960531 
+L 15.57 118.960531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="93.69" y="136.058773" transform="rotate(-0 93.69 136.058773)">attention_mask</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 171.81 147.760531 
+L 235.98 147.760531 
+L 235.98 118.960531 
+L 171.81 118.960531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="203.895" y="136.058773" transform="rotate(-0 203.895 136.058773)">1</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 235.98 147.760531 
+L 300.15 147.760531 
+L 300.15 118.960531 
+L 235.98 118.960531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="268.065" y="136.058773" transform="rotate(-0 268.065 136.058773)">1</text>
+    </g>
+    <g id="patch_12">
+     <path d="M 300.15 147.760531 
+L 364.32 147.760531 
+L 364.32 118.960531 
+L 300.15 118.960531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="332.235" y="136.058773" transform="rotate(-0 332.235 136.058773)">1</text>
+    </g>
+    <g id="patch_13">
+     <path d="M 364.32 147.760531 
+L 428.49 147.760531 
+L 428.49 118.960531 
+L 364.32 118.960531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="396.405" y="136.058773" transform="rotate(-0 396.405 136.058773)">1</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 428.49 147.760531 
+L 492.66 147.760531 
+L 492.66 118.960531 
+L 428.49 118.960531 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="460.575" y="136.058773" transform="rotate(-0 460.575 136.058773)">0</text>
+    </g>
+    <g id="patch_15">
+     <path d="M 492.66 147.760531 
+L 556.83 147.760531 
+L 556.83 118.960531 
+L 492.66 118.960531 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="524.745" y="136.058773" transform="rotate(-0 524.745 136.058773)">0</text>
+    </g>
+    <g id="patch_16">
+     <path d="M 15.57 176.560531 
+L 171.81 176.560531 
+L 171.81 147.760531 
+L 15.57 147.760531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="93.69" y="165.102934" transform="rotate(-0 93.69 165.102934)">문장 분류 labels</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 171.81 176.560531 
+L 235.98 176.560531 
+L 235.98 147.760531 
+L 171.81 147.760531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="203.895" y="164.858773" transform="rotate(-0 203.895 164.858773)">2 (Business)</text>
+    </g>
+    <g id="patch_18">
+     <path d="M 235.98 176.560531 
+L 300.15 176.560531 
+L 300.15 147.760531 
+L 235.98 147.760531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="patch_19">
+     <path d="M 300.15 176.560531 
+L 364.32 176.560531 
+L 364.32 147.760531 
+L 300.15 147.760531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="patch_20">
+     <path d="M 364.32 176.560531 
+L 428.49 176.560531 
+L 428.49 147.760531 
+L 364.32 147.760531 
+z
+" style="fill: #dceaf8; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="patch_21">
+     <path d="M 428.49 176.560531 
+L 492.66 176.560531 
+L 492.66 147.760531 
+L 428.49 147.760531 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="patch_22">
+     <path d="M 492.66 176.560531 
+L 556.83 176.560531 
+L 556.83 147.760531 
+L 492.66 147.760531 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #19324a" x="18.36" y="230.269651" transform="rotate(-0 18.36 230.269651)">ID는 구조 설명용입니다. 실제 토큰·ID와 truncation 결과는 Colab에서 확인합니다.</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Malgun Gothic'; text-anchor: start" x="7.2" y="22.024531" transform="rotate(-0 7.2 22.024531)">길이 맞추기와 loss에서 제외할 위치</text>
+   </g>
+  </g>
+ </g>
+</svg>

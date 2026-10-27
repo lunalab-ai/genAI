@@ -485,3 +485,45 @@ https://proceedings.mlr.press/v139/radford21a.html
 ## 중간고사 답안 리뷰와 판서 필기
 
 [강의 원문](../course/notion/w09a/w09a-midterm-review-notes.md)
+
+## 언어 모델 파인튜닝: 텍스트 분류·생성·지시 기반 튜닝
+
+[강의 원문](../course/notion/w09b/w09b-map.md)
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w09b/notebooks/student/w09b_classification.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w09b/notebooks/student/w09b_generation.ipynb
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w09b/src/W09B-API.md
+
+[강의 원문](../course/notion/w09b/w09b-classification.md)
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w09b/src/W09B-API.md
+
+https://huggingface.co/datasets/fancyzhx/ag_news
+
+https://huggingface.co/distilbert/distilbert-base-uncased
+
+https://huggingface.co/docs/transformers/tasks/sequence_classification
+
+[강의 원문](../course/notion/w09b/w09b-generation.md)
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w09b/src/W09B-API.md
+
+https://huggingface.co/HuggingFaceTB/SmolLM-135M
+
+https://huggingface.co/docs/transformers/main_classes/data_collator
+
+https://huggingface.co/docs/transformers/tasks/language_modeling
+
+[강의 원문](../course/notion/w09b/w09b-instructions.md)
+
+https://arxiv.org/html/2210.11416v5
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w09b/src/W09B-API.md
+
+https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
+
+[강의 원문](../course/notion/w09b/w09b-workbook.md)
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w09b/src/W09B-API.md

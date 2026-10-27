@@ -1,0 +1,245 @@
+{
+  "recorded_on": "2026-10-28",
+  "scope": "one actual CPU run; small balanced samples; not a general benchmark",
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.8.0",
+    "transformers": "5.15.1",
+    "datasets": "4.8.5",
+    "gradio": "6.26.0",
+    "device": "cpu",
+    "threads": 2
+  },
+  "classification": {
+    "before_validation": {
+      "accuracy": 0.21875,
+      "macro_f1": 0.11549165120593692,
+      "weighted_f1": 0.11549165120593692,
+      "confusion": [
+        [
+          1,
+          0,
+          0,
+          31
+        ],
+        [
+          4,
+          1,
+          0,
+          27
+        ],
+        [
+          1,
+          0,
+          0,
+          31
+        ],
+        [
+          4,
+          0,
+          2,
+          26
+        ]
+      ],
+      "count": 128,
+      "per_class": [
+        {
+          "label": "World",
+          "support": 32,
+          "precision": 0.1,
+          "recall": 0.03125,
+          "f1": 0.047619047619047616
+        },
+        {
+          "label": "Sports",
+          "support": 32,
+          "precision": 1.0,
+          "recall": 0.03125,
+          "f1": 0.06060606060606061
+        },
+        {
+          "label": "Business",
+          "support": 32,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "label": "Sci/Tech",
+          "support": 32,
+          "precision": 0.22608695652173913,
+          "recall": 0.8125,
+          "f1": 0.35374149659863946
+        }
+      ]
+    },
+    "after_validation": {
+      "accuracy": 0.875,
+      "macro_f1": 0.8681784778456937,
+      "weighted_f1": 0.8681784778456937,
+      "confusion": [
+        [
+          30,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          19,
+          10
+        ],
+        [
+          1,
+          0,
+          0,
+          31
+        ]
+      ],
+      "count": 128,
+      "per_class": [
+        {
+          "label": "World",
+          "support": 32,
+          "precision": 0.9090909090909091,
+          "recall": 0.9375,
+          "f1": 0.9230769230769231
+        },
+        {
+          "label": "Sports",
+          "support": 32,
+          "precision": 0.9142857142857143,
+          "recall": 1.0,
+          "f1": 0.9552238805970149
+        },
+        {
+          "label": "Business",
+          "support": 32,
+          "precision": 1.0,
+          "recall": 0.59375,
+          "f1": 0.7450980392156863
+        },
+        {
+          "label": "Sci/Tech",
+          "support": 32,
+          "precision": 0.7560975609756098,
+          "recall": 0.96875,
+          "f1": 0.8493150684931506
+        }
+      ]
+    },
+    "final_test": {
+      "accuracy": 0.8828125,
+      "macro_f1": 0.8820335551678835,
+      "weighted_f1": 0.8820335551678835,
+      "confusion": [
+        [
+          30,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          31,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          24,
+          5
+        ],
+        [
+          1,
+          0,
+          3,
+          28
+        ]
+      ],
+      "count": 128,
+      "per_class": [
+        {
+          "label": "World",
+          "support": 32,
+          "precision": 0.8571428571428571,
+          "recall": 0.9375,
+          "f1": 0.8955223880597015
+        },
+        {
+          "label": "Sports",
+          "support": 32,
+          "precision": 1.0,
+          "recall": 0.96875,
+          "f1": 0.9841269841269841
+        },
+        {
+          "label": "Business",
+          "support": 32,
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1": 0.8
+        },
+        {
+          "label": "Sci/Tech",
+          "support": 32,
+          "precision": 0.8235294117647058,
+          "recall": 0.875,
+          "f1": 0.8484848484848485
+        }
+      ]
+    }
+  },
+  "causal": {
+    "before_validation": {
+      "nll": 4.893024933991035,
+      "perplexity": 133.3563587280592,
+      "target_tokens": 493,
+      "documents": 16,
+      "max_length": 32
+    },
+    "after_validation": {
+      "nll": 4.88415520283078,
+      "perplexity": 132.178753917054,
+      "target_tokens": 493,
+      "documents": 16,
+      "max_length": 32
+    },
+    "final_test": {
+      "nll": 4.852402865886688,
+      "perplexity": 128.04770193815122,
+      "target_tokens": 496,
+      "documents": 16,
+      "max_length": 32
+    }
+  },
+  "training_seconds": {
+    "classification": 26.171720100002858,
+    "causal": 55.719053300003
+  },
+  "training_settings": {
+    "classification": {
+      "steps": 32,
+      "batch_size": 2,
+      "max_length": 64
+    },
+    "causal": {
+      "steps": 4,
+      "batch_size": 1,
+      "max_length": 32
+    }
+  },
+  "causal_greedy_unchanged": true,
+  "source_sha256": {
+    "src/luna_genai/finetuning.py": "5f0db9687028f3d6c11993e35c1c365d4524fff85ce3b96a7b477e5ffc2efd17",
+    "src/luna_genai/finetuning_app.py": "2386ace45aa85969a8beeb15ba9735461a598140bd3b0b2473bebbbc990dde77"
+  }
+}

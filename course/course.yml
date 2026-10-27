@@ -296,6 +296,37 @@ sessions:
   - 10월 26일(월) 9주차 1차시는 중간고사 답안 리뷰입니다.
   - 문항별 평가표를 확인하고 수업 중 교수자의 판서와 설명을 필기용 PDF에 정리해 주세요.
   - 중간고사 채점은 이번 주 중 마무리할 예정입니다. 채점이 완료된 후 결과를 공지하겠습니다.
+- id: w09b
+  date: '2026-10-28'
+  title: '언어 모델 파인튜닝: 텍스트 분류·생성·지시 기반 튜닝'
+  pages:
+  - course/notion/w09b/w09b-map.md
+  - course/notion/w09b/w09b-classification.md
+  - course/notion/w09b/w09b-generation.md
+  - course/notion/w09b/w09b-instructions.md
+  - course/notion/w09b/w09b-workbook.md
+  labs:
+  - notebooks/student/w09b_classification.ipynb
+  - notebooks/student/w09b_generation.ipynb
+  quiz: course/quiz/w09b.yml
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w09b/notebooks/student/w09b_classification.ipynb
+  runtime_label: Colab · CPU · 실제 분류/생성 학습 · Gradio
+  release_tag: 2026-fall-w09b
+  assignment:
+    requested: false
+    reason: 일반 수업 실습·자기 점검이며 새 성적 과제 요청 없음
+  announcement_guidance:
+  - '중간고사 후 일반 수업으로 돌아옵니다. 주교재6.1–6.3: 분류 → 생성 → 지시 기반 튜닝의 입력·정답·손실·갱신 대상을 비교합니다.'
+  - A/B는 각각 새 Colab 사본에서 첫 셀부터 독립 실행하세요. 이전 실습 결과·API 키·개인 파일 업로드·유료 GPU가 필요하지 않습니다.
+  - '실습 B: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w09b/notebooks/student/w09b_generation.ipynb'
+  - CPU 필수 경로는 A32회/batch2/길이64, B4회/batch1/길이32의 실제 학습입니다. 작은 평가 표본의 결과를 품질 보장으로
+    해석하지 않습니다.
+  - 최초 모델 A약269MB/B약541MB와 데이터약20MB 및 의존성을 자동 준비하고 캐시를 재사용합니다. 패키지0.1.15/2026-fall-w09b를
+    사용합니다.
+  - 먼저 예상하고 한 조건만 바꾼 뒤 관찰·근거·한계를 기록하세요. 지시 데이터 형식화 버튼은 SFT 학습이 아닙니다.
+  - 마지막 W09B A/B 검증 통과 출력을 확인하고 웹앱 버튼과 관찰 JSON을 직접 점검하세요. 공유 URL은 현재 런타임 동안만 유지됩니다.
+  - 별도 성적 반영 과제나 새 제출 기한은 없습니다. 복습 질문에 먼저 답한 뒤 별도 해설을 확인하세요.
+  notion_url: https://fancy-ballcap-a15.notion.site/W09B-2026-10-28-4067fd00109f81d8ae3af33ba6151d6d
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

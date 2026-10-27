@@ -20,12 +20,14 @@ from markdown_it import MarkdownIt
 
 from check_public_release import scan
 from validate_notion_bundle import validate
+from board_review_parts import kit_pdf_only, render_parts
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_ROOTS = ("course", "notebooks/student", "labs/student", "src", "data/sample")
 PUBLIC_FILES = (
     "README.md",
     "scripts/course.py",
+    "scripts/board_review_parts.py",
     "scripts/check_public_release.py",
     "scripts/validate_notion_bundle.py",
     "requirements.txt",
@@ -134,12 +136,15 @@ def render(text, source, root, repository):
     body = md.renderer.render(tokens, md.options, {})
     worksheet = source.resolve().relative_to(root.resolve()).as_posix() in config.get("pdf_question_pages", [])
     board_review = source.resolve().relative_to(root.resolve()).as_posix() in config.get("pdf_board_review_pages", [])
-    if worksheet or board_review:
+    part_session = next((item for item in config.get("sessions", [])
+        if source.resolve().relative_to(root.resolve()).as_posix() in item.get("pages", [])
+        and item.get("material_mode") == "board-review-pdf" and item.get("board_review_parts")), None) if board_review else None
+    if (worksheet or board_review) and not part_session:
         # Keep each numbered question, its prompt and writing space together.
         # Opt-in prevents repagination of previously published lecture notes.
         body = re.sub(r'(<h2>Q\d{2}\s*·[\s\S]*?)(?=<h2>|$)',
                       r'<section class="pdf-question">\1</section>', body)
-    if board_review:
+    if board_review and not part_session:
         if not re.search(r'<h2>Q\d{2}\s*·', body):
             raise ValueError('Board review requires numbered Q01-style questions')
         def writing_space(match):
@@ -153,6 +158,9 @@ def render(text, source, root, repository):
             return '<section class="pdf-question">' + fragment.replace(label, box) + '</section>'
         body = re.sub(r'<section class="pdf-question">([\s\S]*?)</section>', writing_space, body)
         body = body.replace('<h2>수업 후 복습 기록</h2>', '<h2 class="board-reflection">수업 후 복습 기록</h2>')
+    if part_session:
+        body = render_parts(body, question_count=part_session.get("board_review_questions"),
+                            writing_mm=part_session.get("board_review_writing_mm", 100))
     for key, formula in formulas.items(): body = body.replace(key, formula)
     math_script = ""
     if formulas:
@@ -161,6 +169,7 @@ def render(text, source, root, repository):
     return (
         '<!doctype html><html lang="' + escape(config.get("language", "ko")) + '"><meta charset="utf-8"><style>'
         + CSS + (".pdf-question{break-inside:avoid}" if worksheet else "") + (BOARD_REVIEW_CSS if board_review else "")
+        + ("table th:last-child,table td:last-child{width:14mm;min-width:14mm;white-space:nowrap}" if part_session else "")
         + "</style><body>"
         + body + math_script
         + "</body></html>"
@@ -276,7 +285,7 @@ def validate_course_contract(root, c):
     for session in c.get("sessions", []):
         if session["id"] in policy.get("legacy_sessions", []):
             continue
-        if policy.get("automatic_notebooks"):
+        if policy.get("automatic_notebooks") and not kit_pdf_only(root, session):
             if not any(p.endswith(".ipynb") for p in session.get("labs", [])) or not session.get("colab_url"):
                 raise ValueError("Notebook and Colab URL required: " + session["id"])
         if policy.get("ask_assignment"):
@@ -400,6 +409,25 @@ def notices(root=ROOT, sid=None):
         if not s.get("pages"):
             continue
         base = "https://github.com/" + c["repository"]
+        if kit_pdf_only(root, s):
+            pdf = "course/handouts/" + Path(s["pages"][0]).stem + ".pdf"
+            if not safe(root, pdf).is_file():
+                raise ValueError("Missing reviewed student writing PDF")
+            if c.get("language") == "en":
+                body = (f"[{s['id'].upper()}] {s['title']}\n\n"
+                        f"{c['title']} · {s.get('date')}\n\n"
+                        "Review the midterm questions and the original marking criteria. "
+                        "Use the blank areas to record the instructor's board work.\n\n"
+                        "Board-note PDF\n" + base + "/raw/main/" + pdf + "\n\n"
+                        "Marking is planned to finish this week. Results will be announced after marking is complete.\n")
+            else:
+                body = (f"[{s['id'].upper()}] {s['title']}\n\n"
+                        "중간고사 문제와 평가 기준을 확인하고 필기란에 판서를 정리해 주세요.\n\n"
+                        + base + "/raw/main/" + pdf + "\n\n"
+                        "중간고사 채점은 이번 주 중 마무리할 예정입니다. 채점이 완료된 후 결과를 공지하겠습니다.\n")
+            write(root / "instructor/announcements" / (s["id"] + "-smartclass.txt"), body)
+            print(body)
+            continue
         links = []
         if s.get("notion_url"):
             links.append("Notion 강의노트\n" + s["notion_url"])

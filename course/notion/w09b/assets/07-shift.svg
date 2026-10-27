@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="572.4pt" height="256.679063pt" viewBox="0 0 572.4 256.679063" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-28T03:06:24.394771</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 256.679063 
+L 572.4 256.679063 
+L 572.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="table_1">
+    <g id="patch_2">
+     <path d="M 16.965 122.999063 
+L 178.785 122.999063 
+L 178.785 91.799063 
+L 16.965 91.799063 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_1">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="97.875" y="110.668398" transform="rotate(-0 97.875 110.668398)">입력</text>
+    </g>
+    <g id="patch_3">
+     <path d="M 178.785 122.999063 
+L 254.115 122.999063 
+L 254.115 91.799063 
+L 178.785 91.799063 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_2">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="216.45" y="110.397109" transform="rotate(-0 216.45 110.397109)">The</text>
+    </g>
+    <g id="patch_4">
+     <path d="M 254.115 122.999063 
+L 329.445 122.999063 
+L 329.445 91.799063 
+L 254.115 91.799063 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_3">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="291.78" y="110.189492" transform="rotate(-0 291.78 110.189492)">company</text>
+    </g>
+    <g id="patch_5">
+     <path d="M 329.445 122.999063 
+L 404.775 122.999063 
+L 404.775 91.799063 
+L 329.445 91.799063 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="367.11" y="110.189492" transform="rotate(-0 367.11 110.189492)">grew</text>
+    </g>
+    <g id="patch_6">
+     <path d="M 404.775 122.999063 
+L 480.105 122.999063 
+L 480.105 91.799063 
+L 404.775 91.799063 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="442.44" y="110.397109" transform="rotate(-0 442.44 110.397109)">EOS</text>
+    </g>
+    <g id="patch_7">
+     <path d="M 480.105 122.999063 
+L 555.435 122.999063 
+L 555.435 91.799063 
+L 480.105 91.799063 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="517.77" y="110.397109" transform="rotate(-0 517.77 110.397109)">PAD</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 16.965 154.199063 
+L 178.785 154.199063 
+L 178.785 122.999063 
+L 16.965 122.999063 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="97.875" y="141.868398" transform="rotate(-0 97.875 141.868398)">labels (복사)</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 178.785 154.199063 
+L 254.115 154.199063 
+L 254.115 122.999063 
+L 178.785 122.999063 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="216.45" y="141.597109" transform="rotate(-0 216.45 141.597109)">The</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 254.115 154.199063 
+L 329.445 154.199063 
+L 329.445 122.999063 
+L 254.115 122.999063 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="291.78" y="141.389492" transform="rotate(-0 291.78 141.389492)">company</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 329.445 154.199063 
+L 404.775 154.199063 
+L 404.775 122.999063 
+L 329.445 122.999063 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="367.11" y="141.389492" transform="rotate(-0 367.11 141.389492)">grew</text>
+    </g>
+    <g id="patch_12">
+     <path d="M 404.775 154.199063 
+L 480.105 154.199063 
+L 480.105 122.999063 
+L 404.775 122.999063 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="442.44" y="141.597109" transform="rotate(-0 442.44 141.597109)">EOS</text>
+    </g>
+    <g id="patch_13">
+     <path d="M 480.105 154.199063 
+L 555.435 154.199063 
+L 555.435 122.999063 
+L 480.105 122.999063 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="517.77" y="141.597109" transform="rotate(-0 517.77 141.597109)">-100</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 16.965 185.399063 
+L 178.785 185.399063 
+L 178.785 154.199062 
+L 16.965 154.199062 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="97.875" y="173.107461" transform="rotate(-0 97.875 173.107461)">이 위치에서 맞힐 다음 정답</text>
+    </g>
+    <g id="patch_15">
+     <path d="M 178.785 185.399063 
+L 254.115 185.399063 
+L 254.115 154.199062 
+L 178.785 154.199062 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="216.45" y="172.589492" transform="rotate(-0 216.45 172.589492)">company</text>
+    </g>
+    <g id="patch_16">
+     <path d="M 254.115 185.399063 
+L 329.445 185.399063 
+L 329.445 154.199062 
+L 254.115 154.199062 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="291.78" y="172.589492" transform="rotate(-0 291.78 172.589492)">grew</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 329.445 185.399063 
+L 404.775 185.399063 
+L 404.775 154.199062 
+L 329.445 154.199062 
+z
+" style="fill: #dcf1e6; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="367.11" y="172.797109" transform="rotate(-0 367.11 172.797109)">EOS</text>
+    </g>
+    <g id="patch_18">
+     <path d="M 404.775 185.399063 
+L 480.105 185.399063 
+L 480.105 154.199062 
+L 404.775 154.199062 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="442.44" y="173.068398" transform="rotate(-0 442.44 173.068398)">제외</text>
+    </g>
+    <g id="patch_19">
+     <path d="M 480.105 185.399063 
+L 555.435 185.399063 
+L 555.435 154.199062 
+L 480.105 154.199062 
+z
+" style="fill: #eeeeee; stroke: #a5b7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_18">
+     <text style="font-size: 10px; font-family: 'Malgun Gothic'; text-anchor: middle" x="517.77" y="173.06293" transform="rotate(-0 517.77 173.06293)">없음</text>
+    </g>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #19324a" x="18.36" y="242.826263" transform="rotate(-0 18.36 242.826263)">단어를 토큰으로 단순화한 예시. 실제 EOS는 정답으로 유지하고 padding 위치만 제외합니다.</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Malgun Gothic'; text-anchor: start" x="7.2" y="21.719063" transform="rotate(-0 7.2 21.719063)">다음 토큰 정렬: labels를 두 번 이동시키지 않기</text>
+   </g>
+  </g>
+ </g>
+</svg>

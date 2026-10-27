@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="628.2pt" height="247.248pt" viewBox="0 0 628.2 247.248" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-28T03:06:24.734359</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 247.248 
+L 628.2 247.248 
+L 628.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 22.545 129.910896 
+L 151.443 129.910896 
+Q 158.8086 129.910896 158.8086 127.11672 
+L 158.8086 68.90472 
+Q 158.8086 66.110544 151.443 66.110544 
+L 22.545 66.110544 
+Q 15.1794 66.110544 15.1794 68.90472 
+L 15.1794 127.11672 
+Q 15.1794 129.910896 22.545 129.910896 
+z
+" clip-path="url(#p01a97cc37e)" style="fill: #dceaf8; stroke: #8da5ba; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 194.409 129.910896 
+L 347.859 129.910896 
+Q 355.2246 129.910896 355.2246 127.11672 
+L 355.2246 68.90472 
+Q 355.2246 66.110544 347.859 66.110544 
+L 194.409 66.110544 
+Q 187.0434 66.110544 187.0434 68.90472 
+L 187.0434 127.11672 
+Q 187.0434 129.910896 194.409 129.910896 
+z
+" clip-path="url(#p01a97cc37e)" style="fill: #dceaf8; stroke: #8da5ba; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 378.549 129.910896 
+L 556.551 129.910896 
+Q 563.9166 129.910896 563.9166 127.11672 
+L 563.9166 68.90472 
+Q 563.9166 66.110544 556.551 66.110544 
+L 378.549 66.110544 
+Q 371.1834 66.110544 371.1834 68.90472 
+L 371.1834 127.11672 
+Q 371.1834 129.910896 378.549 129.910896 
+z
+" clip-path="url(#p01a97cc37e)" style="fill: #dcf1e6; stroke: #8da5ba; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 378.549 217.228896 
+L 556.551 217.228896 
+Q 563.9166 217.228896 563.9166 214.43472 
+L 563.9166 172.52208 
+Q 563.9166 169.727904 556.551 169.727904 
+L 378.549 169.727904 
+Q 371.1834 169.727904 371.1834 172.52208 
+L 371.1834 214.43472 
+Q 371.1834 217.228896 378.549 217.228896 
+z
+" clip-path="url(#p01a97cc37e)" style="fill: #dcf1e6; stroke: #8da5ba; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 74.718 217.228896 
+L 320.238 217.228896 
+Q 327.6036 217.228896 327.6036 214.43472 
+L 327.6036 172.52208 
+Q 327.6036 169.727904 320.238 169.727904 
+L 74.718 169.727904 
+Q 67.3524 169.727904 67.3524 172.52208 
+L 67.3524 214.43472 
+Q 67.3524 217.228896 74.718 217.228896 
+z
+" clip-path="url(#p01a97cc37e)" style="fill: #fff0d5; stroke: #8da5ba; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #19324a" x="19.476" y="28.943565" transform="rotate(-0 19.476 28.943565)">노트북의 모델을 웹앱 입력·출력에 연결</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; fill: #19324a" transform="translate(63.060406 95.808572)">입력 위젯</text>
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; fill: #19324a" transform="translate(41.324234 107.405408)">문장 / 길이 / seed</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; fill: #19324a" transform="translate(238.566266 95.765603)">callback 인자</text>
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; fill: #19324a" transform="translate(234.997281 107.448376)">순서·타입 확인</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; fill: #19324a" transform="translate(434.165859 95.878611)">같은 lab 객체</text>
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; fill: #19324a" transform="translate(422.255781 106.878611)">predict / generate</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; fill: #19324a" transform="translate(424.895781 191.228127)">결과 + 실제 설정</text>
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; fill: #19324a" transform="translate(441.188672 202.921213)">관찰 JSON</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #19324a" x="197.478" y="197.122795" transform="rotate(-0 197.478 197.122795)">나의 예상 → 관찰 → 설명·한계</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 159.577798 98.01072 
+Q 172.92441 98.01072 184.593971 98.01072 
+" style="fill: none; stroke: #19324a; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 180.193971 95.81072 
+L 184.593971 98.01072 
+L 180.193971 100.21072 
+" style="fill: none; stroke: #19324a; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 359.062798 98.01072 
+Q 364.738065 98.01072 368.736281 98.01072 
+" style="fill: none; stroke: #19324a; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 364.336281 95.81072 
+L 368.736281 98.01072 
+L 364.336281 100.21072 
+" style="fill: none; stroke: #19324a; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 467.55 132.605077 
+Q 467.55 150.401352 467.55 166.520576 
+" style="fill: none; stroke: #19324a; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 469.75 162.120576 
+L 467.55 166.520576 
+L 465.35 162.120576 
+" style="fill: none; stroke: #19324a; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 370.410081 193.4784 
+Q 350.926414 193.4784 333.119799 193.4784 
+" style="fill: none; stroke: #19324a; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 337.519799 195.6784 
+L 333.119799 193.4784 
+L 337.519799 191.2784 
+" style="fill: none; stroke: #19324a; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p01a97cc37e">
+   <rect x="7.2" y="7.2" width="613.8" height="232.848"/>
+  </clipPath>
+ </defs>
+</svg>
