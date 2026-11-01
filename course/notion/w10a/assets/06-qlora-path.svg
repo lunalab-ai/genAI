@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="751.32pt" height="325.296pt" viewBox="0 0 751.32 325.296" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 325.296 
+L 751.32 325.296 
+L 751.32 0 
+L 0 0 
+z
+" style="fill: #fafcff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 33.606 175.3992 
+L 162.504 175.3992 
+Q 168.084 175.3992 168.084 169.8552 
+L 168.084 116.6328 
+Q 168.084 111.0888 162.504 111.0888 
+L 33.606 111.0888 
+Q 28.026 111.0888 28.026 116.6328 
+L 28.026 169.8552 
+Q 28.026 175.3992 33.606 175.3992 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #2875bb; fill-opacity: 0.070588; stroke: #2875bb; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 212.166 175.3992 
+L 399.654 175.3992 
+Q 405.234 175.3992 405.234 169.8552 
+L 405.234 116.6328 
+Q 405.234 111.0888 399.654 111.0888 
+L 212.166 111.0888 
+Q 206.586 111.0888 206.586 116.6328 
+L 206.586 169.8552 
+Q 206.586 175.3992 212.166 175.3992 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #7d56a3; fill-opacity: 0.070588; stroke: #7d56a3; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 212.166 280.7352 
+L 399.654 280.7352 
+Q 405.234 280.7352 405.234 275.1912 
+L 405.234 221.9688 
+Q 405.234 216.4248 399.654 216.4248 
+L 212.166 216.4248 
+Q 206.586 216.4248 206.586 221.9688 
+L 206.586 275.1912 
+Q 206.586 280.7352 212.166 280.7352 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #c87921; fill-opacity: 0.070588; stroke: #c87921; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 471.636 225.2952 
+L 581.004 225.2952 
+Q 586.584 225.2952 586.584 219.7512 
+L 586.584 169.3008 
+Q 586.584 163.7568 581.004 163.7568 
+L 471.636 163.7568 
+Q 466.056 163.7568 466.056 169.3008 
+L 466.056 219.7512 
+Q 466.056 225.2952 471.636 225.2952 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #168078; fill-opacity: 0.070588; stroke: #168078; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 652.986 225.2952 
+L 709.344 225.2952 
+Q 714.924 225.2952 714.924 219.7512 
+L 714.924 169.3008 
+Q 714.924 163.7568 709.344 163.7568 
+L 652.986 163.7568 
+Q 647.406 163.7568 647.406 169.3008 
+L 647.406 219.7512 
+Q 647.406 225.2952 652.986 225.2952 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #7d56a3; fill-opacity: 0.070588; stroke: #7d56a3; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #17324d" x="26.91" y="33.4728" transform="rotate(-0 26.91 33.4728)">QLoRA: 저장·계산·학습의 색을 나누기</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #465a6e" x="26.91" y="60.6384" transform="rotate(-0 26.91 60.6384)">실제 CPU 검증 경로: NF4 + double quant · 기본 계산 FP32 · 학습 어댑터 FP32</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(40.281562 136.989703)">고정 기본 가중치</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(51.106172 160.989703)">4bit NF4 저장</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 173.989182 143.244 
+Q 185.938906 143.244 195.428956 143.244 
+" style="fill: none; stroke: #2875bb; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 189.428956 140.244 
+L 195.428956 143.244 
+L 189.428956 146.244 
+" style="fill: none; stroke: #2875bb; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(248.136563 136.989703)">필요한 블록 복원</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(225.458438 159.836578)">지원 dtype으로 matmul</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 410.767614 144.411915 
+Q 434.252648 161.2639 455.739266 176.681896 
+" style="fill: none; stroke: #7d56a3; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 452.613432 170.74648 
+L 455.739266 176.681896 
+L 449.115433 175.621314 
+" style="fill: none; stroke: #7d56a3; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(273.386953 241.076484)">LoRA A/B</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(242.208047 266.127656)">16/32bit 학습 모수</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 410.595963 247.213795 
+Q 434.247295 225.020538 456.104964 204.510367 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 449.676786 206.428313 
+L 456.104964 204.510367 
+L 453.782414 210.803678 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="526.32" y="200.421703" transform="rotate(-0 526.32 200.421703)">합 → 응답 loss</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 595.281566 195.912 
+Q 618.391628 195.912 639.042015 195.912 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 633.042015 192.912 
+L 639.042015 195.912 
+L 633.042015 198.912 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="681.165" y="199.505609" transform="rotate(-0 681.165 199.505609)">역전파</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 672.206442 234.995483 
+Q 544.455276 252.737962 419.140401 270.142081 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 425.496048 272.288184 
+L 419.140401 270.142081 
+L 424.670671 266.345225 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #2875bb" x="32.49" y="304.02" transform="rotate(-0 32.49 304.02)">기본 4bit 모수는 optimizer 갱신 대상이 아닙니다.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe300fa24e0">
+   <rect x="12.96" y="12.96" width="725.4" height="299.376"/>
+  </clipPath>
+ </defs>
+</svg>

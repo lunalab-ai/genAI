@@ -1,0 +1,36 @@
+source: course/notion/w10a/w10a-workbook.md
+provenance: 기록지 Q1–Q10과 정확히 대응하는 별도 공개 개념 해설. 실습 전체 완성 코드/교재 상세 풀이와 구별한다.
+items:
+- question: SFT, LoRA, 양자화, RAG를 같은 분류의 배타적 선택지로 보면 왜 틀리는가?
+  answer: SFT는 학습 목표/데이터 형식, LoRA는 갱신 대상, 양자화는 저장 표현, RAG는 추론 근거의 선택이다. 따라서 LoRA로
+    지시 응답 SFT를 하고 양자화된 기본 모델과 RAG를 함께 사용할 수 있다.
+- question: LoRA에서 $W_0\in\mathbb{R}^{d\times k}$, $A\in\mathbb{R}^{r\times k}$, $B\in\mathbb{R}^{d\times
+    r}$의 곱과 학습 모수 수는 어떻게 연결되는가?
+  answer: 입력 $x\in\mathbb{R}^k$에 $A\in\mathbb{R}^{r\times k}$를 곱하면 r차원, B를 곱하면 d차원이
+    되어 기본 출력과 더할 수 있다. 한 선택층에서 bias를 제외하면 전체 $dk$개 대신 $r(d+k)$개를 학습한다. 전체 모델 비율은 선택한
+    층에 달려 있다.
+- question: A 랜덤/B=0 초기화에서 첫 A 기울기가0이어도 학습 실패가 아닌 이유는 무엇인가?
+  answer: B=0에서는 dL/dA가0이지만 A가랜덤이라 Ax가0이 아니면 dL/dB는 생길 수 있다. 첫 optimizer후 B가 바뀌면 다음
+    단계에 A도 학습할 수 있다. 둘 다0인 초기화와 구별한다.
+- question: absmax 균등 양자화에서 이상치 하나가 작은 값의 복원에 영향을 주는 이유는 무엇인가?
+  answer: 공통 최대절댓값이 커지면 격자 간격 $s=\max_i|x_i|/q_{\max}$가 커진다. 작은 값이 같은 정수나0으로 반올림될
+    수 있다. 이 균등 정수 격자는 NF4와 다르며 bits와 스케일 단위를 고정해 비교한다.
+- question: $\frac{Pb}{8}$로 계산한 가중치 저장량과 실제 실행 메모리를 구별해야 하는 이유는 무엇인가?
+  answer: $\frac{Pb}{8}$은 가중치만의 이론적 바이트다. scale·양자화하지 않은 층·gradient·optimizer·activation·KV
+    cache·런타임 overhead가 별도다. GB와GiB도 다른 단위이므로 실제 peak RAM/GPU메모리를 측정해야 한다.
+- question: QLoRA의 기본4bit 저장, 계산 dtype, 학습 어댑터를 어떻게 구별하는가?
+  answer: 기본 가중치는4bit NF4 등으로 저장하고 고정한다. 연산 시 필요한 값을 FP16/BF16/FP32 등 지원 dtype으로 복원해
+    계산하며, LoRA 어댑터가 별도의16/32bit 학습 모수다. 저장4bit가 모든 계산이나 기울기4bit라는 뜻은 아니다.
+- question: 실제EOS와PAD의 ID가 같을 때 응답-only loss 마스크는 무엇을 보존해야 하는가?
+  answer: prompt와padding은 labels=-100으로 제외하되 실제응답EOS는 정답으로 남긴다. ID만으로 모든EOS/PAD를 지우지
+    않고 위치 역할과attention mask를 확인한다. labels는 원래 위치로 전달하고 모델의 loss에서 한 번 shift한다.
+- question: PPL의 유효 토큰 분모와 BLEU/ROUGE의 겹침이 사실성 평가를 대신하지 못하는 이유는 무엇인가?
+  answer: 'PPL은 같은 tokenizer·문맥·마스크에서 유효 다음 토큰 수로 가중한 NLL에 exp를 취한다: $\operatorname{PPL}=\exp(\frac{\sum_b
+    n_b L_b}{\sum_b n_b})$. BLEU/ROUGE는 참조와의 n-gram/부분수열 겹침을 본다. 틀린 숫자를 쓴 문장도 높은 겹침을
+    가질 수 있으므로 사실·지시 이행·형식은 별도로 평가한다.'
+- question: RAG에서 검색hit와 답변의 근거 일치를 따로 확인해야 하는 이유는 무엇인가?
+  answer: 관련 근거가top-k에 있어도 생성기가 내용을 무시하거나 왜곡하거나 필요한 사실을 빠뜨릴 수 있다. ID가출력됐다는 사실도 충분하지
+    않다. 검색ID·실제사용문맥·답변의 각 사실을 대조하여 검색과생성을 따로 판정한다.
+- question: 문서를 갱신하는 RAG와 LoRA SFT는 무엇을 바꾸며 각각 어떤 검증이 필요한가?
+  answer: RAG문서 갱신은 외부문서·임베딩·인덱스를 바꾸고 생성기 가중치를 학습하지 않을 수 있다. LoRA SFT는 정답응답으로 어댑터
+    가중치를 갱신한다. 전자는 문서버전/검색/근거일치, 후자는 동결/기울기/변화량/저장복원과 미사용사례 품질을 확인한다.

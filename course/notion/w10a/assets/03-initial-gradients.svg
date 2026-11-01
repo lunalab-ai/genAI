@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="751.32pt" height="325.296pt" viewBox="0 0 751.32 325.296" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 325.296 
+L 751.32 325.296 
+L 751.32 0 
+L 0 0 
+z
+" style="fill: #fafcff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 36.396 192.0312 
+L 232.254 192.0312 
+Q 237.834 192.0312 237.834 186.4872 
+L 237.834 102.7728 
+Q 237.834 97.2288 232.254 97.2288 
+L 36.396 97.2288 
+Q 30.816 97.2288 30.816 102.7728 
+L 30.816 186.4872 
+Q 30.816 192.0312 36.396 192.0312 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #2875bb; fill-opacity: 0.070588; stroke: #2875bb; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 273.546 192.0312 
+L 469.404 192.0312 
+Q 474.984 192.0312 474.984 186.4872 
+L 474.984 102.7728 
+Q 474.984 97.2288 469.404 97.2288 
+L 273.546 97.2288 
+Q 267.966 97.2288 267.966 102.7728 
+L 267.966 186.4872 
+Q 267.966 192.0312 273.546 192.0312 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #c87921; fill-opacity: 0.070588; stroke: #c87921; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 510.696 192.0312 
+L 706.554 192.0312 
+Q 712.134 192.0312 712.134 186.4872 
+L 712.134 102.7728 
+Q 712.134 97.2288 706.554 97.2288 
+L 510.696 97.2288 
+Q 505.116 97.2288 505.116 102.7728 
+L 505.116 186.4872 
+Q 505.116 192.0312 510.696 192.0312 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #168078; fill-opacity: 0.070588; stroke: #168078; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 120.096 291.8232 
+L 642.384 291.8232 
+Q 647.964 291.8232 647.964 286.2792 
+L 647.964 233.0568 
+Q 647.964 227.5128 642.384 227.5128 
+L 120.096 227.5128 
+Q 114.516 227.5128 114.516 233.0568 
+L 114.516 286.2792 
+Q 114.516 291.8232 120.096 291.8232 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #b54747; fill-opacity: 0.070588; stroke: #b54747; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #17324d" x="26.91" y="33.4728" transform="rotate(-0 26.91 33.4728)">초기화와 첫 기울기: B가 0이어도 학습할 수 있습니다</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #465a6e" x="26.91" y="60.6384" transform="rotate(-0 26.91 60.6384)">작동을 보려면 loss → gradient → optimizer → 가중치 변화를 나눠 확인하세요.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(119.325 126.375703)">초기</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(91.075781 150.540937)">A 랜덤 · B=0</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(77.302734 174.474141)">업데이트 출력=0</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(329.217188 126.526875)">첫 backward</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(332.015625 150.375703)">A 기울기=0</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(316.825781 174.375703)">B 기울기는 가능</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(556.348828 125.291719)">첫 optimizer 후</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(579.1125 150.412031)">B가 변함</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(543.277734 174.375703)">다음 A 기울기 가능</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 243.73782 146.016 
+Q 251.504456 146.016 256.811417 146.016 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 250.811417 143.016 
+L 256.811417 146.016 
+L 250.811417 149.016 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 480.88782 146.016 
+Q 488.654456 146.016 493.961417 146.016 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 487.961417 143.016 
+L 493.961417 146.016 
+L 487.961417 149.016 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="381.24" y="264.808625" transform="rotate(-0 381.24 264.808625)">주의: A=0, B=0으로 둘 다 초기화하면 두 기울기도 0이 되어 멈출 수 있습니다.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe300fa24e0">
+   <rect x="12.96" y="12.96" width="725.4" height="299.376"/>
+  </clipPath>
+ </defs>
+</svg>

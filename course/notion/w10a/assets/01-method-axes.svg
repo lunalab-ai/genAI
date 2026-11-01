@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="751.32pt" height="325.296pt" viewBox="0 0 751.32 325.296" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 325.296 
+L 751.32 325.296 
+L 751.32 0 
+L 0 0 
+z
+" style="fill: #fafcff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30.816 122.7312 
+L 168.084 122.7312 
+Q 173.664 122.7312 173.664 117.1872 
+L 173.664 86.1408 
+Q 173.664 80.5968 168.084 80.5968 
+L 30.816 80.5968 
+Q 25.236 80.5968 25.236 86.1408 
+L 25.236 117.1872 
+Q 25.236 122.7312 30.816 122.7312 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #2875bb; fill-opacity: 0.070588; stroke: #2875bb; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 237.276 122.7312 
+L 687.024 122.7312 
+Q 692.604 122.7312 692.604 117.1872 
+L 692.604 86.1408 
+Q 692.604 80.5968 687.024 80.5968 
+L 237.276 80.5968 
+Q 231.696 80.5968 231.696 86.1408 
+L 231.696 117.1872 
+Q 231.696 122.7312 237.276 122.7312 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #2875bb; fill-opacity: 0.070588; stroke: #2875bb; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 30.816 171.5184 
+L 168.084 171.5184 
+Q 173.664 171.5184 173.664 165.9744 
+L 173.664 134.928 
+Q 173.664 129.384 168.084 129.384 
+L 30.816 129.384 
+Q 25.236 129.384 25.236 134.928 
+L 25.236 165.9744 
+Q 25.236 171.5184 30.816 171.5184 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #c87921; fill-opacity: 0.070588; stroke: #c87921; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 237.276 171.5184 
+L 687.024 171.5184 
+Q 692.604 171.5184 692.604 165.9744 
+L 692.604 134.928 
+Q 692.604 129.384 687.024 129.384 
+L 237.276 129.384 
+Q 231.696 129.384 231.696 134.928 
+L 231.696 165.9744 
+Q 231.696 171.5184 237.276 171.5184 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #c87921; fill-opacity: 0.070588; stroke: #c87921; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 30.816 220.3056 
+L 168.084 220.3056 
+Q 173.664 220.3056 173.664 214.7616 
+L 173.664 183.7152 
+Q 173.664 178.1712 168.084 178.1712 
+L 30.816 178.1712 
+Q 25.236 178.1712 25.236 183.7152 
+L 25.236 214.7616 
+Q 25.236 220.3056 30.816 220.3056 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #7d56a3; fill-opacity: 0.070588; stroke: #7d56a3; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 237.276 220.3056 
+L 687.024 220.3056 
+Q 692.604 220.3056 692.604 214.7616 
+L 692.604 183.7152 
+Q 692.604 178.1712 687.024 178.1712 
+L 237.276 178.1712 
+Q 231.696 178.1712 231.696 183.7152 
+L 231.696 214.7616 
+Q 231.696 220.3056 237.276 220.3056 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #7d56a3; fill-opacity: 0.070588; stroke: #7d56a3; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 30.816 269.0928 
+L 168.084 269.0928 
+Q 173.664 269.0928 173.664 263.5488 
+L 173.664 232.5024 
+Q 173.664 226.9584 168.084 226.9584 
+L 30.816 226.9584 
+Q 25.236 226.9584 25.236 232.5024 
+L 25.236 263.5488 
+Q 25.236 269.0928 30.816 269.0928 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #168078; fill-opacity: 0.070588; stroke: #168078; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 237.276 269.0928 
+L 687.024 269.0928 
+Q 692.604 269.0928 692.604 263.5488 
+L 692.604 232.5024 
+Q 692.604 226.9584 687.024 226.9584 
+L 237.276 226.9584 
+Q 231.696 226.9584 231.696 232.5024 
+L 231.696 263.5488 
+Q 231.696 269.0928 237.276 269.0928 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #168078; fill-opacity: 0.070588; stroke: #168078; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #17324d" x="26.91" y="33.4728" transform="rotate(-0 26.91 33.4728)">네 가지 질문을 서로 다른 축으로 보기</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #465a6e" x="26.91" y="60.6384" transform="rotate(-0 26.91 60.6384)">SFT·LoRA·양자화·RAG는 같은 분류의 배타적 선택지가 아닙니다.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="99.45" y="107.446031" transform="rotate(-0 99.45 107.446031)">학습 목표</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 179.570374 101.664 
+Q 201.285591 101.664 220.541133 101.664 
+" style="fill: none; stroke: #2875bb; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 214.541133 98.664 
+L 220.541133 101.664 
+L 214.541133 104.664 
+" style="fill: none; stroke: #2875bb; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="462.15" y="107.409703" transform="rotate(-0 462.15 107.409703)">SFT: 지시·입력 → 목표 응답</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="99.45" y="156.196903" transform="rotate(-0 99.45 156.196903)">갱신 대상</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 179.570374 150.4512 
+Q 201.285591 150.4512 220.541133 150.4512 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 214.541133 147.4512 
+L 220.541133 150.4512 
+L 214.541133 153.4512 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="462.15" y="155.962528" transform="rotate(-0 462.15 155.962528)">전체 파라미터 / LoRA 어댑터</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="99.45" y="204.984103" transform="rotate(-0 99.45 204.984103)">저장 표현</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 179.570374 199.2384 
+Q 201.285591 199.2384 220.541133 199.2384 
+" style="fill: none; stroke: #7d56a3; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 214.541133 196.2384 
+L 220.541133 199.2384 
+L 214.541133 202.2384 
+" style="fill: none; stroke: #7d56a3; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="462.15" y="204.0384" transform="rotate(-0 462.15 204.0384)">FP32 / FP16 / 8bit / 4bit</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="99.45" y="253.884975" transform="rotate(-0 99.45 253.884975)">추론 근거</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 179.570374 248.0256 
+Q 201.285591 248.0256 220.541133 248.0256 
+" style="fill: none; stroke: #168078; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 214.541133 245.0256 
+L 220.541133 248.0256 
+L 214.541133 251.0256 
+" style="fill: none; stroke: #168078; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; text-anchor: middle; fill: #17324d" x="462.15" y="253.536928" transform="rotate(-0 462.15 253.536928)">기본 입력 / 검색한 외부 문서</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe300fa24e0">
+   <rect x="12.96" y="12.96" width="725.4" height="299.376"/>
+  </clipPath>
+ </defs>
+</svg>

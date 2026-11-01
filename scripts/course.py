@@ -21,12 +21,14 @@ from markdown_it import MarkdownIt
 from check_public_release import scan
 from validate_notion_bundle import validate
 from board_review_parts import kit_pdf_only, render_parts
+from file_io import atomic_write_bytes, atomic_write_text
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_ROOTS = ("course", "notebooks/student", "labs/student", "src", "data/sample")
 PUBLIC_FILES = (
     "README.md",
     "scripts/course.py",
+    "scripts/file_io.py",
     "scripts/board_review_parts.py",
     "scripts/check_public_release.py",
     "scripts/validate_notion_bundle.py",
@@ -89,7 +91,7 @@ def load(root=ROOT):
 
 def write(path, text):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text, encoding="utf-8", newline="\n")
+    atomic_write_text(path, text)
 
 
 def digest(path):
@@ -367,7 +369,7 @@ def build(root=ROOT):
                     or p.relative_to(root).as_posix() in c.get("pdf_board_review_pages", [])):
                 pdf_options = dict(display_header_footer=True, header_template="<span></span>",
                     footer_template='<div style="font-size:8px;width:100%;text-align:center"><span class="pageNumber"></span> / <span class="totalPages"></span></div>')
-            tab.pdf(path=str(dest), prefer_css_page_size=True, print_background=True, **pdf_options)
+            atomic_write_bytes(dest, tab.pdf(prefer_css_page_size=True, print_background=True, **pdf_options))
         browser.close()
     hub(root, c)
     errors = scan(root / "course")

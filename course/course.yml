@@ -329,6 +329,37 @@ sessions:
   - Colab 출력에 JavaScript 로딩 오류가 뜨면 새로고침 후, 새 코드 셀에서 print(app.share_url)을 실행하고 나온
     주소를 새 탭에서 여세요. 별도 앱에서 버튼·출력·JSON을 확인합니다.
   notion_url: https://fancy-ballcap-a15.notion.site/W09B-2026-10-28-4067fd00109f81d8ae3af33ba6151d6d
+- id: w10a
+  date: '2026-11-02'
+  title: '적은 자원으로 언어 모델 바꾸기: LoRA·양자화·QLoRA·평가·RAG'
+  pages:
+  - course/notion/w10a/w10a-lesson.md
+  - course/notion/w10a/w10a-workbook.md
+  labs:
+  - notebooks/student/w10a_adaptation.ipynb
+  - notebooks/student/w10a_rag.ipynb
+  quiz: course/quiz/w10a.yml
+  release_tag: 2026-fall-w10a
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w10a/notebooks/student/w10a_adaptation.ipynb
+  runtime_label: Colab · CPU · 실제 LoRA SFT/최소 RAG · Gradio
+  assignment:
+    requested: false
+    reason: 실습·자기점검이며 새 성적 과제 요청 없음
+  announcement_guidance:
+  - '주교재6.4부터6장 끝까지: LoRA·양자화·QLoRA·평가·최소RAG를 계산과 실제 모델로 연결합니다.'
+  - A/B는 각각 Drive에 새 사본을 저장하고 첫 셀부터 독립 실행하세요. 이전 실습 파일·API키·개인 파일 업로드·유료GPU는 필수가 아닙니다.
+  - '실습 B: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w10a/notebooks/student/w10a_rag.ipynb'
+  - 패키지0.1.16/2026-fall-w10a를 사용합니다. 이미 이전 버전을 import했다면 런타임을 재시작하세요. 모델 선택 파일은A약541MB/B약363MB와
+    의존성을 자동 준비하고 캐시를 재사용합니다.
+  - A는 CPU에서 실제 float LoRA SFT4회/길이64/batch1을 실행합니다. 기본4bit 셀은 사전 검증 기록 분석이며 실제4bit
+    추가 실행은 선택입니다. 두 실행 모드를 구별하세요.
+  - B는 가상 문서8개를 실제 임베딩·검색하고 고정LLM으로 생성합니다. 문서들은 실제 학교 규정이 아닙니다. 검색 성공과 답변의 근거 정확성을
+    따로 판정하세요.
+  - 예측→실행/중간값→한 조건 변경→근거·한계→새 사례 설명을 기록하세요. 짧은 학습으로 일반 성능 개선을 보장하지 않습니다.
+  - 마지막 W10A_A/B_RUNTIME_PASS 출력과 웹앱의 표·문맥·응답·설정JSON을 확인하고 자신의 설명함수를 연결하세요. 공유주소는
+    현재 런타임 동안만 유지됩니다.
+  - Colab 인라인JavaScript 오류가 있으면 새 셀에서 print(app.share_url)을 실행해 나온 주소를 새 탭에서 여세요.
+  - 별도 성적 반영 과제나 새 제출 기한은 없습니다. 복습점검은 먼저 답한 뒤 별도 해설과 비교하세요.
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

@@ -1,0 +1,54 @@
+{
+  "provenance": "자체 작성 가상 연구실 문서8개; 실제 학교/연구실 규정 아님; CC0-1.0",
+  "version": "fiction-v1",
+  "documents": [
+    {
+      "id": "D01",
+      "title": "Study room hours",
+      "text": "The study room closes at 18:00 on weekdays. The room is closed on Sundays.",
+      "ko": "평일 열람실 마감18시"
+    },
+    {
+      "id": "D02",
+      "title": "Projector borrowing",
+      "text": "Members may borrow one projector for two days. Return it to the equipment desk.",
+      "ko": "프로젝터 대여2일"
+    },
+    {
+      "id": "D03",
+      "title": "Room booking",
+      "text": "Book the meeting room at least 24 hours before a meeting. Each booking lasts up to two hours.",
+      "ko": "회의실24시간 전 예약"
+    },
+    {
+      "id": "D04",
+      "title": "Technical support",
+      "text": "For computer problems, email help@example.org. The support desk is in room 204.",
+      "ko": "가상 지원 연락처/204호"
+    },
+    {
+      "id": "D05",
+      "title": "Safety equipment",
+      "text": "Wear safety glasses and gloves when handling chemicals. Food is not allowed in the wet laboratory.",
+      "ko": "화학실 안전"
+    },
+    {
+      "id": "D06",
+      "title": "Seminar schedule",
+      "text": "The weekly research seminar starts on Tuesday at 14:00 in room 310.",
+      "ko": "화요일14시 세미나"
+    },
+    {
+      "id": "D07",
+      "title": "Temporary data",
+      "text": "Remove temporary experiment files after 30 days. Keep approved research records in the archive.",
+      "ko": "임시 파일30일 후 정리"
+    },
+    {
+      "id": "D08",
+      "title": "Printing",
+      "text": "Each member may print 40 black and white pages per week. Color printing requires a separate request.",
+      "ko": "흑백 인쇄 주40쪽"
+    }
+  ]
+}

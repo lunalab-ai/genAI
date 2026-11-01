@@ -1,0 +1,98 @@
+{
+  "kind": "사전 검증 기록; 이 셀의 live 실행 아님",
+  "verified_at": "2026-11-01",
+  "environment": "Windows / Python3.12.10 / torch2.8.0+cpu / transformers5.15.1 / peft0.21.2 / trl1.17.1 / bitsandbytes0.50.2",
+  "state": {
+    "model": "HuggingFaceTB/SmolLM-135M",
+    "revision": "1d461723eec654e65efdc40cf49301c89c0c92f4",
+    "device": "cpu",
+    "rank": 4,
+    "alpha": 8,
+    "scale": 2.0,
+    "dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "trainable_base": 0,
+    "trainable_adapter": 230400,
+    "base_parameter_elements": 81430848,
+    "quantized_4bit_layers": 270,
+    "adapter_dtypes": [
+      "torch.float32"
+    ],
+    "compute_dtype": "torch.float32",
+    "steps": 4,
+    "mode": "실제 NF4 기본 모델 + LoRA",
+    "count_note": "4bit packed parameter numel은 원래 논리적 모수 수와 다름"
+  },
+  "history": [
+    {
+      "loss": 2.31305193901062,
+      "grad_norm": 1.3643954992294312,
+      "learning_rate": 0.0005,
+      "entropy": 2.587085485458374,
+      "mean_token_accuracy": 0.4285714328289032,
+      "num_tokens": 28.0,
+      "epoch": 0.0625,
+      "step": 1
+    },
+    {
+      "loss": 2.1763973236083984,
+      "grad_norm": 0.7168622612953186,
+      "learning_rate": 0.000375,
+      "entropy": 1.2649942636489868,
+      "mean_token_accuracy": 0.5555555820465088,
+      "num_tokens": 57.0,
+      "epoch": 0.125,
+      "step": 2
+    },
+    {
+      "loss": 3.406404495239258,
+      "grad_norm": 1.2977381944656372,
+      "learning_rate": 0.00025,
+      "entropy": 2.3836300373077393,
+      "mean_token_accuracy": 0.1666666716337204,
+      "num_tokens": 84.0,
+      "epoch": 0.1875,
+      "step": 3
+    },
+    {
+      "loss": 2.8752853870391846,
+      "grad_norm": 1.1485223770141602,
+      "learning_rate": 0.000125,
+      "entropy": 2.373366117477417,
+      "mean_token_accuracy": 0.4285714328289032,
+      "num_tokens": 113.0,
+      "epoch": 0.25,
+      "step": 4
+    }
+  ],
+  "gradients": [
+    {
+      "step": 1,
+      "A_gradient_norm_sum": 0.0,
+      "B_gradient_norm_sum": 5.967281995341182
+    },
+    {
+      "step": 2,
+      "A_gradient_norm_sum": 0.5244723337236792,
+      "B_gradient_norm_sum": 4.44200330786407
+    },
+    {
+      "step": 3,
+      "A_gradient_norm_sum": 1.1540464441059157,
+      "B_gradient_norm_sum": 6.212107566185296
+    },
+    {
+      "step": 4,
+      "A_gradient_norm_sum": 1.3247716892510653,
+      "B_gradient_norm_sum": 6.150980711914599
+    }
+  ],
+  "base_unchanged": true,
+  "adapter_changed": true,
+  "training_seconds": 3.292589400007273,
+  "adapter_dtype_policy": "TRL 초기화 후 학습 어댑터 FP32 유지; 기본 NF4/compute_dtype와 별도",
+  "limits": "이 CPU·고정 버전의 소형4회 실행 기록. Colab GPU/T4 성공·7B 속도·품질 개선의 증거가 아님."
+}

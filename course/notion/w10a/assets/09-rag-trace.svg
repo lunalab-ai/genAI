@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="751.32pt" height="325.296pt" viewBox="0 0 751.32 325.296" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 325.296 
+L 751.32 325.296 
+L 751.32 0 
+L 0 0 
+z
+" style="fill: #fafcff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30.816 197.5752 
+L 176.454 197.5752 
+Q 182.034 197.5752 182.034 192.0312 
+L 182.034 100.0008 
+Q 182.034 94.4568 176.454 94.4568 
+L 30.816 94.4568 
+Q 25.236 94.4568 25.236 100.0008 
+L 25.236 192.0312 
+Q 25.236 197.5752 30.816 197.5752 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #168078; fill-opacity: 0.070588; stroke: #168078; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 212.166 197.5752 
+L 357.804 197.5752 
+Q 363.384 197.5752 363.384 192.0312 
+L 363.384 100.0008 
+Q 363.384 94.4568 357.804 94.4568 
+L 212.166 94.4568 
+Q 206.586 94.4568 206.586 100.0008 
+L 206.586 192.0312 
+Q 206.586 197.5752 212.166 197.5752 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #2875bb; fill-opacity: 0.070588; stroke: #2875bb; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 393.516 197.5752 
+L 539.154 197.5752 
+Q 544.734 197.5752 544.734 192.0312 
+L 544.734 100.0008 
+Q 544.734 94.4568 539.154 94.4568 
+L 393.516 94.4568 
+Q 387.936 94.4568 387.936 100.0008 
+L 387.936 192.0312 
+Q 387.936 197.5752 393.516 197.5752 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #7d56a3; fill-opacity: 0.070588; stroke: #7d56a3; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 574.866 197.5752 
+L 720.504 197.5752 
+Q 726.084 197.5752 726.084 192.0312 
+L 726.084 100.0008 
+Q 726.084 94.4568 720.504 94.4568 
+L 574.866 94.4568 
+Q 569.286 94.4568 569.286 100.0008 
+L 569.286 192.0312 
+Q 569.286 197.5752 574.866 197.5752 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #c87921; fill-opacity: 0.070588; stroke: #c87921; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 64.296 297.3672 
+L 687.024 297.3672 
+Q 692.604 297.3672 692.604 291.8232 
+L 692.604 235.8288 
+Q 692.604 230.2848 687.024 230.2848 
+L 64.296 230.2848 
+Q 58.716 230.2848 58.716 235.8288 
+L 58.716 291.8232 
+Q 58.716 297.3672 64.296 297.3672 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #b54747; fill-opacity: 0.070588; stroke: #b54747; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #17324d" x="26.91" y="33.4728" transform="rotate(-0 26.91 33.4728)">최소 RAG: 문서 ID와 문맥을 끝까지 추적하기</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #465a6e" x="26.91" y="60.6384" transform="rotate(-0 26.91 60.6384)">주교재 그림6-8(293쪽)의 개념을 실제 8문서·384차원 실습에 맞게 새로 설계했습니다.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(62.318594 128.978656)">가상 문서8개</text>
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(56.483438 151.378656)">MiniLM 임베딩</text>
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(65.955312 173.252562)">행렬 [8,384]</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(247.524063 128.978656)">질문 임베딩</text>
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(245.309219 149.675687)">cosine top-k</text>
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(247.011094 173.778656)">ID·점수·원문</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(435.874063 128.978656)">선택 문맥</text>
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(422.534688 149.675687)">chat template</text>
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(419.413125 173.833344)">토큰 예산 확인</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(610.224063 128.978656)">고정 생성기</text>
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(617.224063 151.378656)">실제 응답</text>
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(593.763125 173.778656)">사람의 근거 평가</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 185.14782 146.016 
+Q 192.914456 146.016 198.221417 146.016 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 192.221417 143.016 
+L 198.221417 146.016 
+L 192.221417 149.016 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 366.49782 146.016 
+Q 374.264456 146.016 379.571417 146.016 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 373.571417 143.016 
+L 379.571417 146.016 
+L 373.571417 149.016 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 547.84782 146.016 
+Q 555.614456 146.016 560.921417 146.016 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 554.921417 143.016 
+L 560.921417 146.016 
+L 554.921417 149.016 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(179.89125 257.608031)">문서 교체 → 재임베딩·인덱스 버전 변경 · 생성기 학습 0회</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(157.925625 281.571703)">검색 성공 뒤에도 생성기가 근거를 빠뜨리거나 바꿀 수 있습니다.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe300fa24e0">
+   <rect x="12.96" y="12.96" width="725.4" height="299.376"/>
+  </clipPath>
+ </defs>
+</svg>

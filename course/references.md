@@ -527,3 +527,58 @@ https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 [강의 원문](../course/notion/w09b/w09b-workbook.md)
 
 https://github.com/lunalab-ai/genAI/blob/2026-fall-w09b/src/W09B-API.md
+
+## 적은 자원으로 언어 모델 바꾸기: LoRA·양자화·QLoRA·평가·RAG
+
+[강의 원문](../course/notion/w10a/w10a-lesson.md)
+
+주교재: 『핸즈온 생성형 AI』 6.4–6.9, 인쇄273–297쪽(어댑터부터 장말 연습·도전·참고자료). 교재 설명을 보완한 수계산·자체 데이터·실측 실패 분석은 수업용 추가 설계입니다. 원교재 전체 스캔과 출판사 풀이 원본은 배포하지 않습니다.
+
+- [LoRA 원 논문](https://arxiv.org/html/2106.09685v2): 낮은rank 업데이트·초기화·스케일·병합.
+- [QLoRA 원 논문](https://arxiv.org/html/2305.14314v1): NF4·double quantization·paged optimizer와 실험 조건.
+- [PEFT LoRA](https://huggingface.co/docs/peft/package_reference/lora), [양자화와 PEFT](https://huggingface.co/docs/peft/developer_guides/quantization): 실제 설정/준비 경로.
+- [Transformers bitsandbytes](https://huggingface.co/docs/transformers/quantization/bitsandbytes), [TRL SFTTrainer](https://huggingface.co/docs/trl/sft_trainer): 저장/계산 dtype와 현재API·마스크 계약.
+- [Chat templates](https://huggingface.co/docs/transformers/chat_templating), [Perplexity](https://huggingface.co/docs/transformers/perplexity): 모델별 직렬화와 비교 조건.
+- [BLEU](https://aclanthology.org/P02-1040.pdf), [ROUGE](https://aclanthology.org/W04-1013.pdf): 지표의 원 정의와 분모.
+- [MiniLM 모델 카드](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2), [SmolLM-135M-Instruct 모델 카드](https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct): 언어·라이선스·pooling·모델 한계.
+- [RAG 원 논문 초록](https://arxiv.org/abs/2005.11401): parametric/non-parametric memory의 결합. 수업의 고정 파이프라인과 원 논문 전체 학습은 구별합니다.
+
+확인 기준일: 2026-11-01. 실제 설치는 노트북의 고정 버전을 기준으로 합니다. 편집 가능한 SVG와 PNG는 이 페이지의 assets에 함께 보존합니다.
+
+https://aclanthology.org/P02-1040.pdf
+
+https://aclanthology.org/W04-1013.pdf
+
+https://arxiv.org/abs/2005.11401
+
+https://arxiv.org/html/2106.09685v2
+
+https://arxiv.org/html/2305.14314v1
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w10a/notebooks/student/w10a_adaptation.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w10a/notebooks/student/w10a_rag.ipynb
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w10a/src/W10A-API.md
+
+https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
+
+https://huggingface.co/docs/peft/developer_guides/quantization
+
+https://huggingface.co/docs/peft/package_reference/lora
+
+https://huggingface.co/docs/transformers/chat_templating
+
+https://huggingface.co/docs/transformers/perplexity
+
+https://huggingface.co/docs/transformers/quantization/bitsandbytes
+
+https://huggingface.co/docs/trl/sft_trainer
+
+https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+
+[강의 원문](../course/notion/w10a/w10a-workbook.md)
+
+『핸즈온 생성형 AI』 6.4–6.9와 장말 문제. 상세 출처와 모델/논문 링크는 [강의노트 참고자료](https://github.com/lunalab-ai/genAI/blob/2026-fall-w10a/course/notion/w10a/w10a-lesson.md)에 있습니다. 문제와 수계산·가상 데이터·비교 실험은 수업용으로 새로 작성했습니다.
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w10a/course/notion/w10a/w10a-lesson.md

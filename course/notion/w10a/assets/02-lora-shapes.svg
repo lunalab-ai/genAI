@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="751.32pt" height="325.296pt" viewBox="0 0 751.32 325.296" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 325.296 
+L 751.32 325.296 
+L 751.32 0 
+L 0 0 
+z
+" style="fill: #fafcff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 36.396 216.9792 
+L 106.704 216.9792 
+Q 112.284 216.9792 112.284 211.4352 
+L 112.284 163.7568 
+Q 112.284 158.2128 106.704 158.2128 
+L 36.396 158.2128 
+Q 30.816 158.2128 30.816 163.7568 
+L 30.816 211.4352 
+Q 30.816 216.9792 36.396 216.9792 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #168078; fill-opacity: 0.070588; stroke: #168078; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 189.846 158.7672 
+L 371.754 158.7672 
+Q 377.334 158.7672 377.334 153.2232 
+L 377.334 100.0008 
+Q 377.334 94.4568 371.754 94.4568 
+L 189.846 94.4568 
+Q 184.266 94.4568 184.266 100.0008 
+L 184.266 153.2232 
+Q 184.266 158.7672 189.846 158.7672 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #2875bb; fill-opacity: 0.070588; stroke: #2875bb; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 189.846 275.1912 
+L 288.054 275.1912 
+Q 293.634 275.1912 293.634 269.6472 
+L 293.634 216.4248 
+Q 293.634 210.8808 288.054 210.8808 
+L 189.846 210.8808 
+Q 184.266 210.8808 184.266 216.4248 
+L 184.266 269.6472 
+Q 184.266 275.1912 189.846 275.1912 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #c87921; fill-opacity: 0.070588; stroke: #c87921; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 340.506 275.1912 
+L 449.874 275.1912 
+Q 455.454 275.1912 455.454 269.6472 
+L 455.454 216.4248 
+Q 455.454 210.8808 449.874 210.8808 
+L 340.506 210.8808 
+Q 334.926 210.8808 334.926 216.4248 
+L 334.926 269.6472 
+Q 334.926 275.1912 340.506 275.1912 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #c87921; fill-opacity: 0.070588; stroke: #c87921; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 544.176 225.2952 
+L 689.814 225.2952 
+Q 695.394 225.2952 695.394 219.7512 
+L 695.394 166.5288 
+Q 695.394 160.9848 689.814 160.9848 
+L 544.176 160.9848 
+Q 538.596 160.9848 538.596 166.5288 
+L 538.596 219.7512 
+Q 538.596 225.2952 544.176 225.2952 
+z
+" clip-path="url(#pe300fa24e0)" style="fill: #168078; fill-opacity: 0.070588; stroke: #168078; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #17324d" x="26.91" y="33.4728" transform="rotate(-0 26.91 33.4728)">LoRA: 같은 입력에서 두 가지 경로를 더하기</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #465a6e" x="26.91" y="60.6384" transform="rotate(-0 26.91 60.6384)">주교재 그림6-4(277쪽)의 개념을 차원과 스케일을 추가해 새로 설계했습니다.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(50.426953 181.341703)">입력 x</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(63.185156 204.066703)">[k]</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 120.431706 186.219221 
+Q 149.670707 158.489329 177.125009 132.452023 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 170.707106 134.404077 
+L 177.125009 132.452023 
+L 174.83591 138.757578 
+" style="fill: none; stroke: #17324d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 120.431706 188.972779 
+Q 149.670707 216.702671 177.125009 242.739977 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 174.83591 236.434422 
+L 177.125009 242.739977 
+L 170.707106 240.787923 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <!-- 고정 $W_0$ [d,k] -->
+    <g style="fill: #17324d" transform="translate(234.975 119.787)">
+     <text>
+      <tspan x="0" y="-0.1875" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">고</tspan>
+      <tspan x="15" y="-0.1875" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">정</tspan>
+      <tspan x="30" y="-0.1875" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d"> </tspan>
+      <tspan x="57.195557" y="-0.1875" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d"> </tspan>
+      <tspan x="62.468994" y="-0.1875" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">[</tspan>
+      <tspan x="67.039307" y="-0.1875" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">d</tspan>
+      <tspan x="76.070068" y="-0.1875" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">,</tspan>
+      <tspan x="79.351318" y="-0.1875" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">k</tspan>
+      <tspan x="86.939209" y="-0.1875" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">]</tspan>
+      <tspan x="35.273438" y="-0.1875" style="font-style: oblique; font-size: 15px; font-family: 'DejaVu Sans'; fill: #17324d">W</tspan>
+      <tspan x="50.10498" y="2.062493" style="font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #17324d">0</tspan>
+     </text>
+    </g>
+    <!-- $W_0$x → [d] -->
+    <g style="fill: #17324d" transform="translate(244.8 143.037)">
+     <text>
+      <tspan x="0" y="-0.609375" style="font-style: oblique; font-size: 15px; font-family: 'DejaVu Sans'; fill: #17324d">W</tspan>
+      <tspan x="14.831543" y="1.640618" style="font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #17324d">0</tspan>
+      <tspan x="21.922119" y="-0.609375" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">x</tspan>
+      <tspan x="28.894775" y="-0.609375" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d"> </tspan>
+      <tspan x="34.168213" y="-0.609375" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">→</tspan>
+      <tspan x="48.421143" y="-0.609375" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d"> </tspan>
+      <tspan x="53.69458" y="-0.609375" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">[</tspan>
+      <tspan x="58.264893" y="-0.609375" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">d</tspan>
+      <tspan x="67.295654" y="-0.609375" style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d">]</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(201.707812 236.254359)">학습 A [r,k]</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(210.904687 259.203187)">Ax → [r]</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 299.538501 243.036 
+Q 314.27816 243.036 326.558145 243.036 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 320.558145 240.036 
+L 326.558145 243.036 
+L 320.558145 246.036 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(357.162656 236.254359)">학습 B [d,r]</text>
+    <text style="font-size: 15px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(360.905625 259.506703)">BAx → [d]</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 461.135253 242.118824 
+Q 494.232698 225.019189 525.144886 209.048557 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 518.437269 209.137286 
+L 525.144886 209.048557 
+L 521.191298 214.467888 
+" style="fill: none; stroke: #c87921; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 18px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #c87921" x="462.15" y="276.3" transform="rotate(-0 462.15 276.3)">× α/r</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 383.103718 127.34569 
+Q 455.177833 155.719115 524.963237 183.191543 
+" style="fill: none; stroke: #2875bb; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 520.479197 178.202216 
+L 524.963237 183.191543 
+L 518.281351 183.785179 
+" style="fill: none; stroke: #2875bb; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d" transform="translate(592.543125 186.868437)">합 h [d]</text>
+    <!-- $W_0$x + (α/r)BAx -->
+    <g style="fill: #17324d" transform="translate(567.785 208.26)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-style: oblique; font-size: 14px; font-family: 'DejaVu Sans'; fill: #17324d">W</tspan>
+      <tspan x="13.842773" y="1.303118" style="font-size: 9.8px; font-family: 'DejaVu Sans'; fill: #17324d">0</tspan>
+      <tspan x="20.460645" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d">x</tspan>
+      <tspan x="26.968457" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d"> </tspan>
+      <tspan x="31.890332" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d">+</tspan>
+      <tspan x="41.699902" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d"> </tspan>
+      <tspan x="46.621777" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d">(</tspan>
+      <tspan x="50.887402" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d">α</tspan>
+      <tspan x="59.69209" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d">/</tspan>
+      <tspan x="65.236035" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d">r</tspan>
+      <tspan x="70.185254" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d">)</tspan>
+      <tspan x="74.450879" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d">B</tspan>
+      <tspan x="82.619824" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d">A</tspan>
+      <tspan x="91.834668" y="-0.796875" style="font-size: 14px; font-family: 'Malgun Gothic'; fill: #17324d">x</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe300fa24e0">
+   <rect x="12.96" y="12.96" width="725.4" height="299.376"/>
+  </clipPath>
+ </defs>
+</svg>

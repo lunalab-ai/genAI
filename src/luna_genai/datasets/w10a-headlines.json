@@ -1,0 +1,150 @@
+{
+  "provenance": "수업용 자체 작성 가상 영어 뉴스24개; 실제 보도 아님; CC0-1.0",
+  "split_policy": "원문24개를16/4/4로 먼저 분리한 뒤 prompt/response 형식화; 지시 변형 분할 아님",
+  "rows": [
+    {
+      "source_id": "fiction-01",
+      "split": "train",
+      "input": "The library opened a quiet room for students.",
+      "response": "Library Opens Quiet Room"
+    },
+    {
+      "source_id": "fiction-02",
+      "split": "train",
+      "input": "A local team won the city football final.",
+      "response": "Local Team Wins City Final"
+    },
+    {
+      "source_id": "fiction-03",
+      "split": "train",
+      "input": "The museum added a new painting gallery.",
+      "response": "Museum Adds Painting Gallery"
+    },
+    {
+      "source_id": "fiction-04",
+      "split": "train",
+      "input": "The company launched a reusable lunch box.",
+      "response": "Company Launches Reusable Lunch Box"
+    },
+    {
+      "source_id": "fiction-05",
+      "split": "train",
+      "input": "The garden planted twenty new oak trees.",
+      "response": "Garden Plants Twenty Oak Trees"
+    },
+    {
+      "source_id": "fiction-06",
+      "split": "train",
+      "input": "The train station installed bright new lights.",
+      "response": "Station Installs New Lights"
+    },
+    {
+      "source_id": "fiction-07",
+      "split": "train",
+      "input": "The science club built a small weather sensor.",
+      "response": "Science Club Builds Weather Sensor"
+    },
+    {
+      "source_id": "fiction-08",
+      "split": "train",
+      "input": "The cafe introduced a low sugar fruit drink.",
+      "response": "Cafe Introduces Fruit Drink"
+    },
+    {
+      "source_id": "fiction-09",
+      "split": "train",
+      "input": "The village repaired its old stone bridge.",
+      "response": "Village Repairs Stone Bridge"
+    },
+    {
+      "source_id": "fiction-10",
+      "split": "train",
+      "input": "The orchestra performed a new evening concert.",
+      "response": "Orchestra Performs Evening Concert"
+    },
+    {
+      "source_id": "fiction-11",
+      "split": "train",
+      "input": "The school started a bicycle repair workshop.",
+      "response": "School Starts Bicycle Workshop"
+    },
+    {
+      "source_id": "fiction-12",
+      "split": "train",
+      "input": "The health center extended its morning hours.",
+      "response": "Health Center Extends Morning Hours"
+    },
+    {
+      "source_id": "fiction-13",
+      "split": "train",
+      "input": "The bookshop hosted a meeting with an author.",
+      "response": "Bookshop Hosts Author Meeting"
+    },
+    {
+      "source_id": "fiction-14",
+      "split": "train",
+      "input": "The sports center installed a new running track.",
+      "response": "Sports Center Installs Running Track"
+    },
+    {
+      "source_id": "fiction-15",
+      "split": "train",
+      "input": "The zoo welcomed a rescued young fox.",
+      "response": "Zoo Welcomes Rescued Fox"
+    },
+    {
+      "source_id": "fiction-16",
+      "split": "train",
+      "input": "The market opened a stall selling fresh herbs.",
+      "response": "Market Opens Fresh Herb Stall"
+    },
+    {
+      "source_id": "fiction-17",
+      "split": "validation",
+      "input": "The theater announced a new family play.",
+      "response": "Theater Announces Family Play"
+    },
+    {
+      "source_id": "fiction-18",
+      "split": "validation",
+      "input": "The park added a shaded walking path.",
+      "response": "Park Adds Shaded Walking Path"
+    },
+    {
+      "source_id": "fiction-19",
+      "split": "validation",
+      "input": "The laboratory tested a portable water filter.",
+      "response": "Laboratory Tests Portable Water Filter"
+    },
+    {
+      "source_id": "fiction-20",
+      "split": "validation",
+      "input": "The college opened a music practice room.",
+      "response": "College Opens Music Practice Room"
+    },
+    {
+      "source_id": "fiction-21",
+      "split": "test",
+      "input": "The bakery began selling small rye loaves.",
+      "response": "Bakery Begins Selling Rye Loaves"
+    },
+    {
+      "source_id": "fiction-22",
+      "split": "test",
+      "input": "The harbor installed a new rescue boat dock.",
+      "response": "Harbor Installs Rescue Boat Dock"
+    },
+    {
+      "source_id": "fiction-23",
+      "split": "test",
+      "input": "The chess club welcomed its first visiting coach.",
+      "response": "Chess Club Welcomes Visiting Coach"
+    },
+    {
+      "source_id": "fiction-24",
+      "split": "test",
+      "input": "The art center opened a weekend pottery studio.",
+      "response": "Art Center Opens Pottery Studio"
+    }
+  ]
+}
