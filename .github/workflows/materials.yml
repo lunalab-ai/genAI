@@ -34,8 +34,47 @@ jobs:
         if: hashFiles('requirements-lab.txt') != ''
         run: |
           python - <<'PY'
-          import ast, json, os, subprocess, sys, tomllib, yaml
+          import ast, json, os, re, subprocess, sys, tomllib, yaml
           from pathlib import Path
+          def pinned_install_commands(notebook, package_name, repository, optional_extras):
+              refs, extras, public = [], set(), False
+              for cell in notebook['cells']:
+                  if cell['cell_type'] != 'code':
+                      continue
+                  try:
+                      tree = ast.parse(''.join(cell['source']))
+                  except SyntaxError:
+                      continue
+                  for node in tree.body:
+                      if isinstance(node, ast.Assign) and isinstance(node.value, ast.Constant) and isinstance(node.value.value, str):
+                          names = {t.id for t in node.targets if isinstance(t, ast.Name)}
+                          if names.intersection({'COURSE_REF', 'PUBLIC_REF'}):
+                              refs.append(node.value.value)
+                              public |= 'PUBLIC_REF' in names
+                  for node in ast.walk(tree):
+                      if package_name and isinstance(node, ast.Constant) and isinstance(node.value, str):
+                          match = re.fullmatch(re.escape(package_name) + r'\[([A-Za-z0-9_,.-]+)\]\s*@\s*', node.value)
+                          if match:
+                              extras.update(match[1].split(','))
+              if not refs:
+                  return []
+              if len(set(refs)) != 1 or not refs[0] or not all(c.isalnum() or c in '-_./' for c in refs[0]):
+                  raise ValueError('Ambiguous or invalid notebook course ref')
+              if not package_name or not repository:
+                  raise ValueError('Pinned notebook requires package and repository metadata')
+              if public and extras.difference(optional_extras):
+                  raise ValueError('Notebook requests undeclared project extras')
+              selector = package_name + ('[' + ','.join(sorted(extras)) + ']' if public and extras else '')
+              package = selector + ' @ git+https://github.com/' + repository + '.git@' + refs[0] + '#subdirectory=src'
+              install = [sys.executable, '-m', 'pip', 'install']
+              if not public:
+                  return [install + ['--no-deps', package]]
+              # Resolve declared dependencies, then replace only the project with
+              # a regular wheel BEFORE starting the notebook's fresh kernel.
+              # This also replaces a same-version editable left by an older lab
+              # without force-reinstalling the entire ML dependency stack.
+              return [install + [package], install + ['--force-reinstall', '--no-deps', package]]
+
           config = yaml.safe_load(Path('course/course.yml').read_text())
           project_file = Path('src/pyproject.toml')
           project = tomllib.loads(project_file.read_text(encoding='utf-8')) if project_file.exists() else {}
@@ -44,28 +83,9 @@ jobs:
           for session in config['sessions']:
               for lab in session.get('labs', []):
                   if lab.endswith('.ipynb'):
-                      # Legacy Colab-only bootstraps also need their declared pin in CI.
                       notebook = json.loads(Path(lab).read_text(encoding='utf-8'))
-                      refs = []
-                      for cell in notebook['cells']:
-                          if cell['cell_type'] != 'code':
-                              continue
-                          source = ''.join(cell['source'])
-                          try:
-                              tree = ast.parse(source)
-                          except SyntaxError:  # IPython syntax in unrelated legacy cells.
-                              continue
-                          for node in tree.body:
-                              if isinstance(node, ast.Assign) and any(
-                                  isinstance(t, ast.Name) and t.id == 'COURSE_REF' for t in node.targets
-                              ) and isinstance(node.value, ast.Constant) and isinstance(node.value.value, str):
-                                  refs.append(node.value.value)
-                      if refs:
-                          if len(set(refs)) != 1 or not all(c.isalnum() or c in '-_./' for c in refs[0]):
-                              raise ValueError('Ambiguous or invalid notebook course ref: ' + lab)
-                          if not package_name or not repository:
-                              raise ValueError('Pinned notebook requires package and repository metadata')
-                          package = package_name + ' @ git+https://github.com/' + repository + '.git@' + refs[0] + '#subdirectory=src'
-                          subprocess.run([sys.executable, '-m', 'pip', 'install', '--no-deps', package], check=True)
+                      for command in pinned_install_commands(notebook, package_name, repository,
+                              project.get('project', {}).get('optional-dependencies', {})):
+                          subprocess.run(command, check=True)
                       subprocess.run([sys.executable, 'scripts/execute_notebook.py', lab, '--require-checks'], check=True)
           PY
