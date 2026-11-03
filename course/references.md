@@ -582,3 +582,39 @@ https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 『핸즈온 생성형 AI』 6.4–6.9와 장말 문제. 상세 출처와 모델/논문 링크는 [강의노트 참고자료](https://github.com/lunalab-ai/genAI/blob/2026-fall-w10a/course/notion/w10a/w10a-lesson.md)에 있습니다. 문제와 수계산·가상 데이터·비교 실험은 수업용으로 새로 작성했습니다.
 
 https://github.com/lunalab-ai/genAI/blob/2026-fall-w10a/course/notion/w10a/w10a-lesson.md
+
+## 이미지 생성 모델에 새 대상을 가르치기: 전체 파인튜닝·DreamBooth·LoRA·SDXL
+
+[강의 원문](../course/notion/w10b/w10b-lesson.md)
+
+- 주교재 『핸즈온 생성형 AI』 7.1–7.6, 장말 연습·도전·참고자료. 스캔의 PDF 펼침 1–13 전체를 확인했으며 원자료와 출판사 완성 해답은 배포물에 넣지 않습니다.
+- [DreamBooth 원논문](https://arxiv.org/html/2208.12242v2): 식별자·클래스·사전 보존의 의미.
+- [Diffusers text-to-image 학습](https://huggingface.co/docs/diffusers/training/text2image), [DreamBooth](https://huggingface.co/docs/diffusers/training/dreambooth), [LoRA](https://huggingface.co/docs/diffusers/training/lora): 실제 갱신 범위와 API 연결.
+- [Diffusers 0.40.0 SDXL DreamBooth-LoRA 코드](https://github.com/huggingface/diffusers/blob/v0.40.0/examples/dreambooth/train_dreambooth_lora_sdxl.py): 이번 과목의 고정 라이브러리 버전과 대조한 선택 프로젝트 경로.
+- [SDXL-base 공식 설정](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/unet/config.json), [인페인팅 공식 설명](https://huggingface.co/docs/diffusers/using-diffusers/inpaint), [Little Tinies 모델 카드](https://huggingface.co/alvdansen/littletinies).
+
+원문 용어와 방법론을 유지하되 수계산·기하 데이터·비교 실험·도식과 활동은 이번 수업을 위해 새로 설계했습니다. 실행된 작은 모델, 실제 SD1.5, 저장 기록 분석, 선택 SDXL 구성/미실행 경로를 구분합니다.
+
+https://arxiv.org/html/2208.12242v2
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w10b/notebooks/student/w10b_diffusion_adaptation.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w10b/notebooks/student/w10b_diffusion_project.ipynb
+
+https://github.com/huggingface/diffusers/blob/v0.40.0/examples/dreambooth/train_dreambooth_lora_sdxl.py
+
+https://github.com/lunalab-ai/genAI/blob/2026-fall-w10b/src/W10B-API.md
+
+https://huggingface.co/alvdansen/littletinies
+
+https://huggingface.co/docs/diffusers/training/dreambooth
+
+https://huggingface.co/docs/diffusers/training/lora
+
+https://huggingface.co/docs/diffusers/training/text2image
+
+https://huggingface.co/docs/diffusers/using-diffusers/inpaint
+
+https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/unet/config.json
+
+[강의 원문](../course/notion/w10b/w10b-workbook.md)

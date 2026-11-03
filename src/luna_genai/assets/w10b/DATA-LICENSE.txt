@@ -1,0 +1,3 @@
+W10B original procedural geometry illustrations: CC0-1.0.
+No personal photographs or publisher image assets are included.
+Source/projection/view groups: image-manifest.json.

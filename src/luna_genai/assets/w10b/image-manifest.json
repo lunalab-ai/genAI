@@ -1,0 +1,106 @@
+{
+  "provenance": "Original procedural 3-D mesh and eight distinct camera renders authored for W10B. These are synthetic illustrations, not photographs or independently sampled real objects.",
+  "license": "CC0-1.0 for this original geometric dataset",
+  "subject": "green tote bag with an orange triangular front patch and two handles",
+  "instance_prompt": "an illustration of lunabag tote bag",
+  "class_prompt": "an illustration of a tote bag",
+  "split_policy": "Camera groups split before any image augmentation. One synthetic object/renderer; results do not establish generalization to real photographs or new objects.",
+  "images": [
+    {
+      "id": "VIEW00",
+      "group_id": "camera-00",
+      "scene_id": "luna-tote-01",
+      "file": "instance-00.png",
+      "split": "train",
+      "azimuth_degrees": -130,
+      "elevation_degrees": 22,
+      "background": "#ffffff",
+      "caption": "an illustration of lunabag tote bag, oblique view, plain background",
+      "sha256": "f4e0e6a2b30ea31ee818c7e21be058835f090bb1ff14f2ef9d6f42445bd6435e"
+    },
+    {
+      "id": "VIEW01",
+      "group_id": "camera-01",
+      "scene_id": "luna-tote-01",
+      "file": "instance-01.png",
+      "split": "train",
+      "azimuth_degrees": -115,
+      "elevation_degrees": 28,
+      "background": "#f2f3f4",
+      "caption": "an illustration of lunabag tote bag, oblique view, plain background",
+      "sha256": "0684635c07f3701c8ce10061ab988b73103ba6ac340b1b507f43bc3078ea10ff"
+    },
+    {
+      "id": "VIEW02",
+      "group_id": "camera-02",
+      "scene_id": "luna-tote-01",
+      "file": "instance-02.png",
+      "split": "train",
+      "azimuth_degrees": -100,
+      "elevation_degrees": 35,
+      "background": "#eef1ed",
+      "caption": "an illustration of lunabag tote bag, front view, plain background",
+      "sha256": "d6a896a740e313ddb041f7e4dcd9133c0f59ac2df9f811965a7a62db6491d20f"
+    },
+    {
+      "id": "VIEW03",
+      "group_id": "camera-03",
+      "scene_id": "luna-tote-01",
+      "file": "instance-03.png",
+      "split": "train",
+      "azimuth_degrees": -85,
+      "elevation_degrees": 24,
+      "background": "#fff8ed",
+      "caption": "an illustration of lunabag tote bag, front view, plain background",
+      "sha256": "c7a3151651a031acdc169b6e32b00dcea81eb99d2daaaa0807b7d7e9f5a01718"
+    },
+    {
+      "id": "VIEW04",
+      "group_id": "camera-04",
+      "scene_id": "luna-tote-01",
+      "file": "instance-04.png",
+      "split": "train",
+      "azimuth_degrees": -70,
+      "elevation_degrees": 32,
+      "background": "#f2f4fa",
+      "caption": "an illustration of lunabag tote bag, oblique view, plain background",
+      "sha256": "753349e1b37970dc0e966a4c35f3fbe6a60e101dd50123c9a675095f3f5b2791"
+    },
+    {
+      "id": "VIEW05",
+      "group_id": "camera-05",
+      "scene_id": "luna-tote-01",
+      "file": "instance-05.png",
+      "split": "train",
+      "azimuth_degrees": -55,
+      "elevation_degrees": 30,
+      "background": "#faf7f1",
+      "caption": "an illustration of lunabag tote bag, oblique view, plain background",
+      "sha256": "fb02ade8cacdc8e350104d6832bc0a52d439d23fd5fd02b4949e12abea1f5e82"
+    },
+    {
+      "id": "VIEW06",
+      "group_id": "camera-06",
+      "scene_id": "luna-tote-01",
+      "file": "instance-06.png",
+      "split": "validation",
+      "azimuth_degrees": -40,
+      "elevation_degrees": 25,
+      "background": "#dce9f1",
+      "caption": "an illustration of lunabag tote bag, oblique view, plain background",
+      "sha256": "fc1b47cf2ca99d134ad2df5a5afb46f7d3c141216481b5d61737f994b3a6d794"
+    },
+    {
+      "id": "VIEW07",
+      "group_id": "camera-07",
+      "scene_id": "luna-tote-01",
+      "file": "instance-07.png",
+      "split": "validation",
+      "azimuth_degrees": -25,
+      "elevation_degrees": 38,
+      "background": "#f3e7df",
+      "caption": "an illustration of lunabag tote bag, oblique view, plain background",
+      "sha256": "cae93ff9c344cf685608568355fd0ccc405ffe68b1f4b2b7b7b2e7106d4d0d92"
+    }
+  ]
+}

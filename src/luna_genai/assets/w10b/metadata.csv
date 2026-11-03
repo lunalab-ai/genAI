@@ -1,0 +1,9 @@
+file_name,text,split,group_id
+instance-00.png,"an illustration of lunabag tote bag, oblique view, plain background",train,camera-00
+instance-01.png,"an illustration of lunabag tote bag, oblique view, plain background",train,camera-01
+instance-02.png,"an illustration of lunabag tote bag, front view, plain background",train,camera-02
+instance-03.png,"an illustration of lunabag tote bag, front view, plain background",train,camera-03
+instance-04.png,"an illustration of lunabag tote bag, oblique view, plain background",train,camera-04
+instance-05.png,"an illustration of lunabag tote bag, oblique view, plain background",train,camera-05
+instance-06.png,"an illustration of lunabag tote bag, oblique view, plain background",validation,camera-06
+instance-07.png,"an illustration of lunabag tote bag, oblique view, plain background",validation,camera-07

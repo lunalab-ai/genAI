@@ -360,6 +360,37 @@ sessions:
     현재 런타임 동안만 유지됩니다.
   - Colab 인라인JavaScript 오류가 있으면 새 셀에서 print(app.share_url)을 실행해 나온 주소를 새 탭에서 여세요.
   - 별도 성적 반영 과제나 새 제출 기한은 없습니다. 복습점검은 먼저 답한 뒤 별도 해설과 비교하세요.
+- id: w10b
+  date: '2026-11-04'
+  title: '이미지 생성 모델에 새 대상을 가르치기: 전체 파인튜닝·DreamBooth·LoRA·SDXL'
+  pages:
+  - course/notion/w10b/w10b-lesson.md
+  - course/notion/w10b/w10b-workbook.md
+  labs:
+  - notebooks/student/w10b_diffusion_adaptation.ipynb
+  - notebooks/student/w10b_diffusion_project.ipynb
+  quiz: course/quiz/w10b.yml
+  release_tag: 2026-fall-w10b
+  runtime_label: Colab · CPU 실제 소형 모델 학습 / SD1.5 기록 분석 · SDXL 선택 확장
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w10b/notebooks/student/w10b_diffusion_adaptation.ipynb
+  assignment:
+    requested: false
+    reason: 실습·자기점검이며 새 성적 과제 요청 없음
+  announcement_guidance:
+  - 11월4일(수)10주차2차시는 주교재7장 전체입니다. 데이터·목적·가중치 갱신·새 입력을 연결합니다.
+  - A/B는 각각 Drive에 새 사본을 저장하고 첫 셀부터 독립 실행하세요. 이전 실습 파일·API키·개인 사진·유료GPU는 필수가 아닙니다.
+  - '실습 B: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w10b/notebooks/student/w10b_diffusion_project.ipynb'
+  - 패키지0.1.17 / 2026-fall-w10b 고정 버전입니다. 다른 버전을 이미 import했다면 런타임을 재시작하세요. 데이터와 기록은
+    패키지에 포함되고 tokenizer는 최초 자동 준비·캐시 재사용합니다.
+  - A는28×28 작은 조건부 모델을 실제16회×4조건 학습합니다. 이 모델은 Stable Diffusion·텍스트DreamBooth의 완전 재현이
+    아닙니다.
+  - B CPU필수는 실제 SD1.5 LoRA 사전 실행 기록 분석입니다. 지금 새로 SD를 학습한 것으로 표시하지 않습니다. SD1.5 live경로는
+    최초 약2.6GB base를 준비하는 선택 실행이며, SDXL은 프로젝트 파일/조건 검토와 선택GPU학습을 구별합니다.
+  - 예측→중간값→한 조건 변경→근거·한계→새 사례 설명을 기록하세요. 학습 작동과 대상 보존·배경 이행의 품질을 따로 평가합니다.
+  - 마지막 W10B_A/B_RUNTIME_PASS와 앱 버튼·표·마스크·JSON다운로드를 확인하세요. 앱 공유주소는 현재 런타임 동안 유지됩니다.
+    인라인JavaScript오류는 print(app.share_url) 주소를 새 탭에서 여세요.
+  - 별도 성적 과제나 제출 기한은 없습니다. 개념 점검은 먼저 답하고 별도 해설과 비교해 주세요.
+  notion_url: https://fancy-ballcap-a15.notion.site/W10B-2026-11-04-40d7fd00109f81faabd4f102dd0dff41
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab
