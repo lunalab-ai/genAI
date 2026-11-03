@@ -370,7 +370,7 @@ sessions:
   - notebooks/student/w10b_diffusion_adaptation.ipynb
   - notebooks/student/w10b_diffusion_project.ipynb
   quiz: course/quiz/w10b.yml
-  release_tag: 2026-fall-w10b
+  release_tag: 2026-fall-w10b-r1
   runtime_label: Colab · CPU 실제 소형 모델 학습 / SD1.5 기록 분석 · SDXL 선택 확장
   colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w10b/notebooks/student/w10b_diffusion_adaptation.ipynb
   assignment:
