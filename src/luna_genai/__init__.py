@@ -1,6 +1,6 @@
 """Shared course APIs; importing this module does not download a model."""
 from .data import load_reviews
-__version__ = "0.1.17"
+__version__ = "0.1.18"
 
 def __getattr__(name):
     """Load optional model dependencies only when the existing API is requested.

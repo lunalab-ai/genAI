@@ -391,6 +391,43 @@ sessions:
     인라인JavaScript오류는 print(app.share_url) 주소를 새 탭에서 여세요.
   - 별도 성적 과제나 제출 기한은 없습니다. 개념 점검은 먼저 답하고 별도 해설과 비교해 주세요.
   notion_url: https://fancy-ballcap-a15.notion.site/W10B-2026-11-04-40d7fd00109f81faabd4f102dd0dff41
+- id: w11a
+  date: '2026-11-09'
+  title: '이미지 생성의 학습과 제어: 7장 실습 보완과 8장 창의적 활용'
+  pages:
+  - course/notion/w11a/w11a-lesson.md
+  - course/notion/w11a/w11a-workbook.md
+  labs:
+  - notebooks/student/w10b_diffusion_adaptation.ipynb
+  - notebooks/student/w10b_diffusion_project.ipynb
+  - notebooks/student/w11a_image_editing.ipynb
+  - notebooks/student/w11a_control_project.ipynb
+  quiz: course/quiz/w11a.yml
+  release_tag: 2026-fall-w11a
+  runtime_label: Colab · CPU 실제 소형 편집 / 실제 SD1.5 기록 분석 · Gradio
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w11a_image_editing.ipynb
+  assignment:
+    requested: false
+    reason: 수업 실습과 자기점검; 새 성적 과제 요청 없음
+  announcement_guidance:
+  - 11월9일(월) 11주차1차시는 주교재8장 전체와 지난7장 실습을 진행합니다.
+  - 7장 A/B 개선판은 핵심 학습 구현을 노트북 본문에 펼쳐 두었습니다. 기존 문제와 데이터는 유지합니다.
+  - '7장 A: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w10b_diffusion_adaptation.ipynb'
+  - '7장 B: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w10b_diffusion_project.ipynb'
+  - '8장 B·앱: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w11a_control_project.ipynb'
+  - 각 실습은 새 사본에서 첫 셀부터 독립 실행하세요. 패키지0.1.18/2026-fall-w11a 고정 버전입니다. 이미 다른 버전을 import했다면
+    런타임을 재시작하세요.
+  - CPU 필수는 실제 pretrained 소형 denoising·수계산과 전체 SD1.5 사전 실행 기록 분석입니다. 현재 T4/SDXL 생성·학습으로
+    표시하지 않습니다.
+  - API 키·개인 사진·유료 GPU·이전 실습 파일이 필요하지 않습니다. 데이터·checkpoint·기록이 패키지에서 자동 준비됩니다. 선택
+    GPU는 실제 장치·수GB 다운로드가 필요하며 할당을 보장하지 않습니다.
+  - 핵심 코드→shape·중간값→한 조건 변경→새 사례 설명을 기록하고, 앱 callback을 바꿔 JSON/CSV를 내려받으세요. 마지막 W11A_A/B_RUNTIME_PASS를
+    확인합니다.
+  - 앱 주소는 현재 런타임 동안만 유지됩니다. 인라인JavaScript 오류는 print(app.share_url)의 주소를 새 탭에서 여세요.
+  - 별도 성적 과제나 제출 기한은 없습니다. 기록지와 장말5문항으로 복습하세요.
+  - '학생용 전체 파일 ZIP(7장 개선 A/B·8장 A/B·PDF·핵심 소스): https://github.com/lunalab-ai/genAI/releases/download/2026-fall-w11a/w11a-student-files.zip'
+  - '고정 공개 버전: https://github.com/lunalab-ai/genAI/releases/tag/2026-fall-w11a'
+  notion_url: https://fancy-ballcap-a15.notion.site/W11A-2026-11-09-4127fd00109f814c9474c23be74a38da
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

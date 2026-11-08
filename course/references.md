@@ -618,3 +618,31 @@ https://huggingface.co/docs/diffusers/using-diffusers/inpaint
 https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/unet/config.json
 
 [강의 원문](../course/notion/w10b/w10b-workbook.md)
+
+## 이미지 생성의 학습과 제어: 7장 실습 보완과 8장 창의적 활용
+
+[강의 원문](../course/notion/w11a/w11a-lesson.md)
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w10b_diffusion_adaptation.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w10b_diffusion_project.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w11a_control_project.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w11a_image_editing.ipynb
+
+https://huggingface.co/docs/diffusers/api/pipelines/ledits_pp
+
+https://huggingface.co/docs/diffusers/using-diffusers/controlnet
+
+https://huggingface.co/docs/diffusers/using-diffusers/img2img
+
+https://huggingface.co/docs/diffusers/using-diffusers/inpaint
+
+https://huggingface.co/docs/diffusers/using-diffusers/ip_adapter
+
+[강의 원문](../course/notion/w11a/w11a-workbook.md)
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w11a_control_project.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w11a_image_editing.ipynb

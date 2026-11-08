@@ -1,0 +1,296 @@
+{
+  "mode": "actual SD CPU execution record",
+  "created_at": "2026-11-08T15:16:39+0900",
+  "python": "3.12.10",
+  "torch": "2.8.0+cpu",
+  "diffusers": "0.40.0",
+  "base": {
+    "id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14"
+  },
+  "control": {
+    "id": "lllyasviel/control_v11p_sd15_canny",
+    "revision": "115a470d547982438f70198e353a921996e2e819"
+  },
+  "ip": {
+    "id": "h94/IP-Adapter",
+    "revision": "018e402774aeeddd60609b4ecdb7e298259dc729"
+  },
+  "instruction": {
+    "id": "timbrooks/instruct-pix2pix",
+    "revision": "31519b5cb02a7fd89b906d88731cd4d6a7bbf88d"
+  },
+  "size": [
+    256,
+    256
+  ],
+  "seed": 42,
+  "steps": 8,
+  "limitations": "CPU float32, very short low-resolution examples; not quality benchmarks or fresh student SDXL execution",
+  "source": "own procedural tote-bag render; own geometric reference tile; no personal photos",
+  "records": [
+    {
+      "seconds": 8.181244500010507,
+      "settings": {
+        "prompt": "an illustration of a green tote bag with an orange triangular patch on a wooden table, simple background",
+        "strength": 0.25,
+        "num_inference_steps": 8,
+        "guidance_scale": 6
+      },
+      "seed": 42,
+      "pipeline": "StableDiffusionImg2ImgPipeline",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "img2img-0.25",
+      "file": "img2img-0.25.png",
+      "backend": "SD1.5 img2img",
+      "strength": 0.25
+    },
+    {
+      "seconds": 19.066124100005254,
+      "settings": {
+        "prompt": "an illustration of a green tote bag with an orange triangular patch on a wooden table, simple background",
+        "strength": 0.75,
+        "num_inference_steps": 8,
+        "guidance_scale": 6
+      },
+      "seed": 42,
+      "pipeline": "StableDiffusionImg2ImgPipeline",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "img2img-0.75",
+      "file": "img2img-0.75.png",
+      "backend": "SD1.5 img2img",
+      "strength": 0.75
+    },
+    {
+      "seconds": 22.263620900004753,
+      "settings": {
+        "prompt": "an illustration of a green tote bag with an orange triangular patch on a wooden table, simple background",
+        "height": 256,
+        "width": 256,
+        "strength": 1.0,
+        "num_inference_steps": 8,
+        "guidance_scale": 6
+      },
+      "seed": 42,
+      "pipeline": "StableDiffusionInpaintPipeline",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "inpaint",
+      "file": "inpaint.png",
+      "backend": "generic SD1.5 four-channel inpainting, not dedicated SDXL nine-channel",
+      "region_mse": {
+        "inside": 0.307671981217072,
+        "outside": 0.0006143100313010923
+      }
+    },
+    {
+      "seconds": 49.62857420000364,
+      "settings": {
+        "prompt": "a watercolor landscape of mountains and trees",
+        "height": 256,
+        "width": 256,
+        "num_inference_steps": 16,
+        "guidance_scale": 6,
+        "edit_guidance_scale": 5,
+        "edit_warmup_steps": 1,
+        "edit_threshold": 0.7
+      },
+      "seed": 42,
+      "pipeline": "SemanticStableDiffusionPipeline",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "semantic",
+      "file": "semantic.png",
+      "backend": "actual SemanticStableDiffusionPipeline"
+    },
+    {
+      "seconds": 17.400592700010748,
+      "settings": {
+        "strength": 0.75,
+        "num_inference_steps": 8,
+        "guidance_scale": 6
+      },
+      "seed": 42,
+      "pipeline": "StableDiffusionImg2ImgPipeline",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "weighted",
+      "file": "weighted.png",
+      "backend": "actual SD with teaching linear embedding blend, not Compel syntax",
+      "prompts": [
+        "an illustration of a green tote bag",
+        "an illustration of a tote bag with orange flowers"
+      ],
+      "coefficients": [
+        0.7,
+        0.3
+      ]
+    },
+    {
+      "seconds": 12.784774400002789,
+      "settings": {
+        "editing_prompt": null
+      },
+      "seed": 42,
+      "pipeline": "LEditsPPPipelineStableDiffusion",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "inversion-reconstruction",
+      "file": "inversion-reconstruction.png",
+      "backend": "LEDITS++ SD1.5",
+      "inversion_steps": 8,
+      "inversion_seconds": 11.642263499990804,
+      "reconstruction_mse": 0.0005481124422297511
+    },
+    {
+      "seconds": 18.757423100003507,
+      "settings": {
+        "edit_guidance_scale": 5,
+        "edit_warmup_steps": 1,
+        "edit_threshold": 0.7,
+        "use_cross_attn_mask": false,
+        "use_intersect_mask": false
+      },
+      "seed": 42,
+      "pipeline": "LEditsPPPipelineStableDiffusion",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "inversion-edit",
+      "file": "inversion-edit.png",
+      "backend": "LEDITS++ SD1.5",
+      "inversion_steps": 8
+    },
+    {
+      "seconds": 27.923032599996077,
+      "settings": {
+        "prompt": "Turn the bag red",
+        "num_inference_steps": 8,
+        "image_guidance_scale": 1.5,
+        "guidance_scale": 7
+      },
+      "seed": 42,
+      "pipeline": "StableDiffusionInstructPix2PixPipeline",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "instruction",
+      "file": "instruction.png",
+      "backend": "InstructPix2Pix SD1.5, not CosXL"
+    },
+    {
+      "seconds": 30.069003099997644,
+      "settings": {
+        "prompt": "an illustration of a green tote bag with an orange triangular patch on a wooden table, simple background",
+        "height": 256,
+        "width": 256,
+        "num_inference_steps": 8,
+        "guidance_scale": 6,
+        "controlnet_conditioning_scale": 0.0
+      },
+      "seed": 42,
+      "pipeline": "StableDiffusionControlNetPipeline",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "control0-ip0",
+      "file": "control0-ip0.png",
+      "backend": "SD1.5 ControlNet Canny + IP-Adapter",
+      "control_scale": 0.0,
+      "ip_scale": 0.0,
+      "matched_seed": true
+    },
+    {
+      "seconds": 29.442156199991587,
+      "settings": {
+        "prompt": "an illustration of a green tote bag with an orange triangular patch on a wooden table, simple background",
+        "height": 256,
+        "width": 256,
+        "num_inference_steps": 8,
+        "guidance_scale": 6,
+        "controlnet_conditioning_scale": 0.0
+      },
+      "seed": 42,
+      "pipeline": "StableDiffusionControlNetPipeline",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "control0-ip1",
+      "file": "control0-ip1.png",
+      "backend": "SD1.5 ControlNet Canny + IP-Adapter",
+      "control_scale": 0.0,
+      "ip_scale": 0.6,
+      "matched_seed": true
+    },
+    {
+      "seconds": 23.80709410000418,
+      "settings": {
+        "prompt": "an illustration of a green tote bag with an orange triangular patch on a wooden table, simple background",
+        "height": 256,
+        "width": 256,
+        "num_inference_steps": 8,
+        "guidance_scale": 6,
+        "controlnet_conditioning_scale": 0.8
+      },
+      "seed": 42,
+      "pipeline": "StableDiffusionControlNetPipeline",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "control1-ip0",
+      "file": "control1-ip0.png",
+      "backend": "SD1.5 ControlNet Canny + IP-Adapter",
+      "control_scale": 0.8,
+      "ip_scale": 0.0,
+      "matched_seed": true
+    },
+    {
+      "seconds": 22.780733100007637,
+      "settings": {
+        "prompt": "an illustration of a green tote bag with an orange triangular patch on a wooden table, simple background",
+        "height": 256,
+        "width": 256,
+        "num_inference_steps": 8,
+        "guidance_scale": 6,
+        "controlnet_conditioning_scale": 0.8
+      },
+      "seed": 42,
+      "pipeline": "StableDiffusionControlNetPipeline",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "safety_checked": true,
+      "id": "control1-ip1",
+      "file": "control1-ip1.png",
+      "backend": "SD1.5 ControlNet Canny + IP-Adapter",
+      "control_scale": 0.8,
+      "ip_scale": 0.6,
+      "matched_seed": true
+    }
+  ],
+  "sha256": {
+    "canny.png": "0d84d4cc0ecc57c38a3bc6601407a3603b874d3ae7ca1e861e2c96347ca48340",
+    "control0-ip0.png": "f8ce164d3dbba94e0dfc65e655822d7b33337ef465fb5ecba63d9170117cc3c6",
+    "control0-ip1.png": "58a7ed79dbf6ee0f5d4a69994c6887db29bf0934f708e40935954c1694edd2e6",
+    "control1-ip0.png": "97be2bb5a2303ec3bee69ac33b70f852f6e9db3928e9ee51fd0b5bdadb99cbb5",
+    "control1-ip1.png": "7bd26f447d1891c37f80d749d9581f3cde54297d5ae064809c3b550d3343001e",
+    "img2img-0.25.png": "873049ab71be02184175a2bad81a0db382d1f43ea2077a105fab93ba7bc5acb3",
+    "img2img-0.75.png": "de2e4e33521ea19824298a0caf64830ef31102f1c4e06bcbdc3dcc45db168862",
+    "inpaint.png": "8b1c764b10afcadf56da58003f2a40daceb8458366e6a160d288a700b0281d85",
+    "instruction.png": "2ca2f81dac409fdadb39723044c41d0c5507a3a35a2aeee849046ee542d00d93",
+    "inversion-edit.png": "1f7f2e9405497894a511f4831b8b783c10b0d5ee4061fd90ba81ccfb0fa0d23d",
+    "inversion-reconstruction.png": "bb1dedd9886f51b0882376a488f1055832a61cd9a02c6ce4708f16c89c34c4c2",
+    "mask.png": "e0b162216a40bb3fcc2702fe34e33c9ee69783f8cdb860bec7d87754d1bd69d9",
+    "reference.png": "410986e6ee528642d00f3e56fb832de02d8d09888ec1a89f905aa1f308b8a982",
+    "semantic.png": "94b0582a68f737a15ef9bcddb44a5eb7059f5b696829497000f5e13f737ac955",
+    "source.png": "4a2cdae91fe34c4d54f6e4c73358cce215454e7541bc72bb13245b36fe05c695",
+    "weighted.png": "ebf5ce023fce9763cb95aeae1fc08a9c0b9e4b9f312df88a37d1a01ee4bdd1f4"
+  }
+}
