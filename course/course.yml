@@ -446,7 +446,7 @@ sessions:
     reason: 수업 실습·자기점검, 새 성적 과제·제출 기한 요청 없음
   announcement_guidance:
   - 11월11일(수) 11주차2차시는 주교재9장 전체입니다. 파형·Mel·CTC·오류율·음성/음악 생성·평가·프로젝트를 연결합니다.
-  - A/B는 각각 새 Colab 사본에서 첫 셀부터 실행하세요. 패키지0.1.19/2026-fall-w11b-r1 고정 버전이며 이미 다른 버전을
+  - A/B는 각각 새 Colab 사본에서 첫 셀부터 실행하세요. 패키지0.1.20/2026-fall-w11b-r1 고정 버전이며 이미 다른 버전을
     import했다면 런타임을 재시작합니다.
   - 'B·생성과 앱: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b-r1/notebooks/student/w11b_audio_generation.ipynb'
   - API 키·개인 음성·유료 GPU·이전 실습 파일은 필요하지 않습니다. 첫 모델 다운로드는 네트워크와 수분이 필요하고 이후 캐시를 재사용합니다.
