@@ -659,9 +659,9 @@ https://arxiv.org/abs/2301.12503
 
 https://arxiv.org/abs/2308.01546
 
-https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b/notebooks/student/w11b_audio_generation.ipynb
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b-r1/notebooks/student/w11b_audio_generation.ipynb
 
-https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b/notebooks/student/w11b_audio_understanding.ipynb
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b-r1/notebooks/student/w11b_audio_understanding.ipynb
 
 https://huggingface.co/docs/transformers/model_doc/encodec
 

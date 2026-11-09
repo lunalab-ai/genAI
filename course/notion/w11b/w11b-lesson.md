@@ -4,7 +4,7 @@
 
 이번 수업에서 설명할 수 있어야 할 것은 세 가지입니다. **소리를 어떤 배열로 바꾸는가, 그 배열에서 모델이 무엇을 예측하는가, 결과를 어떤 기준으로 확인하는가**입니다. 긴 모델 목록은 이 세 질문으로 묶어 읽습니다.
 
-실습은 [A·표현과 인식](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b/notebooks/student/w11b_audio_understanding.ipynb), [B·생성과 음성 프로젝트](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b/notebooks/student/w11b_audio_generation.ipynb)입니다. 각각 새 사본에서 첫 셀부터 실행합니다. 핵심 함수는 본문에서 수정하며 실제 모델·앱에 전달됩니다. 설치와 파일 입출력만 접어 두었습니다. CPU 기본 경로에 API 키·개인 음성·유료 GPU가 필요하지 않습니다. 첫 모델 다운로드는 네트워크가 필요합니다.
+실습은 [A·표현과 인식](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b-r1/notebooks/student/w11b_audio_understanding.ipynb), [B·생성과 음성 프로젝트](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b-r1/notebooks/student/w11b_audio_generation.ipynb)입니다. 각각 새 사본에서 첫 셀부터 실행합니다. 핵심 함수는 본문에서 수정하며 실제 모델·앱에 전달됩니다. 설치와 파일 입출력만 접어 두었습니다. CPU 기본 경로에 API 키·개인 음성·유료 GPU가 필요하지 않습니다. 첫 모델 다운로드는 네트워크가 필요합니다.
 
 ![파형·특징·인식·생성의 관계](assets/01-map.png)
 
