@@ -646,3 +646,33 @@ https://huggingface.co/docs/diffusers/using-diffusers/ip_adapter
 https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w11a_control_project.ipynb
 
 https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11a/notebooks/student/w11a_image_editing.ipynb
+
+## 주교재 9장 전체 — 오디오 표현·음성 인식·음성 및 음악 생성
+
+[강의 원문](../course/notion/w11b/w11b-lesson.md)
+
+https://arxiv.org/abs/2207.09983
+
+https://arxiv.org/abs/2209.03143
+
+https://arxiv.org/abs/2301.12503
+
+https://arxiv.org/abs/2308.01546
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b/notebooks/student/w11b_audio_generation.ipynb
+
+https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b/notebooks/student/w11b_audio_understanding.ipynb
+
+https://huggingface.co/docs/transformers/model_doc/encodec
+
+https://huggingface.co/docs/transformers/model_doc/speecht5
+
+https://huggingface.co/docs/transformers/model_doc/wav2vec2
+
+https://huggingface.co/facebook/musicgen-small
+
+https://huggingface.co/openai/whisper-tiny
+
+https://www.openslr.org/12/
+
+[강의 원문](../course/notion/w11b/w11b-workbook.md)

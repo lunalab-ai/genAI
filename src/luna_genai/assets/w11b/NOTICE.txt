@@ -1,0 +1,15 @@
+W11B public teaching assets, 2026-11-09.
+No textbook scans, publisher notebook, model weights, personal uploads or exercise solutions included.
+speech.wav: LibriSpeech dev-clean 1272-128104-0000; CC BY 4.0.
+Attribution: Vassil Panayotov, Guoguo Chen, Daniel Povey and Sanjeev Khudanpur.
+Source https://www.openslr.org/12/ ; mirrored via hf-internal-testing/librispeech_asr_dummy.
+Changes: FLAC decoded and converted to PCM16 WAV, unchanged sample rate.
+License https://creativecommons.org/licenses/by/4.0/
+speaker.npy: public research x-vector from Matthijs/cmu-arctic-xvectors (MIT metadata).
+Other WAV/NPZ files: actual classroom research inference records with settings and revisions in manifest.json.
+MusicGen checkpoint license CC-BY-NC-4.0, https://huggingface.co/facebook/musicgen-small
+Use music examples for noncommercial education; generated snippets are not claims of exclusive rights.
+audio_models.decode_speecht5: adapted from Hugging Face Transformers _generate_speech.
+Copyright 2022 The HuggingFace Inc. team and Microsoft Corporation. Apache License 2.0.
+Changes: single-item decode, visible per-step trace, injected stopping callback, bounded length.
+Apache license https://www.apache.org/licenses/LICENSE-2.0

@@ -1,0 +1,166 @@
+{
+  "recorded_at_utc": "2026-11-09",
+  "mode": "previously-executed-real-model-records",
+  "speech": {
+    "text": "MISTER QUILTER IS THE APOSTLE OF THE MIDDLE CLASSES AND WE ARE GLAD TO WELCOME HIS GOSPEL",
+    "speaker_id": 1272,
+    "chapter_id": 128104,
+    "id": "1272-128104-0000",
+    "source": "hf-internal-testing/librispeech_asr_dummy",
+    "revision": "5be91486e11a2d616f4ec5db8d3fd248585ac07a",
+    "sampling_rate": 16000,
+    "samples": 93680,
+    "seconds": 5.855,
+    "source_sha256": "4e25e22555cd16e90edb0a3b49fdcf1fe652b2a1250ab643634db33895c75b41",
+    "reference": "MISTER QUILTER IS THE APOSTLE OF THE MIDDLE CLASSES AND WE ARE GLAD TO WELCOME HIS GOSPEL",
+    "license": "CC-BY-4.0",
+    "original": "https://www.openslr.org/12/",
+    "attribution": "LibriSpeech: Vassil Panayotov, Guoguo Chen, Daniel Povey, Sanjeev Khudanpur; sample 1272-128104-0000; decoded and converted to PCM16 WAV"
+  },
+  "speaker": {
+    "dataset": "Matthijs/cmu-arctic-xvectors",
+    "revision": "5c1297a9eb6c91714ea77c0d4ac5aca9b6a952e5",
+    "member": "spkrec-xvect/cmu_us_slt_arctic-wav-arctic_a0001.npy",
+    "license": "MIT"
+  },
+  "asr": {
+    "facebook/wav2vec2-base-960h": {
+      "text": "MISTER QUILTER IS THE APOSTLE OF THE MIDDLE CLASSES AND WE ARE GLAD TO WELCOME HIS GOSPEL",
+      "shape": [
+        1,
+        292,
+        32
+      ],
+      "load_seconds": 21.79439270000148,
+      "inference_seconds": 0.9326404999956139,
+      "model": "facebook/wav2vec2-base-960h",
+      "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156"
+    },
+    "openai/whisper-tiny": {
+      "text": " Mr. Quilter is the apostle of the middle classes and we are glad to welcome his gospel.",
+      "shape": [
+        1,
+        80,
+        3000
+      ],
+      "load_seconds": 12.13343700000405,
+      "inference_seconds": 0.9820841000037035,
+      "model": "openai/whisper-tiny",
+      "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af"
+    }
+  },
+  "tts": {
+    "text": "We can hear the model.",
+    "mel_shape": [
+      72,
+      80
+    ],
+    "samples": 18432,
+    "sampling_rate": 16000,
+    "seconds": 1.152,
+    "load_seconds": 36.941624600003706,
+    "inference_seconds": 1.1713356999971438,
+    "speaker_member": "spkrec-xvect/cmu_us_slt_arctic-wav-arctic_a0001.npy",
+    "nonzero": true,
+    "peak": 0.3398858606815338
+  },
+  "threshold": [
+    {
+      "threshold": 0.5,
+      "shape": [
+        72,
+        80
+      ],
+      "seconds": 1.152,
+      "asr_readback": " We can hear the model."
+    },
+    {
+      "threshold": 1.0,
+      "shape": [
+        480,
+        80
+      ],
+      "seconds": 7.68,
+      "asr_readback": " We can hear the model. We can hear the model. We can hear the model. We can hear the model."
+    },
+    {
+      "threshold": 1.5,
+      "shape": [
+        480,
+        80
+      ],
+      "seconds": 7.68,
+      "asr_readback": " We can hear the model. We can hear the model. We can hear the model. We can hear the model."
+    }
+  ],
+  "music": [
+    {
+      "prompt": "A calm piano melody",
+      "seed": 7,
+      "max_new_tokens": 100,
+      "sampling_rate": 32000,
+      "samples": 62080,
+      "seconds": 1.94,
+      "load_seconds": 94.72534190000442,
+      "inference_seconds": 15.527855700005603,
+      "model": "facebook/musicgen-small",
+      "revision": "4c8334b02c6ec4e8664a91979669a501ec497792",
+      "peak": 0.1997259259223938
+    },
+    {
+      "prompt": "A bright acoustic guitar melody",
+      "seed": 7,
+      "max_new_tokens": 100,
+      "sampling_rate": 32000,
+      "samples": 62080,
+      "seconds": 1.94,
+      "load_seconds": 94.72534190000442,
+      "inference_seconds": 13.516276199996355,
+      "model": "facebook/musicgen-small",
+      "revision": "4c8334b02c6ec4e8664a91979669a501ec497792",
+      "peak": 0.540753960609436
+    }
+  ],
+  "diffusion": {
+    "model": "teticio/audio-diffusion-ddim-256",
+    "revision": "f5606c5138496ecdcbd096a4446eb6d03ae690cb",
+    "seed": 7,
+    "steps": 10,
+    "sampling_rate": 22050,
+    "samples": 130560,
+    "seconds": 5.921088435374149,
+    "load_seconds": 23.541756099999475,
+    "inference_seconds": 54.44144419999793,
+    "peak": 0.013570636510848999,
+    "note": "unconditional generation; reduced steps for mechanism demonstration; not quality benchmark"
+  },
+  "codec": {
+    "code_shape": [
+      1,
+      1,
+      4,
+      100
+    ],
+    "wave_shape": [
+      64000
+    ],
+    "sampling_rate": 32000,
+    "codebook_size": 2048,
+    "seconds": 2,
+    "mse": 0.0019997593481093645,
+    "inference_seconds": 0.9044033999962267,
+    "model": "facebook/musicgen-small audio_encoder",
+    "revision": "4c8334b02c6ec4e8664a91979669a501ec497792"
+  },
+  "files": {
+    "speech.wav": "799f78ed4beb4de7ceae3a809262d4ce242394342ccd1d58cef7d49dbc2def46",
+    "speaker.npy": "21719c0414a470561e6d037466fd239ab59c1f9ed4e1b97db557dad6d0223e73",
+    "tts.wav": "f22bdbb2d760441b14e60169fed50ddd405fce2441e7c2d0d7ffe45dd2fb85db",
+    "tts-threshold-1.0.wav": "9271cbac2c88a534e2480f0e6bb22c883b3c8e3dfe7b8c5c48c837ade6ba8571",
+    "music-0.wav": "6f4dda1db47ac4119afa0b59fc9d05263d7f4016290045becfb0b3a682068e09",
+    "music-1.wav": "4201c027942da1a1183993ef27b77466661087beaac35199ac15cab430adc8f9",
+    "audio-diffusion.wav": "bb66e1643bad9cf647e179340b6dabe9b846c106871f5fcfc0d323aeee9eac9e",
+    "codec.npz": "5d4a213c73132259ccc3be4b8337ec7affa3344a8967d8fa6c6a6ad6d0041450",
+    "codec-reconstruction.wav": "947567ac439171f12e51379d7cd32a7fa50f8c47b1f292b8ac8e668243e4f332"
+  }
+}

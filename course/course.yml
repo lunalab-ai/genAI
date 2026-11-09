@@ -428,6 +428,35 @@ sessions:
   - '학생용 전체 파일 ZIP(7장 개선 A/B·8장 A/B·PDF·핵심 소스): https://github.com/lunalab-ai/genAI/releases/download/2026-fall-w11a/w11a-student-files.zip'
   - '고정 공개 버전: https://github.com/lunalab-ai/genAI/releases/tag/2026-fall-w11a'
   notion_url: https://fancy-ballcap-a15.notion.site/W11A-2026-11-09-4127fd00109f814c9474c23be74a38da
+- id: w11b
+  date: '2026-11-11'
+  title: 주교재 9장 전체 — 오디오 표현·음성 인식·음성 및 음악 생성
+  pages:
+  - course/notion/w11b/w11b-lesson.md
+  - course/notion/w11b/w11b-workbook.md
+  labs:
+  - notebooks/student/w11b_audio_understanding.ipynb
+  - notebooks/student/w11b_audio_generation.ipynb
+  quiz: course/quiz/w11b.yml
+  release_tag: 2026-fall-w11b
+  runtime_label: Colab CPU · 실제 ASR/TTS·수정 가능한 생성 루프·음성 프로젝트 / 음악·확산 실제 기록
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b/notebooks/student/w11b_audio_understanding.ipynb
+  assignment:
+    requested: false
+    reason: 수업 실습·자기점검, 새 성적 과제·제출 기한 요청 없음
+  announcement_guidance:
+  - 11월11일(수) 11주차2차시는 주교재9장 전체입니다. 파형·Mel·CTC·오류율·음성/음악 생성·평가·프로젝트를 연결합니다.
+  - A/B는 각각 새 Colab 사본에서 첫 셀부터 실행하세요. 패키지0.1.19/2026-fall-w11b 고정 버전이며 이미 다른 버전을 import했다면
+    런타임을 재시작합니다.
+  - 'B·생성과 앱: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w11b/notebooks/student/w11b_audio_generation.ipynb'
+  - API 키·개인 음성·유료 GPU·이전 실습 파일은 필요하지 않습니다. 첫 모델 다운로드는 네트워크와 수분이 필요하고 이후 캐시를 재사용합니다.
+  - 핵심 함수는 본문에서 직접 수정합니다. 예측→실행→중간 배열→한 조건 변경→새 사례 설명을 기록하고 수정 함수를 실제 추론·평가·앱에 전달하세요.
+  - 현재 실행은 실제 ASR/TTS·문자 모델·소형 학습입니다. MusicGen/EnCodec/AudioDiffusion 파일은 실제 사전 실행
+    기록 분석이며 대형 모델의 현재 실행으로 표시하지 않습니다.
+  - W11B_A/B_RUNTIME_PASS, 앱의 새 응답·음성·설정 JSON·종료 CSV·WAV를 확인하세요. 공유 앱에는 민감한 녹음을 올리지
+    마세요.
+  - 별도 성적 과제나 새 제출 기한은 없습니다. 복습 점검은 먼저 풀고 별도 개념 해설과 비교하세요.
+  notion_url: https://fancy-ballcap-a15.notion.site/W11B-2026-11-11-4137fd00109f81d5b1d4c5b875349bec
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

@@ -4,12 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "luna-genai"
-version = "0.1.18"
+version = "0.1.19"
 description = "Reusable language-model and autoencoder experiments for the genAI course"
 requires-python = ">=3.10,<3.14"
 dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<4", "torch>=2.8,<3", "transformers==5.15.1", "huggingface-hub>=1.5,<2", "gradio==6.26.0", "matplotlib>=3.8,<4", "diffusers==0.40.0", "datasets==4.8.5"]
 
 [project.optional-dependencies]
+audio = ["scipy==1.18.1", "librosa==1.0.0", "soundfile==0.14.0", "sentencepiece==0.2.3"]
 adaptation = ["peft==0.21.2", "trl==1.17.1", "accelerate==1.15.0", "bitsandbytes==0.50.2"]
 diffusion-adaptation = ["peft==0.21.2", "accelerate==1.15.0", "safetensors==0.8.0"]
 
@@ -23,4 +24,5 @@ where = ["."]
 include = ["luna_genai*"]
 
 [tool.setuptools.package-data]
-luna_genai = ["datasets/*.json", "assets/w05a/*", "assets/w05b/*", "assets/w06b/*", "assets/w07a/*", "assets/w09b/*", "assets/w10b/*", "assets/w11a/*"]
+luna_genai = ["datasets/*.json", "assets/w05a/*", "assets/w05b/*", "assets/w06b/*", "assets/w07a/*", "assets/w09b/*", "assets/w10b/*", "assets/w11a/*", "assets/w11b/*"]
+
