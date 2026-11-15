@@ -1,0 +1,28 @@
+{
+  "image_sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+  "image_source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.astronaut",
+  "attribution": "NASA public-domain photograph of astronaut Eileen Collins, via scikit-image",
+  "clip_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "detection": "torchvision SSDLite320 MobileNetV3 Large COCO weights",
+  "detections_above_point_four": [
+    {
+      "label": "person",
+      "score": 0.9098663926124573,
+      "box": [
+        31.798498153686523,
+        9.687182426452637,
+        386.1101989746094,
+        512.0
+      ]
+    }
+  ],
+  "segmentation": "torchvision DeepLabV3 MobileNetV3 Large COCO_WITH_VOC_LABELS_V1",
+  "pixel_counts_after_nearest_resize": {
+    "__background__": 138958,
+    "bottle": 1859,
+    "person": 121327
+  },
+  "depth_model": "depth-anything/Depth-Anything-V2-Small-hf",
+  "depth_revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+  "rendered_at_utc": "2026-11-15T15:53:04.738310+00:00"
+}

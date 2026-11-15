@@ -457,6 +457,32 @@ sessions:
     마세요.
   - 별도 성적 과제나 새 제출 기한은 없습니다. 복습 점검은 먼저 풀고 별도 개념 해설과 비교하세요.
   notion_url: https://fancy-ballcap-a15.notion.site/W11B-2026-11-11-4137fd00109f81d5b1d4c5b875349bec
+- id: w12a
+  date: '2026-11-16'
+  title: 소리를 생성해 듣고, 생성형 AI의 발전과 최신 동향 읽기
+  pages:
+  - course/notion/w12a/w12a-lesson.md
+  - course/notion/w12a/w12a-workbook.md
+  labs:
+  - notebooks/student/w12a_sound_studio.ipynb
+  - notebooks/student/w12a_frontiers.ipynb
+  quiz: course/quiz/w12a.yml
+  release_tag: 2026-fall-w12a
+  runtime_label: Colab CPU · 실제 SpeechT5·MusicGen 생성, WAV 청취와 STFT·로그 멜, 10장 사례 실습
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w12a/notebooks/student/w12a_sound_studio.ipynb
+  assignment:
+    requested: false
+    reason: 실습 결과 공유와 자기 점검
+  announcement_guidance:
+  - 11월 16일(월) 12주차 1차시 · 9장 오디오 실습 보강과 10장 전체(10.1–10.11)
+  - 먼저 안내 음성 A/B를 들어 보세요. 학생 ZIP의 course/notion/w12a/listen.html에서 설치 없이 재생하고 WAV를
+    저장할 수 있습니다.
+  - 'A · 오디오 다시 만들기: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w12a/notebooks/student/w12a_sound_studio.ipynb'
+  - 'B · 10장 사례 실습: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w12a/notebooks/student/w12a_frontiers.ipynb'
+  - A에서는 주파수·분석 창·음성 종료 임계값·악기 조건을 각각 바꾸고 소리와 그림을 비교합니다. 첫 모델 다운로드는 수분이 걸릴 수 있습니다.
+    사전 생성 샘플을 먼저 듣거나 팀과 나눠 실습하세요.
+  - B에서는 본문 코드의 선호 응답·전문가 수·가시 창을 바꾸고 NASA 사진 한 장의 분류·탐지·분할·깊이를 비교합니다.
+  - '학생 ZIP: https://github.com/lunalab-ai/genAI/releases/download/2026-fall-w12a/w12a-student-files.zip'
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

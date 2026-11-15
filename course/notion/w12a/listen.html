@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>W12A 축제 사운드 실험실</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f4f7f7;color:#192c43;font:17px/1.56 system-ui,sans-serif}
+main{max-width:1040px;margin:auto;padding:4vw}h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.06;margin:0 0 1rem}
+section{background:#fff;border:1px solid #cfdddd;border-radius:14px;padding:1.35rem;margin:1.4rem 0}
+h2{font-size:1.35rem;margin:.2rem 0 .6rem}h3{font-size:1.05rem;margin:.2rem 0 .6rem}
+.listen{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:1rem}
+audio{width:100%}a{display:block;color:#075866;margin:.3rem 0}img{width:100%;margin:.6rem 0}
+details{margin:1rem 0 0}summary{cursor:pointer;color:#075866}</style>
+<main><h1>축제 사운드 실험실</h1><p>Colab 연결 전에 먼저 듣습니다. A와 B를 비교하고, 들은 차이를 그림에서 찾으세요. 재생 버튼을 누를 때만 소리가 납니다.</p>
+<section><h2>첫 청취 · 어느 안내 음성에 반복이 있나요?</h2><div class="listen"><article><h3>안내 A</h3><audio controls preload="metadata" src="../../../src/luna_genai/assets/w12a/voice-a.wav"></audio><a download href="../../../src/luna_genai/assets/w12a/voice-a.wav">WAV 저장</a></article><article><h3>안내 B</h3><audio controls preload="metadata" src="../../../src/luna_genai/assets/w12a/voice-b.wav"></audio><a download href="../../../src/luna_genai/assets/w12a/voice-b.wav">WAV 저장</a></article></div><details><summary>같은 음원의 파형과 스펙트로그램 보기</summary><img alt="파형과 STFT 및 멜 비교" src="assets/03-voice.png"></details></section>
+<section><h2>직접 합성 · 기본 주파수만 두 배</h2><div class="listen"><article><h3>효과음 440 Hz</h3><audio controls preload="metadata" src="../../../src/luna_genai/assets/w12a/tone-440.wav"></audio><a download href="../../../src/luna_genai/assets/w12a/tone-440.wav">WAV 저장</a></article><article><h3>효과음 880 Hz</h3><audio controls preload="metadata" src="../../../src/luna_genai/assets/w12a/tone-880.wav"></audio><a download href="../../../src/luna_genai/assets/w12a/tone-880.wav">WAV 저장</a></article></div><details><summary>같은 음원의 파형과 스펙트로그램 보기</summary><img alt="파형과 STFT 및 멜 비교" src="assets/01-frequency.png"></details></section>
+<section><h2>MusicGen 사전 생성 · 악기 조건만 변경</h2><div class="listen"><article><h3>피아노</h3><audio controls preload="metadata" src="../../../src/luna_genai/assets/w12a/music-piano.wav"></audio><a download href="../../../src/luna_genai/assets/w12a/music-piano.wav">WAV 저장</a></article><article><h3>어쿠스틱 기타</h3><audio controls preload="metadata" src="../../../src/luna_genai/assets/w12a/music-guitar.wav"></audio><a download href="../../../src/luna_genai/assets/w12a/music-guitar.wav">WAV 저장</a></article></div><details><summary>같은 음원의 파형과 스펙트로그램 보기</summary><img alt="파형과 STFT 및 멜 비교" src="assets/04-music.png"></details></section>
+<section><h2>AudioDiffusion 사전 생성</h2><div class="listen"><article><h3>오디오 확산 출력</h3><audio controls preload="metadata" src="../../../src/luna_genai/assets/w12a/diffusion.wav"></audio><a download href="../../../src/luna_genai/assets/w12a/diffusion.wav">WAV 저장</a></article></div></section>
+</main></html>
