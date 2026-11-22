@@ -483,6 +483,17 @@ sessions:
     사전 생성 샘플을 먼저 듣거나 팀과 나눠 실습하세요.
   - B에서는 본문 코드의 선호 응답·전문가 수·가시 창을 바꾸고 NASA 사진 한 장의 분류·탐지·분할·깊이를 비교합니다.
   - '학생 ZIP: https://github.com/lunalab-ai/genAI/releases/download/2026-fall-w12a/w12a-student-files.zip'
+- id: w13a
+  date: '2026-11-23'
+  title: 캠퍼스 팝업 콘텐츠 제작 스튜디오 · 근거 기반 안내문 생성
+  pages:
+  - course/notion/w13a/w13a-lesson.md
+  labs:
+  - notebooks/student/w13a_content_studio.ipynb
+  runtime_label: Colab CPU · 실제 E5 검색·Qwen2 LoRA 훈련·재로딩·생성 · 동일 조건 실측 경로
+  release_tag: 2026-fall-w13a
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w13a/notebooks/student/w13a_content_studio.ipynb
+
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

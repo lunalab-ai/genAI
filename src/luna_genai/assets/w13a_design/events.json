@@ -1,0 +1,1058 @@
+{
+  "provenance": "수업용으로 작성한 가상 행사와 가상 자료입니다.",
+  "events": [
+    {
+      "id": "photo-workshop",
+      "name": "사진 워크숍",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P0-MEMO",
+          "title": "사진 워크숍 운영 메모",
+          "facts": {
+            "when": "2026-11-26 15:00",
+            "where": "도서관 세미나실",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P0-FAQ",
+          "title": "사진 워크숍 참여 FAQ",
+          "facts": {
+            "signup": null,
+            "capacity": "20명"
+          },
+          "note": "신청 방법은 아직 미정입니다."
+        },
+        {
+          "id": "P0-REF",
+          "title": "사진 워크숍 참고 자료",
+          "facts": {},
+          "note": "카메라 대여는 활동팀이 따로 담당합니다."
+        }
+      ]
+    },
+    {
+      "id": "book-exchange",
+      "name": "책 교환회",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P1-MEMO",
+          "title": "책 교환회 운영 메모",
+          "facts": {
+            "when": "2026-11-27 14:00",
+            "where": "학생회관 2층",
+            "fee": "1,000원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P1-FAQ",
+          "title": "책 교환회 참여 FAQ",
+          "facts": {
+            "signup": "현장 접수",
+            "capacity": "30명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P1-REF",
+          "title": "책 교환회 참고 자료",
+          "facts": {},
+          "note": "교환 도서는 읽을 수 있는 상태로 가져옵니다."
+        }
+      ]
+    },
+    {
+      "id": "podcast",
+      "name": "팟캐스트 체험",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P2-MEMO",
+          "title": "팟캐스트 체험 운영 메모",
+          "facts": {
+            "when": "2026-11-28 13:00",
+            "where": "미디어실",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P2-FAQ",
+          "title": "팟캐스트 체험 참여 FAQ",
+          "facts": {
+            "signup": "사전 신청",
+            "capacity": "12명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P2-REF",
+          "title": "팟캐스트 체험 참고 자료",
+          "facts": {},
+          "note": "녹음 전 마이크 사용을 익힙니다."
+        }
+      ]
+    },
+    {
+      "id": "watercolor",
+      "name": "수채화 모임",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P3-MEMO",
+          "title": "수채화 모임 운영 메모",
+          "facts": {
+            "when": "2026-11-29 16:00",
+            "where": "문화관 1층",
+            "fee": "2,000원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P3-FAQ",
+          "title": "수채화 모임 참여 FAQ",
+          "facts": {
+            "signup": null,
+            "capacity": "16명"
+          },
+          "note": "신청 방법은 아직 미정입니다."
+        },
+        {
+          "id": "P3-REF",
+          "title": "수채화 모임 참고 자료",
+          "facts": {},
+          "note": "완성 작품은 각자 가져갑니다."
+        }
+      ]
+    },
+    {
+      "id": "board-games",
+      "name": "보드게임 교실",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P4-MEMO",
+          "title": "보드게임 교실 운영 메모",
+          "facts": {
+            "when": "2026-11-30 17:00",
+            "where": "학생회관 공동실",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P4-FAQ",
+          "title": "보드게임 교실 참여 FAQ",
+          "facts": {
+            "signup": "현장 접수",
+            "capacity": "24명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P4-REF",
+          "title": "보드게임 교실 참고 자료",
+          "facts": {},
+          "note": "게임 규칙은 시작 전에 설명합니다."
+        }
+      ]
+    },
+    {
+      "id": "night-sky",
+      "name": "교내 별관측",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P5-MEMO",
+          "title": "교내 별관측 운영 메모",
+          "facts": {
+            "when": "2026-12-01 19:00",
+            "where": "과학관 전망대",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P5-FAQ",
+          "title": "교내 별관측 참여 FAQ",
+          "facts": {
+            "signup": "사전 신청",
+            "capacity": null
+          },
+          "note": "정원은 운영팀이 확인 중입니다."
+        },
+        {
+          "id": "P5-REF",
+          "title": "교내 별관측 참고 자료",
+          "facts": {},
+          "note": "구름이 많을 때 예비 활동을 진행합니다."
+        }
+      ]
+    },
+    {
+      "id": "creative-writing",
+      "name": "짧은 소설 쓰기",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P6-MEMO",
+          "title": "짧은 소설 쓰기 운영 메모",
+          "facts": {
+            "when": "2026-12-02 12:30",
+            "where": "인문관 글쓰기실",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P6-FAQ",
+          "title": "짧은 소설 쓰기 참여 FAQ",
+          "facts": {
+            "signup": "현장 접수",
+            "capacity": "18명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P6-REF",
+          "title": "짧은 소설 쓰기 참고 자료",
+          "facts": {},
+          "note": "필기 용구를 지참합니다."
+        }
+      ]
+    },
+    {
+      "id": "maker-demo",
+      "name": "메이커 시연회",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P7-MEMO",
+          "title": "메이커 시연회 운영 메모",
+          "facts": {
+            "when": "2026-12-03 15:30",
+            "where": "창작관 열린작업실",
+            "fee": "3,000원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P7-FAQ",
+          "title": "메이커 시연회 참여 FAQ",
+          "facts": {
+            "signup": null,
+            "capacity": "26명"
+          },
+          "note": "신청 방법은 아직 미정입니다."
+        },
+        {
+          "id": "P7-REF",
+          "title": "메이커 시연회 참고 자료",
+          "facts": {},
+          "note": "작업 구역과 관람 구역을 구분합니다."
+        }
+      ]
+    },
+    {
+      "id": "animation",
+      "name": "프레임 애니메이션",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P8-MEMO",
+          "title": "프레임 애니메이션 운영 메모",
+          "facts": {
+            "when": "2026-12-04 10:30",
+            "where": "시청각 실습실",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P8-FAQ",
+          "title": "프레임 애니메이션 참여 FAQ",
+          "facts": {
+            "signup": "사전 신청",
+            "capacity": "14명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P8-REF",
+          "title": "프레임 애니메이션 참고 자료",
+          "facts": {},
+          "note": "짧은 컷을 함께 편집합니다."
+        }
+      ]
+    },
+    {
+      "id": "glass-art",
+      "name": "색유리 공예 전시",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P9-MEMO",
+          "title": "색유리 공예 전시 운영 메모",
+          "facts": {
+            "when": "2026-12-05 13:00",
+            "where": "문화관 갤러리",
+            "fee": "2,000원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P9-FAQ",
+          "title": "색유리 공예 전시 참여 FAQ",
+          "facts": {
+            "signup": "현장 접수",
+            "capacity": null
+          },
+          "note": "정원은 운영팀이 확인 중입니다."
+        },
+        {
+          "id": "P9-REF",
+          "title": "색유리 공예 전시 참고 자료",
+          "facts": {},
+          "note": "전시품은 눈으로 관람합니다."
+        }
+      ]
+    },
+    {
+      "id": "campus-garden",
+      "name": "캠퍼스 정원 산책",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P10-MEMO",
+          "title": "캠퍼스 정원 산책 운영 메모",
+          "facts": {
+            "when": "2026-12-06 11:30",
+            "where": "식물원 입구",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P10-FAQ",
+          "title": "캠퍼스 정원 산책 참여 FAQ",
+          "facts": {
+            "signup": null,
+            "capacity": "32명"
+          },
+          "note": "신청 방법은 아직 미정입니다."
+        },
+        {
+          "id": "P10-REF",
+          "title": "캠퍼스 정원 산책 참고 자료",
+          "facts": {},
+          "note": "단체 이동은 인솔자 안내를 따릅니다."
+        }
+      ]
+    },
+    {
+      "id": "robot-assembly",
+      "name": "로봇 조립 체험",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P11-MEMO",
+          "title": "로봇 조립 체험 운영 메모",
+          "facts": {
+            "when": "2026-12-07 16:00",
+            "where": "공학관 협업실",
+            "fee": "4,000원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P11-FAQ",
+          "title": "로봇 조립 체험 참여 FAQ",
+          "facts": {
+            "signup": "사전 신청",
+            "capacity": "15명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P11-REF",
+          "title": "로봇 조립 체험 참고 자료",
+          "facts": {},
+          "note": "부품 분류부터 시작합니다."
+        }
+      ]
+    },
+    {
+      "id": "coffee-history",
+      "name": "커피 문화 이야기",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P12-MEMO",
+          "title": "커피 문화 이야기 운영 메모",
+          "facts": {
+            "when": "2026-12-08 14:00",
+            "where": "인문관 소강당",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P12-FAQ",
+          "title": "커피 문화 이야기 참여 FAQ",
+          "facts": {
+            "signup": "현장 접수",
+            "capacity": "40명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P12-REF",
+          "title": "커피 문화 이야기 참고 자료",
+          "facts": {},
+          "note": "강연 자료는 현장에서 배포합니다."
+        }
+      ]
+    },
+    {
+      "id": "jazz-reading",
+      "name": "재즈 감상회",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P13-MEMO",
+          "title": "재즈 감상회 운영 메모",
+          "facts": {
+            "when": "2026-12-09 18:30",
+            "where": "음악관 감상실",
+            "fee": "2,500원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P13-FAQ",
+          "title": "재즈 감상회 참여 FAQ",
+          "facts": {
+            "signup": null,
+            "capacity": "28명"
+          },
+          "note": "신청 방법은 아직 미정입니다."
+        },
+        {
+          "id": "P13-REF",
+          "title": "재즈 감상회 참고 자료",
+          "facts": {},
+          "note": "곡 소개 뒤 감상을 시작합니다."
+        }
+      ]
+    },
+    {
+      "id": "cloth-repair",
+      "name": "의류 수선 테이블",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P14-MEMO",
+          "title": "의류 수선 테이블 운영 메모",
+          "facts": {
+            "when": "2026-12-10 15:00",
+            "where": "생활관 공예실",
+            "fee": "1,500원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P14-FAQ",
+          "title": "의류 수선 테이블 참여 FAQ",
+          "facts": {
+            "signup": "현장 접수",
+            "capacity": "22명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P14-REF",
+          "title": "의류 수선 테이블 참고 자료",
+          "facts": {},
+          "note": "작은 수선이 필요한 옷을 준비합니다."
+        }
+      ]
+    },
+    {
+      "id": "accessible-map",
+      "name": "캠퍼스 지도 읽기",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P15-MEMO",
+          "title": "캠퍼스 지도 읽기 운영 메모",
+          "facts": {
+            "when": "2026-12-11 10:00",
+            "where": "중앙도서관 그룹실",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P15-FAQ",
+          "title": "캠퍼스 지도 읽기 참여 FAQ",
+          "facts": {
+            "signup": "사전 신청",
+            "capacity": null
+          },
+          "note": "정원은 운영팀이 확인 중입니다."
+        },
+        {
+          "id": "P15-REF",
+          "title": "캠퍼스 지도 읽기 참고 자료",
+          "facts": {},
+          "note": "이동이 어려운 지점을 지도에 표시합니다."
+        }
+      ]
+    },
+    {
+      "id": "open-mic",
+      "name": "낭독 오픈 마이크",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P16-MEMO",
+          "title": "낭독 오픈 마이크 운영 메모",
+          "facts": {
+            "when": "2026-12-12 19:00",
+            "where": "동아리실 무대",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P16-FAQ",
+          "title": "낭독 오픈 마이크 참여 FAQ",
+          "facts": {
+            "signup": null,
+            "capacity": "35명"
+          },
+          "note": "신청 방법은 아직 미정입니다."
+        },
+        {
+          "id": "P16-REF",
+          "title": "낭독 오픈 마이크 참고 자료",
+          "facts": {},
+          "note": "낭독 순서는 현장에서 공유합니다."
+        }
+      ]
+    },
+    {
+      "id": "planting",
+      "name": "겨울 화분 심기",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P17-MEMO",
+          "title": "겨울 화분 심기 운영 메모",
+          "facts": {
+            "when": "2026-12-13 13:40",
+            "where": "식물원 온실",
+            "fee": "3,500원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P17-FAQ",
+          "title": "겨울 화분 심기 참여 FAQ",
+          "facts": {
+            "signup": "현장 접수",
+            "capacity": "17명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P17-REF",
+          "title": "겨울 화분 심기 참고 자료",
+          "facts": {},
+          "note": "화분의 물 주는 방법을 안내합니다."
+        }
+      ]
+    },
+    {
+      "id": "archive",
+      "name": "학생기록 전시 해설",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P18-MEMO",
+          "title": "학생기록 전시 해설 운영 메모",
+          "facts": {
+            "when": "2026-12-14 14:20",
+            "where": "기록관 전시실",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P18-FAQ",
+          "title": "학생기록 전시 해설 참여 FAQ",
+          "facts": {
+            "signup": "사전 신청",
+            "capacity": "25명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P18-REF",
+          "title": "학생기록 전시 해설 참고 자료",
+          "facts": {},
+          "note": "해설은 전시물의 제작 과정에 초점을 둡니다."
+        }
+      ]
+    },
+    {
+      "id": "audio-book",
+      "name": "오디오북 만들기",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P19-MEMO",
+          "title": "오디오북 만들기 운영 메모",
+          "facts": {
+            "when": "2026-12-15 16:30",
+            "where": "미디어관 편집실",
+            "fee": "2,000원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P19-FAQ",
+          "title": "오디오북 만들기 참여 FAQ",
+          "facts": {
+            "signup": "사전 신청",
+            "capacity": null
+          },
+          "note": "정원은 운영팀이 확인 중입니다."
+        },
+        {
+          "id": "P19-REF",
+          "title": "오디오북 만들기 참고 자료",
+          "facts": {},
+          "note": "간단한 음성 편집을 소개합니다."
+        }
+      ]
+    },
+    {
+      "id": "paper-model",
+      "name": "종이 모형 실습",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P20-MEMO",
+          "title": "종이 모형 실습 운영 메모",
+          "facts": {
+            "when": "2026-12-16 15:10",
+            "where": "공예관 실습실",
+            "fee": "1,000원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P20-FAQ",
+          "title": "종이 모형 실습 참여 FAQ",
+          "facts": {
+            "signup": null,
+            "capacity": "21명"
+          },
+          "note": "신청 방법은 아직 미정입니다."
+        },
+        {
+          "id": "P20-REF",
+          "title": "종이 모형 실습 참고 자료",
+          "facts": {},
+          "note": "교내 건물을 주제로 모형을 만듭니다."
+        }
+      ]
+    },
+    {
+      "id": "photo-walk",
+      "name": "캠퍼스 사진 산책",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P21-MEMO",
+          "title": "캠퍼스 사진 산책 운영 메모",
+          "facts": {
+            "when": "2026-12-17 10:15",
+            "where": "중앙정원 안내판 앞",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P21-FAQ",
+          "title": "캠퍼스 사진 산책 참여 FAQ",
+          "facts": {
+            "signup": "현장 접수",
+            "capacity": "33명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P21-REF",
+          "title": "캠퍼스 사진 산책 참고 자료",
+          "facts": {},
+          "note": "조용한 동선을 따라 이동합니다."
+        }
+      ]
+    },
+    {
+      "id": "debate",
+      "name": "자료 읽기 토론",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P22-MEMO",
+          "title": "자료 읽기 토론 운영 메모",
+          "facts": {
+            "when": "2026-12-18 15:45",
+            "where": "인문관 302호",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P22-FAQ",
+          "title": "자료 읽기 토론 참여 FAQ",
+          "facts": {
+            "signup": "사전 신청",
+            "capacity": "19명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "P22-REF",
+          "title": "자료 읽기 토론 참고 자료",
+          "facts": {},
+          "note": "발표문과 원문을 함께 대조합니다."
+        }
+      ]
+    },
+    {
+      "id": "science-museum",
+      "name": "생활 과학 작은 전시",
+      "split": "train",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "P23-MEMO",
+          "title": "생활 과학 작은 전시 운영 메모",
+          "facts": {
+            "when": "2026-12-19 12:00",
+            "where": "과학관 전시홀",
+            "fee": "3,000원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "P23-FAQ",
+          "title": "생활 과학 작은 전시 참여 FAQ",
+          "facts": {
+            "signup": null,
+            "capacity": "41명"
+          },
+          "note": "신청 방법은 아직 미정입니다."
+        },
+        {
+          "id": "P23-REF",
+          "title": "생활 과학 작은 전시 참고 자료",
+          "facts": {},
+          "note": "체험과 관찰 안내를 구분합니다."
+        }
+      ]
+    },
+    {
+      "id": "val-book-talk",
+      "name": "교내 북토크",
+      "split": "validation",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "V0-MEMO",
+          "title": "교내 북토크 운영 메모",
+          "facts": {
+            "when": "2026-11-27 16:00",
+            "where": "중앙도서관 북라운지",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "V0-FAQ",
+          "title": "교내 북토크 참여 FAQ",
+          "facts": {
+            "signup": null,
+            "capacity": "24명"
+          },
+          "note": "신청 방법은 아직 미정입니다."
+        },
+        {
+          "id": "V0-REF",
+          "title": "교내 북토크 참고 자료",
+          "facts": {},
+          "note": "낭독 자료와 질문지를 행사 전에 준비합니다."
+        }
+      ]
+    },
+    {
+      "id": "val-eco-forum",
+      "name": "환경 아이디어 포럼",
+      "split": "validation",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "V1-MEMO",
+          "title": "환경 아이디어 포럼 운영 메모",
+          "facts": {
+            "when": "2026-11-28 14:20",
+            "where": "공학관 회의실",
+            "fee": "1,500원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "V1-FAQ",
+          "title": "환경 아이디어 포럼 참여 FAQ",
+          "facts": {
+            "signup": "현장 접수",
+            "capacity": "27명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "V1-REF",
+          "title": "환경 아이디어 포럼 참고 자료",
+          "facts": {},
+          "note": "포스터에는 순환 자원에 관한 문구를 사용합니다."
+        }
+      ]
+    },
+    {
+      "id": "val-bookbinding",
+      "name": "나만의 제본 노트",
+      "split": "validation",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "V2-MEMO",
+          "title": "나만의 제본 노트 운영 메모",
+          "facts": {
+            "when": "2026-12-02 13:50",
+            "where": "문화관 공방",
+            "fee": "3,500원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "V2-FAQ",
+          "title": "나만의 제본 노트 참여 FAQ",
+          "facts": {
+            "signup": "사전 신청",
+            "capacity": null
+          },
+          "note": "정원은 운영팀이 확인 중입니다."
+        },
+        {
+          "id": "V2-REF",
+          "title": "나만의 제본 노트 참고 자료",
+          "facts": {},
+          "note": "노트 표지의 디자인 예시는 별도 안내합니다."
+        }
+      ]
+    },
+    {
+      "id": "val-screening",
+      "name": "애니메이션 메이킹 상영",
+      "split": "validation",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "V3-MEMO",
+          "title": "애니메이션 메이킹 상영 운영 메모",
+          "facts": {
+            "when": "2026-12-03 18:20",
+            "where": "영상관 시사실",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "V3-FAQ",
+          "title": "애니메이션 메이킹 상영 참여 FAQ",
+          "facts": {
+            "signup": null,
+            "capacity": "36명"
+          },
+          "note": "신청 방법은 아직 미정입니다."
+        },
+        {
+          "id": "V3-REF",
+          "title": "애니메이션 메이킹 상영 참고 자료",
+          "facts": {},
+          "note": "포스터에 제작 과정의 스틸 이미지를 씁니다."
+        }
+      ]
+    },
+    {
+      "id": "val-campus-quiz",
+      "name": "캠퍼스 퀴즈 투어",
+      "split": "validation",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "V4-MEMO",
+          "title": "캠퍼스 퀴즈 투어 운영 메모",
+          "facts": {
+            "when": "2026-12-04 13:10",
+            "where": "학생지원관 로비",
+            "fee": "무료"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "V4-FAQ",
+          "title": "캠퍼스 퀴즈 투어 참여 FAQ",
+          "facts": {
+            "signup": "현장 접수",
+            "capacity": "31명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "V4-REF",
+          "title": "캠퍼스 퀴즈 투어 참고 자료",
+          "facts": {},
+          "note": "동선 안내는 진행자에게 문의합니다."
+        }
+      ]
+    },
+    {
+      "id": "val-sound",
+      "name": "겨울 소리 산책",
+      "split": "validation",
+      "variant": "original",
+      "docs": [
+        {
+          "id": "V5-MEMO",
+          "title": "겨울 소리 산책 운영 메모",
+          "facts": {
+            "when": "2026-12-05 11:40",
+            "where": "중앙정원 쉼터",
+            "fee": "2,500원"
+          },
+          "note": "운영팀이 확정한 일정과 운영 위치, 참가 비용입니다."
+        },
+        {
+          "id": "V5-FAQ",
+          "title": "겨울 소리 산책 참여 FAQ",
+          "facts": {
+            "signup": "사전 신청",
+            "capacity": "18명"
+          },
+          "note": "참여 절차와 운영 인원에 대한 확정 답변입니다."
+        },
+        {
+          "id": "V5-REF",
+          "title": "겨울 소리 산책 참고 자료",
+          "facts": {},
+          "note": "행사 홍보 사진은 풍경 실루엣을 사용합니다."
+        }
+      ]
+    },
+    {
+      "id": "film",
+      "name": "독립영화 상영회",
+      "split": "official",
+      "variant": "original",
+      "docs": [
+        {
+          "facts": {
+            "fee": "무료",
+            "when": "2026-11-27 18:00",
+            "where": "학술정보관 영화감상실"
+          },
+          "id": "FILM-MEMO",
+          "title": "행사 운영 메모"
+        },
+        {
+          "facts": {
+            "capacity": "28명",
+            "signup": null
+          },
+          "id": "FILM-FAQ",
+          "note": "신청 방법은 운영팀 확인 전입니다.",
+          "title": "운영팀 FAQ"
+        },
+        {
+          "id": "FILM-REF",
+          "title": "홍보 이미지 참고",
+          "facts": {},
+          "note": "포스터의 분위기와 글자 배치 참고 사항입니다."
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "name": "빈티지 마켓",
+      "split": "official",
+      "variant": "original",
+      "docs": [
+        {
+          "facts": {
+            "fee": "3,000원",
+            "when": "2026-11-28 13:00",
+            "where": "학생회관 2층"
+          },
+          "id": "MARKET-MEMO",
+          "title": "행사 운영 메모"
+        },
+        {
+          "facts": {
+            "capacity": "32명",
+            "signup": "현장 접수"
+          },
+          "id": "MARKET-FAQ",
+          "title": "운영팀 FAQ"
+        },
+        {
+          "id": "MARKET-REF",
+          "title": "홍보 이미지 참고",
+          "facts": {},
+          "note": "포스터의 분위기와 글자 배치 참고 사항입니다."
+        }
+      ]
+    }
+  ]
+}

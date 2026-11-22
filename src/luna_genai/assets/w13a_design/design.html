@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>캠퍼스 팝업 콘텐츠 제작 스튜디오</title>
+<style>
+:root{color-scheme:light;--green:#153e35;--ink:#152e28;--muted:#4b695f;--cream:#f2f3eb;--edge:#d6dfd4;--gold:#ffedc0}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);font:15px/1.55 "Malgun Gothic","Noto Sans KR",sans-serif;color:var(--ink)}
+header{background:var(--green);color:#fff;padding:22px max(24px,calc((100vw - 1300px)/2 + 24px))}
+header h1{font-size:26px;margin:3px 0;letter-spacing:-.04em}header p{margin:0;color:#d8ebe4}main{max-width:1300px;margin:20px auto;padding:0 24px 40px}
+.grid{display:grid;grid-template-columns:minmax(300px,.72fr) minmax(510px,1.28fr);gap:16px;align-items:start}
+section{background:#fff;border:1px solid var(--edge);border-radius:14px;padding:19px 21px;margin-bottom:16px}
+h2{margin:0 0 10px;font-size:19px;letter-spacing:-.03em}h3{margin:12px 0 5px;font-size:15px}p{margin:8px 0}
+label{display:block;font-weight:650;margin-top:10px}input,select,button{font:inherit}select,input[type=text]{width:100%;padding:7px 10px;border:1px solid #9db6ac;border-radius:6px;background:#fff;color:var(--ink)}
+button{padding:7px 12px;border:1px solid #537a6e;border-radius:7px;background:#fff;color:var(--ink);font-weight:700;cursor:pointer}
+button.primary{background:#216451;color:#fff;border-color:#216451}button:disabled{opacity:.47;cursor:default}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #c07429;outline-offset:2px}
+.actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}.small{color:var(--muted);font-size:13px}
+.badge{display:inline-block;border-radius:17px;background:#dceee4;padding:4px 10px;margin:0 5px 4px 0;font-weight:700}
+.badge.review{background:var(--gold);color:#593927}.scroll{overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:450px}td,th{padding:6px;border-bottom:1px solid #edf0eb;text-align:left}th{background:#eff3ed}tr.chosen{background:#e7f4ed}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:250px;overflow:auto;padding:9px;background:#edf1eb;border-radius:6px;color:#273c34;line-height:1.5}
+details{margin-top:8px}summary{cursor:pointer;font-weight:650}fieldset{margin:7px 0;border:1px solid var(--edge);border-radius:8px;padding:8px 12px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.full{grid-column:1/-1}.history{overflow-wrap:anywhere}
+
+nav{display:flex;gap:14px;margin:12px 0 0}nav a{color:#e1f1e9}
+.film-banner{background:#d3d8cd url("/photos.png") 97% 85% / 326% auto no-repeat;min-height:104px;border-radius:9px}
+.channels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.channels article{border:1px solid var(--edge);background:#f7f9f3;padding:8px;border-radius:8px;margin-top:4px}
+.channels article p{font-size:13px}
+#feedback{color:var(--green);font-weight:700;min-height:24px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}header h1{font-size:23px}main{padding:0 12px 24px}section{padding:15px}}
+</style></head>
+<body>
+<header><p>생성형 인공지능 · W13A</p><h1>캠퍼스 팝업 콘텐츠 제작 스튜디오</h1><p>근거 문서 검색 → Qwen2 생성 → 사실과 출처 검사 → 앱 기본값</p><nav><a href="#creation">콘텐츠 만들기</a><a href="#validation">생성 결과 검증</a><a href="#submission">제출 확인</a></nav></header>
+<main><div class="grid">
+<div>
+<section><h2>설계 비교</h2>
+<p class="small">① 기본 → ② 검색 → ③ 검색+LoRA. ④에서는 검색 수 또는 LoRA rank 중 하나를 바꿉니다.</p>
+<label for="axis">내가 바꿀 변수</label><select id="axis"><option value="top_k">top_k 2 → 1 · 같은 어댑터</option><option value="lora_rank">rank 4 → 2 · 같은 문서</option></select>
+<label for="hypothesis">실험 전에 적은 가설</label><input type="text" id="hypothesis" maxlength="250" placeholder="예: FAQ가 빠지면 신청 근거가 줄어들 것이다.">
+<div class="actions"><button type="button" id="experiment" class="primary">검증 6건 비교</button></div>
+<p class="small">비교표는 로컬에서 실제 측정한 기록을 재생합니다. 적용 후 지금 모델을 실행할 수 있습니다.</p>
+</section>
+<section id="submission"><h2>오류 기록과 제출</h2><p class="small">서로 다른 실행에서 오류 필드를 하나씩 찾으세요. 선택한 생성 원문과 문서의 값은 각 항목 아래에서 열 수 있습니다.</p>
+<div id="observations"></div><div class="actions"><button type="button" id="download" disabled>과제 ZIP 다운로드</button></div>
+<p id="feedback" role="status" aria-live="polite">앱을 준비하고 있습니다.</p></section>
+</div>
+<div>
+<section id="validation"><h2>검증 결과와 기본값</h2><p id="decision" class="small">검증을 실행하면 후보의 지표가 표시됩니다.</p><div id="metrics" class="scroll"></div>
+<div class="actions"><button type="button" class="primary" id="apply" disabled>기본값 적용</button>
+<button type="button" id="update" disabled>자료 갱신 · 2,000원</button><button type="button" id="live" disabled>선택 모델로 지금 생성</button></div></section>
+<section id="creation"><h2>안내문 미리보기</h2><div id="badges"></div><h3 id="eventName"></h3><p id="facts"></p>
+<p class="small">원문 확인용 행사 사실은 운영 자료에서 읽습니다. 생성 원문과 판정은 아래에 표시합니다.</p>
+<div class="actions"><button type="button" id="firstLive">독립영화 · 지금 첫 초안 생성</button></div><p id="ids" class="small history"></p><div id="fields" class="scroll"></div>
+<details><summary>검색 문서와 실제 생성 프롬프트</summary><pre id="prompt"></pre></details>
+<details><summary>모델 생성 원문</summary><pre id="raw"></pre></details><details id="livePreview" hidden><summary>지금 모델 실행 · 시연</summary><pre id="liveRaw"></pre></details></section>
+<section><h2>한 행사 · 두 채널</h2><div class="film-banner" role="img" aria-label="독립영화 상영관을 그린 수업용 이미지"></div>
+<p class="small">운영 자료로 만든 문구와 모델 초안을 나란히 봅니다. 이 채널 시연은 공식 비교와 구분합니다.</p><div id="channels" class="channels"></div></section>
+</div></div></main>
+<script>
+const by = id => document.getElementById(id);
+let rows = [];
+let updated = false;
+const note = text => by("feedback").textContent = text;
+function element(tag, text, parent){
+    const item = document.createElement(tag); item.textContent = text; if(parent)parent.append(item); return item;
+}
+function table(place, values, fields, choice){
+    place.replaceChildren(); const t = element("table","",place), head = element("tr","",element("thead","",t));
+    fields.forEach(([key,title])=>element("th",title,head));
+    const body=element("tbody","",t);
+    values.forEach(value=>{const row=element("tr","",body); if(value.condition===choice)row.className="chosen";
+        fields.forEach(([key])=>element("td",value[key]??"—",row));});
+}
+function panel(data){
+    by("livePreview").hidden=true;
+    by("badges").replaceChildren();
+    for(const value of [data.status,data.label,data.mode])element("span",value,by("badges")).className="badge"+(value==="검토 필요"?" review":"");
+    by("eventName").textContent=data.name;
+    by("facts").textContent=data.facts_text;
+    by("ids").textContent="설정 ID "+data.config_id+" · 문서 "+data.document_version.slice(0,12)+" · 출처 "+(data.used_docs.join(", ")||"없음");
+    by("ids").dataset.config=data.config_id; by("ids").dataset.document=data.document_version;
+    by("prompt").textContent=data.ranked.map(row=>row.id+" "+row.score).join("\n")+"\n\n"+data.prompt;
+    by("raw").textContent=data.raw;
+    table(by("fields"),data.field_view,[["field","항목"],["generated","생성값"],["expected","원문 값"],["status","판정"],["source_ok","출처"]]);
+}
+function channels(items){
+    by("channels").replaceChildren();
+    items.forEach(item=>{
+        const card=element("article","",by("channels"));
+        element("h3",item.label,card);
+        element("p",item.intro,card);
+        element("p",item.facts,card);
+        if(item.raw!==null){
+            const detail=element("details","",card);
+            element("summary","모델 초안 · "+item.mode,detail);
+            element("pre",item.raw,detail);
+        }
+    });
+}
+function select(id,label,options,parent){
+    const l=element("label",label,parent); l.htmlFor=id;
+    const s=element("select","",parent); s.id=id;
+    options.forEach(([value,title])=>{const o=element("option",title,s);o.value=value;}); return s;
+}
+function createObservation(n){
+    const area=element("fieldset","",by("observations"));element("legend","오류 "+n,area);
+    const p="obs"+n;
+    const selected=select(p+"run","실행",[["","고르기"],...rows.map(r=>[r.id,r.case+" · "+r.condition])],area);
+    const grid=element("div","",area);grid.className="row";
+    const parts=[["field","필드",[["when","일시"],["where","장소"],["fee","참가비"],["signup","신청"],["capacity","정원"]]],
+    ["status","판정",[["missing","출력 누락"],["mismatch","값 불일치"],["unsupported","자료 밖 값"],["match","값 일치"],["unknown_ok","미정 처리"]]],
+    ["source","출처 확인",[["false","실패"],["true","유효"]]],["seen","근거 제공",[["false","없음"],["true","있음"]]]];
+    parts.forEach(([id,label,values])=>select(p+id,label,values,element("div","",grid)));
+    const details=element("details","",area);element("summary","모델 원문과 검증할 사실",details);
+    const evidence=element("pre","",details);
+    selected.addEventListener("change",()=>{const run=rows.find(r=>r.id===selected.value);
+        evidence.textContent=run?run.raw+"\n\n운영 자료\n"+Object.entries(run.facts).map(([k,v])=>k+" "+v).join("\n")+"\n\n"+run.prompt:"";
+    });
+}
+async function request(path,body){
+    const response=await fetch(path,body===undefined?undefined:{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+    if(!response.ok){const err=await response.json();throw Error(err.error);}
+    return response;
+}
+async function perform(btn,fn){
+    btn.disabled=true;
+    try{await fn();}catch(error){note(error.message);}finally{btn.disabled=false;}
+}
+by("experiment").onclick=()=>perform(by("experiment"),async()=>{
+    const data=await(await request("/api/experiment",{axis:by("axis").value,hypothesis:by("hypothesis").value})).json();
+    by("decision").textContent="선택한 기본값 "+data.rows.find(row=>row.condition===data.choice).label+" · 자료 밖 값 → 핵심 사실 → 출처 → 토큰 → 학습 모수 순서";
+    by("decision").dataset.choice=data.choice;
+    table(by("metrics"),data.rows,[["label","설정"],["retrieved","검색 근거"],["core_correct","핵심 일치"],["unsupported","자료 밖"],["valid_sources","유효 출처"],["input_tokens","입력 토큰"]],data.choice);
+    rows=data.runs; by("observations").replaceChildren(); [1,2].forEach(createObservation);
+    by("apply").disabled=false;by("update").disabled=true;by("live").disabled=true;by("download").disabled=true;updated=false;
+    note("기본값을 적용한 뒤 자료 갱신을 확인하세요.");
+});
+by("apply").onclick=()=>perform(by("apply"),async()=>{
+    panel(await(await request("/api/apply",{})).json()); by("update").disabled=false;by("live").disabled=false;
+    updated=false;by("download").disabled=true;note("선택 설정을 적용했습니다.");
+});
+by("update").onclick=()=>perform(by("update"),async()=>{
+    panel(await(await request("/api/update",{})).json());updated=true;by("download").disabled=false;note("갱신한 문서의 버전과 판정을 확인하세요.");
+});
+by("firstLive").onclick=()=>perform(by("firstLive"),async()=>{
+    note("독립영화 첫 초안을 CPU로 생성 중입니다.");
+    panel(await(await request("/api/first-live",{})).json());
+    note("독립영화의 실제 첫 초안을 표시했습니다.");
+});
+by("live").onclick=()=>perform(by("live"),async()=>{
+    note("현재 설정으로 CPU 생성 중입니다.");
+    const current=await(await request("/api/live",{})).json();
+    by("liveRaw").textContent=current.raw;
+    by("livePreview").hidden=false;by("livePreview").open=true;
+    note("지금 생성한 원문입니다. 과제에는 같은 실행 경로의 검증 묶음이 들어갑니다.");
+});
+by("download").onclick=()=>perform(by("download"),async()=>{
+    if(!updated)throw Error("먼저 자료를 갱신하세요.");
+    const observations=[1,2].map(n=>{const p="obs"+n;return {run_id:by(p+"run").value,field:by(p+"field").value,
+        status:by(p+"status").value,source_ok:by(p+"source").value==="true",evidence_seen:by(p+"seen").value==="true"};});
+    if(!observations.every(row=>row.run_id)||observations[0].run_id===observations[1].run_id)throw Error("서로 다른 두 실행을 선택하세요.");
+    const file=await(await request("/api/zip",{observations})).blob();
+    const url=URL.createObjectURL(file);const a=document.createElement("a");a.href=url;a.download="w13a-design-submission.zip";
+    a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);note("ZIP을 받았습니다.");
+});
+request("/api/start").then(r=>r.json()).then(data=>{panel(data);channels(data.channels);note("기본 모델의 오류를 찾아보세요.");}).catch(e=>note(e.message));
+</script></body></html>
