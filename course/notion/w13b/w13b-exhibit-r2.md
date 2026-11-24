@@ -22,4 +22,4 @@
 - 운영 메모와 학습 응답을 나누어 어느 토큰을 손실에 넣을지 확인합니다. [W09B 지시 학습과 응답 손실](https://github.com/lunalab-ai/genAI/blob/2026-fall-w09b/course/notion/w09b/w09b-instructions.md#L33)
 - rank와 alpha가 어댑터를 어떻게 바꾸는지 읽고, 비교표에서 NLL의 분모를 확인합니다. [W10A LoRA 설정](https://github.com/lunalab-ai/genAI/blob/2026-fall-w10a/course/notion/w10a/w10a-lesson.md#L99) · [W10A 모델 평가](https://github.com/lunalab-ai/genAI/blob/2026-fall-w10a/course/notion/w10a/w10a-lesson.md#L220)
 
-[학생 Colab](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w13b-r2/notebooks/student/w13b_exhibit_r2.ipynb) · [과제 1 전용 24회·9건 Colab](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w13b/notebooks/student/w13b_exhibit.ipynb)
+[학생 Colab](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w13b-r3/notebooks/student/w13b_exhibit_r2.ipynb) · [과제 1 전용 24회·9건 Colab](https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w13b/notebooks/student/w13b_exhibit.ipynb)

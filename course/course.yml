@@ -501,9 +501,9 @@ sessions:
   - course/notion/w13b/w13b-exhibit-r2.md
   labs:
   - notebooks/student/w13b_exhibit_r2.ipynb
-  release_tag: 2026-fall-w13b-r2
+  release_tag: 2026-fall-w13b-r3
   runtime_label: CPU · 마스크와 LoRA · 샘플링 비교 · 운영 메모로 카드 만들기
-  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w13b-r2/notebooks/student/w13b_exhibit_r2.ipynb
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w13b-r3/notebooks/student/w13b_exhibit_r2.ipynb
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab

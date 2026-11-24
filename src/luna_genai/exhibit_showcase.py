@@ -11,7 +11,7 @@ from .exhibit_studio import dataset, digest, inspect_output, load_json, messages
 SCHEMA = "w13b-cards-v2"
 MEMO_SCHEMA = "w13b-memo-v2"
 COLAB = ("https://colab.research.google.com/github/lunalab-ai/genAI/blob/"
-         "2026-fall-w13b-r2/notebooks/student/w13b_exhibit_r2.ipynb")
+         "2026-fall-w13b-r3/notebooks/student/w13b_exhibit_r2.ipynb")
 VALIDATION = ("BAG-07", "BAG-10", "TEE-11")
 AUDIENCES = ("공통", "처음 방문한 학생", "리폼에 관심 있는 학생")
 TEMPLATE = Path(__file__).with_name("assets") / "w13b-r2" / "studio.html"
