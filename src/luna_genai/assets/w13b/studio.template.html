@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>캠퍼스 리폼 전시 안내 키트</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f3eb;color:#162d25;font:16px/1.6 system-ui,"Malgun Gothic",sans-serif}
+header{background:#143a30;color:#fff;padding:36px max(24px,calc((100% - 1080px)/2))}
+h1{font-size:clamp(27px,4vw,44px);line-height:1.18;margin:5px 0 12px;letter-spacing:-.03em}header p{margin:0;color:#e0ece5}
+main{max-width:1130px;margin:auto;padding:26px 24px 48px}article,aside,details{background:white;border:1px solid #d4dcd0;border-radius:16px;padding:24px}
+section{display:grid;grid-template-columns:minmax(220px,1fr) minmax(0,2fr);gap:18px}h2{font-size:20px;margin:0 0 12px}dl{margin:0}dt,small{color:#49665a}dd{margin:0 0 10px;font-weight:650}
+pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere;background:#eef3eb;padding:16px;border-radius:10px;margin:10px 0}
+button{background:#146447;color:white;border:0;border-radius:7px;padding:9px 14px;font:inherit;cursor:pointer}
+details{margin-top:16px}summary{font-weight:700;cursor:pointer}table{border-collapse:collapse;width:100%;margin-top:12px;font-size:14px}
+td,th{text-align:left;padding:8px;border-bottom:1px solid #e2e7e0}.mark{font-size:14px;color:#236148;font-weight:700}
+.hold{color:#945123}footer{margin-top:15px;color:#49665a;font-size:13px;overflow-wrap:anywhere}
+@media(max-width:680px){section{grid-template-columns:1fr}article,aside,details{padding:16px}table{font-size:12px}td,th{padding:4px}}
+</style></head><body>
+<header><small style="color:#bfe1d0">생성형 인공지능 · W13B</small><h1>캠퍼스 리폼 전시 안내 키트</h1><p>운영 메모를 받아 전시 작품 소개문을 생성하고 사실을 확인합니다.</p></header>
+<main><section><aside><h2>운영 메모</h2><h3 id="title"></h3><p id="material"></p><dl id="facts"></dl></aside>
+<article><h2>생성된 작품 소개문</h2><div id="mode" class="mark"></div><pre id="raw"></pre><p id="decision"></p><button id="copy" type="button">소개문 복사</button><span id="copied" role="status"></span><footer id="trace"></footer></article></section>
+<details id="verification"><summary>운영 자료와 결과 비교</summary><table><thead><tr><th>항목</th><th>모델 출력</th><th>운영 자료</th><th>판정</th></tr></thead><tbody id="fields"></tbody></table></details>
+<details id="experiment"><summary>두 rank의 검증 결과</summary><table><thead><tr><th>rank</th><th>사실 일치</th><th>자료 밖</th><th>형식 실패</th><th>정답 NLL</th></tr></thead><tbody id="metrics"></tbody></table></details>
+</main><script type="application/json" id="studio-data">__STUDIO_DATA__</script><script>
+const data=JSON.parse(document.getElementById("studio-data").textContent);
+function put(id,value){document.getElementById(id).textContent=value;}
+function addRow(id,values){
+ const row=document.getElementById(id).insertRow();
+ for(const value of values)row.insertCell().textContent=value;
+}
+put("title",data.case.title);put("material",data.case.material);
+for(const [name,value] of Object.entries(data.case.facts)){
+ for(const [tag,word] of [["dt",name],["dd",value]]){
+   const el=document.createElement(tag);el.textContent=word;document.getElementById("facts").append(el);
+ }
+}
+const r=data.record;
+put("mode", data.mode==="live"?"내 Colab 실측 저장본":"수업 실측 재생");
+put("raw",r.result.raw || "생성된 문자열 없음");
+const canPublish=r.result.publishable&&data.comparison.some(m=>m.rank===r.rank&&!m.unsupported&&!m.invalid);
+put("decision",canPublish?"구조화 사실 통과 · 소개 문장 검토":"게시 보류 · 판정표 확인");
+document.getElementById("decision").className=canPublish?"mark":"mark hold";
+put("trace","작품 "+r.case_id+" · rank "+r.rank+" · 실행 "+r.run_id+" · 어댑터 "+(r.adapter_sha256||"기본 모델").slice(0,12));
+for(const row of r.result.fields)addRow("fields",[row.field,row.claim||"—",row.reference,row.status]);
+for(const row of data.comparison)addRow("metrics",[row.rank,row.match+"/"+row.fields,row.unsupported,row.invalid,row.nll]);
+document.getElementById("copy").addEventListener("click",async()=>{
+ try{await navigator.clipboard.writeText(r.result.raw);put("copied"," 복사했습니다.");}
+ catch{const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(document.getElementById("raw"));selection.removeAllRanges();selection.addRange(range);put("copied"," 선택한 텍스트를 복사하세요.");}
+});
+</script></body></html>

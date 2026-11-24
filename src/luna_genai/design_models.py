@@ -68,16 +68,20 @@ def frozen_hash(model):
 
 
 class QwenDesign:
-    def __init__(self, threads=2):
+    def __init__(self, threads=2, *, model_id=MODEL_ID, model_revision=MODEL_REVISION,
+                 generation_settings=None):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
 
         torch.set_num_threads(max(1, threads))
         self.torch = torch
+        self.model_id = model_id
+        self.model_revision = model_revision
+        self.generation_settings = SETTINGS if generation_settings is None else generation_settings
         start = perf_counter()
-        self.tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, revision=MODEL_REVISION)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_id, revision=model_revision)
         self.model = AutoModelForCausalLM.from_pretrained(
-            MODEL_ID, revision=MODEL_REVISION, dtype=torch.float32,
+            model_id, revision=model_revision, dtype=torch.float32,
         ).eval()
         self.training = {}
         self.adapter_paths = {}
@@ -139,7 +143,7 @@ class QwenDesign:
         adapter.save_pretrained(directory, safe_serialization=True)
         sha = sha256((directory / "adapter_model.safetensors").read_bytes()).hexdigest()
         trained = {
-            "spec": spec, "model": MODEL_ID, "revision": MODEL_REVISION,
+            "spec": spec, "model": self.model_id, "revision": self.model_revision,
             "base_before": base_before, "base_after": base_after,
             "changed_tensors": changed, "trainable": sum(p.numel() for p in trainable),
             "adapter_sha256": sha, "updates": history, "training_seconds": training_seconds,
@@ -215,7 +219,7 @@ class QwenDesign:
         eos = self.tokenizer.eos_token_id
         padded = [[eos] * (width - len(ids)) + ids for ids in input_ids]
         masks = [[0] * (width - len(ids)) + [1] * len(ids) for ids in input_ids]
-        cfg = GenerationConfig(**SETTINGS, pad_token_id=eos, eos_token_id=eos, use_cache=True)
+        cfg = GenerationConfig(**self.generation_settings, pad_token_id=eos, eos_token_id=eos, use_cache=True)
         with frozen, torch.inference_mode():
             output = self.model.generate(
                 input_ids=torch.tensor(padded), attention_mask=torch.tensor(masks), generation_config=cfg,
