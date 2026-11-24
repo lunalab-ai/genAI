@@ -97,11 +97,11 @@ class ExhibitTrainer(QwenDesign):
         response = self.tokenizer.encode(target, add_special_tokens=False) + [self.tokenizer.eos_token_id]
         return {"event": case["id"], "prefix": prefix, "response": response}
 
-    def evaluate(self, cases, rank):
+    def evaluate(self, cases, rank, *, steps=STEPS):
         if not cases or any(row["split"] == "train" for row in cases):
             raise ValueError("검증 또는 최종 평가 분할을 선택하세요.")
         if rank:
-            self.activate(rank, STEPS)
+            self.activate(rank, steps)
         from contextlib import nullcontext
         frozen = self.model.disable_adapter() if self.installed and not rank else nullcontext()
         nll = []
@@ -118,7 +118,7 @@ class ExhibitTrainer(QwenDesign):
         outputs = []
         for offset in range(0, len(cases), batch):
             prompts = [self.prompt(case) for case in cases[offset:offset+batch]]
-            outputs.extend(self.generate_batch(prompts, rank, STEPS))
+            outputs.extend(self.generate_batch(prompts, rank, steps))
         rows = []
         for case, result, (total, tokens) in zip(cases, outputs, nll):
             row = self.record(case, result, rank)

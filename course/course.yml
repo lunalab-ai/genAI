@@ -498,13 +498,12 @@ sessions:
   date: '2026-11-25'
   title: 캠퍼스 리폼 전시 안내 키트 · 언어 모델을 학습해 소개문 만들기
   pages:
-  - course/notion/w13b/w13b-exhibit.md
+  - course/notion/w13b/w13b-exhibit-r2.md
   labs:
-  - notebooks/student/w13b_exhibit.ipynb
-  release_tag: 2026-fall-w13b
-  runtime_label: CPU · 실제 LoRA 학습과 검증·웹 HTML
-  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w13b/notebooks/student/w13b_exhibit.ipynb
-
+  - notebooks/student/w13b_exhibit_r2.ipynb
+  release_tag: 2026-fall-w13b-r2
+  runtime_label: CPU · 마스크와 LoRA · 샘플링 비교 · 운영 메모로 카드 만들기
+  colab_url: https://colab.research.google.com/github/lunalab-ai/genAI/blob/2026-fall-w13b-r2/notebooks/student/w13b_exhibit_r2.ipynb
 hero: course/notion/week01/assets/01_hero_banner.png
 supplements:
 - id: week01-lab
